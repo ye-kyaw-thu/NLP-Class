@@ -8,7 +8,7 @@ I do appreciate to know in advance, if you want to use my slides or some parts o
 Let's do our best for languages of Myanmar (Burma)!  
 Let's do our best for Myanmar NLP R&D!  
 
-Regards, 
+Regards,  
 Ye@Language Understanding Lab.
 28 July 2019  
 
