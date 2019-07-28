@@ -2,7 +2,7 @@
 
 Some lecture materials of NLP Class at University of Technology Yadanapon Cyber City (UTYCC), 2019
 
-Please note I also used some old slides of Summer Schools in my NLP class. 
+Please note, I also used some old slides of Summer Schools in my NLP class. 
 I do appreciate to know in advance, if you want to use my slides or some parts of my slides in your class.  
 
 Let's do our best for languages of Myanmar (Burma)!  
