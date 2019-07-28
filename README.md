@@ -9,7 +9,7 @@ Let's do our best for languages of Myanmar!
 Let's do our best for Myanmar NLP R&D!  
 
 Regards,  
-Ye@Language Understanding Lab.
+Ye@Language Understanding Lab.  
 28 July 2019  
 
 ===== Myanmar Language =====
