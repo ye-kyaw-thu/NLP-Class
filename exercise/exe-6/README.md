@@ -78,7 +78,7 @@ if you can write a shell script, write it.
     ├── test.cleaned.1.id.dtl  
     └── test.cleaned.1.id.pra  
     
-# /PBSMT/bk-my/test.cleaned.1.id.pra file
+# File: /PBSMT/bk-my/test.cleaned.1.id.pra file
 
 		DUMP OF SYSTEM ALIGNMENT STRUCTURE  
 
@@ -118,5 +118,47 @@ REF:  ဒါ ဘယ်သူ့ ပန်းကုံး လဲ    ။
 HYP:  ဒါ ဘယ်သူ့ ပန်းကုံး သလဲ ။   
 Eval:                                                    S               
 
+# File: /PBSMT/my-bk/test.cleaned.1.id.dtl
 
+DETAILED OVERALL REPORT FOR THE SYSTEM: ./test.cleaned.1.id  
+
+SENTENCE RECOGNITION PERFORMANCE  
+
+ sentences                                        1044  
+ with errors                             89.9%   ( 939)  
+
+   with substitions                      88.9%   ( 928)  
+   with deletions                        24.3%   ( 254)  
+   with insertions                       23.7%   ( 247)  
+
+
+WORD RECOGNITION PERFORMANCE  
+
+Percent Total Error       =   42.8%   (2912)  
+
+Percent Correct           =   63.1%   (4299)  
+
+Percent Substitution      =   31.9%   (2174)  
+Percent Deletions         =    4.9%   ( 335)  
+Percent Insertions        =    5.9%   ( 403)  
+Percent Word Accuracy     =   57.2%  
+
+
+Ref. words                =           (6808)  
+Hyp. words                =           (6876)  
+Aligned words             =           (7211)  
+
+CONFUSION PAIRS                  Total                 (1710)  
+                                 With >=  1 occurrences (1710)  
+
+   1:   40  ->  ဝို ==> ကို  
+   2:   35  ->  မင်း ==> နင်  
+   3:   19  ->  ကို ==> ဝို  
+   4:   17  ->  သူ ==> ဒယ်ကောင်မငယ်  
+   5:   15  ->  မင့် ==> နင်  
+   6:   12  ->  ငါ ==> ကျွန်တော်  
+   7:   12  ->  လဲ ==> ရိ  
+   8:   11  ->  နင် ==> ခင်ဗျား  
+   9:   11  ->  သွား ==> သော  
+  10:    9  ->  ဝ ==> ဟုတ်ဝ  
 
