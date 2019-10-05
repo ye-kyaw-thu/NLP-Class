@@ -64,4 +64,59 @@ They are:
 
 if you can write a shell script, write it.
 
+# If you finish running all steps above, you will get following files:
+
+./PBSMT/  
+├── bk-my  
+│   ├── test.cleaned.1  
+│   ├── test.cleaned.1.id  
+│   ├── test.cleaned.1.id.dtl  
+│   └── test.cleaned.1.id.pra  
+└── my-bk  
+    ├── test.cleaned.1  
+    ├── test.cleaned.1.id  
+    ├── test.cleaned.1.id.dtl  
+    └── test.cleaned.1.id.pra  
+    
+# /PBSMT/bk-my/test.cleaned.1.id.pra file
+
+		DUMP OF SYSTEM ALIGNMENT STRUCTURE
+
+System name:   ./test.cleaned.1.id
+
+Speakers: 
+    0:  ye
+
+Speaker sentences   0:  ye   #utts: 1044
+id: (ye_1)
+Scores: (#C #S #D #I) 4 1 0 1
+REF:  သူမ ************ ခင်ဗျားကို ချစ် ပါလိမ့်မယ် ။ 
+HYP:  သူမ မင်း ကို                      ချစ် ပါလိမ့်မယ် ။ 
+Eval:           I            S                                                                              
+
+id: (ye_2)
+Scores: (#C #S #D #I) 6 0 0 0
+REF:  သူမ က ရလို့ ဝမ်းသာ နေတာ ။ 
+HYP:  သူမ က ရလို့ ဝမ်းသာ နေတာ ။ 
+Eval:                                                                   
+
+id: (ye_3)
+Scores: (#C #S #D #I) 2 1 5 0
+REF:  သူမ ပိုပြီးအိုစာ သွားလိမ့်မယ် လို့ ကျွန်တော် မျှော်လင့်ထား ခဲ့တယ်                                                                                                                ။ 
+HYP:  သူမ ************************************ ************************************ ************ *************************** *************************************** တအားအိုသွားမယ်လို့ကျွန်တော်မျှော်လင့်ထားရယ် ။ 
+Eval:           D                                    D                                    D            D                           D                                       S                                                                                                                                     
+
+id: (ye_4)
+Scores: (#C #S #D #I) 4 1 0 0
+REF:  ဒီ ကို လာ တာလား ။ 
+HYP:  ဒီ ကို လာ သလား    ။ 
+Eval:                         S                   
+
+id: (ye_5)
+Scores: (#C #S #D #I) 4 1 0 0
+REF:  ဒါ ဘယ်သူ့ ပန်းကုံး လဲ    ။ 
+HYP:  ဒါ ဘယ်သူ့ ပန်းကုံး သလဲ ။ 
+Eval:                                                    S             
+
+
 
