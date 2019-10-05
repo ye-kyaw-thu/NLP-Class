@@ -162,3 +162,5 @@ CONFUSION PAIRS                  Total                 (1710)
    9:   11  ->  သွား ==> သော  
   10:    9  ->  ဝ ==> ဟုတ်ဝ  
 
+# Do Error Analysis based on WER values, .pra, .dtl files on Myanmar-Beik, Beik-Myanmar Machine Translation Model!
+Report to me.
