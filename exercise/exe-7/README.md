@@ -112,7 +112,9 @@ crf_learn --help ခေါ်ကြည့်ပါ။
  -m, --maxiter=INT           set INT for max iterations in LBFGS routine(default 10k)
  -c, --cost=FLOAT            set FLOAT for cost parameter(default 1.0)
 
-တစ်ခုရှိတာက အပြောင်းအလဲ တွေကို မျိုးစုံပြောင်းလဲပြီး မော်ဒယ်ဆောက်ကြည့်တာထက်၊ တစ်မျိုးပြောင်း မော်ဒယ် တစ်ခါဆောက်လုပ်မှသာ အဲဒီပြောင်းလဲလိုက်တဲ့ parameter, feature က word segmentation performance ပေါ်မှာ ဘယ်လိုသက်ရောက်သလဲ ဆိုတာကို နားလည်ရလွယ်ပါလိမ့်မယ်။
+တစ်ခုရှိတာက အပြောင်းအလဲ တွေကို မျိုးစုံပြောင်းလဲပြီး မော်ဒယ်ဆောက်ကြည့်တာထက်၊ တစ်မျိုးပြောင်း မော်ဒယ် တစ်ခါဆောက်လုပ်မှသာ  
+အဲဒီပြောင်းလဲလိုက်တဲ့ parameter, feature က word segmentation performance ပေါ်မှာ ဘယ်လိုသက်ရောက်သလဲ  
+ဆိုတာကို နားလည်ရလွယ်ပါလိမ့်မယ်။
 
 ```
 
