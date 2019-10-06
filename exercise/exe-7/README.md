@@ -92,6 +92,8 @@ Here
 - "B" for beginning of a word
 - "I" for internal of a word
 
+- Write a perl script for labeling
+
 ### Suggestion in Myanmar language:
 
 - မြန်မာစာလုံးတွေကို ဘယ်လို segmentation unit နဲ့ ဖြတ်ပြီး မော်ဒယ် ဆောက်မလဲ ဆိုတာကို စဉ်းစားပါ
@@ -103,11 +105,9 @@ Here
 
 ============
 
-Refer labeling of our word segmentation paper:
+Refer labeling and CRF model results of our word segmentation paper (ICGEC-2015 conf. paper):
 
 Win Pa Pa, Ye Kyaw Thu, Andrew Finch, Eiichiro Sumita, "Word Boundary Identification for Myanmar Text Using Conditional Random Fields", In Proceedings of the Ninth International Conference on Genetic and Evolutionary Computing, August 26-28, 2015, Yangon, Myanmar, pp. 447-456. [Paper Link](https://github.com/ye-kyaw-thu/papers/blob/master/ICGEC2015/typeinst.pdf)
-
-- Write a perl script for labeling
 
 ## 5. Prepare a template file
 
