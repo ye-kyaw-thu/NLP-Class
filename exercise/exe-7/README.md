@@ -1,11 +1,12 @@
 # Building Word Segmentation Model with CRF
 
 Here we will use CRF++ toolkit.Usage:  
-[CRF++ toolkit](https://taku910.github.io/crfpp/)
+[https://taku910.github.io/crfpp/](https://taku910.github.io/crfpp/)
 
 ## 1. Install CRF++ toolkit.
 
-[Download Path](https://drive.google.com/drive/u/0/folders/0B4y35FiV1wh7fngteFhHQUN2Y1B5eUJBNHZUemJYQV9VWlBUb3JlX0xBdWVZTWtSbVBneU0)
+Download Path:  
+[https://drive.google.com/drive/u/0/folders/0B4y35FiV1wh7fngteFhHQUN2Y1B5eUJBNHZUemJYQV9VWlBUb3JlX0xBdWVZTWtSbVBneU0](https://drive.google.com/drive/u/0/folders/0B4y35FiV1wh7fngteFhHQUN2Y1B5eUJBNHZUemJYQV9VWlBUb3JlX0xBdWVZTWtSbVBneU0)
 
 Latest Version Filename: CRF++0.58.tar.gz  
 (Note: .zip file is for Windows OS)
@@ -80,8 +81,7 @@ For example:
 
 Refer labeling of our word segmentation paper:
 
-Win Pa Pa, Ye Kyaw Thu, Andrew Finch, Eiichiro Sumita, "Word Boundary Identification for Myanmar Text Using Conditional Random Fields", In Proceedings of the Ninth International Conference on Genetic and Evolutionary Computing, August 26-28, 2015, Yangon, Myanmar, pp. 447-456.
-[Paper](https://github.com/ye-kyaw-thu/papers/blob/master/ICGEC2015/typeinst.pdf)
+Win Pa Pa, Ye Kyaw Thu, Andrew Finch, Eiichiro Sumita, "Word Boundary Identification for Myanmar Text Using Conditional Random Fields", In Proceedings of the Ninth International Conference on Genetic and Evolutionary Computing, August 26-28, 2015, Yangon, Myanmar, pp. 447-456. [Paper Link](https://github.com/ye-kyaw-thu/papers/blob/master/ICGEC2015/typeinst.pdf)
 
 - Write a perl script for labeling
 
