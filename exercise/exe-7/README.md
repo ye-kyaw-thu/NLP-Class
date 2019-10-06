@@ -38,8 +38,9 @@ open-test.my (open-test data, i.e. not contained in train.my file)
 
 - Syllable Breaking  
 - Consider Based on example data of CRF++ how to label Myanmar data for supervised training:  
-For example:  
+Example labeling or features for Japanese Word Segmentation (from /CRF++-0.58/example/seg/):  
 
+```
 １	n	B  
 日	k	B  
 付	k	B  
@@ -76,6 +77,7 @@ For example:
 .
 .
 .
+```
 
 ============
 
@@ -108,26 +110,31 @@ B
 
 ## 6.Training a CRF Word Segmentation Model
 
+```bash
 crf_learn -f 3 -c 4.0 template train.my model  
+```
 
 ## 7. Testing your CRF model
 
 ### Testing with Closed-test data
+
+```bash
 crf_test -m model closed-test.my  
+```
 
 ### Testing with Open-test data
+
+```bash
 crf_test -m model open-test.my  
+```
 
 ## 8.Make evaluation and consider to increase your model performance
 
-e.g. Updating features, updating template, changing parameters of CRF++ training process  
+For example:
+- Updating features
+- Updating template
+- Changing parameters of CRF++ training process  
 
 # One more exercise
+
 Write a perl program for changing column format into normal writing format (left to right)  
-
-
-
-
-
-
-
