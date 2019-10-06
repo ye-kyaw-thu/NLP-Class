@@ -36,8 +36,12 @@ open-test.my (open-test data, i.e. not contained in train.my file)
 
 ## 4. Preprocessing steps
 
-- Syllable Breaking  
-- Consider Based on example data of CRF++ how to label Myanmar data for supervised training:  
+- Syllable Breaking  (if you want to build a CRF model with syllable unit)
+- Character Breaking (if you want to build a CRF model with character unit)
+- SubWord level ?! (you can also consider subword level segmentation ...)
+
+- Based on an example word segmentation training data of CRF++ toolkit and consider how to label Myanmar data for supervised moedling:  
+
 Example labeling or features for Japanese Word Segmentation (from /CRF++-0.58/example/seg/):  
 
 ```
@@ -78,6 +82,24 @@ Example labeling or features for Japanese Word Segmentation (from /CRF++-0.58/ex
 .
 .
 ```
+
+Here   
+- "k" for Kanji
+- "h" for hiragana character
+- "t" for katana character
+- "n" for number
+
+- "B" for beginning of a word
+- "I" for internal of a word
+
+### Suggestion in Myanmar language:
+
+- မြန်မာစာလုံးတွေကို ဘယ်လို segmentation unit နဲ့ ဖြတ်ပြီး မော်ဒယ် ဆောက်မလဲ ဆိုတာကို စဉ်းစားပါ
+- လေဘယ် ဘယ်လိုထိုးရင် ကောင်းမလဲ၊ tag တွေကို ဘယ်နှစ်မျိုး သတ်မှတ်ရင် word segmentation ရလဒ်က ပိုကောင်းလာမလဲ ဆိုတာကို စဉ်းစားကြည့်ပါ
+- လက်ရှိ exercise လုပ်ခိုင်းထားတာက မြန်မာစာအတွက် word segmentation မော်ဒယ် ဆောက်တာ ဆိုပေမယ့်၊ ဆရာ တင်ပေးထားတဲ့ training data မှာ အင်္ဂလိပ်စာလုံးတွေလည်း ပါနေတယ် ဆိုတဲ့ အချက်ကိုလည်း ဂရုပြုပါ
+- y label အတွက်က "B", "I" ပဲ ဖြစ်ဖြစ်၊ "|", "-" ပဲဖြစ်ဖြစ် လုပ်လို့ရတယ်။ နှစ်မျိုးတည်း မဟုတ်ပဲ ဆရာတို့ ICGEC 2015 paper မှာ လုပ်ထားခဲ့သလို "-", "|", "<", ">" စသည်ဖြင် နှစ်မျိုးထက်မက ပေးပြီး စမ်းချင်လည်း စမ်းကြည့်နိုင်ပါတယ်။
+- template file ကိုလည်း ကိုယ်ရဲ့ training data format အပေါ်မှာ မူတည်ပြီးတော့ ပြောင်းလဲပေးဖို့ကိုလည်း မမေ့ပါနဲ့။ ဥပမာ ကော်လံ ၂ခုသုံးထားလား၊ ၃ခုသုံးထားလား အဲဒီအပေါ်ကို မူတည်ပြီး template file ကို update လုပ်ဖို့ လိုအပ်ပါတယ်။ နောက်ပြီးတော့ character သို့ syllable တစ်လုံးကို တည်လိုက်ပြီး အဲဒီ စာလုံးရဲ့ နောက် ဘယ်နှစ်လုံးရဲ့ လေဘယ်တွေ၊ အဲဒီစာလုံးရဲ့ ရှေ့ ဘယ်နှစ်လုံးရဲ့ property တွေကို မော်ဒယ်ကို ထည့်သွင်းစဉ်းစားပြီး learn လုပ်စေချင်တာလဲ ဆိုတဲ့ အပေါ်ကို မူတည်ပြီးလည်း template ကို update လုပ်ဖို့ လိုအပ်ပါတယ်
+- Machine learning ရဲ့ သဘောသဘာဝ အတိုင်း feature engineering လုပ်ကြည့်ဖို့ လိုအပ်ပါတယ်။ မော်ဒယ် အမျိုးမျိုး ဆောက်ကြည့်ပြီးတော့ open test နဲ့ evaluation ထပ်ခါထပ်ခါ လုပ်ပြီး the best accuracy or F-score စတာတွေကို ရအောင် ကြိုးစားရပါလိမ့်မယ်
 
 ============
 
@@ -137,4 +159,6 @@ For example:
 
 # One more exercise
 
-Write a perl program for changing column format into normal writing format (left to right)  
+Write a perl program for changing column format of model output into normal writing format (left to right).  
+
+
