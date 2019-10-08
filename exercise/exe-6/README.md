@@ -117,6 +117,9 @@ Scores: (#C #S #D #I) 4 1 0 0
 REF:  ဒါ ဘယ်သူ့ ပန်းကုံး လဲ    ။   
 HYP:  ဒါ ဘယ်သူ့ ပန်းကုံး သလဲ ။   
 Eval:                                                    S               
+...  
+...  
+...  
 
 # File: /PBSMT/my-bk/test.cleaned.1.id.dtl
 
@@ -161,6 +164,9 @@ CONFUSION PAIRS                  Total                 (1710)
    8:   11  ->  နင် ==> ခင်ဗျား  
    9:   11  ->  သွား ==> သော  
   10:    9  ->  ဝ ==> ဟုတ်ဝ  
+...  
+...  
+...  
 
 # Do Error Analysis based on WER values, .pra, .dtl files on Myanmar-Beik, Beik-Myanmar Machine Translation Model!
 Report to me.
