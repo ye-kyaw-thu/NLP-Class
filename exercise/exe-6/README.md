@@ -51,6 +51,9 @@ They are:
 
 ## Do WER Calculation:  
 
+First change directory path:  
+e.g. cd ./PBSMT/bk-my/  
+
 ### to see some SYSTEM SUMMARY PERCENTAGES on screen 
  sclite -r ../../../test.my.id -h ./test.cleaned.1.id -i spu_id
 
@@ -109,7 +112,7 @@ Eval:           D                                    D                          
 id: (ye_4)  
 Scores: (#C #S #D #I) 4 1 0 0  
 REF:  ဒီ ကို လာ တာလား ။   
-HYP:  ဒီ ကို လာ သလား    ။ 
+HYP:  ဒီ ကို လာ သလား    ။  
 Eval:                         S                     
 
 id: (ye_5)  
