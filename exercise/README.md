@@ -2,7 +2,7 @@
 1 10-fold  
 2 Write a Word Segmentation Checker  
 3 Manually Word Segmentation  
-4 Myanmar to Braille converter (Parsing exercise) 
+4 Myanmar to Braille converter (Parsing exercise)  
 5 Parsing (programming with Myanmar language)  
 6 WER (Word Error Rate) Calculation  
 7 Myanmar Word Segmentation Model Building with CRF  
