@@ -11,5 +11,5 @@
 10 Developing a New Keyboard based on kKg  
 
 *** to all my students,   
-Try to finish above all homework ASAP!!!
+Try to finish above all homeworks ASAP!!!
 
