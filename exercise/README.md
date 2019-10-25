@@ -2,7 +2,7 @@
 1. Exercise of data preparation for 10-fold cross validation  
 2. Write a Word Segmentation Checker  
 3. Exercise of manual word segmentation (It should be fun ...)  
-4. Myanmar to Braille converter (Parsing exercise)  
+4. Myanmar text to Myanmar Braille converter (Parsing exercise)  
 5. Parsing (programming with our beloved Myanmar language)  
 6. WER (Word Error Rate) Calculation  
 7. Myanmar Word Segmentation Model Building with CRF (Conditional Random Fields)  
