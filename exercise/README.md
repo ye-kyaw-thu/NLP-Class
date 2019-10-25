@@ -3,7 +3,7 @@
 2. Write a Word Segmentation Checker  
 3. Exercise of manual word segmentation (It should be fun ...)  
 4. Myanmar text to Myanmar Braille converter (Parsing exercise)  
-5. Parsing (programming with our beloved Myanmar language)  
+5. Parsing is everywhere!!! (programming with our beloved Myanmar language)  
 6. WER (Word Error Rate) Calculation  
 7. Myanmar Word Segmentation Model Building with CRF (Conditional Random Fields)  
 8. Grapheme-to-Phoneme Conversion Model Building with CRF  
