@@ -9,6 +9,8 @@
 8. Grapheme-to-Phoneme Conversion Model Building with CRF  
 9. Spelling Checker with a Dictionary (let's use string similarity measures)  
 10. Developing a New Keyboard based on kKg   
+11. Preprocessing for FST, read myPOS corpus and change format to OpenFST files  
+12. Practical running FSA model based on the PDF files that I uploaded (refer 11-fsm4NLP.pdf slide)  
 
 *** to all my students,   
 Try to finish above all homeworks ASAP!!!
