@@ -11,7 +11,7 @@
 10. Developing a new keyboard based on kKg  
    (e.g. a new keyboard for a new language, designing a new Myanmar keyboard layout ...)    
 11. Preprocessing for FST, read myPOS corpus and change format to OpenFST files  
-12. Practical building of a FSA model based on the PDF files that I uploaded (refer 11-fsm4NLP.pdf slide)  
+12. Practical building of a FSA model based on the PDF slide that I uploaded (refer 11-fsm4NLP.pdf slide)  
 
 *** to all my students,   
 Try to finish above all homeworks ASAP!!!
