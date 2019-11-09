@@ -24,6 +24,7 @@ exercise\ ဖိုလ်ဒါအောက်မှာက class ထဲမှာ
 
 ကျွန်တော်တို့ မြန်မာနိုင်ငံမှာရှိတဲ့ ဘာသာစကားတွေရဲ့ NLP R&D တိုးတက်ဖို့အတွက် ကြိုးစားကြရအောင်။  
 
-ရဲကျော်သူ@Language Understanding Lab.  
+ရဲကျော်သူ  
+Language Understanding Lab.  
 28 July 2019  
 
