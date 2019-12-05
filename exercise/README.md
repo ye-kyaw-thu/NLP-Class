@@ -13,7 +13,7 @@
 11. Preprocessing for FST, read myPOS corpus and change format to OpenFST files  
 12. Practical building of a FSA model based on the PDF slide that I uploaded (refer 11-fsm4NLP.pdf slide)  
 13. G2P (Graphame-to-Phoneme) conversion exercise
-14. Building edit-distance FST exercise
+14. String similarity measurement with edit-distance FST
 
 *** to all my students,   
 Try to finish above all homeworks ASAP!!!
