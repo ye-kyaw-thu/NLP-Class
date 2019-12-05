@@ -1,1 +1,1 @@
-# Building Edit Distance FST Exercise
+# String similarity measurement with edit distance FST
