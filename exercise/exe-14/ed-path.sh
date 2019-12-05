@@ -36,7 +36,7 @@ fstdraw --portrait --isymbols=$isymFile --osymbols=$osymFile str2.fst | dot -Tpd
 evince ./str2.pdf
 
 # compose str1 FST and edit_sarr FST piping the output and compose with str2 FST
-fstcompose str1.fst edit_str1.fst | fstcompose - str2.fst > str1_edit_str2.fst
+fstcompose str1.fst edit.fst | fstcompose - str2.fst > str1_edit_str2.fst
 
 fstdraw --portrait --isymbols=$isymFile --osymbols=$osymFile str1_edit_str2.fst | dot -Tpdf -Eheadport=e -Etailport=w > str1_edit_str2.pdf
 # view
