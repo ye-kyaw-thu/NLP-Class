@@ -1,0 +1,81 @@
+// ET-NlP Keyboard is written by EiThandarAung, Thiha Nyein, Naing Linn Phyo, Phyo Thu Htet.
+// 26 Oct 2019 Last updated: 30 Oct 2019
+// This keyboard is based on kKg keyboard and zawgyi layout.
+// Designed for ones who are familiar with zawgyi layout (one of the widely used keyboard layout for Burmese).
+// kkg keyboard is created by Dr Ye Kyaw Thu.
+
+
+partial default alphanumeric_keys
+xkb_symbols "basic" {
+    name[Group1]= "etnlp";
+    key.type[Group1] = "FOUR_LEVEL";
+   
+    
+
+    // Alphanumeric section
+    key <TLDE> { [      U103F, asciitilde,	grave,	asciitilde ] };	
+    key <AE01> { [      U1041,      U100b,            1,      exclam ] }; // ၁ ဋ
+    key <AE02> { [      U1042,      U100c,            2,          at ] }; // ၂  ဌ	
+    key <AE03> { [      U1043,      U100d,            3,  numbersign ] }; // ၃  ဍ	
+    key <AE04> { [      U1044,      U100e,            4,      dollar ] }; // ၄  ဎ
+    key <AE05> { [      U1045,      U1003,            5,     percent ] }; // ၅  ဃ
+    key <AE06> { [      U1046,      U1025,            6, asciicircum ] }; // ၆  ဥ
+    key <AE07> { [      U1047,      U101B,            7,   ampersand ] }; // ၇  ရ
+    key <AE08> { [      U1048,      U1002,            8,    asterisk ] }; // ၈  ဂ
+    key <AE09> { [      U1049,	    U1029,            9,   parenleft ] }; // ၉  ဩ
+    key <AE10> { [      U1040, 	    U102a,            0,  parenright ] }; // ၀  ဪ
+    key <AE11> { [      parenleft,  U103F,         minus,  underscore ] }; // ( ဿ
+    key <AE12> { [      parenright, U1023,	  equal,        plus ] }; // ) ဣ
+
+    key <AD01> { [	U1006,	U104C,	q,	Q ] }; //  ဆ  ၌
+    key <AD02> { [	U1010,	U104D,	w,	W ] }; //  တ ၍
+    key <AD03> { [	U1014,	U100F,	e,	E ] }; //  န   ဏ
+    key <AD04> { [	U1019,	null,	r,	R ] }; //  မ  
+    key <AD05> { [	U1021,	null,	t,	T ] }; //  အ  
+    key <AD06> { [	U1015,	null,	y,	Y ] }; //  ပ  
+    key <AD07> { [	U1000,	null,	u,	U ] }; // က 
+    key <AD08> { [	U1004,	null,	i,	I ] }; // င 
+    key <AD09> { [	U101E,	U1024,	o,	O ] }; // သ  ဤ
+    key <AD10> { [	U1005,	U104F,	p,	P ] }; //  စ  ၏
+    key <AD11> { [	U101F,	U0027,	bracketleft,	braceleft ] }; //  ဟ ဧ
+    key <AD12> { [	null,	null,	bracketright,	braceright ] }; // 
+
+    key <AC01> { [      U1031,  U1017,  a,	A ] }; // ေ  ဗ
+    key <AC02> { [      U103B,  U103E,  s,      S ] }; // ျ  ှ
+    key <AC03> { [      U102D,  U102E,  d,      D ] }; // ိ  ီ
+    key <AC04> { [      U103A,  U1085,  f,      F ] }; // ်  ႅ
+    key <AC05> { [      U102B,  U103D,  g,      G ] }; // ါ  ွ
+    key <AC06> { [      U1039,  null,   h,      H ] }; // ္ null
+    key <AC07> { [      U103C,  U1032,  j,      J ] }; // ြ  ဲ	
+    key <AC08> { [      U1037,  U1036,  k,      K ] }; // ့  ံ	
+    key <AC09> { [      U102F,  U1030,  l,      L ] }; // ု  ူ
+    key <AC10> { [      U1012,  U1013,  semicolon,	colon ] }; //ဒ ဓ 	
+    key <AC11> { [      null,   null,   apostrophe,	quotedbl] };
+
+    key <AB01> { [	U1016,	U1007,	z,	Z ] }; //  ဖ    ဇ  
+    key <AB02> { [	U1011,	null,	x,	X ] }; //  ထ      
+    key <AB03> { [	U1001,	null,	c,	C ] }; //  ခ    
+    key <AB04> { [	U101C,	null,	v,	V ] }; //  လ  
+    key <AB05> { [	U1018,	null,	b,	B ] }; //  ဘ
+    key <AB06> { [	U100A,	null,	n,	N ] }; //  ည 
+    key <AB07> { [	U102C,	null,	m,	M ] }; // ာ 
+    key <AB08> { [	U101A,	U101D,	comma,	less ] }; // ဝ ယ
+    key <AB09> { [	U1038,	null,	period,	greater ] }; // း
+    key <AB10> { [	U104B,	U104A,	slash,	question ] }; // ။ ၊
+    key <BKSL> { [	U104F,	U1051,	backslash,	bar ] }; // 
+
+    
+
+    key <CAPS> { [ ISO_Level5_Shift, ISO_Level5_Shift, ISO_Level5_Shift, ISO_Level5_Shift ] };
+    
+    // Consider for both lefty and righty in switching to English Section
+    key <RALT>  { type[Group1]="TWO_LEVEL",
+                [ ISO_Level3_Shift, Multi_key ]   };
+    modifier_map Mod5   { <RALT> };
+    key <LALT>  { type[Group1]="TWO_LEVEL",
+                [ ISO_Level3_Shift, Multi_key ]   };
+    modifier_map Mod5   { <LALT> };
+   
+};
+
+

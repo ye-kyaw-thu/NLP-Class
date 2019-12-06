@@ -1,0 +1,84 @@
+// Braille Burmese Keyboard ( Based on kKg layout )
+// kKg layout is created by Dr Ye Kyaw Thu 
+// Ref: https://github.com/ye-kyaw-thu/kKg-Myanmar-Keyboard/blob/master/ver1/kkg
+
+// Usage: Normal and Shift for Braillie characters, LALT and RALT for burmese charcters
+// Phyo Thu Htet, Information Science Student, UTYCC
+// @SoftwareLab, UTYCC
+// 26 Oct 2019, Last Modified : 29 Oct 2019
+
+
+partial default alphanumeric_keys
+xkb_symbols "basic" {
+    name[Group1]= "etnlp";
+    key.type[Group1] = "FOUR_LEVEL";
+   
+    
+
+    key <TLDE> { [	U283F,	null,	U100E,	U007E	] }; // ⠿ null ဎ ~
+    key <AE01> { [	null,	null,	U1041,	U1023] }; //  ၁  ဣ need to change
+    key <AE02> { [	null,	null,	U1042,	U1024	] }; //  ၂  ဤ need to change(null)
+    key <AE03> { [      null,   U2826,  U1043,	U104C	] }; //  null ⠦ ၃  ၌ need to change(null)
+    key <AE04> { [	null,	U282C,	U1044,	U104E] }; //  null ⠬ ၄  ၎ need to change(null)
+    key <AE05> { [	null,   null,	U1045,	U0025] }; //  ၅  % need to change(null)
+    key <AE06> { [	null,	null,	U1046,	U005E] }; //  ၆  ^ need to change (null)
+    key <AE07> { [	null,	null,	U1047,	U0026] }; //  ၇  & need to change (null)
+    key <AE08> { [	null,	null,	U1048,	U002A] }; //  ၈  * need to change(null)
+    key <AE09> { [	null,	null,	U1049,	U0028] }; //  ၉  (need to change (null)
+    key <AE10> { [	null,	null,	U1040,	U0029] }; //  ၀  )
+    key <AE11> { [	minus,	underscore] }; // - _
+    key <AE12> { [	equal,	plus] }; // = +
+
+    key <AD01> { [	U2837,	U2827,	U100A,	U1009] }; // ⠷ ⠧ည  ဉ
+    key <AD02> { [	U283A,	U281C,	U101D,	U103D] }; // ⠺ ⠜ ဝ  ွ 
+    key <AD03> { [	U2821,	null,	U1032,	U1027] }; // ⠡ null ဲ   ဧ
+    key <AD04> { [	U2801,	U280E,	U102C,	U102B] }; // ⠁⠎ ာ  ါ
+    key <AD05> { [	U2839,	U281E,	U101E,	U1010] }; // ⠹ ⠞သ  တ
+    key <AD06> { [	U2856,	U283D,	U101B,	U101A] }; // ⠗ ⠽ ရ  ယ
+    key <AD07> { [	U2811,	U2825,	U102F,	U1030] }; // ⠑ ⠥ ု   ူ
+
+    key <AD08> { [	U280A,	U282A,	U102D,	U102E] }; // ⠊ ⠪ ိ  ီ
+    key <AD09> { [	null,	null,	U102A,	U1029] }; // null null ဪ  ဩ
+    key <AD10> { [	U2856,	U2830,	U1015,	U1016] }; //  ⡖ ⠰ ပ  ဖ
+    key <AD11> { [	null,   null,   U005B,	U007B] }; //  [ {
+    key <AD12> { [	null,   null,   U005D,	U007D] }; //  ] }
+
+    key <AC01> { [	U2823,  U2831,  U1021,	U1031] }; //⠣  ⠱  အ  ေ
+    key <AC02> { [	U284C,  U2864,  U1005,	U1006] }; //⡌  ⡤ စ  ဆ
+    key <AC03> { [	U2819,  U280B,  U1012,	U1013] }; // ⠙  ဒ  ဓ
+    key <AC04> { [	U2804,  null,   U103A,	U1039] }; // ⠄ ်  ္ (padsint symbol)
+    key <AC05> { [	U281B,  U281F,  U1002,	U1003] }; // ⠛ ⠟ ဂ  ဃ
+    key <AC06> { [	U2813,  U282D,  U101F,	U103E] }; // ⠓ ⠭ ဟ  ှ
+    key <AC07> { [	U2814,  U2822,  U103B,	U103C] }; // ⠔ ⠢ ျ  ြ
+    key <AC08> { [	U2828,  U2888,  U1000,	U1001] }; // ⡁ ⢈ က  ခ
+    key <AC09> { [	U2807,  U2838,  U101C,	U1020] }; // ⠇⠸  လ  ဠ
+    key <AC10> { [	U2806,  U003F,  U1038,	U104B] }; // ⠆? း  ။ 
+    key <AC11> { [	apostrophe,quotedbl  ] }; // ' " 
+
+    key <AB01> { [	U28D1,  U28CC, U1007,	U1008] }; //  ⠵ ⣌ ဇ    ဈ
+    key <AB02> { [	U281A,  U283B, U1011,	U100C] }; // ⠚  ⠻ ထ    ဌ
+    key <AB03> { [	U2848,  null , U1004,	U1025] }; // ⡈  င  ဥ need to  check
+    key <AB04> { [	U2833,  U283E, U100B,	U100D] }; // ⠳  ⠾ ဋ  ဍ    
+    key <AB05> { [	U2803,  U2889, U1018,	U1017] }; // ⠃⢉ ဘ  ဗ
+    key <AB06> { [	U281D,  U286C, U1014,	U100F] }; // ⠝  ⡬ န  ဏ
+    key <AB07> { [	U2849,  null,  U1019,	U1026] }; // ⡉ null မ  ဦ
+    key <AB08> { [	U003F,  U2856, U104A,	U104D] }; // ? ⠯ ၊  ၍
+    key <AB09> { [	U2802,  U2809, U1037,	U1036] }; // ⠂⠉ ့  ံ
+    key <AB10> { [	null,   U2815, U103F,	U104F] }; //  null ⠕ ဿ ၏  need to check
+    key <BKSL> { [	U005C,	U005F] }; //
+
+    
+
+    key <CAPS> { [ ISO_Level5_Shift, ISO_Level5_Shift, ISO_Level5_Shift, ISO_Level5_Shift ] };
+    
+    // Consider for both lefty and righty in switching to English Section
+    key <RALT>  { type[Group1]="TWO_LEVEL",
+                [ ISO_Level3_Shift, Multi_key ]   };
+    modifier_map Mod5   { <RALT> };
+    key <LALT>  { type[Group1]="TWO_LEVEL",
+                [ ISO_Level3_Shift, Multi_key ]   };
+    modifier_map Mod5   { <LALT> };
+   
+};
+
+
