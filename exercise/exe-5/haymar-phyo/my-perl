@@ -1,0 +1,35 @@
+#!/usr/bin/perl
+
+#fortestAssign5;
+
+သုံး strict;
+သုံး warnings;
+သုံး utf8;
+
+binmode(STDIN, ":utf8");
+binmode(STDOUT, ":utf8");
+binmode(STDERR, ":utf8");
+
+ဖိုင်ဖွင့် (my $inputFILE,"<:encoding(utf8)", "10-lines.txt") သို့မဟုတ် ပရိုဂရမ်မှထွက်  "Couldn't open input file 10-lines.txt!, $!\n";
+
+while (!ဖိုင်အဆုံး ($inputFILE)) {
+     
+    my $line = <$inputFILE>;
+     အကယ်၍ (($line မညီ '') နဲ့ ($line !~ /^ *$/)) {
+
+	chomp ($line);
+
+        $line =~ s/^\s+|\s+$//g; #remove spaces at the start and end of sentences
+        $line =~ s/ +/ /g;  #remove multiple spaces between words
+	$line =~ s/ //g;
+
+	print "$line\n";
+
+	$line=~s/([က-ဟ]|[က-ဟ][ျ|ြ|ှ])([က-ဟ]|[\s]|[က-ဟ][်]|[ါ-ဲ|ွ|ံ])/$1အ$2/g;
+	$line=~s/([က-ဟ])([ါ-ဲ|ွ|ံ])/$1အ$2/g;
+	ပြ "$line\n";
+            
+}
+}
+
+ဖိုင်ပိတ် ($inputFILE);
