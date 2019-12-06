@@ -1,0 +1,7 @@
+Edit Distance with FST
+
+isymbols.txt ---> isymbols 
+osymbols.txt ---> osymbols  (same isymbols and osymbols)
+dict.txt ---> rules
+input-string 
+target-string
