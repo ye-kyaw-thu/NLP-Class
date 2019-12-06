@@ -1,0 +1,14 @@
+-	0
+n	1
+ppm	2
+conj	3
+part	4
+v	5
+punc	6
+num	7
+adv	8
+adj	9
+pron	10
+fw	11
+abb	12
+tn	13

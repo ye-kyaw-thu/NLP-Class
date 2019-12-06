@@ -1,0 +1,7 @@
+FST (small languge generator)
+
+input.txt --> isymbols
+*output.txt --> osymbols
+*dict.txt --> rules 
+sentence.txt --> input (to get input.txt in osymbols)
+
