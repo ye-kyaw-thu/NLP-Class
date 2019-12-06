@@ -1,0 +1,146 @@
+Accuracy :
+0.9811445583857096
+Precision-recall table (2-tags Syllable Level)
+              precision    recall  f1-score   support
+
+           
+       1.00      1.00      1.00      1059
+        End
+       0.98      0.99      0.99     24256
+      Other
+       0.98      0.96      0.97     10961
+
+    accuracy                           0.98     36276
+   macro avg       0.99      0.98      0.98     36276
+weighted avg       0.98      0.98      0.98     36276
+
+Accuracy :
+0.9825780130113574
+Precision-recall table (3-tags Syllable Level)
+              precision    recall  f1-score   support
+
+           
+       1.00      1.00      1.00      1059
+        End
+       0.98      0.99      0.99     24256
+      Other
+       0.97      0.95      0.96      8311
+      Start
+       1.00      1.00      1.00      2650
+
+    accuracy                           0.98     36276
+   macro avg       0.99      0.99      0.99     36276
+weighted avg       0.98      0.98      0.98     36276
+
+Accuracy :
+0.9834877053699416
+Precision-recall table (4-tags Syllable Level)
+              precision    recall  f1-score   support
+
+           
+       1.00      1.00      1.00      1059
+        End
+       0.98      0.99      0.99     24256
+      Other
+       0.97      0.95      0.96      7524
+Second-Last
+       0.99      0.95      0.97       787
+      Start
+       1.00      1.00      1.00      2650
+
+    accuracy                           0.98     36276
+   macro avg       0.99      0.98      0.98     36276
+weighted avg       0.98      0.98      0.98     36276
+
+Accuracy :
+0.9875124048957988
+Precision-recall table (5-tags Syllable Level)
+              precision    recall  f1-score   support
+
+           
+       1.00      1.00      1.00      1059
+        End
+       0.99      0.99      0.99     24256
+      Other
+       0.98      0.97      0.97      4406
+Second-Last
+       1.00      0.96      0.98       578
+    Sepcial
+       0.97      0.97      0.97      4837
+      Start
+       1.00      0.99      0.99      1140
+
+    accuracy                           0.99     36276
+   macro avg       0.99      0.98      0.98     36276
+weighted avg       0.99      0.99      0.99     36276
+
+Accuracy :
+0.968039298303308
+Precision-recall table (2-tags Character Level)
+              precision    recall  f1-score   support
+
+           
+       1.00      1.00      1.00      1059
+        End
+       0.92      0.95      0.94     24256
+      Other
+       0.98      0.97      0.98     71992
+
+    accuracy                           0.97     97307
+   macro avg       0.97      0.98      0.97     97307
+weighted avg       0.97      0.97      0.97     97307
+
+Accuracy :
+0.9529530249622329
+Precision-recall table (3-tags Character Level)
+              precision    recall  f1-score   support
+
+           
+       1.00      1.00      1.00      1059
+        End
+       0.94      0.96      0.95     24256
+      Other
+       0.96      0.95      0.96     51301
+      Start
+       0.94      0.96      0.95     20691
+
+    accuracy                           0.95     97307
+   macro avg       0.96      0.97      0.96     97307
+weighted avg       0.95      0.95      0.95     97307
+
+Accuracy :
+0.948564851449536
+Precision-recall table (4-tags Character Level)
+              precision    recall  f1-score   support
+
+           
+       1.00      1.00      1.00      1059
+        End
+       0.96      0.97      0.96     24256
+      Other
+       0.94      0.92      0.93     33519
+Second-Last
+       0.94      0.95      0.95     17782
+      Start
+       0.95      0.97      0.96     20691
+
+    accuracy                           0.95     97307
+   macro avg       0.96      0.96      0.96     97307
+weighted avg       0.95      0.95      0.95     97307
+
+Accuracy :
+1.0
+Precision-recall table (5-tags Character Level)
+              precision    recall  f1-score   support
+
+           
+       1.00      1.00      1.00     24256
+      Other
+       1.00      1.00      1.00     74147
+      Start
+       1.00      1.00      1.00     22101
+
+    accuracy                           1.00    120504
+   macro avg       1.00      1.00      1.00    120504
+weighted avg       1.00      1.00      1.00    120504
+
