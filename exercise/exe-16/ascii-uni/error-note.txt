@@ -1,0 +1,57 @@
+fstprint ./input.fsa
+0	1	b	25
+1	2	k	33
+2	3	J	53
+3	4	g	46
+4	5	z	35
+5	6	m	31
+6	7	k	33
+7	8	u	39
+8	9	\s	1
+9	10	e	27
+10	11	G	51
+11	12	\s	1
+12	13	q	34
+13	14	f	36
+14	15	h	47
+15	16	\s	1
+16	17	k	33
+17	18	k	33
+18	19	G	51
+19	20	h	47
+20	21	\s	1
+21	22	?	65
+22	Infinity
+print output.fst as text
+
+========
+
+Reason:
+
+lar@lar-air:/media/lar/Transcend/student/zzl/from/font-converter/kayah li converter/js/fst$ cat ./input.fsa.txt 
+0	1	b
+1	2	k
+2	3	J
+3	4	g
+4	5	z
+5	6	m
+6	7	k
+7	8	u
+8	9	\s
+9	10	e
+10	11	G
+11	12	\s
+12	13	q
+13	14	f
+14	15	h
+15	16	\s
+16	17	k
+17	18	k
+18	19	G
+19	20	h
+20	21	\s
+21	22	?
+
+==========
+
+
