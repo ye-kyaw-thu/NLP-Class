@@ -1,0 +1,36 @@
+Ref:
+http://www.isle.illinois.edu/sst/courses/minicourse/2009/lecture6.pdf
+
+How I tested:
+
+./mk-fsa.sh
+./print-fsa.sh
+./draw.sh
+
+
+./mk-dict.sh
+./print-dict.sh
+./draw.dict.sh
+
+./print-possible-strings.sh
+
+========
+
+lar@lar-air:/media/lar/Transcend/student/lecture/utycc/fsa/tst/language-gen$ ./print-random.sh
+
+ကျွန်မ ဈေး ပြန်တယ်  
+lar@lar-air:/media/lar/Transcend/student/lecture/utycc/fsa/tst/language-gen$ ./print-random.sh
+
+ကျွန်မ ဈေး သွားတယ်  
+lar@lar-air:/media/lar/Transcend/student/lecture/utycc/fsa/tst/language-gen$ ./print-random.sh
+
+ကျွန်တော် ကျောင်း ပြန်တယ်  
+lar@lar-air:/media/lar/Transcend/student/lecture/utycc/fsa/tst/language-gen$ ./print-random.sh
+
+ကျွန်မ ကျောင်း သွားတယ်  
+lar@lar-air:/media/lar/Transcend/student/lecture/utycc/fsa/tst/language-gen$ ./print-random.sh
+
+ကျွန်တော် ကျောင်း ပြန်တယ်  
+lar@lar-air:/media/lar/Transcend/student/lecture/utycc/fsa/tst/language-gen$ ./print-random.sh
+
+ကျွန်မ ဈေး သွားတယ်  

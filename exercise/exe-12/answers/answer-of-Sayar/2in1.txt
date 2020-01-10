@@ -1,0 +1,14 @@
+0	1	subj
+1	2	obj
+2	3	v
+3
+0	4	subj
+4	5	v
+5	6	obj
+6
+0	7	subj
+7	8	v
+8
+0	9	subj
+9	10	v
+10

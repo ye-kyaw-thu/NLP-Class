@@ -1,0 +1,68 @@
+lar@lar-air:/media/lar/Transcend/student/lecture/utycc/fsa/tst/language-gen2$ ./print-random2.sh 
+
+- - ကျွန်တော် ပြန်တယ် ကျောင်း - ကျွန်မ ဈေး သွားတယ် - ကျွန်မ ကျောင်း သွားတယ် - ကျွန်မ ဈေး ပြန်တယ် - ကျွန်တော် ကျောင်း ပြန်တယ် - ကျွန်မ ကျောင်း သွားတယ် - - ကျွန်မ သွားတယ် ဈေး - ကျွန်မ ကျောင်း ပြန်တယ် - - ကျွန်မ သွားတယ် ဈေး  
+lar@lar-air:/media/lar/Transcend/student/lecture/utycc/fsa/tst/language-gen2$ ./print-random2.sh 
+
+ 
+lar@lar-air:/media/lar/Transcend/student/lecture/utycc/fsa/tst/language-gen2$ ./print-random2.sh 
+
+ 
+lar@lar-air:/media/lar/Transcend/student/lecture/utycc/fsa/tst/language-gen2$ ./print-random2.sh 
+
+ 
+lar@lar-air:/media/lar/Transcend/student/lecture/utycc/fsa/tst/language-gen2$ ./print-random2.sh 
+
+- ကျွန်မ ကျောင်း ပြန်တယ်  
+lar@lar-air:/media/lar/Transcend/student/lecture/utycc/fsa/tst/language-gen2$ ./print-random2.sh 
+
+- ကျွန်တော် ကျောင်း သွားတယ် - ကျွန်မ ဈေး ပြန်တယ်  
+lar@lar-air:/media/lar/Transcend/student/lecture/utycc/fsa/tst/language-gen2$ ./print-random2.sh 
+
+- ကျွန်မ ဈေး သွားတယ် - - ကျွန်မ သွားတယ် ဈေး  
+lar@lar-air:/media/lar/Transcend/student/lecture/utycc/fsa/tst/language-gen2$ ./print-random2.sh 
+
+- - ကျွန်တော် ပြန်တယ် ဈေး - ကျွန်မ ဈေး ပြန်တယ် - ကျွန်တော် ဈေး သွားတယ် - ကျွန်တော် ကျောင်း ပြန်တယ်  
+lar@lar-air:/media/lar/Transcend/student/lecture/utycc/fsa/tst/language-gen2$ 
+
+=========
+
+lar@lar-air:/media/lar/Transcend/student/lecture/utycc/fsa/tst/language-gen2$ ./print-random2.sh 
+
+- ကျွန်မ ပြန်တယ် ကျောင်း  
+lar@lar-air:/media/lar/Transcend/student/lecture/utycc/fsa/tst/language-gen2$ ./print-random2.sh 
+
+- ကျွန်တော် သွားတယ် ကျောင်း  
+lar@lar-air:/media/lar/Transcend/student/lecture/utycc/fsa/tst/language-gen2$ ./print-random2.sh 
+
+ကျွန်မ ဈေး သွားတယ်  
+lar@lar-air:/media/lar/Transcend/student/lecture/utycc/fsa/tst/language-gen2$ ./print-random2.sh 
+
+- ကျွန်မ သွားတယ် ကျောင်း  
+lar@lar-air:/media/lar/Transcend/student/lecture/utycc/fsa/tst/language-gen2$ ./print-random2.sh 
+
+ကျွန်မ ဈေး ပြန်တယ်  
+lar@lar-air:/media/lar/Transcend/student/lecture/utycc/fsa/tst/language-gen2$ ./print-random2.sh 
+
+ကျွန်မ ကျောင်း သွားတယ်  
+lar@lar-air:/media/lar/Transcend/student/lecture/utycc/fsa/tst/language-gen2$ ./print-random2.sh 
+
+- ကျွန်မ သွားတယ် ဈေး  
+lar@lar-air:/media/lar/Transcend/student/lecture/utycc/fsa/tst/language-gen2$ ./print-random2.sh 
+
+- ကျွန်တော် သွားတယ် ကျောင်း  
+lar@lar-air:/media/lar/Transcend/student/lecture/utycc/fsa/tst/language-gen2$ ./print-random2.sh 
+
+ကျွန်တော် ဈေး သွားတယ်  
+lar@lar-air:/media/lar/Transcend/student/lecture/utycc/fsa/tst/language-gen2$ ./print-random2.sh 
+
+ကျွန်တော် ဈေး သွားတယ်  
+lar@lar-air:/media/lar/Transcend/student/lecture/utycc/fsa/tst/language-gen2$ ./print-random2.sh 
+
+ကျွန်တော် ကျောင်း ပြန်တယ်  
+lar@lar-air:/media/lar/Transcend/student/lecture/utycc/fsa/tst/language-gen2$ ./print-random2.sh 
+
+ကျွန်မ ကျောင်း ပြန်တယ်  
+lar@lar-air:/media/lar/Transcend/student/lecture/utycc/fsa/tst/language-gen2$ ./print-random2.sh 
+
+ကျွန်မ ဈေး ပြန်တယ်  
+
