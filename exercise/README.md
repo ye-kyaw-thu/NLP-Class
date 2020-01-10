@@ -15,6 +15,7 @@
 13. G2P (Graphame-to-Phoneme) conversion exercise
 14. String similarity measurement with edit-distance FST
 15. FST model for conversion small-capital, capital-to-small 
+16. Kayah ASCII to Kayah Unicode font conversion with FST
 
 *** to all my students,   
 Try to finish above all homeworks ASAP!!!
