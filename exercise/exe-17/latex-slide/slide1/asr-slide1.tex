@@ -1,0 +1,1273 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Beamer Presentation
+% LaTeX Template
+% Version 1.0 (10/11/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND THEMES
+%----------------------------------------------------------------------------------------
+
+\documentclass{beamer}
+
+\usepackage{fontspec}
+
+%for typing Myanmar text, you can also used with Myanmar3 font
+\newfontfamily {\padauktext}[Script=Myanmar]{Padauk}
+%\newfontfamily {\kayahlitext}{poebya}
+%\newfontfamily{\kayahlitext}{Kayah}
+%\newfontfamily{\kayahlitext}{Karenni}
+%[Extension = .ttf, UprightFont = *-Regular, ...]
+
+%\newfontinstance {\padauktext}[Script=Myanmar]{Padauk}
+
+\usepackage{xeCJK}
+%\setCJKmainfont{MS Mincho} % for \rmfamily
+%\setCJKsansfont{MS Gothic} % for \sffamily
+\setCJKmainfont{ipaexm.ttf}
+% when you got error such as font not found type following command:
+% sudo apt-get install latex-cjk-all
+
+%for double quote
+\newcommand{\quotes}[1]{``#1''}
+
+\usepackage{hyperref}
+\hypersetup{
+    %colorlinks=true,
+    linkcolor=blue,
+    %filecolor=magenta,      
+    urlcolor=cyan,
+}
+
+\mode<presentation> {
+
+% The Beamer class comes with a number of default slide themes
+% which change the colors and layouts of slides. Below this is a list
+% of all the themes, uncomment each in turn to see what they look like.
+
+\usetheme{default}
+%\usetheme{AnnArbor}
+%\usetheme{Antibes}
+%\usetheme{Bergen}
+%\usetheme{Berkeley}
+%\usetheme{Berlin}
+%\usetheme{Boadilla}
+%\usetheme{CambridgeUS}
+%\usetheme{Copenhagen}
+%\usetheme{Darmstadt}
+%\usetheme{Dresden}
+%\usetheme{Frankfurt}
+%\usetheme{Goettingen}
+%\usetheme{Hannover}
+%\usetheme{Ilmenau}
+%\usetheme{JuanLesPins}
+%\usetheme{Luebeck}
+\usetheme{Madrid}
+%\usetheme{Malmoe}
+%\usetheme{Marburg}
+%\usetheme{Montpellier}
+%\usetheme{PaloAlto}
+%\usetheme{Pittsburgh}
+%\usetheme{Rochester}
+%\usetheme{Singapore}
+%\usetheme{Szeged}
+%\usetheme{Warsaw}
+
+% As well as themes, the Beamer class has a number of color themes
+% for any slide theme. Uncomment each of these in turn to see how it
+% changes the colors of your current slide theme.
+
+%\usecolortheme{albatross}
+%\usecolortheme{beaver}
+%\usecolortheme{beetle}
+%\usecolortheme{crane}
+%\usecolortheme{dolphin}
+%\usecolortheme{dove}
+%\usecolortheme{fly}
+%\usecolortheme{lily}
+%\usecolortheme{orchid}
+%\usecolortheme{rose}
+%\usecolortheme{seagull}
+%\usecolortheme{seahorse}
+%\usecolortheme{whale}
+%\usecolortheme{wolverine}
+
+%\setbeamertemplate{footline} % To remove the footer line in all slides uncomment this line
+%\setbeamertemplate{footline}[page number] % To replace the footer line in all slides with a simple slide count uncomment this line
+
+%\setbeamertemplate{navigation symbols}{} % To remove the navigation symbols from the bottom of all slides uncomment this line
+}
+
+\usepackage{graphicx} % Allows including images
+\usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\title[Recording No.1 for ASR Project]{Recording No.1 for ASR Project} % The short title appears at the bottom of every slide, the full title is only on the title page
+
+\author{NLP Class No.1, UTYCC, Pyin Oo Lwin} 
+\institute[UTYCC] % Your institution as it will appear on the bottom of every slide, may be shorthand to save space
+{
+Prepared by Ye Kyaw Thu\\
+Visiting Professor\\
+Semantic Technology Research Team (LST)\\  % Your institution for the title page
+Artificial Intelligence Research Group (ANRG)\\
+National Electronics and Computer Technology Center (NECTEC)\\
+\medskip
+\textit{ka2pluskha2@gmail.com} % Your email address
+}
+\date{\today} % Date, can be changed to a custom date
+
+\begin{document}
+
+\begin{frame}
+\titlepage % Print the title page as the first slide
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+%	PRESENTATION SLIDES
+%----------------------------------------------------------------------------------------
+
+\begin{frame}
+\frametitle{\padauktext ဂရုပြုရန် အချက်များ}
+
+\begin{itemize}
+\item {\padauktext အသံထွက်မဖတ်ခင်မှာ စာကြောင်းကို တစ်ခေါက် စိတ်ထဲမှာ ဖတ်ရန်}
+\item word segmentation {\padauktext ဖြတ်ထားပေမဲ့ ဖြတ်ဖတ်စရာ မလိုပါ}
+\item {\padauktext စာကြောင်း တစ်ကြောင်း ဖတ်ပြီးသွားရင် ၁စက္ကန့်လောက်ပဲ ဖြစ်ဖြစ် ခဏ နားပါ}
+\item {\padauktext ဖတ်တဲ့အခါမှာ ပုံမှန် ကိုယ် စကားပြောနေကြ အတိုင်းပဲ ဖတ်ရန်}
+\item {\padauktext ပီပီသသ ဖတ်ရန်၊ စကားပြောတဲ့ ပုံစံအတိုင်းပဲ ဖတ်ရန်}
+\item {\padauktext ဖတ်တဲ့ နှုန်း }(reading speed) {\padauktext ကိုလည်း ကိုယ် ပြောနေကြ နှုန်းအတိုင်းပဲ သွားရန်}
+\item {\padauktext မှားသွားရင် ၁ စက္ကန့်လောက်ခြားပြီး နောက်တစ်ခေါက် ဆက်ဖတ်သွားရန်}
+\item {\padauktext ဖတ်ရင်းနဲ့ မောလာရင်၊ နားချင်ရင် ခဏ နားပြီးမှ ဆက်ဖတ်ပါ}
+\end{itemize}
+
+\end{frame}
+
+%------------------------------------------------
+
+% From hear I filled with auto print 
+%------------------------------------------------
+\begin{frame}
+\frametitle{Sentence No. 1-5}
+\begin{itemize}
+\item {\padauktext {\Large ကား ရဲ့ အရှိန် ကို လျှော့ ပါ}}
+\item {\padauktext {\Large ကူ ကြ ပါအုံး ရှင့်}}
+\item {\padauktext {\Large ကူညီ ကြ ပါ ခင်ဗျာ}}
+\item {\padauktext {\Large ကူညီ ကြ ပါအုံး}}
+\item {\padauktext {\Large ကော်ဖီ ထပ် ရ နိုင် မလား}}
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Sentence No. 6-10}
+\begin{itemize}
+\item {\padauktext {\Large ကော်ဖီ နောက် တစ်ခွက် ရနိုင် ပါ မလား}}
+\item {\padauktext {\Large ကော်ဖီ သောက်ချင်သေး တယ်}}
+\item {\padauktext {\Large ကို စိတ်တို}}
+\item {\padauktext {\Large ကောင်မလေး နဲ့ကော တွေ့ရဲ့ လား}}
+\item {\padauktext {\Large ကောင်လေး နဲ့ကော တွေ့ဖြစ်ကြ သေးလား}}
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Sentence No. 11-15}
+\begin{itemize}
+\item {\padauktext {\Large ကောင်လေး နဲ့ မကြာခဏ တွေ့ ကြ သလား}}
+\item {\padauktext {\Large ကောင်း ပါတယ်}}
+\item {\padauktext {\Large ကောင်းပါပြီ}}
+\item {\padauktext {\Large ကောင်းသော နေ့ ဖြစ် ပါစေ ခင်ဗျာ}}
+\item {\padauktext {\Large ကောင်းသော နေ့ ဖြစ် ပါစေ ရှင်}}
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Sentence No. 16-20}
+\begin{itemize}
+\item {\padauktext {\Large ကိစ္စ မရှိ ပါဘူး}}
+\item {\padauktext {\Large ကျသင့်ငွေ ကို ပြော ပါ}}
+\item {\padauktext {\Large ကျေးဇူး ကမ္ဘာ ပါပဲ}}
+\item {\padauktext {\Large ကျေးဇူးတင် ပါတယ်}}
+\item {\padauktext {\Large ကျေးဇူးတင် ပါတယ် ခင်ဗျာ}}
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Sentence No. 21-25}
+\begin{itemize}
+\item {\padauktext {\Large ကျေးဇူးတင် ပါတယ် ရှင်}}
+\item {\padauktext {\Large ကျေးဇူး ပါ}}
+\item {\padauktext {\Large ကျေးဇူး ပါပဲ}}
+\item {\padauktext {\Large ကျေးဇူးပြုပြီးတော့ ကော်ဖီ တစ်ခွက် လောက် ရနိုင် မလား}}
+\item {\padauktext {\Large ကျေးဇူး ရှိ ပါတယ်}}
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Sentence No. 26-30}
+\begin{itemize}
+\item {\padauktext {\Large ကျေးဇူး အများကြီး တင် ပါတယ်}}
+\item {\padauktext {\Large ကျေးဇူး အရမ်း ကြီး ပါတယ်}}
+\item {\padauktext {\Large ကျင့်သား ရနေ ပါပြီ}}
+\item {\padauktext {\Large ကျန်တဲ့ အချိန်က အရမ်း နည်း နေပြီ}}
+\item {\padauktext {\Large ကျန်သေး တယ်}}
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Sentence No. 31-35}
+\begin{itemize}
+\item {\padauktext {\Large ကြာသာပတေးနေ့ မှာ ဖုန်းဆက် ပါ}}
+\item {\padauktext {\Large ကြိုးစား ကြည့် ပါမယ်}}
+\item {\padauktext {\Large ကြိုးစား ကြည့် မယ်}}
+\item {\padauktext {\Large ကြိုးစား ကြည့် လိုက် ပါမယ်}}
+\item {\padauktext {\Large ကြိုးစား ပါမယ်}}
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Sentence No. 36-40}
+\begin{itemize}
+\item {\padauktext {\Large ကြိုးစား လိုက် မယ်}}
+\item {\padauktext {\Large ကျွန်တော် ခင်ဗျားကို သတိရ နေ မှာ}}
+\item {\padauktext {\Large ကျွန်တော် တောင်းပန် ပါတယ်}}
+\item {\padauktext {\Large ကျွန်တော် ထင်ထားတဲ့ အတိုင်း ပါပဲ}}
+\item {\padauktext {\Large ကျွန်တော် နဲ့ လိုက်ခဲ့ ပါ}}
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Sentence No. 41-45}
+\begin{itemize}
+\item {\padauktext {\Large ကျွန်တော် နဲ့ အတူတူ သွား မလား}}
+\item {\padauktext {\Large ကျွန်တော် ပျင်းနေ ပြီ}}
+\item {\padauktext {\Large ကျွန်တော် ပျင်းနေ လောက် ပြီ}}
+\item {\padauktext {\Large ကျွန်တော် မုန်း တယ်}}
+\item {\padauktext {\Large ကျွန်တော် မျှော်လင့် နေ ပါတယ်}}
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Sentence No. 46-50}
+\begin{itemize}
+\item {\padauktext {\Large ကျွန်တော် လည်း အရမ်း မုန်းတာ ပဲ}}
+\item {\padauktext {\Large ကျွန်တော် သိ တယ်}}
+\item {\padauktext {\Large ကျွန်တော် သူနဲ့ စကား ပြောမှ ဖြစ် လိမ့်မယ်}}
+\item {\padauktext {\Large ကျွန်မ နဲ့ လိုက်ခဲ့ ပါ}}
+\item {\padauktext {\Large ကျွန်မ နဲ့ အတူတူ သွား မလား}}
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Sentence No. 51-55}
+\begin{itemize}
+\item {\padauktext {\Large ကျွန်မ မုန်းတီး တယ်}}
+\item {\padauktext {\Large ကျွန်မ မုန်း တယ်}}
+\item {\padauktext {\Large ကျွန်မ မျှော်လင့် နေ ပါတယ်}}
+\item {\padauktext {\Large ကျွန်မ သိ တယ်}}
+\item {\padauktext {\Large ခရီး ဖြောင့်ဖြူး ပါစေ}}
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Sentence No. 56-60}
+\begin{itemize}
+\item {\padauktext {\Large ခက်ခက်ခဲခဲ တော့ မဟုတ် ပါဘူး}}
+\item {\padauktext {\Large ခင်ခင်မင်မင် ပါပဲ}}
+\item {\padauktext {\Large ခင်ဗျား က အမြဲတမ်း မှန် ပါတယ်}}
+\item {\padauktext {\Large ခင်ဗျား မှာ အချိန် မရှိ တော့ဘူး}}
+\item {\padauktext {\Large ခင်ဗျား မှားနေ ပါတယ်}}
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Sentence No. 61-65}
+\begin{itemize}
+\item {\padauktext {\Large ခင်ဗျား မှားနေ ပြီ}}
+\item {\padauktext {\Large ခင်ဗျား အလှည့် ရောက် ပြီ}}
+\item {\padauktext {\Large ခေါင်း ကောင်း တယ်}}
+\item {\padauktext {\Large ခေါင်း သိပ် ကောင်း တယ်}}
+\item {\padauktext {\Large ခပ်တည်တည် နေ ပါ လား}}
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Sentence No. 66-70}
+\begin{itemize}
+\item {\padauktext {\Large ဂုဏ်ယူ ပါတယ်}}
+\item {\padauktext {\Large ဂုဏ်ယူ ပါတယ် ကွာ}}
+\item {\padauktext {\Large ဂုဏ်ယူ ပါတယ် ရှင်}}
+\item {\padauktext {\Large ငါ က အချိန် တွေကို ဖြုန်းနေ တာပဲ}}
+\item {\padauktext {\Large ငါ ချစ်တယ်}}
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Sentence No. 71-75}
+\begin{itemize}
+\item {\padauktext {\Large ငါ တောင်းပန် ပါတယ်}}
+\item {\padauktext {\Large ငါ နဲ့ လိုက်ခဲ့ ပါ}}
+\item {\padauktext {\Large ငါ နဲ့ အတူ သွား မလား}}
+\item {\padauktext {\Large ငါ နင့်ကို လွမ်း နေ မှာ}}
+\item {\padauktext {\Large ငါ နိုင် ပြီ}}
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Sentence No. 76-80}
+\begin{itemize}
+\item {\padauktext {\Large ငါ ပျင်းနေ ပြီ}}
+\item {\padauktext {\Large ငါ ဘယ်သူ့ ကိုမှ မသိဘူး}}
+\item {\padauktext {\Large ငါ မင်းကို သတိရ နေ မှာ}}
+\item {\padauktext {\Large ငါ မုန်း တယ်}}
+\item {\padauktext {\Large ငါ မျှော်လင့် ပါတယ်}}
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Sentence No. 81-85}
+\begin{itemize}
+\item {\padauktext {\Large ငါ ရပြီ}}
+\item {\padauktext {\Large ငါ လည်းပဲ အတူတူ ပါပဲ}}
+\item {\padauktext {\Large ငါ လည်း အဲဒီလို ပဲ ထင် တယ်}}
+\item {\padauktext {\Large ငါ လုပ်နိုင် ပါတယ်}}
+\item {\padauktext {\Large ငါ သိတယ်}}
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Sentence No. 86-90}
+\begin{itemize}
+\item {\padauktext {\Large ငါ သိ တယ်}}
+\item {\padauktext {\Large ငါ သူနဲ့ စကား ပြောမှ ဖြစ် မယ်}}
+\item {\padauktext {\Large ငါ သွားတော့ မယ်}}
+\item {\padauktext {\Large ငါ အလေ့အကျင့် ဖြစ်နေ ပါပြီ}}
+\item {\padauktext {\Large ငါ့ ကို ကူညီ ပါအုံး}}
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Sentence No. 91-95}
+\begin{itemize}
+\item {\padauktext {\Large ငါ့ ကို အဲဒီ လို မပြော ပါနဲ့}}
+\item {\padauktext {\Large စကား ကို ဖြည်းဖြည်း ပြောပေး လို့ ရ မလား}}
+\item {\padauktext {\Large စကား ကို ဖြည်းဖြည်း ပြော လို့ ရ မလား}}
+\item {\padauktext {\Large စကား ပြောတာ မြန် တယ် ဖြည်းဖြည်း ပြော ပါ}}
+\item {\padauktext {\Large စနေနေ့ မှာ ဖုန်းဆက် ပါ}}
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Sentence No. 96-100}
+\begin{itemize}
+\item {\padauktext {\Large စောင့် ကြပါ ဟ}}
+\item {\padauktext {\Large စောင့် ကြ ပါအုံး}}
+\item {\padauktext {\Large စောင့် ပါ ဟ}}
+\item {\padauktext {\Large စောင့် ပါအုံး}}
+\item {\padauktext {\Large စဉ်းစား ပေးပါ ခင်ဗျာ}}
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Sentence No. 101-105}
+\begin{itemize}
+\item {\padauktext {\Large စဉ်းစား ပေးပါ ရှင်}}
+\item {\padauktext {\Large စိတ်ဝင်စား စရာ ပါပဲ}}
+\item {\padauktext {\Large စိတ်ဝင်စား ဖို့ ကောင်း လိုက်တာ}}
+\item {\padauktext {\Large စိတ်ဝင်စား လိုက်တာ}}
+\item {\padauktext {\Large ဆရာ ကို ကြည့်ရတာ ပင်ပန်း နေပြီ}}
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Sentence No. 106-110}
+\begin{itemize}
+\item {\padauktext {\Large ဆရာမ ကို ကြည့် ရတာ ပင်ပန်း နေပြီ}}
+\item {\padauktext {\Large ဆရာဝန် ကို ကြည့်ရတာ ပင်ပန်း နေပြီ}}
+\item {\padauktext {\Large ဆောရီး}}
+\item {\padauktext {\Large ဆောရီး ပါ ကွာ}}
+\item {\padauktext {\Large ဆောရီး ပါ ရှင်}}
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Sentence No. 111-115}
+\begin{itemize}
+\item {\padauktext {\Large ဆိုးဆိုးရွားရွား ပါပဲ}}
+\item {\padauktext {\Large ဆိုးရွား ပါတယ်}}
+\item {\padauktext {\Large ဆိုးရွားလွန်း တယ်}}
+\item {\padauktext {\Large ဆိုးရွား လွန်း ပါတယ် ခင်ဗျာ}}
+\item {\padauktext {\Large ဆိုးလိုက် တဲ့ ရာသီဥတု}}
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Sentence No. 116-120}
+\begin{itemize}
+\item {\padauktext {\Large ဈေး က အဆမတန် ပဲ}}
+\item {\padauktext {\Large ဈေး က မတန် ဘူး}}
+\item {\padauktext {\Large ဈေး က မဟားတရား ကြီး နေတယ်}}
+\item {\padauktext {\Large ဈေးကြီး တယ်}}
+\item {\padauktext {\Large ဉာဏ် က ကွာ ပါတယ်}}
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Sentence No. 121-125}
+\begin{itemize}
+\item {\padauktext {\Large ဉာဏ် ကြီး ပါတယ်}}
+\item {\padauktext {\Large ဉာဏ် တအား ကောင်း ပါတယ်}}
+\item {\padauktext {\Large ညာ ကွေ့}}
+\item {\padauktext {\Large ညာဖက် ကို ကွေ့ လိုက်ပါ}}
+\item {\padauktext {\Large တနင်္ဂနွေနေ့ မှာ ဖုန်းဆက် ပါ}}
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Sentence No. 126-130}
+\begin{itemize}
+\item {\padauktext {\Large တနင်္လာနေ့ မှာ ဖုန်းဆက် ပါ}}
+\item {\padauktext {\Large တူ ကို မတူ ပါဘူး}}
+\item {\padauktext {\Large တောင်းပန် ပါတယ်}}
+\item {\padauktext {\Large တစ်ခုခု ရချင် နေတာ လား}}
+\item {\padauktext {\Large တစ်ခုခု လိုချင် နေတာ မဟုတ် လား}}
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Sentence No. 131-135}
+\begin{itemize}
+\item {\padauktext {\Large တစ်ခုခု လိုချင် သလား}}
+\item {\padauktext {\Large တစ်ယောက် မှ ငါ မသိဘူး}}
+\item {\padauktext {\Large တည့်တည့် သာ ဆက်သွား ပါ}}
+\item {\padauktext {\Large တည့်တည့် သွား ပါ}}
+\item {\padauktext {\Large ထင်ထားတဲ့ အတိုင်း ပဲ}}
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Sentence No. 136-140}
+\begin{itemize}
+\item {\padauktext {\Large ထင်ထား တဲ့ အတိုင်း ဖြစ်လာ ပြီနော်}}
+\item {\padauktext {\Large ဒီ နေရာ မှာ လူတွေ က အများကြီး ပဲ}}
+\item {\padauktext {\Large ဒီနေ့ ဘာနေ့ မို့လို့ လဲ}}
+\item {\padauktext {\Large ဒီနေ့ ဘာနေ့ လဲ ကွ}}
+\item {\padauktext {\Large ဒီနေ့ ဘယ်နှရက် လဲ}}
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Sentence No. 141-145}
+\begin{itemize}
+\item {\padauktext {\Large ဒီမှာ လူတွေ အများကြီး ပဲနော်}}
+\item {\padauktext {\Large ဒီလို အဓိပ္ပါယ်မျိုး လား}}
+\item {\padauktext {\Large နားလည် ပါပြီ ခင်ဗျာ}}
+\item {\padauktext {\Large နားလည် ပါပြီ ရှင်}}
+\item {\padauktext {\Large နားလည် ပြီ}}
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Sentence No. 146-150}
+\begin{itemize}
+\item {\padauktext {\Large နားလည် သွား ပါပြီ}}
+\item {\padauktext {\Large နီးနီးနားနား ပါပဲ}}
+\item {\padauktext {\Large နီး ပါ သလား ခင်ဗျာ}}
+\item {\padauktext {\Large နီး ပါ သလား ရှင်}}
+\item {\padauktext {\Large နီး လား}}
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Sentence No. 151-155}
+\begin{itemize}
+\item {\padauktext {\Large နေကောင်း တယ်နော်}}
+\item {\padauktext {\Large နေကောင်း ပါတယ် နော်}}
+\item {\padauktext {\Large နေကောင်း ပါရဲ့ လား ခင်ဗျာ}}
+\item {\padauktext {\Large နေကောင်း ပါရဲ့ လားရှင့်}}
+\item {\padauktext {\Large နေကောင်း ရဲ့ လား}}
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Sentence No. 156-160}
+\begin{itemize}
+\item {\padauktext {\Large နေကောင်း လား}}
+\item {\padauktext {\Large နေ တအား ပူတယ်}}
+\item {\padauktext {\Large နေ တအား ပူတယ်}}
+\item {\padauktext {\Large နေ ပူ လိုက်တာ}}
+\item {\padauktext {\Large နေလို့ နည်းနည်း ကောင်းလာ ပါပြီ}}
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Sentence No. 161-165}
+\begin{itemize}
+\item {\padauktext {\Large နောက် တစ်ခု ရှိသေး တယ်}}
+\item {\padauktext {\Large နောက် တစ်ရက် မှာ ဖုန်းပြန် ဆက်ပေး ပါ}}
+\item {\padauktext {\Large နောက်ထပ် ကျန် ပါ သေးတယ်}}
+\item {\padauktext {\Large နောက် ပြန်ဆုတ်}}
+\item {\padauktext {\Large နောက် ပြန် သွား}}
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Sentence No. 166-170}
+\begin{itemize}
+\item {\padauktext {\Large နိုင် တယ်တဲ့}}
+\item {\padauktext {\Large နိုင် သွားပြီ}}
+\item {\padauktext {\Large နည်းနည်း တော့ နေလို့ ကောင်း လာ ပါပြီ}}
+\item {\padauktext {\Large ပူ လိုက်တာ}}
+\item {\padauktext {\Large ပို မပြော ပါ နဲ့}}
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Sentence No. 171-175}
+\begin{itemize}
+\item {\padauktext {\Large ပိုလို့ မပြောကြ ပါနဲ့ ကွာ}}
+\item {\padauktext {\Large ပိုလို့ မပြောကြ ပါနဲ့ ရှင်}}
+\item {\padauktext {\Large ပိန္နဲခါမှာ ဖုန်းဆက် ပါ}}
+\item {\padauktext {\Large ပျော် ပါတယ်}}
+\item {\padauktext {\Large ပျော် ပါတယ် ခင်ဗျာ}}
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Sentence No. 176-180}
+\begin{itemize}
+\item {\padauktext {\Large ပျော် ပါတယ် ရှင်}}
+\item {\padauktext {\Large ပြီး ပြီလား}}
+\item {\padauktext {\Large ပြီးသွား ပါပြီလား}}
+\item {\padauktext {\Large ပြီးသွား ပြီလား}}
+\item {\padauktext {\Large ပြော စမ်းပါ}}
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Sentence No. 181-185}
+\begin{itemize}
+\item {\padauktext {\Large ပြောတာ ကို နားလည် သလား}}
+\item {\padauktext {\Large ပြောတာ ကို ရတယ် နော်}}
+\item {\padauktext {\Large ပြောတာ ကို သဘောပေါက် လား}}
+\item {\padauktext {\Large ပြောပြ စမ်းပါ}}
+\item {\padauktext {\Large ပြောပြ ပါ}}
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Sentence No. 186-190}
+\begin{itemize}
+\item {\padauktext {\Large ပြည့်စုံ ပါပြီ}}
+\item {\padauktext {\Large ပြန်တော့ ကောင်းလာ ပါပြီ}}
+\item {\padauktext {\Large ပြန်ဖို့ အချိန် ရောက်ပြီ}}
+\item {\padauktext {\Large ပြဿနာ မရှိ ပါဘူး}}
+\item {\padauktext {\Large ပြဿနာ မဟုတ် ပါဘူး}}
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Sentence No. 191-195}
+\begin{itemize}
+\item {\padauktext {\Large ဖြောင့်ဖြောင့် ဆင်းသွား ပါ}}
+\item {\padauktext {\Large ဖြည်းဖြည်း မောင်း ပါ}}
+\item {\padauktext {\Large ဗိုက် က ဆာ နေပြီ}}
+\item {\padauktext {\Large ဗိုက်ဆာ တယ်}}
+\item {\padauktext {\Large ဗိုက်ဆာ နေပြီ}}
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Sentence No. 196-200}
+\begin{itemize}
+\item {\padauktext {\Large ဗိုက် တအား ဆာ နေပြီ}}
+\item {\padauktext {\Large ဗိုက် အရမ်း ဆာ နေပြီ}}
+\item {\padauktext {\Large ဗုဒ္ဓဟူးနေ့ မှာ ဖုန်းဆက် ပါ}}
+\item {\padauktext {\Large ဘာပြော လိုက်တာ လဲ}}
+\item {\padauktext {\Large ဘာပြော လိုက် သလဲ}}
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Sentence No. 201-205}
+\begin{itemize}
+\item {\padauktext {\Large ဘာ ပြဿနာ ရှိ သလဲ}}
+\item {\padauktext {\Large ဘာ ပြဿနာ လဲ}}
+\item {\padauktext {\Large ဘာ မှ မသိဘူး}}
+\item {\padauktext {\Large ဘာမှ မဟုတ် ပါဘူး}}
+\item {\padauktext {\Large ဘာရယ် မဟုတ် ပါဘူး}}
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Sentence No. 206-210}
+\begin{itemize}
+\item {\padauktext {\Large ဘာလိုလို နဲ့ ပြန်ဖို့ အချိန် ရောက်လာ ပြီ}}
+\item {\padauktext {\Large ဘယ်ကို လိုက်ရှာ ရ မလဲ ဆိုတာ မသိ ဘူး}}
+\item {\padauktext {\Large ဘယ် ကို သွားနေ တာလဲ}}
+\item {\padauktext {\Large ဘယ် ကို ဦးတည်နေ တာလဲ}}
+\item {\padauktext {\Large ဘယ် ကွေ့}}
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Sentence No. 211-215}
+\begin{itemize}
+\item {\padauktext {\Large ဘယ် နှရက် ကြာမှာ လဲ}}
+\item {\padauktext {\Large ဘယ် နှရက် တည်းမယ် လို့ စိတ်ကူး ထား ပါ သလဲ}}
+\item {\padauktext {\Large ဘယ် နှရက် နေမှာ လဲ}}
+\item {\padauktext {\Large ဘယ်ဖက် ကို ကွေ့ လိုက်ပါ}}
+\item {\padauktext {\Large ဘယ်မှာ ရှာရ မှန် မသိ ဘူး}}
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Sentence No. 216-220}
+\begin{itemize}
+\item {\padauktext {\Large ဘယ်မှာ သူမ ရှိ ပါ သလဲ}}
+\item {\padauktext {\Large ဘယ်မှာ သူ ရှိ တာ လဲ}}
+\item {\padauktext {\Large ဘယ်လို ထင်ပါ သလဲ}}
+\item {\padauktext {\Large ဘယ်လို ထင်မြင် ပါ သလဲ}}
+\item {\padauktext {\Large ဘယ်လို ထင် လဲ}}
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Sentence No. 221-225}
+\begin{itemize}
+\item {\padauktext {\Large ဘယ်လို ပြဿနာ ပါလဲ}}
+\item {\padauktext {\Large ဘယ်လို မြင် ပါ သလဲ}}
+\item {\padauktext {\Large ဘယ်လောက် ကျ ပါ သလဲ}}
+\item {\padauktext {\Large ဘယ်လောက် ကျသွား သလဲ}}
+\item {\padauktext {\Large ဘယ်လောက် ကြာကြာ နေ မယ် လို့ စိတ်ကူး ထား သလဲ}}
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Sentence No. 226-230}
+\begin{itemize}
+\item {\padauktext {\Large ဘယ်လောက် ရှင်း ရမှာ ပါလဲ}}
+\item {\padauktext {\Large ဘယ်သူ မှ ငါ မသိဘူး}}
+\item {\padauktext {\Large မကြာခင် ရောက်လာ ပါ လိမ့်မယ်}}
+\item {\padauktext {\Large မကြိုက် ပါဘူး}}
+\item {\padauktext {\Large မကြိုက် ဘူး}}
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Sentence No. 231-235}
+\begin{itemize}
+\item {\padauktext {\Large မခက်ခဲ ပါဘူး}}
+\item {\padauktext {\Large မချဲ့ကား ပါ နဲ့}}
+\item {\padauktext {\Large မစ ပါနဲ့}}
+\item {\padauktext {\Large မစောင့် တော့ ဘူး}}
+\item {\padauktext {\Large မစောင့် နိုင် ပါ ဘူး}}
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Sentence No. 236-240}
+\begin{itemize}
+\item {\padauktext {\Large မစောင့်နိုင် ဘူး}}
+\item {\padauktext {\Large မ စိတ်တို}}
+\item {\padauktext {\Large မဆိုး ပါဘူး}}
+\item {\padauktext {\Large မတူ ပါဘူး}}
+\item {\padauktext {\Large မတန် ဘူး}}
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Sentence No. 241-245}
+\begin{itemize}
+\item {\padauktext {\Large မနက်ဖြန် တွေ့ကြ မယ်}}
+\item {\padauktext {\Large မနက်ဖြန် ဖုန်းဆက် ပါ}}
+\item {\padauktext {\Large မနောက် ပါနဲ့}}
+\item {\padauktext {\Large မပြီးသေး ဘူး}}
+\item {\padauktext {\Large မဖြစ်နိုင် တာပဲ}}
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Sentence No. 246-250}
+\begin{itemize}
+\item {\padauktext {\Large မဖြစ်နိုင် ပါဘူး}}
+\item {\padauktext {\Large မဖြစ်နိုင် ပါဘူး ခင်ဗျာ}}
+\item {\padauktext {\Large မဖြစ်နိုင် ပါဘူး ရှင်}}
+\item {\padauktext {\Large မယုံနိုင် စရာ ပါလား}}
+\item {\padauktext {\Large မယုံနိုင် ပါဘူး}}
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Sentence No. 251-255}
+\begin{itemize}
+\item {\padauktext {\Large မယုံ နိုင်ပါဘူး ခင်ဗျာ}}
+\item {\padauktext {\Large မယုံ နိုင်ပါဘူး ရှင့်}}
+\item {\padauktext {\Large မယုံနိုင် ဘူး}}
+\item {\padauktext {\Large မယုံနိုင် လောက်အောင် ပါပဲ}}
+\item {\padauktext {\Large မယုံ ပါဘူး}}
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Sentence No. 256-260}
+\begin{itemize}
+\item {\padauktext {\Large မယုံဘူး ကွာ}}
+\item {\padauktext {\Large မယုံဘူး ရှင့်}}
+\item {\padauktext {\Large မယုံ သေးပါဘူး}}
+\item {\padauktext {\Large မလိုချင် တော့ ပါ ခင်ဗျာ}}
+\item {\padauktext {\Large မလို တော့ ပါဘူး}}
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Sentence No. 261-265}
+\begin{itemize}
+\item {\padauktext {\Large မလို တော့ ပါ ရှင်}}
+\item {\padauktext {\Large မလို ပါဘူး}}
+\item {\padauktext {\Large မလိုအပ် တော့ ပါဘူး}}
+\item {\padauktext {\Large မလုပ် ကြပါ နဲ့}}
+\item {\padauktext {\Large မလုပ် ကြပါ နဲ့ ခင်ဗျာ}}
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Sentence No. 266-270}
+\begin{itemize}
+\item {\padauktext {\Large မလုပ် နဲ့}}
+\item {\padauktext {\Large မလုပ် ပါနဲ့}}
+\item {\padauktext {\Large မလုပ် ပါနဲ့ ရှင့်}}
+\item {\padauktext {\Large မဟုတ်တာ ကို မလုပ်ကြ ပါနဲ့ ကွာ}}
+\item {\padauktext {\Large မဟုတ်တာ မလုပ်ကြ ပါနဲ့ ရှင်}}
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Sentence No. 271-275}
+\begin{itemize}
+\item {\padauktext {\Large မအိုကေ ဘူး}}
+\item {\padauktext {\Large မအိုကေ ဘူး ကွ}}
+\item {\padauktext {\Large မအိုကေ ဘူး ရှင့်}}
+\item {\padauktext {\Large မိုးရွာ ချပြီ}}
+\item {\padauktext {\Large မိုးရွာ တယ် ဟေ့}}
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Sentence No. 276-280}
+\begin{itemize}
+\item {\padauktext {\Large မိုးရွာ နေတယ်}}
+\item {\padauktext {\Large မင်္ဂလာ ပါ}}
+\item {\padauktext {\Large မင်္ဂလာ ပါ ခင်ဗျာ}}
+\item {\padauktext {\Large မင်္ဂလာ ပါ ဆရာ}}
+\item {\padauktext {\Large မင်္ဂလာ ပါ ဆရာမ}}
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Sentence No. 281-285}
+\begin{itemize}
+\item {\padauktext {\Large မင်္ဂလာ ပါ ရှင်}}
+\item {\padauktext {\Large မင်္ဂလာရှိ သော နေ့ ဖြစ် ပါစေ}}
+\item {\padauktext {\Large မင်း က စိတ်တို နေတယ် နော်}}
+\item {\padauktext {\Large မင်း ကလည်း ကွာ အလန့်တကြား မလုပ် ပါနဲ့}}
+\item {\padauktext {\Large မင်း ကောင်မလေး နဲ့ မကြာခဏ တွေ့ဖြစ် ကြ သလား}}
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Sentence No. 286-290}
+\begin{itemize}
+\item {\padauktext {\Large မင်း ကြည့် ရတာ ပင်ပန်းနေ ပြီ}}
+\item {\padauktext {\Large မင်း စိတ်ဆိုး နေတယ်}}
+\item {\padauktext {\Large မင်း စိတ်ဆိုး နေ ပါပြီ}}
+\item {\padauktext {\Large မင်း စိတ်ဆိုး နေပြီ}}
+\item {\padauktext {\Large မင်း စိတ်တို တတ် တယ် နော်}}
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Sentence No. 291-295}
+\begin{itemize}
+\item {\padauktext {\Large မင်း စိတ် မရှည်ဘူး နော်}}
+\item {\padauktext {\Large မင်း မှားနေ ပြီ}}
+\item {\padauktext {\Large မင်း လိမ်နေ တယ်}}
+\item {\padauktext {\Large မင်း အမြဲတမ်း မှန် ပါတယ်}}
+\item {\padauktext {\Large မင်း အလှည့် ပါ}}
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Sentence No. 296-300}
+\begin{itemize}
+\item {\padauktext {\Large မင်း အဲဒီလို ငါ့ကို မပြော ပါနဲ့}}
+\item {\padauktext {\Large မုန်း စရာ ကောင်းလိုက် တာ}}
+\item {\padauktext {\Large မြန်မြန် မြန်မြန်}}
+\item {\padauktext {\Large မြန်မြန် လုပ်ပေးပါ}}
+\item {\padauktext {\Large မြန်မှ ဖြစ် မယ်}}
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Sentence No. 301-305}
+\begin{itemize}
+\item {\padauktext {\Large မှန်တာ ပေါ့}}
+\item {\padauktext {\Large မှန်တာ ပေါ့ ရှင်}}
+\item {\padauktext {\Large မှန် ပါတယ်}}
+\item {\padauktext {\Large မှန်မှန်ကန်ကန် လုပ်ကြ ပါ ကွာ}}
+\item {\padauktext {\Large မှန်မှန် ကန်ကန် လုပ်ကြပါ ရှင်}}
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Sentence No. 306-310}
+\begin{itemize}
+\item {\padauktext {\Large မှန်မှန်ကန်ကန် လုပ် ပါ}}
+\item {\padauktext {\Large မှန်မှန် လုပ်ကြ ပါ}}
+\item {\padauktext {\Large မျှော်လင့် ကြတာ ပေါ့}}
+\item {\padauktext {\Large မွှေးနေ တာပဲ}}
+\item {\padauktext {\Large မွှေးလိုက် တာ}}
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Sentence No. 311-315}
+\begin{itemize}
+\item {\padauktext {\Large ယုံကြည် ချင် တယ်}}
+\item {\padauktext {\Large ယုံကြည် တယ်}}
+\item {\padauktext {\Large ယုံ ပါတယ်}}
+\item {\padauktext {\Large ရ ပါတယ်}}
+\item {\padauktext {\Large ရ ပါပြီ ခင်ဗျာ}}
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Sentence No. 316-320}
+\begin{itemize}
+\item {\padauktext {\Large ရ ပါပြီ ရှင့်}}
+\item {\padauktext {\Large ရပြီ ကွာ}}
+\item {\padauktext {\Large ရဟင် လိုချင် ပါ သလား}}
+\item {\padauktext {\Large ရာသီဥတု က မကောင်း ဘူး}}
+\item {\padauktext {\Large ရာသီဥတု ဆိုး နေတယ်}}
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Sentence No. 321-325}
+\begin{itemize}
+\item {\padauktext {\Large ရီချင် တယ်}}
+\item {\padauktext {\Large ရီချင် လိုက်တာ}}
+\item {\padauktext {\Large ရီစရာ ကောင်း လိုက်တာ}}
+\item {\padauktext {\Large ရူးနေ လား}}
+\item {\padauktext {\Large ရူးပေါပေါ မလုပ် ပါနဲ့}}
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Sentence No. 326-330}
+\begin{itemize}
+\item {\padauktext {\Large ရေငတ် လိုက်တာ}}
+\item {\padauktext {\Large ရေ တအား ငတ် နေပြီ}}
+\item {\padauktext {\Large ရောက်ခါနီး ပြီလား}}
+\item {\padauktext {\Large ရောက်တော့ မလား}}
+\item {\padauktext {\Large ရောက်တော့မယ် နော်}}
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Sentence No. 331-335}
+\begin{itemize}
+\item {\padauktext {\Large ရောက်တော့မယ် မဟုတ် လား}}
+\item {\padauktext {\Large ရုံးပိတ် တယ် နော်}}
+\item {\padauktext {\Large ရုံးပိတ်ရက် မို့လို့ လား}}
+\item {\padauktext {\Large ရယ်ဒီ ပါပဲ}}
+\item {\padauktext {\Large ရွံစရာ ကောင်းလိုက် တာ}}
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Sentence No. 336-340}
+\begin{itemize}
+\item {\padauktext {\Large ရွံ တယ်}}
+\item {\padauktext {\Large ရွံ လိုက်တာ}}
+\item {\padauktext {\Large ရှာတွေ့ ကြပြီ တဲ့}}
+\item {\padauktext {\Large ရှာတွေ့ တယ်}}
+\item {\padauktext {\Large ရှာတွေ့ ပါပြီ}}
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Sentence No. 341-345}
+\begin{itemize}
+\item {\padauktext {\Large ရှာ မတွေ့ ဘူး}}
+\item {\padauktext {\Large ရှာ မတွေ့ ဘူး ဖြစ်နေတာ တဲ့}}
+\item {\padauktext {\Large ရှာလို့ တွေ့ပြီ}}
+\item {\padauktext {\Large ရှေ့တည့်တည့် သွားပါ}}
+\item {\padauktext {\Large ရှင် မှားနေ ပြီ}}
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Sentence No. 346-350}
+\begin{itemize}
+\item {\padauktext {\Large ရှင် လိုချင် လား}}
+\item {\padauktext {\Large ရှင် လိုချင် လို့လား}}
+\item {\padauktext {\Large ရှင် အမြဲတမ်း မှန် ပါတယ်}}
+\item {\padauktext {\Large ရှင် အဲဒီလို့ ကျွန်မကို မပြော ပါနဲ့}}
+\item {\padauktext {\Large ရှင့် အလှည့် ရောက် ပြီ}}
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Sentence No. 351-355}
+\begin{itemize}
+\item {\padauktext {\Large လာ မနောက် ပါနဲ့ ကွာ}}
+\item {\padauktext {\Large လိုချင် ပါ သလား}}
+\item {\padauktext {\Large လိုချင် ပါသလား ရှင့်}}
+\item {\padauktext {\Large လိုချင် လား}}
+\item {\padauktext {\Large လိုက်လို့ မရဘူး ဖြည်းဖြည်း ရှင်းပြ ပေးပါ လား}}
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Sentence No. 356-360}
+\begin{itemize}
+\item {\padauktext {\Large လုပ် ကြ တာပေါ့}}
+\item {\padauktext {\Large လုပ်နိုင် တာ ပေါ့}}
+\item {\padauktext {\Large လုပ်နိုင် တယ်}}
+\item {\padauktext {\Large လုပ်နိုင် ရမှာ ပေါ့}}
+\item {\padauktext {\Large လုံလောက် ပါပြီ}}
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Sentence No. 361-365}
+\begin{itemize}
+\item {\padauktext {\Large လုံးဝ ကို ရှာလို့ မတွေ့ဘူး}}
+\item {\padauktext {\Large လုံးဝ မဟုတ်ဘူး}}
+\item {\padauktext {\Large လုံးဝ မှား တယ်}}
+\item {\padauktext {\Large လုံးဝ မှန် တယ်}}
+\item {\padauktext {\Large လုံးဝ ယုံ ပါတယ်}}
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Sentence No. 366-370}
+\begin{itemize}
+\item {\padauktext {\Large လုံးဝ ဟုတ် တယ်}}
+\item {\padauktext {\Large လုံးဝ အတူတူ ပဲ ဥစ္စာ}}
+\item {\padauktext {\Large လွမ်း နေမှာ သေချာတယ်}}
+\item {\padauktext {\Large လွယ် ပါတယ်}}
+\item {\padauktext {\Large ဝေး ပါ သလား}}
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Sentence No. 371-375}
+\begin{itemize}
+\item {\padauktext {\Large ဝေး ပါ သလား ခင်ဗျာ}}
+\item {\padauktext {\Large ဝေး ပါ သလား ရှင်}}
+\item {\padauktext {\Large ဝေး လား}}
+\item {\padauktext {\Large ဝေး လား ဟင်}}
+\item {\padauktext {\Large ဝေး သလား}}
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Sentence No. 376-380}
+\begin{itemize}
+\item {\padauktext {\Large သတိရ မှာ သေချာတယ်}}
+\item {\padauktext {\Large သာယာ တဲ့ ခရီး ဖြစ် ပါစေ}}
+\item {\padauktext {\Large သိသာ နေတာ ပဲ}}
+\item {\padauktext {\Large သိသာ နေတာ ပဲ ဟာကိုး}}
+\item {\padauktext {\Large သိသာ ပါတယ်}}
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Sentence No. 381-385}
+\begin{itemize}
+\item {\padauktext {\Large သိသာ ပါတယ်}}
+\item {\padauktext {\Large သိသိသာသာ ကြီး ပါ}}
+\item {\padauktext {\Large သူ က ဉာဏ်ကောင်း ပါတယ်}}
+\item {\padauktext {\Large သူ က အခု ဘယ်မှာ လဲ}}
+\item {\padauktext {\Large သူငယ်ချင်းကောင်း တစ်ယောက် ပါ}}
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Sentence No. 386-390}
+\begin{itemize}
+\item {\padauktext {\Large သူတို့ သိကြ တယ်}}
+\item {\padauktext {\Large သူတို့ သိ တယ်}}
+\item {\padauktext {\Large သူတို့ အချင်းချင်း ချစ်ကြ ပါတယ်}}
+\item {\padauktext {\Large သူ နဲ့ အတူတူ သွား မလား}}
+\item {\padauktext {\Large သူ ပျင်းနေ ပြီ}}
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Sentence No. 391-395}
+\begin{itemize}
+\item {\padauktext {\Large သူ ပျင်းနေ လောက်ပြီ}}
+\item {\padauktext {\Large သူ ဘာပြော တာ လဲ}}
+\item {\padauktext {\Large သူ ဘာပြော လိုက်တာ လဲ}}
+\item {\padauktext {\Large သူ ဘာ မှ မသိဘူး}}
+\item {\padauktext {\Large သူ ဘာလုပ်လုပ် ကြိုက်တယ်}}
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Sentence No. 396-400}
+\begin{itemize}
+\item {\padauktext {\Large သူ ဘာ အကြောင်း ပြော နေတာ လဲ}}
+\item {\padauktext {\Large သူ ဘယ် ကို ရောက် နေ လဲ}}
+\item {\padauktext {\Large သူ ဘယ် မှာ လဲ}}
+\item {\padauktext {\Large သူ ဘယ်ရောက် နေ သလဲ}}
+\item {\padauktext {\Large သူမ က အခု ဘယ်မှာ ရှိတာ လဲ}}
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Sentence No. 401-405}
+\begin{itemize}
+\item {\padauktext {\Large သူမ က အချစ်ဆုံး သူငယ်ချင်း ပါ}}
+\item {\padauktext {\Large သူမ က အရမ်း ဉာဏ်ကောင်း ပါတယ်}}
+\item {\padauktext {\Large သူမ ပျင်းနေ လောက်ပြီ}}
+\item {\padauktext {\Large သူမ ဘာပြော လိုက်တာ လဲ}}
+\item {\padauktext {\Large သူမ မှာ အချိန် မရှိ တော့ဘူး}}
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Sentence No. 406-410}
+\begin{itemize}
+\item {\padauktext {\Large သူမ လာနေ ပါပြီ}}
+\item {\padauktext {\Large သူမ လမ်းခုလပ် မှာ ပါ}}
+\item {\padauktext {\Large သူ လာနေ ပါပြီ}}
+\item {\padauktext {\Large သူ လမ်းခုလပ် မှာ ပါ}}
+\item {\padauktext {\Large သူ လိမ်နေ တယ်}}
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Sentence No. 411-415}
+\begin{itemize}
+\item {\padauktext {\Large သူ လိမ်နေ ပြီ}}
+\item {\padauktext {\Large သူ သိ တယ်}}
+\item {\padauktext {\Large သူ့ ကိုတော့ တော်တော်လေး ကြိုက်နေ ပါတယ်}}
+\item {\padauktext {\Large သူ့ ကိုတော့ အရူးအမူး ဖြစ်နေ ပါတယ်}}
+\item {\padauktext {\Large သူ့ ကြည့် ရတာ ပင်ပန်းနေ ပြီ}}
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Sentence No. 416-420}
+\begin{itemize}
+\item {\padauktext {\Large သူ့ နဲ့ မကြာခဏ တွေ့ဖြစ် ကြ လား}}
+\item {\padauktext {\Large သူ့ မှာ အချိန် မရှိ တော့ဘူး}}
+\item {\padauktext {\Large သေချာ တယ် နော်}}
+\item {\padauktext {\Large သေချာ နေပြီ လား}}
+\item {\padauktext {\Large သေချာ ပါတယ် နော်}}
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Sentence No. 421-425}
+\begin{itemize}
+\item {\padauktext {\Large သေချာ ရဲ့ လား}}
+\item {\padauktext {\Large သောကြာနေ့ မှာ ဖုန်းဆက် ပါ}}
+\item {\padauktext {\Large သက်သာလာ ပါပြီ}}
+\item {\padauktext {\Large သက်သာလာ ပါပြီ ခင်ဗျာ}}
+\item {\padauktext {\Large သက်သာလာ ပါပြီ ရှင်}}
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Sentence No. 426-430}
+\begin{itemize}
+\item {\padauktext {\Large သန်ဘက်ခါ ဖုန်းဆက် ပါ}}
+\item {\padauktext {\Large သန်ဘက်ခါ မှာ ဆုံကြ မယ် လေ}}
+\item {\padauktext {\Large သိပ် ကောင်း ပါတယ်}}
+\item {\padauktext {\Large သွားတော့ မယ်နော်}}
+\item {\padauktext {\Large သွား ဖို့ အချိန် ရောက်လာ ပြီ}}
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Sentence No. 431-435}
+\begin{itemize}
+\item {\padauktext {\Large သွား မယ်}}
+\item {\padauktext {\Large သွား ရတော့ မယ်}}
+\item {\padauktext {\Large သွား ရတော့ မယ်}}
+\item {\padauktext {\Large ဟိုဟာ ကို ဝယ်ကြ ရအောင်}}
+\item {\padauktext {\Large ဟိုဟာ ကို ဝယ် ရအောင်}}
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Sentence No. 436-440}
+\begin{itemize}
+\item {\padauktext {\Large ဟုတ်ကဲ့}}
+\item {\padauktext {\Large ဟုတ်ကဲ့ ခင်ဗျာ}}
+\item {\padauktext {\Large ဟုတ်ကဲ့ ပါ}}
+\item {\padauktext {\Large ဟုတ်ကဲ့ ရှင့်}}
+\item {\padauktext {\Large ဟုတ် ပါ သလား}}
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Sentence No. 441-445}
+\begin{itemize}
+\item {\padauktext {\Large ဟုတ် ပါ သလား ခင်ဗျာ}}
+\item {\padauktext {\Large ဟုတ် ပါ သလား ရှင်}}
+\item {\padauktext {\Large ဟုတ်လား}}
+\item {\padauktext {\Large ဟုတ်လား ခင်ဗျာ}}
+\item {\padauktext {\Large ဟုတ်လား ရှင်}}
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Sentence No. 446-450}
+\begin{itemize}
+\item {\padauktext {\Large အချင်းချင်း ခင်ခင်မင်မင် ရှိ ပါတယ်}}
+\item {\padauktext {\Large အချင်းချင်း သိပ် ချစ်ကြ ပါတယ်}}
+\item {\padauktext {\Large အချစ်ဆုံး သူငယ်ချင်း ပါ}}
+\item {\padauktext {\Large အချိန် က သိပ် မကျန် တော့ ဘူး}}
+\item {\padauktext {\Large အချိန် တွေကို နှမြော လိုက်တာ}}
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Sentence No. 451-455}
+\begin{itemize}
+\item {\padauktext {\Large အချိန်တွေ တော်တော် ကုန်သွား ပြီ}}
+\item {\padauktext {\Large အချိန်ဖြုန်း နေတာ ပါ}}
+\item {\padauktext {\Large အချိန် မရှိတော့ ဘူး}}
+\item {\padauktext {\Large အဆင်သင့် ပါပဲ}}
+\item {\padauktext {\Large အတူတူ ပဲ ဥစ္စာ}}
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Sentence No. 456-460}
+\begin{itemize}
+\item {\padauktext {\Large အဓိပ္ပါယ် က ဒီလို လား}}
+\item {\padauktext {\Large အနီး မှာ ပါပဲ}}
+\item {\padauktext {\Large အနံအရသာ မွှေးလိုက် တာ}}
+\item {\padauktext {\Large အနံအသက် က မွှေးလိုက် တာ}}
+\item {\padauktext {\Large အနိုင်ရ သွား ပြီတဲ့}}
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Sentence No. 461-465}
+\begin{itemize}
+\item {\padauktext {\Large အပိုတွေ ပါကွာ}}
+\item {\padauktext {\Large အမြန်ဆုံး လုပ်ပေး ပါ}}
+\item {\padauktext {\Large အရမ်း ကို ဂုဏ်ယူ ပါတယ်}}
+\item {\padauktext {\Large အရမ်း ကို ဆိုးရွား လွန်း ပါတယ်}}
+\item {\padauktext {\Large အရမ်း စိတ်ဝင်စား ပါတယ်}}
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Sentence No. 466-470}
+\begin{itemize}
+\item {\padauktext {\Large အရမ်း ပူအိုက် တယ်}}
+\item {\padauktext {\Large အရမ်း ပျော်နေ ပါတယ်}}
+\item {\padauktext {\Large အရမ်း မကြိုက် ဘူး}}
+\item {\padauktext {\Large အရမ်း မှန် ပါတယ် ခင်ဗျာ}}
+\item {\padauktext {\Large အရမ်း အရမ်း ကို ဂုဏ်ယူ ပါတယ် ကွာ}}
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Sentence No. 471-475}
+\begin{itemize}
+\item {\padauktext {\Large အရှိန် လျှော့ ပါ}}
+\item {\padauktext {\Large အလေ့အကျင့် တော့ ဖြစ်နေ ပြီ}}
+\item {\padauktext {\Large အလန့်တကြား ကွာ}}
+\item {\padauktext {\Large အလုပ် တအားများ ပါတယ်}}
+\item {\padauktext {\Large အလုပ်များ တယ်}}
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Sentence No. 476-480}
+\begin{itemize}
+\item {\padauktext {\Large အလုပ် များလွန်း တယ်}}
+\item {\padauktext {\Large အလုပ် အရမ်း များ တယ်}}
+\item {\padauktext {\Large အား တဲ့အခါ မှာ ဖုန်းပြန် ဆက်ပေး ပါ}}
+\item {\padauktext {\Large အား တဲ့အခါ မှာ ဖုန်းပြန် ဆက်ပေး လို့ ရ မလား}}
+\item {\padauktext {\Large အားလပ်ရက်တွေ အများကြီးပဲ နော်}}
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Sentence No. 481-485}
+\begin{itemize}
+\item {\padauktext {\Large အားလပ်ရက် လား}}
+\item {\padauktext {\Large အေးအေးဆေးဆေး လုပ် ပါ}}
+\item {\padauktext {\Large အဲဒါ ကို စဉ်းစားပေး ပါ}}
+\item {\padauktext {\Large အဲဒါလေး ကို စဉ်းစားပေး ပါနော်}}
+\item {\padauktext {\Large အဲဒါ လိုချင် လား}}
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Sentence No. 486-490}
+\begin{itemize}
+\item {\padauktext {\Large အဲဒါ ဝယ်ကြ ရအောင်}}
+\item {\padauktext {\Large အဲဒါ ဝယ် ရအောင်}}
+\item {\padauktext {\Large အဲဒီ ကိစ္စ ကို စဉ်းစား ပါ}}
+\item {\padauktext {\Large အဲဒီလို ပဲ ဖြစ် မှာပါ}}
+\item {\padauktext {\Large အဲဒီ လို ဖြစ်မယ် လို့ မထင်ထား ပါဘူး}}
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Sentence No. 491-495}
+\begin{itemize}
+\item {\padauktext {\Large အဲဒီ လို ဖြစ်မှာ မဟုတ် ပါဘူး}}
+\item {\padauktext {\Large အဲဒီ လို မထင် ပါဘူး}}
+\item {\padauktext {\Large အဲဒီလို အဓိပ္ပါယ် ပြန်ရ မှာလား}}
+\item {\padauktext {\Large အဲဒီလို အဓိပ္ပါယ် လား}}
+\item {\padauktext {\Large အိုကေ}}
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Sentence No. 496-500}
+\begin{itemize}
+\item {\padauktext {\Large အိုကေ တယ်နော်}}
+\item {\padauktext {\Large အိုကေ ပါတယ် နော်}}
+\item {\padauktext {\Large အိုကေ ရဲ့ လား}}
+\item {\padauktext {\Large အိုကေလား ခင်ဗျာ}}
+\item {\padauktext {\Large အင်္ဂါနေ့ မှာ ဖုန်းဆက် ပါ}}
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+
+% End auto print
+
+\begin{frame}
+%\frametitle{Thanks}
+%\Huge{\centerline{The End!!! \\ Thank You!}}
+%\begin{itemize}
+%  \item Thank You!
+\Huge{\centerline{Thank you!}}
+%\end{itemize}
+\end{frame}
+%----------------------------------------------------------------------------------------
+
+\end{document} 
