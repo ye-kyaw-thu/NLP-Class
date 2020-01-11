@@ -1,6 +1,6 @@
 # Introduction to Latex
 
-Master ကျောင်းသားတွေ၊ PhD ကျောင်းသားတွေက Latex ကိုသုံးပြီးတော့ စာတမ်းရေးတာ၊ presentation slide ပြင်တာတွေကို သိထားသင့်တယ်။  
+အထူးသဖြင့် Master ကျောင်းသားတွေ၊ PhD ကျောင်းသားတွေက Latex ကိုသုံးပြီးတော့ စာတမ်းရေးတာ၊ presentation slide ပြင်တာတွေကို သိထားသင့်တယ်။  
 ဒီ NLP Class ရဲ့ နောက်ဆုံး project report ကို Latex ကို သုံးပြီးတော့ တင်ရမယ်။  
 Presentation slide ကိုလည်း Latex ကို သုံးရမယ်။  
 Exercise no. 17 က အဲဒီအတွက် ပြင်ဆင်တာလည်း ဖြစ်ပါတယ်။  
