@@ -13,7 +13,7 @@ view:
 
 $(FILE).pdf: $(FILE).tex
 	xelatex $(FILE).tex
-	xelatex $(FILE).tex
+	#xelatex $(FILE).tex
 	#bibtex $(FILE)
 	evince $(FILE).pdf
 
