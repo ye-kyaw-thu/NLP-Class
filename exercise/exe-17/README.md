@@ -20,7 +20,7 @@ latex-slide/ ဖိုလ်ဒါကို refer လုပ်ပါ။
 latex-paper/paper1/ ဖိုလ်ဒါမှာက [iSAI-NLP 2019](https://isai-nlp2019.aiat.or.th/), Chiang Mai, Thailand မှာ ဆရာကိုယ်တိုင်ဖတ်ခဲ့တဲ့ Statistical Machine Translation between Kachin and Rawang စာတမ်းရဲ့ latex source ဖိုင်နဲ့ ခေါ်သုံးထားတဲ့ image ဖိုင်တွေ၊ compiled PDF ဖိုင် စတာတွေအားလုံးကို တင်ပေးထားပါတယ်။  
 
 ဒီစာတမ်းကို ကိုယ့်စက်ထဲမှာ xelatex နဲ့ compile လုပ်ပြီးတော့ PDF ဖိုင် ထွက်တဲ့အထိ လုပ်ကြည့်ပါ။  
-ဥပမာ .sty ဖိုင် မရှိတဲ့ ကိစ္စမျိုး နဲ့ တခြား compile လုပ်တဲ့အခါမဟာ ထွက်လာတဲ့ error တွေကို ဖြေရှင်းကြည့်ပါ။  
+ဥပမာ .sty ဖိုင် မရှိတဲ့ ကိစ္စမျိုး နဲ့ တခြား compile လုပ်တဲ့အခါမှာ ထွက်လာတဲ့ error တွေကို ဖြေရှင်းကြည့်ပါ။  
 
 Makefile ကိုလည်း refer လုပ်ပါ။  
 
