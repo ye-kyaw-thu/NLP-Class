@@ -1,0 +1,1041 @@
+Kaldi Installation Note:
+
+Reference:
+http://jrmeyer.github.io/asr/2016/01/26/Installing-Kaldi.html
+
+==========
+
+lar@lar-air:~/tool$ git clone https://github.com/kaldi-asr/kaldi.git
+Cloning into 'kaldi'...
+remote: Enumerating objects: 1, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 105239 (delta 0), reused 0 (delta 0), pack-reused 105238
+Receiving objects: 100% (105239/105239), 118.50 MiB | 638.00 KiB/s, done.
+Resolving deltas: 100% (81161/81161), done.
+Checking connectivity... done.
+lar@lar-air:~/tool$ cd kaldi/
+lar@lar-air:~/tool/kaldi$ cat INSTALL 
+This is the official Kaldi INSTALL. Look also at INSTALL.md for the git mirror installation.
+[Option 1 in the following does not apply to native Windows install, see windows/INSTALL or following Option 2]
+
+Option 1 (bash + makefile):
+
+  Steps:
+    (1)
+    go to tools/  and follow INSTALL instructions there.
+
+    (2)
+    go to src/ and follow INSTALL instructions there.
+
+Option 2 (cmake):
+
+    Go to cmake/ and follow INSTALL.md instructions there.
+    Note, it may not be well tested and some features are missing currently.
+lar@lar-air:~/tool/kaldi$ cd tools/
+lar@lar-air:~/tool/kaldi/tools$ ls
+ATLAS_headers  config  INSTALL                 install_portaudio.sh  install_srilm.sh
+CLAPACK        extras  install_pfile_utils.sh  install_speex.sh      Makefile
+lar@lar-air:~/tool/kaldi/tools$ cat INSTALL 
+To check the prerequisites for Kaldi, first run
+
+  extras/check_dependencies.sh
+
+and see if there are any system-level installations you need to do. Check the
+output carefully. There are some things that will make your life a lot easier
+if you fix them at this stage. If your system default C++ compiler is not
+supported, you can do the check with another compiler by setting the CXX
+environment variable, e.g.
+
+  CXX=g++-4.8 extras/check_dependencies.sh
+
+Then run
+
+  make
+
+which by default will install ATLAS headers, OpenFst, SCTK and sph2pipe.
+OpenFst requires a relatively recent C++ compiler with C++11 support, e.g.
+g++ >= 4.7, Apple clang >= 5.0 or LLVM clang >= 3.3. If your system default
+compiler does not have adequate support for C++11, you can specify a C++11
+compliant compiler as a command argument, e.g.
+
+  make CXX=g++-4.8
+
+If you have multiple CPUs and want to speed things up, you can do a parallel
+build by supplying the "-j" option to make, e.g. to use 4 CPUs
+
+  make -j 4
+
+In extras/, there are also various scripts to install extra bits and pieces that
+are used by individual example scripts.  If an example script needs you to run
+one of those scripts, it will tell you what to do.
+lar@lar-air:~/tool/kaldi/tools$ 
+
+lar@lar-air:~/tool/kaldi/tools$ extras/check_dependencies.sh
+extras/check_dependencies.sh: WARNING python 2.7 is not the default python. We fixed this by adding a correct symlink more prominently on the path.
+ ... If you really want to use python 3.6.1 as default, add an empty file /home/lar/tool/kaldi/tools/python/.use_default_python and run this script again.
+extras/check_dependencies.sh: Intel MKL is not installed. Run extras/install_mkl.sh to install it.
+ ... You can also use other matrix algebra libraries. For information, see:
+ ...   http://kaldi-asr.org/doc/matrixwrap.html
+lar@lar-air:~/tool/kaldi/tools$ 
+
+lar@lar-air:~/tool/kaldi/tools$ extras/check_dependencies.sh
+extras/check_dependencies.sh: WARNING python 2.7 is not the default python. We fixed this by adding a correct symlink more prominently on the path.
+ ... If you really want to use python 3.6.1 as default, add an empty file /home/lar/tool/kaldi/tools/python/.use_default_python and run this script again.
+extras/check_dependencies.sh: Intel MKL is not installed. Run extras/install_mkl.sh to install it.
+ ... You can also use other matrix algebra libraries. For information, see:
+ ...   http://kaldi-asr.org/doc/matrixwrap.html
+lar@lar-air:~/tool/kaldi/tools$ python --version
+Python 3.6.1 :: Continuum Analytics, Inc.
+lar@lar-air:~/tool/kaldi/tools$ touch  /home/lar/tool/kaldi/tools/python/.use_default_python
+lar@lar-air:~/tool/kaldi/tools$ extras/check_dependencies.sh
+extras/check_dependencies.sh: Intel MKL is not installed. Run extras/install_mkl.sh to install it.
+ ... You can also use other matrix algebra libraries. For information, see:
+ ...   http://kaldi-asr.org/doc/matrixwrap.html
+
+===========
+
+N: Data from such a repository can't be authenticated and is therefore potentially dangerous to use.
+N: See apt-secure(8) manpage for repository creation and user configuration details.
+W: The repository 'http://ppa.launchpad.net/yorba/ppa/ubuntu xenial Release' does not have a Release file.
+N: Data from such a repository can't be authenticated and is therefore potentially dangerous to use.
+N: See apt-secure(8) manpage for repository creation and user configuration details.
+W: Failed to fetch http://packages.ros.org/ros/ubuntu/dists/xenial/InRelease  The following signatures couldn't be verified because the public key is not available: NO_PUBKEY F42ED6FBAB17C654
+W: Failed to fetch http://storage.googleapis.com/tensorflow-serving-apt/dists/stable/InRelease  The following signatures were invalid: KEYEXPIRED 1531525724  KEYEXPIRED 1531525724  KEYEXPIRED 1531525724
+E: Failed to fetch http://jp.archive.ubuntu.com/ubuntu/dists/xenial-updates/main/dep11/icons-64x64.tar  Could not open file /var/lib/apt/lists/partial/jp.archive.ubuntu.com_ubuntu_dists_xenial-updates_main_dep11_icons-64x64.tar.gz - open (13: Permission denied)
+E: Failed to fetch http://jp.archive.ubuntu.com/ubuntu/dists/xenial-backports/main/dep11/Components-amd64.yml  Could not open file /var/lib/apt/lists/partial/jp.archive.ubuntu.com_ubuntu_dists_xenial-backports_main_dep11_Components-amd64.yml.xz - open (13: Permission denied)
+E: Failed to fetch http://security.ubuntu.com/ubuntu/dists/xenial-security/main/dep11/icons-64x64.tar  Could not open file /var/lib/apt/lists/partial/security.ubuntu.com_ubuntu_dists_xenial-security_main_dep11_icons-64x64.tar.gz - open (13: Permission denied) [IP: 91.189.91.23 80]
+E: Failed to fetch http://ppa.launchpad.net/yorba/ppa/ubuntu/dists/xenial/main/binary-amd64/Packages  404  Not Found [IP: 91.189.95.83 80]
+E: Failed to fetch http://ppa.launchpad.net/jonathonf/ffmpeg-3/ubuntu/dists/xenial/main/binary-amd64/Packages  403  Forbidden [IP: 91.189.95.83 80]
+W: Some index files failed to download. They have been ignored, or old ones used instead.
+extras/install_mkl.sh: MKL package intel-mkl-64bit-2020.0-088 installation FAILED.
+
+Please open an issue with us at https://github.com/kaldi-asr/kaldi/ if you
+believe this is a bug.
+
+=============
+
+Solution:
+
+https://github.com/kaldi-asr/kaldi/issues/3253
+
+Find all lines that begin with deb http://www.getdeb.net/.... in /etc/apt/sources.list and all files /etc/apt/sources.list.d/*.list, and remove them. This site went down in 2013. You must have noticed the same error when installing updates on your system.
+
+=============
+
+I couldn't find "deb http://www.getdeb.net/..." in /etc/apt/sources.list
+
+However, I removed all files /etc/apt/sources.list.d/*.list
+and run again. Still got error messages.
+
+  Could not open file /var/lib/apt/lists/partial/jp.archive.ubuntu.com_ubuntu_dists_xenial-updates_main_dep11_icons-64x64.tar.gz - open (13: Permission denied)
+Ign:17 http://jp.archive.ubuntu.com/ubuntu xenial-updates/universe amd64 DEP-11 Metadata               
+Ign:19 http://jp.archive.ubuntu.com/ubuntu xenial-updates/universe DEP-11 64x64 Icons                  
+Ign:26 http://jp.archive.ubuntu.com/ubuntu xenial-updates/multiverse amd64 DEP-11 Metadata             
+Ign:39 http://security.ubuntu.com/ubuntu xenial-security/multiverse amd64 DEP-11 Metadata              
+Ign:22 http://security.ubuntu.com/ubuntu xenial-security/main amd64 DEP-11 Metadata                    
+Err:27 http://security.ubuntu.com/ubuntu xenial-security/main DEP-11 64x64 Icons                       
+  Could not open file /var/lib/apt/lists/partial/security.ubuntu.com_ubuntu_dists_xenial-security_main_dep11_icons-64x64.tar.gz - open (13: Permission denied) [IP: 91.189.91.24 80]
+Ign:34 http://security.ubuntu.com/ubuntu xenial-security/universe amd64 DEP-11 Metadata                
+Ign:29 http://jp.archive.ubuntu.com/ubuntu xenial-backports/main amd64 DEP-11 Metadata                 
+Ign:35 http://security.ubuntu.com/ubuntu xenial-security/universe DEP-11 64x64 Icons                   
+Ign:39 http://security.ubuntu.com/ubuntu xenial-security/multiverse amd64 DEP-11 Metadata              
+Ign:22 http://security.ubuntu.com/ubuntu xenial-security/main amd64 DEP-11 Metadata                    
+Ign:30 http://jp.archive.ubuntu.com/ubuntu xenial-backports/universe amd64 DEP-11 Metadata             
+Ign:12 http://jp.archive.ubuntu.com/ubuntu xenial-updates/main amd64 DEP-11 Metadata                   
+Err:29 http://jp.archive.ubuntu.com/ubuntu xenial-backports/main amd64 DEP-11 Metadata                 
+  Could not open file /var/lib/apt/lists/partial/jp.archive.ubuntu.com_ubuntu_dists_xenial-backports_main_dep11_Components-amd64.yml.xz - open (13: Permission denied)
+Ign:30 http://jp.archive.ubuntu.com/ubuntu xenial-backports/universe amd64 DEP-11 Metadata             
+Fetched 325 kB in 11s (29.1 kB/s)                                                                      
+Reading package lists... Done
+E: Failed to fetch http://jp.archive.ubuntu.com/ubuntu/dists/xenial-updates/main/dep11/icons-64x64.tar  Could not open file /var/lib/apt/lists/partial/jp.archive.ubuntu.com_ubuntu_dists_xenial-updates_main_dep11_icons-64x64.tar.gz - open (13: Permission denied)
+E: Failed to fetch http://jp.archive.ubuntu.com/ubuntu/dists/xenial-backports/main/dep11/Components-amd64.yml  Could not open file /var/lib/apt/lists/partial/jp.archive.ubuntu.com_ubuntu_dists_xenial-backports_main_dep11_Components-amd64.yml.xz - open (13: Permission denied)
+E: Failed to fetch http://security.ubuntu.com/ubuntu/dists/xenial-security/main/dep11/icons-64x64.tar  Could not open file /var/lib/apt/lists/partial/security.ubuntu.com_ubuntu_dists_xenial-security_main_dep11_icons-64x64.tar.gz - open (13: Permission denied) [IP: 91.189.91.24 80]
+E: Some index files failed to download. They have been ignored, or old ones used instead.
+extras/install_mkl.sh: MKL package intel-mkl-64bit-2020.0-088 installation FAILED.
+
+Please open an issue with us at https://github.com/kaldi-asr/kaldi/ if you
+believe this is a bug.
+
+=============
+
+I refered:
+https://askubuntu.com/questions/917603/sudo-apt-get-update-failing-could-not-open-list-file-due-to-permission-deni
+
+do followings:
+
+lar@lar-air:~/tool/kaldi/tools$ sudo -i
+root@lar-air:~# rm /var/lib/apt/lists/partial/*
+root@lar-air:~# exit
+logout
+
+=============
+rerun:
+lar@lar-air:~/tool/kaldi/tools$ sudo extras/install_mkl.sh 
+
+Setting up intel-mkl-f95-2020.0-166 (2020.0-166) ...
+Setting up intel-mkl-gnu-rt-2020.0-166 (2020.0-166) ...
+Setting up intel-mkl-gnu-2020.0-166 (2020.0-166) ...
+Setting up intel-mkl-gnu-c-2020.0-166 (2020.0-166) ...
+Setting up intel-mkl-gnu-f-rt-2020.0-166 (2020.0-166) ...
+Setting up intel-mkl-gnu-f-2020.0-166 (2020.0-166) ...
+Setting up intel-mkl-pgi-rt-2020.0-166 (2020.0-166) ...
+Setting up intel-mkl-pgi-2020.0-166 (2020.0-166) ...
+Setting up intel-mkl-pgi-c-2020.0-166 (2020.0-166) ...
+Setting up intel-mkl-psxe-2020.0-088 (2020.0-088) ...
+Setting up intel-mkl-tbb-rt-2020.0-166 (2020.0-166) ...
+Setting up intel-mkl-tbb-2020.0-166 (2020.0-166) ...
+Setting up intel-psxe-common-doc-2020 (2020.0-088) ...
+Setting up intel-psxe-common-2020.0-088 (2020.0-088) ...
+Setting up intel-mkl-64bit-2020.0-088 (2020.0-088) ...
+extras/install_mkl.sh: Configuring ld runtime bindings
++ echo '/opt/intel/lib/intel64
+/opt/intel/mkl/lib/intel64'
++ ldconfig
+extras/install_mkl.sh: MKL package intel-mkl-64bit-2020.0-088 was successfully installed
+lar@lar-air:~/tool/kaldi/tools$ 
+
+=============
+
+lar@lar-air:~/tool/kaldi/tools$ nproc
+4
+
+===========
+
+make[5]: Leaving directory '/home/lar/tool/kaldi/tools/openfst-1.6.7/src/extensions'
+make[4]: Leaving directory '/home/lar/tool/kaldi/tools/openfst-1.6.7/src/extensions'
+make[3]: Leaving directory '/home/lar/tool/kaldi/tools/openfst-1.6.7/src/extensions'
+make[3]: Entering directory '/home/lar/tool/kaldi/tools/openfst-1.6.7/src'
+make[4]: Entering directory '/home/lar/tool/kaldi/tools/openfst-1.6.7/src'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/home/lar/tool/kaldi/tools/openfst-1.6.7/src'
+make[3]: Leaving directory '/home/lar/tool/kaldi/tools/openfst-1.6.7/src'
+make[2]: Leaving directory '/home/lar/tool/kaldi/tools/openfst-1.6.7/src'
+make[2]: Entering directory '/home/lar/tool/kaldi/tools/openfst-1.6.7'
+make[3]: Entering directory '/home/lar/tool/kaldi/tools/openfst-1.6.7'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/lar/tool/kaldi/tools/openfst-1.6.7'
+make[2]: Leaving directory '/home/lar/tool/kaldi/tools/openfst-1.6.7'
+make[1]: Leaving directory '/home/lar/tool/kaldi/tools/openfst-1.6.7'
+rm -f openfst
+ln -s openfst-1.6.7 openfst
+-e 
+
+
+Warning: IRSTLM is not installed by default anymore. If you need IRSTLM
+Warning: use the script extras/install_irstlm.sh
+All done OK.
+lar@lar-air:~/tool/kaldi/tools$
+
+==============
+
+lar@lar-air:~/tool/kaldi/tools$ extras/install_irstlm.sh
+
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Leaving directory '/home/lar/tool/kaldi/tools/irstlm/doc'
+make[1]: Leaving directory '/home/lar/tool/kaldi/tools/irstlm/doc'
+make[1]: Entering directory '/home/lar/tool/kaldi/tools/irstlm'
+make[2]: Entering directory '/home/lar/tool/kaldi/tools/irstlm'
+make  install-exec-hook
+make[3]: Entering directory '/home/lar/tool/kaldi/tools/irstlm'
+cd /home/lar/tool/kaldi/tools/irstlm/ && \
+  ln -s -n -f lib lib64
+make[3]: Leaving directory '/home/lar/tool/kaldi/tools/irstlm'
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/home/lar/tool/kaldi/tools/irstlm'
+make[1]: Leaving directory '/home/lar/tool/kaldi/tools/irstlm'
+***() Installation of IRSTLM finished successfully
+***() Please source the tools/extras/env.sh in your path.sh to enable it
+lar@lar-air:~/tool/kaldi/tools$ 
+
+===============
+
+lar@lar-air:~/tool/kaldi/tools$ cd ../src/
+lar@lar-air:~/tool/kaldi/src$ la
+base            cudafeatbin  fstbin      ivector     Makefile   nnetbin     rnnlmbin    util
+bin             cudamatrix   fstext      ivectorbin  makefiles  NOTES       sgmm2       .version
+chain           decoder      gmm         kws         matrix     online      sgmm2bin
+chainbin        doc          gmmbin      kwsbin      nnet       online2     tfrnnlm
+configure       Doxyfile     gst-plugin  lat         nnet2      online2bin  tfrnnlmbin
+cudadecoder     feat         hmm         latbin      nnet2bin   onlinebin   TODO
+cudadecoderbin  featbin      INSTALL     lm          nnet3      probe       transform
+cudafeat        fgmmbin      itf         lmbin       nnet3bin   rnnlm       tree
+lar@lar-air:~/tool/kaldi/src$ cat INSTALL 
+
+These instructions are valid for UNIX-like systems (these steps have
+been run on various Linux distributions; Darwin; Cygwin).  For native Windows
+compilation, see ../windows/INSTALL.
+
+You must first have completed the installation steps in ../tools/INSTALL
+(compiling OpenFst; getting ATLAS and CLAPACK headers).
+
+The installation instructions are
+
+  ./configure --shared
+  make depend -j 8
+  make -j 8
+
+Note that we added the "-j 8" to run in parallel because "make" takes a long
+time.  8 jobs might be too many for a laptop or small desktop machine with not
+many cores.
+
+For more information, see documentation at http://kaldi-asr.org/doc/
+and click on "The build process (how Kaldi is compiled)".
+
+==========
+
+lar@lar-air:~/tool/kaldi/src$ ./configure 
+Configuring KALDI to use MKL.
+Checking compiler g++ ...
+Checking OpenFst library in /home/lar/tool/kaldi/tools/openfst-1.6.7 ...
+Checking cub library in /home/lar/tool/kaldi/tools/cub-1.8.0 ...
+Doing OS specific configurations ...
+On Linux: Checking for linear algebra header files ...
+Configuring MKL library directory: Found: /opt/intel/mkl/lib/intel64
+MKL configured with threading: sequential, libs: -L/opt/intel/mkl/lib/intel64 -Wl,-rpath=/opt/intel/mkl/lib/intel64 -lmkl_intel_lp64  -lmkl_core  -lmkl_sequential 
+MKL include directory configured as: /opt/intel/mkl/include
+Configuring MKL threading as sequential
+MKL threading libraries configured as   -ldl -lpthread -lm
+Using Intel MKL as the linear algebra library.
+Intel(R) Math Kernel Library Version 2020.0.0 Product Build 20191122 for Intel(R) 64 architecture applications
+Successfully configured for Linux with MKL libs from /opt/intel/mkl
+WARNING: CUDA will not be used! If you have already installed cuda drivers
+         and CUDA toolkit, try using the --cudatk-dir= option. A GPU and CUDA
+         are required to run neural net experiments in a realistic time.
+INFO: Configuring Kaldi not to link with Speex. Don't worry, it's only needed if
+      you intend to use 'compress-uncompress-speex', which is very unlikely.
+Kaldi has been successfully configured. To compile:
+
+  make -j clean depend; make -j <NCPU>
+
+where <NCPU> is the number of parallel builds you can afford to do. If unsure,
+use the smaller of the number of CPUs or the amount of RAM in GB divided by 2,
+to stay within safe limits. 'make -j' without the numeric value may not limit
+the number of parallel jobs at all, and overwhelm even a powerful workstation,
+since Kaldi build is highly parallelized.
+lar@lar-air:~/tool/kaldi/src$ 
+
+==========
+lar@lar-air:~/tool/kaldi/src$ make depend -j 4
+...
+...
+g++ -M -std=c++11 -I.. -isystem /home/lar/tool/kaldi/tools/openfst-1.6.7/include -O1 -Wno-sign-compare -Wall -Wno-sign-compare -Wno-unused-local-typedefs -Wno-deprecated-declarations -Winit-self -DKALDI_DOUBLEPRECISION=0 -DHAVE_EXECINFO_H=1 -DHAVE_CXXABI_H -DHAVE_MKL -I/opt/intel/mkl/include -m64 -msse -msse2 -pthread -g batched-threaded-nnet3-cuda-pipeline.cc cuda-decoder.cc decodable-cumatrix.cc cuda-fst.cc >> .depend.mk
+make[1]: Leaving directory '/home/lar/tool/kaldi/src/cudadecoder'
+make -C cudadecoderbin/ depend
+make[1]: Entering directory '/home/lar/tool/kaldi/src/cudadecoderbin'
+rm -f .depend.mk
+g++ -M -std=c++11 -I.. -isystem /home/lar/tool/kaldi/tools/openfst-1.6.7/include -O1  -Wall -Wno-sign-compare -Wno-unused-local-typedefs -Wno-deprecated-declarations -Winit-self -DKALDI_DOUBLEPRECISION=0 -DHAVE_EXECINFO_H=1 -DHAVE_CXXABI_H -DHAVE_MKL -I/opt/intel/mkl/include -m64 -msse -msse2 -pthread -g batched-wav-nnet3-cuda.cc >> .depend.mk
+make[1]: Leaving directory '/home/lar/tool/kaldi/src/cudadecoderbin'
+make[1]: Leaving directory '/home/lar/tool/kaldi/src/online2bin'
+make[1]: Leaving directory '/home/lar/tool/kaldi/src/chainbin'
+make[1]: Leaving directory '/home/lar/tool/kaldi/src/nnet2bin'
+
+============
+
+g++  -Wl,-rpath=/home/lar/tool/kaldi/tools/openfst-1.6.7/lib -rdynamic   nnet3-chain-acc-lda-stats.o ../nnet3/kaldi-nnet3.a ../chain/kaldi-chain.a ../cudamatrix/kaldi-cudamatrix.a ../decoder/kaldi-decoder.a ../lat/kaldi-lat.a ../fstext/kaldi-fstext.a ../hmm/kaldi-hmm.a ../transform/kaldi-transform.a ../gmm/kaldi-gmm.a ../tree/kaldi-tree.a ../util/kaldi-util.a ../matrix/kaldi-matrix.a ../base/kaldi-base.a   /home/lar/tool/kaldi/tools/openfst-1.6.7/lib/libfst.so -L/opt/intel/mkl/lib/intel64 -Wl,-rpath=/opt/intel/mkl/lib/intel64 -lmkl_intel_lp64  -lmkl_core  -lmkl_sequential    -ldl -lpthread -lm  -lm -lpthread -ldl  -o nnet3-chain-acc-lda-stats
+g++  -Wl,-rpath=/home/lar/tool/kaldi/tools/openfst-1.6.7/lib -rdynamic   nnet3-chain-train.o ../nnet3/kaldi-nnet3.a ../chain/kaldi-chain.a ../cudamatrix/kaldi-cudamatrix.a ../decoder/kaldi-decoder.a ../lat/kaldi-lat.a ../fstext/kaldi-fstext.a ../hmm/kaldi-hmm.a ../transform/kaldi-transform.a ../gmm/kaldi-gmm.a ../tree/kaldi-tree.a ../util/kaldi-util.a ../matrix/kaldi-matrix.a ../base/kaldi-base.a   /home/lar/tool/kaldi/tools/openfst-1.6.7/lib/libfst.so -L/opt/intel/mkl/lib/intel64 -Wl,-rpath=/opt/intel/mkl/lib/intel64 -lmkl_intel_lp64  -lmkl_core  -lmkl_sequential    -ldl -lpthread -lm  -lm -lpthread -ldl  -o nnet3-chain-train
+collect2: error: ld returned 1 exit status
+<builtin>: recipe for target 'nnet3-chain-acc-lda-stats' failed
+make[1]: *** [nnet3-chain-acc-lda-stats] Error 1
+make[1]: *** Waiting for unfinished jobs....
+collect2: error: ld returned 1 exit status
+<builtin>: recipe for target 'nnet3-chain-subset-egs' failed
+make[1]: *** [nnet3-chain-subset-egs] Error 1
+collect2: error: ld returned 1 exit status
+<builtin>: recipe for target 'nnet3-chain-train' failed
+make[1]: *** [nnet3-chain-train] Error 1
+make[1]: Leaving directory '/home/lar/tool/kaldi/src/chainbin'
+Makefile:136: recipe for target 'chainbin' failed
+make: *** [chainbin] Error 2
+lar@lar-air:~/tool/kaldi/src$
+
+============
+
+Maybe reason is my HDD space.
+After cleaning some spaces ..., I run again and  it looks OK for this time.
+
+lar@lar-air:~/tool/kaldi/src$ make -j 4
+test -d  || mkdir 
+The version of configure script matches kaldi.mk version. Good.
+make -C base
+make[1]: Entering directory '/home/lar/tool/kaldi/src/base'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/lar/tool/kaldi/src/base'
+make -C matrix
+make[1]: Entering directory '/home/lar/tool/kaldi/src/matrix'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/lar/tool/kaldi/src/matrix'
+make -C util
+make -C matrix test
+make[1]: Entering directory '/home/lar/tool/kaldi/src/util'
+make[1]: Entering directory '/home/lar/tool/kaldi/src/matrix'
+Running matrix-lib-test ...make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/lar/tool/kaldi/src/util'
+make -C tree
+make -C cudamatrix
+make[1]: Entering directory '/home/lar/tool/kaldi/src/cudamatrix'
+make[1]: Entering directory '/home/lar/tool/kaldi/src/tree'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/lar/tool/kaldi/src/tree'
+make -C gmm
+make -C hmm
+make[1]: Entering directory '/home/lar/tool/kaldi/src/gmm'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/lar/tool/kaldi/src/cudamatrix'
+make -C fstext
+make[1]: Entering directory '/home/lar/tool/kaldi/src/hmm'
+make[1]: Entering directory '/home/lar/tool/kaldi/src/fstext'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/lar/tool/kaldi/src/hmm'
+make -C lat
+make[1]: Entering directory '/home/lar/tool/kaldi/src/lat'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/lar/tool/kaldi/src/gmm'
+make[1]: Nothing to be done for 'all'.
+make -C nnet
+make[1]: Leaving directory '/home/lar/tool/kaldi/src/fstext'
+make -C transform
+make[1]: Entering directory '/home/lar/tool/kaldi/src/nnet'
+make[1]: Entering directory '/home/lar/tool/kaldi/src/transform'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/lar/tool/kaldi/src/lat'
+make -C lm
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/lar/tool/kaldi/src/transform'
+make -C kws
+make[1]: Entering directory '/home/lar/tool/kaldi/src/lm'
+make[1]: Entering directory '/home/lar/tool/kaldi/src/kws'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/lar/tool/kaldi/src/nnet'
+make -C sgmm2
+make[1]: Entering directory '/home/lar/tool/kaldi/src/sgmm2'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/lar/tool/kaldi/src/lm'
+make -C feat
+make[1]: Entering directory '/home/lar/tool/kaldi/src/feat'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/lar/tool/kaldi/src/sgmm2'
+make -C decoder
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/lar/tool/kaldi/src/kws'
+make -C ivector
+make[1]: Entering directory '/home/lar/tool/kaldi/src/decoder'
+make[1]: Entering directory '/home/lar/tool/kaldi/src/ivector'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/lar/tool/kaldi/src/feat'
+make -C nnet2
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/lar/tool/kaldi/src/ivector'
+make -C chain
+make[1]: Entering directory '/home/lar/tool/kaldi/src/nnet2'
+make[1]: Entering directory '/home/lar/tool/kaldi/src/chain'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/lar/tool/kaldi/src/decoder'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/lar/tool/kaldi/src/chain'
+make -C nnet3
+make[1]: Entering directory '/home/lar/tool/kaldi/src/nnet3'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/lar/tool/kaldi/src/nnet2'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/lar/tool/kaldi/src/nnet3'
+make -C online2
+make -C rnnlm
+make[1]: Entering directory '/home/lar/tool/kaldi/src/online2'
+make[1]: Entering directory '/home/lar/tool/kaldi/src/rnnlm'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/lar/tool/kaldi/src/online2'
+make -C cudafeat
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/lar/tool/kaldi/src/rnnlm'
+make[1]: Entering directory '/home/lar/tool/kaldi/src/cudafeat'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/lar/tool/kaldi/src/cudafeat'
+make -C cudadecoder
+make[1]: Entering directory '/home/lar/tool/kaldi/src/cudadecoder'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/lar/tool/kaldi/src/cudadecoder'
+make -C bin
+make -C fstbin
+make -C gmmbin
+make[1]: Entering directory '/home/lar/tool/kaldi/src/bin'
+make[1]: Entering directory '/home/lar/tool/kaldi/src/fstbin'
+make[1]: Entering directory '/home/lar/tool/kaldi/src/gmmbin'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/lar/tool/kaldi/src/gmmbin'
+make -C fgmmbin
+make[1]: Entering directory '/home/lar/tool/kaldi/src/fgmmbin'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/lar/tool/kaldi/src/fstbin'
+make -C featbin
+make[1]: Entering directory '/home/lar/tool/kaldi/src/featbin'
+rm -f arpa2fst
+make[1]: Leaving directory '/home/lar/tool/kaldi/src/bin'
+make -C cudafeatbin
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/lar/tool/kaldi/src/fgmmbin'
+make[1]: Entering directory '/home/lar/tool/kaldi/src/cudafeatbin'
+make -C nnetbin
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/lar/tool/kaldi/src/cudafeatbin'
+make -C latbin
+make[1]: Entering directory '/home/lar/tool/kaldi/src/nnetbin'
+make[1]: Entering directory '/home/lar/tool/kaldi/src/latbin'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/lar/tool/kaldi/src/featbin'
+make -C sgmm2bin
+make[1]: Entering directory '/home/lar/tool/kaldi/src/sgmm2bin'
+rm -f cuda-gpu-available
+make[1]: Leaving directory '/home/lar/tool/kaldi/src/nnetbin'
+make -C nnet3bin
+make[1]: Entering directory '/home/lar/tool/kaldi/src/nnet3bin'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/lar/tool/kaldi/src/sgmm2bin'
+make -C nnet2bin
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/lar/tool/kaldi/src/latbin'
+make -C kwsbin
+make[1]: Entering directory '/home/lar/tool/kaldi/src/nnet2bin'
+make[1]: Entering directory '/home/lar/tool/kaldi/src/kwsbin'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/lar/tool/kaldi/src/nnet3bin'
+make -C ivectorbin
+make[1]: Entering directory '/home/lar/tool/kaldi/src/ivectorbin'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/lar/tool/kaldi/src/kwsbin'
+make -C online2bin
+make[1]: Entering directory '/home/lar/tool/kaldi/src/online2bin'
+rm -f cuda-compiled
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/lar/tool/kaldi/src/ivectorbin'
+make -C lmbin
+make[1]: Leaving directory '/home/lar/tool/kaldi/src/nnet2bin'
+make -C chainbin
+make[1]: Entering directory '/home/lar/tool/kaldi/src/lmbin'
+make[1]: Entering directory '/home/lar/tool/kaldi/src/chainbin'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/lar/tool/kaldi/src/lmbin'
+make -C rnnlmbin
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/lar/tool/kaldi/src/online2bin'
+make -C cudadecoderbin
+make[1]: Entering directory '/home/lar/tool/kaldi/src/rnnlmbin'
+make[1]: Entering directory '/home/lar/tool/kaldi/src/cudadecoderbin'
+g++  -Wl,-rpath=/home/lar/tool/kaldi/tools/openfst-1.6.7/lib -rdynamic   nnet3-chain-subset-egs.o ../nnet3/kaldi-nnet3.a ../chain/kaldi-chain.a ../cudamatrix/kaldi-cudamatrix.a ../decoder/kaldi-decoder.a ../lat/kaldi-lat.a ../fstext/kaldi-fstext.a ../hmm/kaldi-hmm.a ../transform/kaldi-transform.a ../gmm/kaldi-gmm.a ../tree/kaldi-tree.a ../util/kaldi-util.a ../matrix/kaldi-matrix.a ../base/kaldi-base.a   /home/lar/tool/kaldi/tools/openfst-1.6.7/lib/libfst.so -L/opt/intel/mkl/lib/intel64 -Wl,-rpath=/opt/intel/mkl/lib/intel64 -lmkl_intel_lp64  -lmkl_core  -lmkl_sequential    -ldl -lpthread -lm  -lm -lpthread -ldl  -o nnet3-chain-subset-egs
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/lar/tool/kaldi/src/cudadecoderbin'
+g++  -Wl,-rpath=/home/lar/tool/kaldi/tools/openfst-1.6.7/lib -rdynamic   nnet3-chain-acc-lda-stats.o ../nnet3/kaldi-nnet3.a ../chain/kaldi-chain.a ../cudamatrix/kaldi-cudamatrix.a ../decoder/kaldi-decoder.a ../lat/kaldi-lat.a ../fstext/kaldi-fstext.a ../hmm/kaldi-hmm.a ../transform/kaldi-transform.a ../gmm/kaldi-gmm.a ../tree/kaldi-tree.a ../util/kaldi-util.a ../matrix/kaldi-matrix.a ../base/kaldi-base.a   /home/lar/tool/kaldi/tools/openfst-1.6.7/lib/libfst.so -L/opt/intel/mkl/lib/intel64 -Wl,-rpath=/opt/intel/mkl/lib/intel64 -lmkl_intel_lp64  -lmkl_core  -lmkl_sequential    -ldl -lpthread -lm  -lm -lpthread -ldl  -o nnet3-chain-acc-lda-stats
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/lar/tool/kaldi/src/rnnlmbin'
+g++  -Wl,-rpath=/home/lar/tool/kaldi/tools/openfst-1.6.7/lib -rdynamic   nnet3-chain-train.o ../nnet3/kaldi-nnet3.a ../chain/kaldi-chain.a ../cudamatrix/kaldi-cudamatrix.a ../decoder/kaldi-decoder.a ../lat/kaldi-lat.a ../fstext/kaldi-fstext.a ../hmm/kaldi-hmm.a ../transform/kaldi-transform.a ../gmm/kaldi-gmm.a ../tree/kaldi-tree.a ../util/kaldi-util.a ../matrix/kaldi-matrix.a ../base/kaldi-base.a   /home/lar/tool/kaldi/tools/openfst-1.6.7/lib/libfst.so -L/opt/intel/mkl/lib/intel64 -Wl,-rpath=/opt/intel/mkl/lib/intel64 -lmkl_intel_lp64  -lmkl_core  -lmkl_sequential    -ldl -lpthread -lm  -lm -lpthread -ldl  -o nnet3-chain-train
+ 11s... SUCCESS matrix-lib-test
+Running sparse-matrix-test ... 0s... SUCCESS sparse-matrix-test
+make[1]: Leaving directory '/home/lar/tool/kaldi/src/matrix'
+g++  -Wl,-rpath=/home/lar/tool/kaldi/tools/openfst-1.6.7/lib -rdynamic   nnet3-chain-compute-prob.o ../nnet3/kaldi-nnet3.a ../chain/kaldi-chain.a ../cudamatrix/kaldi-cudamatrix.a ../decoder/kaldi-decoder.a ../lat/kaldi-lat.a ../fstext/kaldi-fstext.a ../hmm/kaldi-hmm.a ../transform/kaldi-transform.a ../gmm/kaldi-gmm.a ../tree/kaldi-tree.a ../util/kaldi-util.a ../matrix/kaldi-matrix.a ../base/kaldi-base.a   /home/lar/tool/kaldi/tools/openfst-1.6.7/lib/libfst.so -L/opt/intel/mkl/lib/intel64 -Wl,-rpath=/opt/intel/mkl/lib/intel64 -lmkl_intel_lp64  -lmkl_core  -lmkl_sequential    -ldl -lpthread -lm  -lm -lpthread -ldl  -o nnet3-chain-compute-prob
+g++  -Wl,-rpath=/home/lar/tool/kaldi/tools/openfst-1.6.7/lib -rdynamic   nnet3-chain-combine.o ../nnet3/kaldi-nnet3.a ../chain/kaldi-chain.a ../cudamatrix/kaldi-cudamatrix.a ../decoder/kaldi-decoder.a ../lat/kaldi-lat.a ../fstext/kaldi-fstext.a ../hmm/kaldi-hmm.a ../transform/kaldi-transform.a ../gmm/kaldi-gmm.a ../tree/kaldi-tree.a ../util/kaldi-util.a ../matrix/kaldi-matrix.a ../base/kaldi-base.a   /home/lar/tool/kaldi/tools/openfst-1.6.7/lib/libfst.so -L/opt/intel/mkl/lib/intel64 -Wl,-rpath=/opt/intel/mkl/lib/intel64 -lmkl_intel_lp64  -lmkl_core  -lmkl_sequential    -ldl -lpthread -lm  -lm -lpthread -ldl  -o nnet3-chain-combine
+g++  -Wl,-rpath=/home/lar/tool/kaldi/tools/openfst-1.6.7/lib -rdynamic   nnet3-chain-normalize-egs.o ../nnet3/kaldi-nnet3.a ../chain/kaldi-chain.a ../cudamatrix/kaldi-cudamatrix.a ../decoder/kaldi-decoder.a ../lat/kaldi-lat.a ../fstext/kaldi-fstext.a ../hmm/kaldi-hmm.a ../transform/kaldi-transform.a ../gmm/kaldi-gmm.a ../tree/kaldi-tree.a ../util/kaldi-util.a ../matrix/kaldi-matrix.a ../base/kaldi-base.a   /home/lar/tool/kaldi/tools/openfst-1.6.7/lib/libfst.so -L/opt/intel/mkl/lib/intel64 -Wl,-rpath=/opt/intel/mkl/lib/intel64 -lmkl_intel_lp64  -lmkl_core  -lmkl_sequential    -ldl -lpthread -lm  -lm -lpthread -ldl  -o nnet3-chain-normalize-egs
+g++  -Wl,-rpath=/home/lar/tool/kaldi/tools/openfst-1.6.7/lib -rdynamic   nnet3-chain-e2e-get-egs.o ../nnet3/kaldi-nnet3.a ../chain/kaldi-chain.a ../cudamatrix/kaldi-cudamatrix.a ../decoder/kaldi-decoder.a ../lat/kaldi-lat.a ../fstext/kaldi-fstext.a ../hmm/kaldi-hmm.a ../transform/kaldi-transform.a ../gmm/kaldi-gmm.a ../tree/kaldi-tree.a ../util/kaldi-util.a ../matrix/kaldi-matrix.a ../base/kaldi-base.a   /home/lar/tool/kaldi/tools/openfst-1.6.7/lib/libfst.so -L/opt/intel/mkl/lib/intel64 -Wl,-rpath=/opt/intel/mkl/lib/intel64 -lmkl_intel_lp64  -lmkl_core  -lmkl_sequential    -ldl -lpthread -lm  -lm -lpthread -ldl  -o nnet3-chain-e2e-get-egs
+g++  -Wl,-rpath=/home/lar/tool/kaldi/tools/openfst-1.6.7/lib -rdynamic   nnet3-chain-compute-post.o ../nnet3/kaldi-nnet3.a ../chain/kaldi-chain.a ../cudamatrix/kaldi-cudamatrix.a ../decoder/kaldi-decoder.a ../lat/kaldi-lat.a ../fstext/kaldi-fstext.a ../hmm/kaldi-hmm.a ../transform/kaldi-transform.a ../gmm/kaldi-gmm.a ../tree/kaldi-tree.a ../util/kaldi-util.a ../matrix/kaldi-matrix.a ../base/kaldi-base.a   /home/lar/tool/kaldi/tools/openfst-1.6.7/lib/libfst.so -L/opt/intel/mkl/lib/intel64 -Wl,-rpath=/opt/intel/mkl/lib/intel64 -lmkl_intel_lp64  -lmkl_core  -lmkl_sequential    -ldl -lpthread -lm  -lm -lpthread -ldl  -o nnet3-chain-compute-post
+make[1]: Leaving directory '/home/lar/tool/kaldi/src/chainbin'
+echo Done
+Done
+lar@lar-air:~/tool/kaldi/src$ 
+
+===========
+
+lar@lar-air:~/tool/kaldi/src$ cd ../egs/
+lar@lar-air:~/tool/kaldi/egs$ la
+aidatatang_200zh      chime4                   gp                multi_cn          thchs30
+aishell               chime5                   heroico           multi_en          tidigits
+aishell2              chime6                   hkust             ptb               timit
+ami                   cifar                    hub4_english      README.txt        tunisian_msa
+an4                   cmu_cslu_kids            hub4_spanish      reverb            uw3
+apiai_decode          cnceleb                  iam               rimes             voxceleb
+aspire                commonvoice              iban              rm                voxforge
+aurora4               csj                      ifnenit           sitw              vystadial_cz
+babel                 dihard_2018              librispeech       spanish_dimex100  vystadial_en
+babel_multilang       fame                     lre               sprakbanken       wsj
+bentham               farsdat                  lre07             sprakbanken_swe   yesno
+bn_music_speech       fisher_callhome_spanish  madcat_ar         sre08             yomdle_fa
+callhome_diarization  fisher_english           madcat_zh         sre10             yomdle_korean
+callhome_egyptian     fisher_swbd              malach            sre16             yomdle_russian
+casia_hwdb            formosa                  material          svhn              yomdle_tamil
+chime1                gale_arabic              mgb2_arabic       swahili           yomdle_zh
+chime2                gale_mandarin            mgb5              swbd              zeroth_korean
+chime3                gop                      mini_librispeech  tedlium
+lar@lar-air:~/tool/kaldi/egs$ cat README.txt
+
+This directory contains example scripts that demonstrate how to 
+use Kaldi.  Each subdirectory corresponds to a corpus that we have
+example scripts for.
+
+Note: we now have some scripts using free data, including voxforge,
+vystadial_{cz,en} and yesno.  Most of the others are available from
+the Linguistic Data Consortium (LDC), which requires money (unless you
+have a membership).
+
+If you have an LDC membership, probably rm/s5 or wsj/s5 should be your first
+choice to try out the scripts.
+
+lar@lar-air:~/tool/kaldi/egs$ 
+
+=========
+
+lar@lar-air:~/tool/kaldi/egs$ cd yesno/
+lar@lar-air:~/tool/kaldi/egs/yesno$ la
+README.txt  s5
+
+lar@lar-air:~/tool/kaldi/egs/yesno$ cat README.txt 
+
+
+The "yesno" corpus is a very small dataset of recordings of one individual
+saying yes or no multiple times per recording, in Hebrew.  It is available from
+http://www.openslr.org/1.
+It is mainly included here as an easy way to test out the Kaldi scripts.
+
+The test set is perfectly recognized at the monophone stage, so the dataset is
+not exactly challenging.
+
+The scripts are in s5/.
+
+lar@lar-air:~/tool/kaldi/egs/yesno$ 
+
+lar@lar-air:~/tool/kaldi/egs/yesno$ tree
+.
+├── README.txt
+└── s5
+    ├── conf
+    │   ├── mfcc.conf
+    │   └── topo_orig.proto
+    ├── input
+    │   ├── lexicon_nosil.txt
+    │   ├── lexicon.txt
+    │   ├── phones.txt
+    │   └── task.arpabo
+    ├── local
+    │   ├── create_yesno_txt.pl
+    │   ├── create_yesno_waves_test_train.pl
+    │   ├── create_yesno_wav_scp.pl
+    │   ├── prepare_data.sh
+    │   ├── prepare_dict.sh
+    │   ├── prepare_lm.sh
+    │   └── score.sh -> ../steps/score_kaldi.sh
+    ├── path.sh
+    ├── run.sh
+    ├── steps -> ../../wsj/s5/steps
+    └── utils -> ../../wsj/s5/utils
+
+6 directories, 16 files
+lar@lar-air:~/tool/kaldi/egs/yesno$ 
+
+=======
+
+lar@lar-air:~/tool/kaldi/egs/yesno/s5$ ls
+conf  input  local  path.sh  run.sh  steps  utils
+lar@lar-air:~/tool/kaldi/egs/yesno/s5$ 
+
+========
+
+lar@lar-air:~/tool/kaldi/egs/yesno/s5$ ./run.sh
+--2020-01-13 02:49:18--  http://www.openslr.org/resources/1/waves_yesno.tar.gz
+Resolving www.openslr.org (www.openslr.org)... failed: Temporary failure in name resolution.
+wget: unable to resolve host address ‘www.openslr.org’
+lar@lar-air:~/tool/kaldi/egs/yesno/s5$ ./run.sh
+--2020-01-13 02:50:23--  http://www.openslr.org/resources/1/waves_yesno.tar.gz
+Resolving www.openslr.org (www.openslr.org)... 46.101.158.64
+Connecting to www.openslr.org (www.openslr.org)|46.101.158.64|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 4703754 (4.5M) [application/x-gzip]
+Saving to: ‘waves_yesno.tar.gz’
+
+waves_yesno.tar.gz        100%[=====================================>]   4.49M   111KB/s    in 2m 38s  
+
+2020-01-13 02:53:30 (29.1 KB/s) - ‘waves_yesno.tar.gz’ saved [4703754/4703754]
+
+waves_yesno/
+waves_yesno/1_0_0_0_0_0_1_1.wav
+waves_yesno/1_1_0_0_1_0_1_0.wav
+waves_yesno/1_0_1_1_1_1_0_1.wav
+waves_yesno/1_1_1_1_0_1_0_0.wav
+waves_yesno/0_0_1_1_1_0_0_0.wav
+waves_yesno/0_1_1_1_1_1_1_1.wav
+waves_yesno/0_1_0_1_1_1_0_0.wav
+waves_yesno/1_0_1_1_1_0_1_0.wav
+waves_yesno/1_0_0_1_0_1_1_1.wav
+waves_yesno/0_0_1_0_1_0_0_0.wav
+waves_yesno/0_1_0_1_1_0_1_0.wav
+waves_yesno/0_0_1_1_0_1_1_0.wav
+waves_yesno/1_0_0_0_1_0_0_1.wav
+waves_yesno/1_1_0_1_1_1_1_0.wav
+waves_yesno/0_0_1_1_1_1_0_0.wav
+waves_yesno/1_1_0_0_1_1_1_0.wav
+waves_yesno/0_0_1_1_0_1_1_1.wav
+waves_yesno/1_1_0_1_0_1_1_0.wav
+waves_yesno/0_1_0_0_0_1_1_0.wav
+waves_yesno/0_0_0_1_0_0_0_1.wav
+waves_yesno/0_0_1_0_1_0_1_1.wav
+waves_yesno/0_0_1_0_0_0_1_0.wav
+waves_yesno/1_1_0_1_1_0_0_1.wav
+waves_yesno/0_1_1_1_0_1_0_1.wav
+waves_yesno/0_1_1_1_0_0_0_0.wav
+waves_yesno/README~
+waves_yesno/0_1_0_0_0_1_0_0.wav
+waves_yesno/1_0_0_0_0_0_0_1.wav
+waves_yesno/1_1_0_1_1_0_1_1.wav
+waves_yesno/1_1_0_0_0_0_0_1.wav
+waves_yesno/1_0_0_0_0_0_0_0.wav
+waves_yesno/0_1_1_1_1_0_1_0.wav
+waves_yesno/0_0_1_1_0_1_0_0.wav
+waves_yesno/1_1_1_0_0_0_0_1.wav
+waves_yesno/1_0_1_0_1_0_0_1.wav
+waves_yesno/0_1_0_0_1_0_1_1.wav
+waves_yesno/0_0_1_1_1_1_1_0.wav
+waves_yesno/1_1_0_0_0_1_1_1.wav
+waves_yesno/0_1_1_1_0_0_1_0.wav
+waves_yesno/1_1_0_1_0_1_0_0.wav
+waves_yesno/1_1_1_1_1_1_1_1.wav
+waves_yesno/0_0_1_0_1_0_0_1.wav
+waves_yesno/1_1_1_1_0_0_1_0.wav
+waves_yesno/0_0_1_1_1_0_0_1.wav
+waves_yesno/0_1_0_1_0_0_0_0.wav
+waves_yesno/1_1_1_1_1_0_0_0.wav
+waves_yesno/README
+waves_yesno/0_1_1_0_0_1_1_1.wav
+waves_yesno/0_0_1_0_0_1_1_0.wav
+waves_yesno/1_1_0_0_1_0_1_1.wav
+waves_yesno/1_1_1_0_0_1_0_1.wav
+waves_yesno/0_0_1_0_0_1_1_1.wav
+waves_yesno/0_0_1_1_0_0_0_1.wav
+waves_yesno/1_0_1_1_0_1_1_1.wav
+waves_yesno/1_1_1_0_1_0_1_0.wav
+waves_yesno/1_1_1_0_1_0_1_1.wav
+waves_yesno/0_1_0_0_1_0_1_0.wav
+waves_yesno/1_1_1_0_0_1_1_1.wav
+waves_yesno/0_1_1_0_0_1_1_0.wav
+waves_yesno/0_0_0_1_0_1_1_0.wav
+waves_yesno/1_1_1_1_1_1_0_0.wav
+waves_yesno/0_0_0_0_1_1_1_1.wav
+Preparing train and test data
+Dictionary preparation succeeded
+utils/prepare_lang.sh --position-dependent-phones false data/local/dict <SIL> data/local/lang data/lang
+Checking data/local/dict/silence_phones.txt ...
+--> reading data/local/dict/silence_phones.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dict/silence_phones.txt is OK
+
+Checking data/local/dict/optional_silence.txt ...
+--> reading data/local/dict/optional_silence.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dict/optional_silence.txt is OK
+
+Checking data/local/dict/nonsilence_phones.txt ...
+--> reading data/local/dict/nonsilence_phones.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dict/nonsilence_phones.txt is OK
+
+Checking disjoint: silence_phones.txt, nonsilence_phones.txt
+--> disjoint property is OK.
+
+Checking data/local/dict/lexicon.txt
+--> reading data/local/dict/lexicon.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dict/lexicon.txt is OK
+
+Checking data/local/dict/extra_questions.txt ...
+--> data/local/dict/extra_questions.txt is empty (this is OK)
+--> SUCCESS [validating dictionary directory data/local/dict]
+
+**Creating data/local/dict/lexiconp.txt from data/local/dict/lexicon.txt
+fstaddselfloops data/lang/phones/wdisambig_phones.int data/lang/phones/wdisambig_words.int 
+prepare_lang.sh: validating output directory
+utils/validate_lang.pl data/lang
+Checking existence of separator file
+separator file data/lang/subword_separator.txt is empty or does not exist, deal in word case.
+Checking data/lang/phones.txt ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/lang/phones.txt is OK
+
+Checking words.txt: #0 ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/lang/words.txt is OK
+
+Checking disjoint: silence.txt, nonsilence.txt, disambig.txt ...
+--> silence.txt and nonsilence.txt are disjoint
+--> silence.txt and disambig.txt are disjoint
+--> disambig.txt and nonsilence.txt are disjoint
+--> disjoint property is OK
+
+Checking sumation: silence.txt, nonsilence.txt, disambig.txt ...
+--> found no unexplainable phones in phones.txt
+
+Checking data/lang/phones/context_indep.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 1 entry/entries in data/lang/phones/context_indep.txt
+--> data/lang/phones/context_indep.int corresponds to data/lang/phones/context_indep.txt
+--> data/lang/phones/context_indep.csl corresponds to data/lang/phones/context_indep.txt
+--> data/lang/phones/context_indep.{txt, int, csl} are OK
+
+Checking data/lang/phones/nonsilence.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 2 entry/entries in data/lang/phones/nonsilence.txt
+--> data/lang/phones/nonsilence.int corresponds to data/lang/phones/nonsilence.txt
+--> data/lang/phones/nonsilence.csl corresponds to data/lang/phones/nonsilence.txt
+--> data/lang/phones/nonsilence.{txt, int, csl} are OK
+
+Checking data/lang/phones/silence.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 1 entry/entries in data/lang/phones/silence.txt
+--> data/lang/phones/silence.int corresponds to data/lang/phones/silence.txt
+--> data/lang/phones/silence.csl corresponds to data/lang/phones/silence.txt
+--> data/lang/phones/silence.{txt, int, csl} are OK
+
+Checking data/lang/phones/optional_silence.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 1 entry/entries in data/lang/phones/optional_silence.txt
+--> data/lang/phones/optional_silence.int corresponds to data/lang/phones/optional_silence.txt
+--> data/lang/phones/optional_silence.csl corresponds to data/lang/phones/optional_silence.txt
+--> data/lang/phones/optional_silence.{txt, int, csl} are OK
+
+Checking data/lang/phones/disambig.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 2 entry/entries in data/lang/phones/disambig.txt
+--> data/lang/phones/disambig.int corresponds to data/lang/phones/disambig.txt
+--> data/lang/phones/disambig.csl corresponds to data/lang/phones/disambig.txt
+--> data/lang/phones/disambig.{txt, int, csl} are OK
+
+Checking data/lang/phones/roots.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 3 entry/entries in data/lang/phones/roots.txt
+--> data/lang/phones/roots.int corresponds to data/lang/phones/roots.txt
+--> data/lang/phones/roots.{txt, int} are OK
+
+Checking data/lang/phones/sets.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 3 entry/entries in data/lang/phones/sets.txt
+--> data/lang/phones/sets.int corresponds to data/lang/phones/sets.txt
+--> data/lang/phones/sets.{txt, int} are OK
+
+Checking data/lang/phones/extra_questions.{txt, int} ...
+Checking optional_silence.txt ...
+--> reading data/lang/phones/optional_silence.txt
+--> data/lang/phones/optional_silence.txt is OK
+
+Checking disambiguation symbols: #0 and #1
+--> data/lang/phones/disambig.txt has "#0" and "#1"
+--> data/lang/phones/disambig.txt is OK
+
+Checking topo ...
+
+Checking word-level disambiguation symbols...
+--> data/lang/phones/wdisambig.txt exists (newer prepare_lang.sh)
+Checking data/lang/oov.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 1 entry/entries in data/lang/oov.txt
+--> data/lang/oov.int corresponds to data/lang/oov.txt
+--> data/lang/oov.{txt, int} are OK
+
+--> data/lang/L.fst is olabel sorted
+--> data/lang/L_disambig.fst is olabel sorted
+--> SUCCESS [validating lang directory data/lang]
+Preparing language models for test
+arpa2fst --disambig-symbol=#0 --read-symbol-table=data/lang_test_tg/words.txt input/task.arpabo data/lang_test_tg/G.fst 
+LOG (arpa2fst[5.5.598~1-611ff]:Read():arpa-file-parser.cc:94) Reading \data\ section.
+LOG (arpa2fst[5.5.598~1-611ff]:Read():arpa-file-parser.cc:149) Reading \1-grams: section.
+LOG (arpa2fst[5.5.598~1-611ff]:RemoveRedundantStates():arpa-lm-compiler.cc:359) Reduced num-states from 1 to 1
+fstisstochastic data/lang_test_tg/G.fst 
+1.20397 1.20397
+Succeeded in formatting data.
+steps/make_mfcc.sh --nj 1 data/train_yesno exp/make_mfcc/train_yesno mfcc
+utils/validate_data_dir.sh: WARNING: you have only one speaker.  This probably a bad idea.
+   Search for the word 'bold' in http://kaldi-asr.org/doc/data_prep.html
+   for more information.
+utils/validate_data_dir.sh: Successfully validated data-directory data/train_yesno
+steps/make_mfcc.sh: [info]: no segments file exists: assuming wav.scp indexed by utterance.
+steps/make_mfcc.sh: Succeeded creating MFCC features for train_yesno
+steps/compute_cmvn_stats.sh data/train_yesno exp/make_mfcc/train_yesno mfcc
+Succeeded creating CMVN stats for train_yesno
+fix_data_dir.sh: kept all 31 utterances.
+fix_data_dir.sh: old files are kept in data/train_yesno/.backup
+steps/make_mfcc.sh --nj 1 data/test_yesno exp/make_mfcc/test_yesno mfcc
+utils/validate_data_dir.sh: WARNING: you have only one speaker.  This probably a bad idea.
+   Search for the word 'bold' in http://kaldi-asr.org/doc/data_prep.html
+   for more information.
+utils/validate_data_dir.sh: Successfully validated data-directory data/test_yesno
+steps/make_mfcc.sh: [info]: no segments file exists: assuming wav.scp indexed by utterance.
+steps/make_mfcc.sh: It seems not all of the feature files were successfully procesed (29 != 31); consider using utils/fix_data_dir.sh data/test_yesno
+steps/make_mfcc.sh: Less than 95% the features were successfully generated. Probably a serious error.
+steps/compute_cmvn_stats.sh data/test_yesno exp/make_mfcc/test_yesno mfcc
+Succeeded creating CMVN stats for test_yesno
+fix_data_dir.sh: kept 29 utterances out of 31
+fix_data_dir.sh: old files are kept in data/test_yesno/.backup
+steps/train_mono.sh --nj 1 --cmd utils/run.pl --totgauss 400 data/train_yesno data/lang exp/mono0a
+steps/train_mono.sh: Initializing monophone system.
+steps/train_mono.sh: Compiling training graphs
+steps/train_mono.sh: Aligning data equally (pass 0)
+steps/train_mono.sh: Pass 1
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 2
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 3
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 4
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 5
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 6
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 7
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 8
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 9
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 10
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 11
+steps/train_mono.sh: Pass 12
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 13
+steps/train_mono.sh: Pass 14
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 15
+steps/train_mono.sh: Pass 16
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 17
+steps/train_mono.sh: Pass 18
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 19
+steps/train_mono.sh: Pass 20
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 21
+steps/train_mono.sh: Pass 22
+steps/train_mono.sh: Pass 23
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 24
+steps/train_mono.sh: Pass 25
+steps/train_mono.sh: Pass 26
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 27
+steps/train_mono.sh: Pass 28
+steps/train_mono.sh: Pass 29
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 30
+steps/train_mono.sh: Pass 31
+steps/train_mono.sh: Pass 32
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 33
+steps/train_mono.sh: Pass 34
+steps/train_mono.sh: Pass 35
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 36
+steps/train_mono.sh: Pass 37
+steps/train_mono.sh: Pass 38
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 39
+steps/diagnostic/analyze_alignments.sh --cmd utils/run.pl data/lang exp/mono0a
+steps/diagnostic/analyze_alignments.sh: see stats in exp/mono0a/log/analyze_alignments.log
+1 warnings in exp/mono0a/log/update.*.log
+exp/mono0a: nj=1 align prob=-81.88 over 0.05h [retry=0.0%, fail=0.0%] states=11 gauss=371
+steps/train_mono.sh: Done training monophone system in exp/mono0a
+tree-info exp/mono0a/tree 
+tree-info exp/mono0a/tree 
+fstminimizeencoded 
+fsttablecompose data/lang_test_tg/L_disambig.fst data/lang_test_tg/G.fst 
+fstpushspecial 
+fstdeterminizestar --use-log=true 
+fstisstochastic data/lang_test_tg/tmp/LG.fst 
+0.534295 0.533859
+[info]: LG not stochastic.
+fstcomposecontext --context-size=1 --central-position=0 --read-disambig-syms=data/lang_test_tg/phones/disambig.int --write-disambig-syms=data/lang_test_tg/tmp/disambig_ilabels_1_0.int data/lang_test_tg/tmp/ilabels_1_0.13795 data/lang_test_tg/tmp/LG.fst 
+fstisstochastic data/lang_test_tg/tmp/CLG_1_0.fst 
+0.534295 0.533859
+[info]: CLG not stochastic.
+make-h-transducer --disambig-syms-out=exp/mono0a/graph_tgpr/disambig_tid.int --transition-scale=1.0 data/lang_test_tg/tmp/ilabels_1_0 exp/mono0a/tree exp/mono0a/final.mdl 
+fstminimizeencoded 
+fstrmsymbols exp/mono0a/graph_tgpr/disambig_tid.int 
+fstrmepslocal 
+fstdeterminizestar --use-log=true 
+fsttablecompose exp/mono0a/graph_tgpr/Ha.fst data/lang_test_tg/tmp/CLG_1_0.fst 
+fstisstochastic exp/mono0a/graph_tgpr/HCLGa.fst 
+0.5342 -0.000299216
+HCLGa is not stochastic
+add-self-loops --self-loop-scale=0.1 --reorder=true exp/mono0a/final.mdl exp/mono0a/graph_tgpr/HCLGa.fst 
+steps/decode.sh --nj 1 --cmd utils/run.pl exp/mono0a/graph_tgpr data/test_yesno exp/mono0a/decode_test_yesno
+decode.sh: feature type is delta
+steps/diagnostic/analyze_lats.sh --cmd utils/run.pl exp/mono0a/graph_tgpr exp/mono0a/decode_test_yesno
+steps/diagnostic/analyze_lats.sh: see stats in exp/mono0a/decode_test_yesno/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,1,2) and mean=1.2
+steps/diagnostic/analyze_lats.sh: see stats in exp/mono0a/decode_test_yesno/log/analyze_lattice_depth_stats.log
+local/score.sh --cmd utils/run.pl data/test_yesno exp/mono0a/graph_tgpr exp/mono0a/decode_test_yesno
+local/score.sh: scoring with word insertion penalty=0.0,0.5,1.0
+%WER 0.00 [ 0 / 232, 0 ins, 0 del, 0 sub ] exp/mono0a/decode_test_yesno/wer_10_0.0
+lar@lar-air:~/tool/kaldi/egs/yesno/s5$ 
+
+==========
+
+lar@lar-air:~/tool/kaldi/egs/yesno/s5$ tree -d
+.
+├── conf
+├── data
+│   ├── lang
+│   │   └── phones
+│   ├── lang_test_tg
+│   │   ├── phones
+│   │   └── tmp
+│   ├── local
+│   │   ├── dict
+│   │   └── lang
+│   ├── test_yesno
+│   │   ├── conf
+│   │   └── split1
+│   │       └── 1
+│   └── train_yesno
+│       ├── conf
+│       └── split1
+│           └── 1
+├── exp
+│   ├── make_mfcc
+│   │   ├── test_yesno
+│   │   └── train_yesno
+│   └── mono0a
+│       ├── decode_test_yesno
+│       │   ├── log
+│       │   └── scoring_kaldi
+│       │       ├── log
+│       │       ├── penalty_0.0
+│       │       │   └── log
+│       │       ├── penalty_0.5
+│       │       │   └── log
+│       │       ├── penalty_1.0
+│       │       │   └── log
+│       │       └── wer_details
+│       ├── graph_tgpr
+│       │   └── phones
+│       └── log
+├── input
+├── local
+├── mfcc
+├── steps -> ../../wsj/s5/steps
+├── utils -> ../../wsj/s5/utils
+└── waves_yesno
+
+43 directories
+
+=============
+
+
