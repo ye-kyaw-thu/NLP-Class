@@ -2,5 +2,8 @@
 
 ## Installation
 
-Reference link: (http://jrmeyer.github.io/asr/2016/01/26/Installing-Kaldi.html)[http://jrmeyer.github.io/asr/2016/01/26/Installing-Kaldi.html]
-Installation note of Sayar: 
+Reference link: (http://jrmeyer.github.io/asr/2016/01/26/Installing-Kaldi.html)[http://jrmeyer.github.io/asr/2016/01/26/Installing-Kaldi.html]  
+
+Installation note of Sayar: (https://github.com/ye-kyaw-thu/NLP-Class/blob/master/asr-prj/kachin-asr/kaldi-installation.log)[https://github.com/ye-kyaw-thu/NLP-Class/blob/master/asr-prj/kachin-asr/kaldi-installation.log]  
+
+
