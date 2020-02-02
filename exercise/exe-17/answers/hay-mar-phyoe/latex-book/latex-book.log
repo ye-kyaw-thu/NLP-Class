@@ -1,0 +1,1504 @@
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/Debian) (preloaded format=xelatex 2020.1.20)  20 JAN 2020 00:57
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**latex-book.tex
+(./latex-book.tex
+LaTeX2e <2017-04-15>
+Babel <3.18> and hyphenation patterns for 3 language(s) loaded.
+(./IEEEtran.cls
+Document Class: IEEEtran 2015/08/26 V1.8b by Michael Shell
+-- See the "IEEEtran_HOWTO" manual for usage information.
+-- http://www.michaelshell.org/tex/ieeetran/
+\@IEEEtrantmpdimenA=\dimen102
+\@IEEEtrantmpdimenB=\dimen103
+\@IEEEtrantmpdimenC=\dimen104
+\@IEEEtrantmpcountA=\count79
+\@IEEEtrantmpcountB=\count80
+\@IEEEtrantmpcountC=\count81
+\@IEEEtrantmptoksA=\toks14
+LaTeX Font Info:    Try loading font information for TU+ptm on input line 503.
+LaTeX Font Info:    No file TUptm.fd. on input line 503.
+
+LaTeX Font Warning: Font shape `TU/ptm/m/n' undefined
+(Font)              using `TU/lmr/m/n' instead on input line 503.
+
+-- Using 8.5in x 11in (letter) paper.
+-- Using DVI output.
+\@IEEEnormalsizeunitybaselineskip=\dimen105
+-- This is a 10 point document.
+\CLASSINFOnormalsizebaselineskip=\dimen106
+\CLASSINFOnormalsizeunitybaselineskip=\dimen107
+\IEEEnormaljot=\dimen108
+
+LaTeX Font Warning: Font shape `TU/ptm/bx/n' undefined
+(Font)              using `TU/ptm/m/n' instead on input line 1090.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/m/it' undefined
+(Font)              using `TU/ptm/m/n' instead on input line 1090.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/bx/it' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 1090.
+
+\IEEEquantizedlength=\dimen109
+\IEEEquantizedlengthdiff=\dimen110
+\IEEEquantizedtextheightdiff=\dimen111
+\IEEEilabelindentA=\dimen112
+\IEEEilabelindentB=\dimen113
+\IEEEilabelindent=\dimen114
+\IEEEelabelindent=\dimen115
+\IEEEdlabelindent=\dimen116
+\IEEElabelindent=\dimen117
+\IEEEiednormlabelsep=\dimen118
+\IEEEiedmathlabelsep=\dimen119
+\IEEEiedtopsep=\skip41
+\c@section=\count82
+\c@subsection=\count83
+\c@subsubsection=\count84
+\c@paragraph=\count85
+\c@IEEEsubequation=\count86
+\abovecaptionskip=\skip42
+\belowcaptionskip=\skip43
+\c@figure=\count87
+\c@table=\count88
+\@IEEEeqnnumcols=\count89
+\@IEEEeqncolcnt=\count90
+\@IEEEsubeqnnumrollback=\count91
+\@IEEEquantizeheightA=\dimen120
+\@IEEEquantizeheightB=\dimen121
+\@IEEEquantizeheightC=\dimen122
+\@IEEEquantizeprevdepth=\dimen123
+\@IEEEquantizemultiple=\count92
+\@IEEEquantizeboxA=\box26
+\@IEEEtmpitemindent=\dimen124
+\IEEEPARstartletwidth=\dimen125
+\c@IEEEbiography=\count93
+\@IEEEtranrubishbin=\box27
+)
+** ATTENTION: Overriding command lockouts (line 2).
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2017/09/02 v2.17a AMS math features
+\@mathmargin=\skip44
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks15
+\ex@=\dimen126
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen127
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count94
+LaTeX Info: Redefining \frac on input line 213.
+\uproot@=\count95
+\leftroot@=\count96
+LaTeX Info: Redefining \overline on input line 375.
+\classnum@=\count97
+\DOTSCASE@=\count98
+LaTeX Info: Redefining \ldots on input line 472.
+LaTeX Info: Redefining \dots on input line 475.
+LaTeX Info: Redefining \cdots on input line 596.
+\Mathstrutbox@=\box28
+\strutbox@=\box29
+\big@size=\dimen128
+LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
+\macc@depth=\count99
+\c@MaxMatrixCols=\count100
+\dotsspace@=\muskip10
+\c@parentequation=\count101
+\dspbrk@lvl=\count102
+\tag@help=\toks16
+\row@=\count103
+\column@=\count104
+\maxfields@=\count105
+\andhelp@=\toks17
+\eqnshift@=\dimen129
+\alignsep@=\dimen130
+\tagshift@=\dimen131
+\tagwidth@=\dimen132
+\totwidth@=\dimen133
+\lineht@=\dimen134
+\@envbody=\toks18
+\multlinegap=\skip45
+\multlinetaggap=\skip46
+\mathdisplay@stack=\toks19
+LaTeX Info: Redefining \[ on input line 2817.
+LaTeX Info: Redefining \] on input line 2818.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks20
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: xetex.def on input line 99.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/xetex.def
+File: xetex.def 2017/06/24 v5.0h Graphics/color driver for xetex
+))
+\Gin@req@height=\dimen135
+\Gin@req@width=\dimen136
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2017/04/05 v2.0i Standard LaTeX package
+Package textcomp Info: Sub-encoding information:
+(textcomp)               5 = only ISO-Adobe without \textcurrency
+(textcomp)               4 = 5 + \texteuro
+(textcomp)               3 = 4 + \textohm
+(textcomp)               2 = 3 + \textestimated + \textcurrency
+(textcomp)               1 = TS1 - \textcircled - \t
+(textcomp)               0 = TS1 (full)
+(textcomp)             Font families with sub-encoding setting implement
+(textcomp)             only a restricted character set as indicated.
+(textcomp)             Family '?' is the default used for unknown fonts.
+(textcomp)             See the documentation for details.
+Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 79.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1enc.def
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+)
+LaTeX Info: Redefining \oldstylenums on input line 334.
+Package textcomp Info: Setting cmr sub-encoding to TS1/0 on input line 349.
+Package textcomp Info: Setting cmss sub-encoding to TS1/0 on input line 350.
+Package textcomp Info: Setting cmtt sub-encoding to TS1/0 on input line 351.
+Package textcomp Info: Setting cmvtt sub-encoding to TS1/0 on input line 352.
+Package textcomp Info: Setting cmbr sub-encoding to TS1/0 on input line 353.
+Package textcomp Info: Setting cmtl sub-encoding to TS1/0 on input line 354.
+Package textcomp Info: Setting ccr sub-encoding to TS1/0 on input line 355.
+Package textcomp Info: Setting ptm sub-encoding to TS1/4 on input line 356.
+Package textcomp Info: Setting pcr sub-encoding to TS1/4 on input line 357.
+Package textcomp Info: Setting phv sub-encoding to TS1/4 on input line 358.
+Package textcomp Info: Setting ppl sub-encoding to TS1/3 on input line 359.
+Package textcomp Info: Setting pag sub-encoding to TS1/4 on input line 360.
+Package textcomp Info: Setting pbk sub-encoding to TS1/4 on input line 361.
+Package textcomp Info: Setting pnc sub-encoding to TS1/4 on input line 362.
+Package textcomp Info: Setting pzc sub-encoding to TS1/4 on input line 363.
+Package textcomp Info: Setting bch sub-encoding to TS1/4 on input line 364.
+Package textcomp Info: Setting put sub-encoding to TS1/5 on input line 365.
+Package textcomp Info: Setting uag sub-encoding to TS1/5 on input line 366.
+Package textcomp Info: Setting ugq sub-encoding to TS1/5 on input line 367.
+Package textcomp Info: Setting ul8 sub-encoding to TS1/4 on input line 368.
+Package textcomp Info: Setting ul9 sub-encoding to TS1/4 on input line 369.
+Package textcomp Info: Setting augie sub-encoding to TS1/5 on input line 370.
+Package textcomp Info: Setting dayrom sub-encoding to TS1/3 on input line 371.
+Package textcomp Info: Setting dayroms sub-encoding to TS1/3 on input line 372.
+
+Package textcomp Info: Setting pxr sub-encoding to TS1/0 on input line 373.
+Package textcomp Info: Setting pxss sub-encoding to TS1/0 on input line 374.
+Package textcomp Info: Setting pxtt sub-encoding to TS1/0 on input line 375.
+Package textcomp Info: Setting txr sub-encoding to TS1/0 on input line 376.
+Package textcomp Info: Setting txss sub-encoding to TS1/0 on input line 377.
+Package textcomp Info: Setting txtt sub-encoding to TS1/0 on input line 378.
+Package textcomp Info: Setting lmr sub-encoding to TS1/0 on input line 379.
+Package textcomp Info: Setting lmdh sub-encoding to TS1/0 on input line 380.
+Package textcomp Info: Setting lmss sub-encoding to TS1/0 on input line 381.
+Package textcomp Info: Setting lmssq sub-encoding to TS1/0 on input line 382.
+Package textcomp Info: Setting lmvtt sub-encoding to TS1/0 on input line 383.
+Package textcomp Info: Setting lmtt sub-encoding to TS1/0 on input line 384.
+Package textcomp Info: Setting qhv sub-encoding to TS1/0 on input line 385.
+Package textcomp Info: Setting qag sub-encoding to TS1/0 on input line 386.
+Package textcomp Info: Setting qbk sub-encoding to TS1/0 on input line 387.
+Package textcomp Info: Setting qcr sub-encoding to TS1/0 on input line 388.
+Package textcomp Info: Setting qcs sub-encoding to TS1/0 on input line 389.
+Package textcomp Info: Setting qpl sub-encoding to TS1/0 on input line 390.
+Package textcomp Info: Setting qtm sub-encoding to TS1/0 on input line 391.
+Package textcomp Info: Setting qzc sub-encoding to TS1/0 on input line 392.
+Package textcomp Info: Setting qhvc sub-encoding to TS1/0 on input line 393.
+Package textcomp Info: Setting futs sub-encoding to TS1/4 on input line 394.
+Package textcomp Info: Setting futx sub-encoding to TS1/4 on input line 395.
+Package textcomp Info: Setting futj sub-encoding to TS1/4 on input line 396.
+Package textcomp Info: Setting hlh sub-encoding to TS1/3 on input line 397.
+Package textcomp Info: Setting hls sub-encoding to TS1/3 on input line 398.
+Package textcomp Info: Setting hlst sub-encoding to TS1/3 on input line 399.
+Package textcomp Info: Setting hlct sub-encoding to TS1/5 on input line 400.
+Package textcomp Info: Setting hlx sub-encoding to TS1/5 on input line 401.
+Package textcomp Info: Setting hlce sub-encoding to TS1/5 on input line 402.
+Package textcomp Info: Setting hlcn sub-encoding to TS1/5 on input line 403.
+Package textcomp Info: Setting hlcw sub-encoding to TS1/5 on input line 404.
+Package textcomp Info: Setting hlcf sub-encoding to TS1/5 on input line 405.
+Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 406.
+Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
+Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
+Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: xetex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 67.
+\captionmargin=\dimen137
+\captionmargin@=\dimen138
+\captionwidth=\dimen139
+\caption@tempdima=\dimen140
+\caption@indent=\dimen141
+\caption@parindent=\dimen142
+\caption@hangindent=\dimen143
+Package caption Info: Unknown document class (or package),
+(caption)             standard defaults will be used.
+)
+
+Package caption Warning: Unsupported document class (or package) detected,
+(caption)                usage of the caption package is not recommended.
+See the caption package documentation for explanation.
+
+Package caption Info: \@makecaption = \long macro:#1#2->\ifx \@captype \@IEEEta
+blestring \footnotesize \bgroup \par \centering \@IEEEtabletopskipstrut {\norma
+lfont \footnotesize #1}\\{\normalfont \footnotesize \scshape #2}\par \addvspace
+ {0.5\baselineskip }\egroup \@IEEEtablecaptionsepspace \else \@IEEEfigurecaptio
+nsepspace \setbox \@tempboxa \hbox {\normalfont \footnotesize {#1.}\nobreakspac
+e \nobreakspace #2}\ifdim \wd \@tempboxa >\hsize \setbox \@tempboxa \hbox {\nor
+malfont \footnotesize {#1.}\nobreakspace \nobreakspace }\parbox [t]{\hsize }{\n
+ormalfont \footnotesize \noindent \unhbox \@tempboxa #2}\else \ifCLASSOPTIONcon
+ference \hbox to\hsize {\normalfont \footnotesize \hfil \box \@tempboxa \hfil }
+\else \hbox to\hsize {\normalfont \footnotesize \box \@tempboxa \hfil }\fi \fi 
+\fi .
+\c@ContinuedFloat=\count106
+) (/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2016/05/22 v1.1-161 Sub-captions (AR)
+\c@subfigure=\count107
+\c@subtable=\count108
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec.sty
+(/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2018/02/21 L3 programming layer (loader) 
+
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3-code.tex
+Package: expl3 2018/02/21 L3 programming layer (code)
+\c_max_int=\count109
+\l_tmpa_int=\count110
+\l_tmpb_int=\count111
+\g_tmpa_int=\count112
+\g_tmpb_int=\count113
+\g__intarray_font_int=\count114
+\g__prg_map_int=\count115
+\c_log_iow=\count116
+\l_iow_line_count_int=\count117
+\l__iow_line_target_int=\count118
+\l__iow_one_indent_int=\count119
+\l__iow_indent_int=\count120
+\c_zero_dim=\dimen144
+\c_max_dim=\dimen145
+\l_tmpa_dim=\dimen146
+\l_tmpb_dim=\dimen147
+\g_tmpa_dim=\dimen148
+\g_tmpb_dim=\dimen149
+\c_zero_skip=\skip47
+\c_max_skip=\skip48
+\l_tmpa_skip=\skip49
+\l_tmpb_skip=\skip50
+\g_tmpa_skip=\skip51
+\g_tmpb_skip=\skip52
+\c_zero_muskip=\muskip11
+\c_max_muskip=\muskip12
+\l_tmpa_muskip=\muskip13
+\l_tmpb_muskip=\muskip14
+\g_tmpa_muskip=\muskip15
+\g_tmpb_muskip=\muskip16
+\l_keys_choice_int=\count121
+\c__fp_leading_shift_int=\count122
+\c__fp_middle_shift_int=\count123
+\c__fp_trailing_shift_int=\count124
+\c__fp_big_leading_shift_int=\count125
+\c__fp_big_middle_shift_int=\count126
+\c__fp_big_trailing_shift_int=\count127
+\c__fp_Bigg_leading_shift_int=\count128
+\c__fp_Bigg_middle_shift_int=\count129
+\c__fp_Bigg_trailing_shift_int=\count130
+\l__sort_length_int=\count131
+\l__sort_min_int=\count132
+\l__sort_top_int=\count133
+\l__sort_max_int=\count134
+\l__sort_true_max_int=\count135
+\l__sort_block_int=\count136
+\l__sort_begin_int=\count137
+\l__sort_end_int=\count138
+\l__sort_A_int=\count139
+\l__sort_B_int=\count140
+\l__sort_C_int=\count141
+\l__tl_build_start_index_int=\count142
+\l__tl_build_index_int=\count143
+\l__tl_analysis_normal_int=\count144
+\l__tl_analysis_index_int=\count145
+\l__tl_analysis_nesting_int=\count146
+\l__tl_analysis_type_int=\count147
+\l__regex_internal_a_int=\count148
+\l__regex_internal_b_int=\count149
+\l__regex_internal_c_int=\count150
+\l__regex_balance_int=\count151
+\l__regex_group_level_int=\count152
+\l__regex_mode_int=\count153
+\c__regex_cs_in_class_mode_int=\count154
+\c__regex_cs_mode_int=\count155
+\l__regex_catcodes_int=\count156
+\l__regex_default_catcodes_int=\count157
+\c__regex_catcode_L_int=\count158
+\c__regex_catcode_O_int=\count159
+\c__regex_catcode_A_int=\count160
+\c__regex_all_catcodes_int=\count161
+\l__regex_show_lines_int=\count162
+\l__regex_min_state_int=\count163
+\l__regex_max_state_int=\count164
+\l__regex_left_state_int=\count165
+\l__regex_right_state_int=\count166
+\l__regex_capturing_group_int=\count167
+\l__regex_min_pos_int=\count168
+\l__regex_max_pos_int=\count169
+\l__regex_curr_pos_int=\count170
+\l__regex_start_pos_int=\count171
+\l__regex_success_pos_int=\count172
+\l__regex_curr_char_int=\count173
+\l__regex_curr_catcode_int=\count174
+\l__regex_last_char_int=\count175
+\l__regex_case_changed_char_int=\count176
+\l__regex_curr_state_int=\count177
+\l__regex_step_int=\count178
+\l__regex_min_active_int=\count179
+\l__regex_max_active_int=\count180
+\l__regex_replacement_csnames_int=\count181
+\l__regex_match_count_int=\count182
+\l__regex_min_submatch_int=\count183
+\l__regex_submatch_int=\count184
+\l__regex_zeroth_submatch_int=\count185
+\g__regex_trace_regex_int=\count186
+\c_empty_box=\box30
+\l_tmpa_box=\box31
+\l_tmpb_box=\box32
+\g_tmpa_box=\box33
+\g_tmpb_box=\box34
+\l__box_top_dim=\dimen150
+\l__box_bottom_dim=\dimen151
+\l__box_left_dim=\dimen152
+\l__box_right_dim=\dimen153
+\l__box_top_new_dim=\dimen154
+\l__box_bottom_new_dim=\dimen155
+\l__box_left_new_dim=\dimen156
+\l__box_right_new_dim=\dimen157
+\l__box_internal_box=\box35
+\l__coffin_internal_box=\box36
+\l__coffin_internal_dim=\dimen158
+\l__coffin_offset_x_dim=\dimen159
+\l__coffin_offset_y_dim=\dimen160
+\l__coffin_x_dim=\dimen161
+\l__coffin_y_dim=\dimen162
+\l__coffin_x_prime_dim=\dimen163
+\l__coffin_y_prime_dim=\dimen164
+\c_empty_coffin=\box37
+\l__coffin_aligned_coffin=\box38
+\l__coffin_aligned_internal_coffin=\box39
+\l_tmpa_coffin=\box40
+\l_tmpb_coffin=\box41
+\l__coffin_display_coffin=\box42
+\l__coffin_display_coord_coffin=\box43
+\l__coffin_display_pole_coffin=\box44
+\l__coffin_display_offset_dim=\dimen165
+\l__coffin_display_x_dim=\dimen166
+\l__coffin_display_y_dim=\dimen167
+\l__coffin_bounding_shift_dim=\dimen168
+\l__coffin_left_corner_dim=\dimen169
+\l__coffin_right_corner_dim=\dimen170
+\l__coffin_bottom_corner_dim=\dimen171
+\l__coffin_top_corner_dim=\dimen172
+\l__coffin_scaled_total_height_dim=\dimen173
+\l__coffin_scaled_width_dim=\dimen174
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3xdvipdfmx.def
+File: l3xdvidpfmx.def 2017/03/18 v L3 Experimental driver: xdvipdfmx
+\g__driver_image_int=\count187
+\l__driver_tmp_box=\box45
+))
+Package: xparse 2018/02/21 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count188
+\g__xparse_grabber_int=\count189
+\l__xparse_m_args_int=\count190
+\l__xparse_mandatory_args_int=\count191
+\l__xparse_v_nesting_int=\count192
+)
+Package: fontspec 2017/11/09 v2.6g Font selection for XeLaTeX and LuaLaTeX
+
+(/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
+Package: fontspec-xetex 2017/11/09 v2.6g Font selection for XeLaTeX and LuaLaTe
+X
+\l__fontspec_script_int=\count193
+\l__fontspec_language_int=\count194
+\l__fontspec_strnum_int=\count195
+\l__fontspec_tmp_int=\count196
+\l__fontspec_em_int=\count197
+\l__fontspec_emdef_int=\count198
+\l__fontspec_strong_int=\count199
+\l__fontspec_strongdef_int=\count266
+\l__fontspec_tmpa_dim=\dimen175
+\l__fontspec_tmpb_dim=\dimen176
+\l__fontspec_tmpc_dim=\dimen177
+\g__file_internal_ior=\read1
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/tuenc.def
+File: tuenc.def 2017/04/05 v2.0i Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding TU on input line 82.
+))
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \fontspec with sig. 'O{}mO{}' on line 542.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setmainfont with sig. 'O{}mO{}' on line 546.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setsansfont with sig. 'O{}mO{}' on line 550.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setmonofont with sig. 'O{}mO{}' on line 554.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setmathrm with sig. 'O{}mO{}' on line 558.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setboldmathrm with sig. 'O{}mO{}' on line 562.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setmathsf with sig. 'O{}mO{}' on line 566.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setmathtt with sig. 'O{}mO{}' on line 570.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setromanfont with sig. 'O{}mO{}' on line 574.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newfontfamily with sig. 'mO{}mO{}' on line 578.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newfontface with sig. 'mO{}mO{}' on line 582.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \defaultfontfeatures with sig. 't+om' on line 586.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \addfontfeatures with sig. 'm' on line 590.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \addfontfeature with sig. 'm' on line 594.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newfontfeature with sig. 'mm' on line 598.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newAATfeature with sig. 'mmmm' on line 602.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newopentypefeature with sig. 'mmm' on line 606.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newICUfeature with sig. 'mmm' on line 610.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \aliasfontfeature with sig. 'mm' on line 614.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \aliasfontfeatureoption with sig. 'mmm' on line 618.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newfontscript with sig. 'mm' on line 622.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newfontlanguage with sig. 'mm' on line 626.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareFontsExtensions with sig. 'm' on line 630.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \IfFontFeatureActiveTF with sig. 'mmm' on line 634.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \EncodingCommand with sig. 'mO{}m' on line 3632.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \EncodingAccent with sig. 'mm' on line 3638.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \EncodingSymbol with sig. 'mm' on line 3644.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \EncodingComposite with sig. 'mmm' on line 3650.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \EncodingCompositeCommand with sig. 'mmm' on line 3656.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareUnicodeEncoding with sig. 'mm' on line 3681.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \UndeclareSymbol with sig. 'm' on line 3687.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \UndeclareAccent with sig. 'm' on line 3693.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \UndeclareCommand with sig. 'm' on line 3699.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \UndeclareComposite with sig. 'mm' on line 3706.
+.................................................
+
+(/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec.cfg)
+LaTeX Info: Redefining \itshape on input line 3891.
+LaTeX Info: Redefining \slshape on input line 3896.
+LaTeX Info: Redefining \scshape on input line 3901.
+LaTeX Info: Redefining \upshape on input line 3906.
+LaTeX Info: Redefining \em on input line 3936.
+LaTeX Info: Redefining \emph on input line 3961.
+LaTeX Info: Redefining \- on input line 4015.
+.................................................
+. LaTeX info: "xparse/redefine-command"
+. 
+. Redefining command \oldstylenums with sig. 'm' on line 4110.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \liningnums with sig. 'm' on line 4114.
+.................................................
+))
+\g__fontspec_family_Padauk_int=\count267
+.................................................
+. fontspec info: "no-font-shape"
+. 
+. Could not resolve font "Padauk/I" (it probably doesn't exist).
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'Padauk(0)' created for font 'Padauk' with options
+. [Script=Myanmar].
+.  
+.  This font family consists of the following NFSS series/shapes:
+.  
+. - 'normal' (m/n) with NFSS spec.: <->"Padauk/OT:script=mym2;language=DFLT;"
+. - 'small caps'  (m/sc) with NFSS spec.: 
+. - 'bold' (bx/n) with NFSS spec.: <->"Padauk/B/OT:script=mym2;language=DFLT;"
+. - 'bold small caps'  (bx/sc) with NFSS spec.: 
+. - 'bold italic' (bx/it) with NFSS spec.:
+. <->"Padauk/BI/OT:script=mym2;language=DFLT;"
+. - 'bold italic small caps'  (bx/itsc) with NFSS spec.: 
+.................................................
+
+(./latex-book.aux)
+\openout1 = `latex-book.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 20.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 20.
+ (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
+File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 20.
+
+-- Lines per column: 74 (approximate, difference = 3.0pt).
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+.................................................
+. fontspec info: "setup-math"
+. 
+. Adjusting the maths setup (use [no-math] to avoid this).
+.................................................
+\symlegacymaths=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 20.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 20.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 20.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 20.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 20.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 20.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 20.
+LaTeX Font Info:    Redeclaring math accent \check on input line 20.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 20.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 20.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 20.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 20.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 20.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 20.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 20.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 20.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 20.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 20.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 20.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 20.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 20.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 20.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 20.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 20.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `normal' on input line 20.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 20.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `bold' on input line 20.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> TU/lmr/m/n on input line 20.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  TU/lmr/m/n --> TU/lmr/m/n on input line 20.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 20.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> TU/lmr/bx/n on input line 20.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 20.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 20.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  TU/lmr/m/n --> TU/lmr/bx/n on input line 20.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> TU/lmr/bx/it on input line 20.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> TU/lmss/bx/n on input line 20.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/bx/n on input line 20.
+LaTeX Font Info:    Calculating math sizes for size <11> on input line 30.
+LaTeX Font Info:    Try loading font information for U+msa on input line 30.
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 30.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+Underfull \hbox (badness 1939) in paragraph at lines 32--35
+\TU/Padauk(0)/bx/n/9 အရေးကြီးသည့် ကဏ္ဍတစ်ခု အနေဖြင့် ပါဝင်နေပါသည်။ စာပေသည်
+ []
+
+
+Underfull \hbox (badness 1661) in paragraph at lines 32--35
+\TU/Padauk(0)/bx/n/9 စိတ်ဓာတ် ရှင်သန်ထက်မြက်ရေး အစရှိသည့် စိတ်ဓာတ် ကောင်းတို့ကိ
+ု
+ []
+
+
+Underfull \hbox (badness 1694) in paragraph at lines 32--35
+\TU/Padauk(0)/bx/n/9 လူ့လောက အကြောင်းအရာများကို စွဲမြဲစေခဲ့သည်။ သုတစာပေ သည်
+ []
+
+
+Underfull \hbox (badness 1661) in paragraph at lines 32--35
+\TU/Padauk(0)/bx/n/9 လူငယ်များကို သဘာဝ လောကကြီး နှင့် မိတ်ဆက် ပေးသည့်အပြင်
+ []
+
+
+LaTeX Font Warning: Font shape `TU/Padauk(0)/m/sc' undefined
+(Font)              using `TU/Padauk(0)/m/n' instead on input line 42.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 44--57
+[]\TU/Padauk(0)/m/n/10 ဝန်ကြီးချုပ်ဟောင်း ဦးနု၊ ဦးသန့်၊ ဦးချစ်မောင်၊ မြသန်းတင့်
+၊
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 44--57
+\TU/Padauk(0)/m/n/10 ဝိဓူရသခင်ချစ်မောင်၊ ဗိုလ်ချုပ်အောင်ဆန်း၊ ဆရာအောင်သင်း
+ []
+
+
+Underfull \hbox (badness 4940) in paragraph at lines 44--57
+\TU/Padauk(0)/m/n/10 စာဖတ်၍ ကျော်ကြားခဲ့ သော ပုဂ္ဂိုလ်ပေါင်း များစွာ ရှိပါသည်။
+ []
+
+
+Underfull \hbox (badness 1603) in paragraph at lines 44--57
+\TU/Padauk(0)/m/n/10 မြောင် လှမြို့စား၊ နိုင်ငံခြားဝန်မင်း၊ မင်းကြီး မဟာသီရိဇေယ
+ျဦးချိမ့်
+ []
+
+
+Underfull \hbox (badness 3375) in paragraph at lines 44--57
+\TU/Padauk(0)/m/n/10 ဖြစ်သည်။ အိပ်ချိန်၊ စား ချိန်မှအပ ပညာကိုသာဆည်းပူးနေသည်
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 44--57
+\TU/Padauk(0)/m/n/10 ဟုဆိုပါသည်။ အကြောင်းမှာ ထမင်း စားချိန်၊ လက်ဖက်ရည်
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 44--57
+\TU/Padauk(0)/m/n/10 ချိုချဉ်များ စားသုံး နေခိုက်မှာပင် ပညာစာပေဆည်းပူး မှု ကို
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 44--57
+\TU/Padauk(0)/m/n/10 စာဖတ်တော်များအား မင်းကဘယ် ကျောက်စာကိုကြည့်၊
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 44--57
+\TU/Padauk(0)/m/n/10 မင်းကဘယ်ဆေး ကျမ်းကိုရှာ၊ မင်းကဘယ်သမိုင်းကို ရှာ
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 44--57
+\TU/Padauk(0)/m/n/10 ကြည့်စသည်ဖြင့် ဆေးကျမ်း၊ မော်ကွန်း၊ ပျို့စသည်တို့ကို
+ []
+
+
+Underfull \hbox (badness 7595) in paragraph at lines 44--57
+\TU/Padauk(0)/m/n/10 လိုအပ်ချက်များကို စာကူးစာရေးများက မိမိတို့ ရေးကူးထားသည့်
+ []
+
+
+Underfull \hbox (badness 6001) in paragraph at lines 44--57
+\TU/Padauk(0)/m/n/10 နေ့စဉ် ထမင်း သုံးဆောင်တိုင်း၊ လက်ဖက်ရည် သုံးဆောင်တိုင်း
+ []
+
+
+Underfull \hbox (badness 4168) in paragraph at lines 44--57
+\TU/Padauk(0)/m/n/10 ကျင့်သုံးဆောင်ရွက် သော လုပ်ငန်းစဉ် ဖြစ်သည်။ မင်းကြီးသည်
+ []
+
+
+Underfull \hbox (badness 3713) in paragraph at lines 44--57
+\TU/Padauk(0)/m/n/10 ရေအိမ် သွားသည့် အခါ စာကိုကြည့်ရှု၍ လျှောက်သွား သည်။
+ []
+
+
+Underfull \hbox (badness 1708) in paragraph at lines 44--57
+\TU/Padauk(0)/m/n/10 လည်း ကျက်မှတ်လေသည်။ မင်းကြီး သည် နန်းတော်၌ ညီလာခံ
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 44--57
+\TU/Padauk(0)/m/n/10 ဆရာအောင်သင်းက မိမိကိုယ်ကို အားလပ်ခွင့်မထား ဆိုသည့်
+ []
+
+
+Underfull \hbox (badness 2790) in paragraph at lines 44--57
+[]\TU/Padauk(0)/m/n/10 ကမ္ဘာကျော် စာဖတ်သူ ပုဂ္ဂိုလ်ကြီး တစ်ယောက်ကို ဆက်လက်
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 44--57
+\TU/Padauk(0)/m/n/10 ခေါင်းဆောင်ကြီး ဘင်ဂျမင်ဖရန်ကလင် ပင် ဖြစ်ပါသည် ။
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 44--57
+\TU/Padauk(0)/m/n/10 အထက်ဖော်ပြပါ အမေရိကန် ပြည်ထောင်စု အတွက် အလွန်
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 44--57
+\TU/Padauk(0)/m/n/10 အရေးပါသော စာချုပ်စာတမ်းကြီး လေးစောင် စလုံးတွင်
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 44--57
+\TU/Padauk(0)/m/n/10 မှာ ဘင်ဂျမင်ဖရန်ကလင် တစ်ဦးတည်း သာ ရှိသည်။
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 44--57
+\TU/Padauk(0)/m/n/10 ဖြစ်သည်။ အတန်းကျောင်း ကို နှစ်နှစ်သာ တက်ခဲ့သည်။
+ []
+
+
+Underfull \hbox (badness 2065) in paragraph at lines 44--57
+\TU/Padauk(0)/m/n/10 ဖရန်ကလင်သည် ဉာဏ်ရည် အလွန်ထက်ပြီး ကြိုးစားအားထုတ် မှု
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 44--57
+\TU/Padauk(0)/m/n/10 အမေရိကန်ပြည် ထောင်စုတွင် နာမည်ကျော် စာရေးဆရာ
+ []
+
+
+Underfull \hbox (badness 2726) in paragraph at lines 44--57
+\TU/Padauk(0)/m/n/10 ဆိုသည့် စာအုပ်ကို ဖတ်မိသည်။ စာအုပ် ကို အလွန်သဘောကျ
+ []
+
+
+Underfull \hbox (badness 5431) in paragraph at lines 44--57
+\TU/Padauk(0)/m/n/10 နှစ်သက်သဖြင့် အထပ်ထပ် အခါခါ ဖတ်ရှုလေ့လာပြီး စာအုပ်ပါ
+ []
+
+
+Underfull \hbox (badness 4193) in paragraph at lines 44--57
+\TU/Padauk(0)/m/n/10 သော စာအုပ်စာတမ်း တို့ကို လေ့လာ၊ ဖတ်ရှု၊ မှတ်သားနာယူမှု
+ []
+
+
+Underfull \hbox (badness 2005) in paragraph at lines 44--57
+\TU/Padauk(0)/m/n/10 ကို အလေးအနက်ပြု ၍ ဆောင်ရွက်ခဲ့သည်။ ကျောင်း နေခွင့်မရ၊
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 44--57
+\TU/Padauk(0)/m/n/10 ဆရာများ၏ သင်ကြားခွင့် မရခဲ့သော ဘင်ဂျမင်ဖရန်ကလင်
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 44--57
+\TU/Padauk(0)/m/n/10 သည် ကိုယ့်ထူးကိုယ်ချွန်ကာ စာအရေးအသား ကောင်းသည့်
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 44--57
+\TU/Padauk(0)/m/n/10 လာတော့သည်။ ဖရန်ကလင်၏ အစ်ကိုသည် သတင်းစာတိုက်
+ []
+
+
+Underfull \hbox (badness 6477) in paragraph at lines 44--57
+\TU/Padauk(0)/m/n/10 တည်ထောင်လိုက်ရာ ဖရန် ကလင်သည် စာစီ၊ စာရိုက်၊ ပုံနှိပ်၊
+ []
+
+
+Underfull \hbox (badness 2875) in paragraph at lines 44--57
+\TU/Padauk(0)/m/n/10 မညည်းမညူ လုပ်ဆောင်သည်။ သတင်းစာတိုက် သို့ ရောက်သမျှ
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 44--57
+\TU/Padauk(0)/m/n/10 ဘင်ဂျမင်ဖရန်ကလင် သည် ပညာပြည့်ဝ နှလုံးလှ ခဲ့သည်။
+ []
+
+
+Underfull \hbox (badness 1859) in paragraph at lines 44--57
+\TU/Padauk(0)/m/n/10 ၁၇၂၉ခုနှစ်တွင် ကိုယ်ပိုင် သတင်းစာကြီး တစ်စောင် ထူထောင်နိုင
+်
+ []
+
+
+Underfull \hbox (badness 1584) in paragraph at lines 44--57
+\TU/Padauk(0)/m/n/10 ယခုအခါ အမေရိကန် ပြည်ထောင်စု ပင်ဆီဗေးနီးယား တက္ကသိုလ်
+ []
+
+
+Underfull \hbox (badness 3168) in paragraph at lines 44--57
+\TU/Padauk(0)/m/n/10 ကျောင်း ဝင်းအတွင်း ခံ့ညား ထည်ဝါသော ဘင်ဂျမင်ဖရန်ကလင်
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 44--57
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [1
+
+
+]
+Underfull \hbox (badness 2343) in paragraph at lines 59--63
+\TU/Padauk(0)/m/sc/10 အေးမြတဲ့ ရေးဟန်နဲ့ ဘဝနေနည်းကို တကယ် အနုပညာဆန်ဆန်
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 59--63
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 63--64
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 64--65
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 65--66
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 66--67
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--68
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--69
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 69--70
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--71
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 71--72
+
+ []
+
+
+Underfull \hbox (badness 3189) in paragraph at lines 74--77
+\TU/Padauk(0)/m/sc/10 စတဲ့ အခန်း ၉ခန်းပါဝင်ပြီး အဓိပ္ပါယ် ရှိတဲ့ ဘဝတစ်ခု မည်သို
+့
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--77
+\TU/Padauk(0)/m/sc/10 တည်ဆောက် ပုံဖော်ရမည်ကို ဆွေးနွေးထားပါတယ် ။ ကျွန်မ
+ []
+
+
+Underfull \hbox (badness 4254) in paragraph at lines 74--77
+\TU/Padauk(0)/m/sc/10 အနေနဲ့ အဲ့ထဲကမှ ချစ်ခြင်းအနုပညာ၊ မိတ်ဆွေဖွဲ့ခြင်းအနုပညာ ၊
+
+ []
+
+
+Underfull \hbox (badness 4913) in paragraph at lines 74--77
+\TU/Padauk(0)/m/sc/10 တွေးခေါ်မှုအနုပညာ နဲ့ပျော်ရွှင်ခြင်း အနုပညာ အကြောင်းတွေကိ
+ု
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--77
+
+ []
+
+
+LaTeX Font Warning: Font shape `TU/Padauk(0)/m/it' undefined
+(Font)              using `TU/Padauk(0)/m/n' instead on input line 77.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 77--85
+\TU/Padauk(0)/m/sc/10 စတုတ္ထအချက်။ ။ တစ်ခါတစ်ရံ မှာ ခွဲခွာနေခြင်း အားဖြင့်
+ []
+
+
+Underfull \hbox (badness 4378) in paragraph at lines 77--85
+\TU/Padauk(0)/m/sc/10 အချစ်ပုံဆောင်ခဲ ကို အသစ်ဖြစ်အောင် လုပ်ပေးတာမျိုး ရှိရမယ်
+ []
+
+
+Underfull \hbox (badness 1629) in paragraph at lines 77--85
+\TU/Padauk(0)/m/sc/10 လူတွေ သတိမပြုမိတဲ့ အချက်ကတော့ ကိုယ့်ချစ်သူကို ဆက်လက်
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 77--85
+
+ []
+
+
+Underfull \hbox (badness 2653) in paragraph at lines 85--88
+\TU/Padauk(0)/m/it/10 တကယ့် မိတ်ဆွေစစ် ဆက်ဆံရေးမှာ ကိုယ်ကျိုးမကြည့်ခြင်း ဟာ
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 85--88
+\TU/Padauk(0)/m/it/10 ကိုယ့်ဆီကို လာပြီး အကူအညီ မတောင်းခင် အကူအညီပေးဖို့
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 85--88
+\TU/Padauk(0)/m/it/10 ဖြစ်ပါတယ် ။ ကိုယ် အကူအညီ ပေးလိုက်တဲ့အတွက် သူ့မှာ
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 85--88
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 88--93
+\TU/Padauk(0)/m/it/10 စဉ်းစားတွေးခေါ်ခြင်းဆိုတာ မိမိ၏လုပ်ရပ်များကြောင့်
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 88--93
+\TU/Padauk(0)/m/it/10 အစစ်အမှန်လောကကြီးထဲမှာ ပေါ်ထွက်လာတဲ့ ရလာဒ်များ ၊
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 88--93
+\TU/Padauk(0)/m/it/10 ခန့်မှန်းရန်၊ ကြည့်မြင်ရန် ကြိုးစားသော လူရဲ့ အားထုတ်မှု၊
+ []
+
+
+Underfull \hbox (badness 2343) in paragraph at lines 88--93
+\TU/Padauk(0)/m/it/10 ဒါဟာ စဉ်းစားတွေးခေါ်ခြင်း ဖြစ်စဉ်ပဲ ။ အေကားရဲ့ တွေးခေါ်မှ
+ု
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 88--93
+\TU/Padauk(0)/m/it/10 နံပါတ်တစ်။ ။ မိမိကိုယ်တိုင် မှန်တယ်လို့ ရှင်းရှင်းလင်းလင်
+း
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 88--93
+\TU/Padauk(0)/m/it/10 နံပါတ်နှစ်။ ။အလျင်စလိုဆုံးဖြတ်ခြင်းနှင့်
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 88--93
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 93--96
+\TU/Padauk(0)/m/it/10 ပျော်ရွှင်မှုကို အတားအဆီး ဖြစ် စေတဲ့ အဓိက ဒုက္ခနှစ်ခုက
+ []
+
+
+Underfull \hbox (badness 6625) in paragraph at lines 93--96
+\TU/Padauk(0)/m/it/10 သူတို့ကိုယ်သူတို့ ဖျားအောင် လုပ်ကြတယ် ။ ကျွန်မတို့စိတ်ဟာ
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 93--96
+\TU/Padauk(0)/m/it/10 ထင်နေတဲ့ အရာများသာဖြစ်တယ် ။ လောကမှာ စိတ်အထင်နဲ့
+ []
+
+
+Underfull \hbox (badness 1796) in paragraph at lines 93--96
+\TU/Padauk(0)/m/it/10 နာမကျန်းဖြစ် တဲ့ သူတွေရှိသလို စိတ်အထင်နဲ့ ဆင်းရဲမွဲတေနေသူ
+
+ []
+
+
+Underfull \hbox (badness 2809) in paragraph at lines 93--96
+\TU/Padauk(0)/m/it/10 တွေလည်း အများကြီးရှိတယ် ။ တခြားသူတွေ ဒုက္ခရောက်နေချိန်
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 93--96
+\TU/Padauk(0)/m/it/10 ကိုယ့်မှာ ဝင်ငွေကလေး နည်းနည်းပါးပါး လျော့သွားတာနဲ့
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 93--96
+\TU/Padauk(0)/m/it/10 ဘဝဆုံးတော့မလောက် ပြောနေတာမျိုးတော့ မဟုတ်သေးဘူး
+ []
+
+
+Underfull \hbox (badness 7451) in paragraph at lines 93--96
+\TU/Padauk(0)/m/it/10 လေ ။ ပျော်ရွှင်မှုကို အတားအဆီးဖြစ်စေတဲ့ နောက်အကြောင်း
+ []
+
+
+Underfull \hbox (badness 3333) in paragraph at lines 93--96
+\TU/Padauk(0)/m/it/10 တစ်ကြောင်းက ရှုံးနိမ့်ခြင်းပဲ ။ ကိုယ့်ရည်မှန်းချက် မအောင်
+မြင်ပဲ
+ []
+
+
+Underfull \hbox (badness 1895) in paragraph at lines 93--96
+\TU/Padauk(0)/m/it/10 အကောင်အထည် မဖော်နိုင်တဲ့လူဟာ ဘာဖြစ်လို့ စိတ်ဆင်းရဲတာလဲ
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 93--96
+\TU/Padauk(0)/m/it/10 ။ သူ့ရဲ့အတိတ်က ရှုံးနိမ့်မှုဖြစ်စေတဲ့ ချို့ယွင်းချက်တွေကိ
+ု
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 93--96
+\TU/Padauk(0)/m/it/10 ပြန်သတိရပြီး သူ့ရဲ့ အနာဂတ် အောင်မြင်မှုတွေကိုလည်း သူနဲ့
+ []
+
+
+Underfull \hbox (badness 4492) in paragraph at lines 93--96
+\TU/Padauk(0)/m/it/10 ။ တယယ်လို့ အတိတ်ကအမှားတွေကိုပြန်တွေးပြီး စိုးရိမ်ခြင်းမဖြ
+စ်
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 93--96
+\TU/Padauk(0)/m/it/10 ၊ နောက် အနာဂတ်အတွက်လည်း တွေးတောပူပန်ခြင်းမဖြစ်ပဲ
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 93--96
+\TU/Padauk(0)/m/it/10 လက်ရှိ အခြေအနေကို အာရုံစူးစိုက်ပြီး လက်ရှိအလုပ်ကို
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 93--96
+\TU/Padauk(0)/m/it/10 အောင်မြင်ဖို့ ကြိုးစားခဲ့ရင် ကျေနပ်လောက်တဲ့ ရလာဒ်တွေ
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 93--96
+\TU/Padauk(0)/m/it/10 အမြဲလိုလို ပေါ်ထွက်လာမှာ သေချာပါတယ် ။ စိတ်ဆင်းရဲမှုရဲ့
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 93--96
+\TU/Padauk(0)/m/it/10 ။ အကြောက်ကြောင့် ဖြစ်လာတဲ့ ပြင်းထန်တဲ့ စိတ်ခံစားမှုဟာ
+ []
+
+
+Underfull \hbox (badness 5802) in paragraph at lines 93--96
+\TU/Padauk(0)/m/it/10 အကျိုးလည်းမများ ပါဘူး ။ ဘာဖြစ်လို့လဲ ဆိုတော့ ဖြစ်မလား
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 93--96
+\TU/Padauk(0)/m/it/10 ဖြစ်မလားဆိုပြီး မျှော်လင့်စိုးရိမ် နေရတာဟာ တကယ်ဖြစ်လာပြီး
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 93--96
+
+ []
+
+[2]
+File: ./fig/fig1.png Graphic file (type bmp)
+<./fig/fig1.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 104--133
+\TU/Padauk(0)/m/it/10 ``မြောက်ဖျားက အလွမ်းရာသီ'' တဲ့ ဆရာမစံပယ်ဖြူနုရဲ့
+ []
+
+
+Underfull \hbox (badness 4242) in paragraph at lines 104--133
+\TU/Padauk(0)/m/it/10 အမျိုးသားစာပေဆုရ ဝတ္ထုလေး ပါ။ ဒီစာအုပ်လေးကို သြဂုတ်လ
+ []
+
+
+Underfull \hbox (badness 6625) in paragraph at lines 104--133
+\TU/Padauk(0)/m/it/10 ကြောင့် ပြိုကွဲခဲ့ရတဲ့ မိသားစုဘဝတွေအကြောင်း နောက်ခံထားပြီ
+း
+ []
+
+
+Underfull \hbox (badness 5862) in paragraph at lines 104--133
+\TU/Padauk(0)/m/it/10 အစ်မဖြစ်သူက ညီမလေးကို စစ်ပြေးဒုက္ခသည်စခန်းမှာလိုက်ရှာခဲ့တ
+ဲ့
+ []
+
+
+Underfull \hbox (badness 4024) in paragraph at lines 104--133
+\TU/Padauk(0)/m/it/10 အဒေါ်ဖြစ်သူက နုနယ်တဲ့အဖြူထည်စိတ်လေးကို အရောင်ဆိုးခဲ့ရာမှ
+ []
+
+
+Underfull \hbox (badness 1668) in paragraph at lines 104--133
+\TU/Padauk(0)/m/it/10 အဖေတူအမေကွဲ ညီမလေးအပေါ် မကြင်နာနိုင်ခဲ့သော၊ မုန်းခဲ့သော
+ []
+
+
+Underfull \hbox (badness 5607) in paragraph at lines 104--133
+\TU/Padauk(0)/m/it/10 လွှမ်းမိုးနိုင်တယ် ဆိုတဲ အချက်လေး၊ နွယ် တက္ကသိုလ်ရောက်လို
+့
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 104--133
+\TU/Padauk(0)/m/it/10 သိနားလည်လာတာတောင်မှ ငယ်စဉ်ကလေးဘဝက
+ []
+
+
+Underfull \hbox (badness 7308) in paragraph at lines 104--133
+\TU/Padauk(0)/m/it/10 ကလေးပီပီ ရိုးသားဖြူစင်လွန်းစွာ အစ်မဖြစ်သူက ကြင်ကြင်နာနာ
+ []
+
+
+Underfull \hbox (badness 5711) in paragraph at lines 104--133
+\TU/Padauk(0)/m/it/10 အဆိုင်း အိမ်ထောင်ကျပြီး နောက် နေထိုင်ရာ ကချင်ရွာလေးမှာ
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 104--133
+\TU/Padauk(0)/m/it/10 တဆက်တည်းမှာပဲ စစ်ပြေးဒုက္ခသည်တို့ရဲ့ ဒုက္ခအဖုံဖုံနဲ့
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 104--133
+\TU/Padauk(0)/m/it/10 ညီမလေး အဆိုင်း ကို ရှာတွေ့ပေမယ့် စာဖတ်သူတွေ
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 104--133
+\TU/Padauk(0)/m/it/10 မကောင်းခဲ့ပေမယ့် ကမ္ဘာမှာ ခုထိစစ်က ပျောက်မသွားဘူးပဲ၊
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 104--133
+
+ []
+
+File: ./fig/fig2.png Graphic file (type bmp)
+<./fig/fig2.png>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 141--152
+\TU/Padauk(0)/m/it/10 ``ဝမ်းသာစရာအကြောင်းကို ရှာတတ်လျှင်
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 141--152
+\TU/Padauk(0)/m/it/10 အကောင်းမြင်ဝါဒရှိဖို့အတွက် အသိဉာဏ်တွေ အများကြီးပေးခဲ့တဲ့
+ []
+
+
+Underfull \hbox (badness 7722) in paragraph at lines 141--152
+\TU/Padauk(0)/m/it/10 ပေါ်လီယာနာ ဆိုတာ အသက် ၁၁ နှစ် အရွယ်သာရှိသေးတဲ့
+ []
+
+
+Underfull \hbox (badness 2689) in paragraph at lines 141--152
+\TU/Padauk(0)/m/it/10 ထိတွေ့ဆက်ဆံရသူများသည် နှလုံးမသာ မျက်နှာမလှ ဖြစ်နေရာက
+ []
+
+
+Underfull \hbox (badness 3039) in paragraph at lines 141--152
+\TU/Padauk(0)/m/it/10 က ကိုယ်မရသေးတဲ့ အရာတွေ ကိုယ်မပိုင်ဆိုင်ဖြစ်သေးတဲ့ အရာ
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 141--152
+\TU/Padauk(0)/m/it/10 တွေကိုသာ မျှော်လင့်တောင့်တရင်းနဲ့ ကိုယ်ပိုင်ဆိုင်ထားပြီးသ
+ား
+ []
+
+
+Underfull \hbox (badness 1577) in paragraph at lines 141--152
+\TU/Padauk(0)/m/it/10 လက်ရှိအရာတွေအပေါ် ဝမ်းသာကျေနပ်ရမှာ မေ့နေတတ်ကြပါတယ်
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 141--152
+\TU/Padauk(0)/m/it/10 ။ အောက်စဖို့ဒ် ဆရာတော် ဟောထားသလို လူတွေဟာ
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 141--152
+\TU/Padauk(0)/m/it/10 မိမိ ပိုင်ဆိုင်ထားတဲ့ အရာတွေ အပေါ်မှာလည်း မုဒိတာ ပွား
+ []
+
+
+Underfull \hbox (badness 4048) in paragraph at lines 141--152
+\TU/Padauk(0)/m/it/10 ဝမ်းမြောက်ရမယ် တဲ့ ။ ကျွန်မ မှာ ခြေနှစ်ဖက် လက်နှစ်ဖက်
+ []
+
+
+Underfull \hbox (badness 5592) in paragraph at lines 141--152
+\TU/Padauk(0)/m/it/10 ဘွဲ့ရ တဲ့ထိ ပညာကောင်းကောင်းသင်ခဲ့ရလို့ ဝမ်းမြောက်တယ် ။
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 141--152
+\TU/Padauk(0)/m/it/10 ကရုဏာ မုဒိတာ မေတ္တာများနဲ့ ရှင်သန်နေထိုင်ကြစေဖို့
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 141--152
+\TU/Padauk(0)/m/it/10 စိတ်ဓာတ်ခွန်အားပေးမဲ့ ပေါ်လီယာနာ ကို မဖတ်ဖူးလျှင်
+ []
+
+
+Underfull \hbox (badness 6575) in paragraph at lines 141--152
+\TU/Padauk(0)/m/it/10 ကျွန်မချစ်သော ပေါ်လီယာနာ သည် လူတိုင်း၏ နှလုံးသားတွင်
+ []
+
+[3]
+File: ./fig/fig3.png Graphic file (type bmp)
+<./fig/fig3.png>
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 186--187
+[]\TU/Padauk(0)/m/it/10 လူငယ်လူရွယ်များ အတွက် စာပေသည် အရေးကြီးသော
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 186--187
+\TU/Padauk(0)/m/it/10 အခန်းကဏ္ဍတစ်ရပ် အဖြစ် မည်ကဲ့သို့ ပါဝင်နေကြောင်း နှင့်
+ []
+
+
+Underfull \hbox (badness 4739) in paragraph at lines 186--187
+\TU/Padauk(0)/m/it/10 ကျွန်မ ဖတ်ဖူးသမျှထဲ မှာ အကောင်းဆုံး ဖြစ်မည် ဟု ယူဆ
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+** Conference Paper **
+Before submitting the final camera ready copy, remember to:
+
+ 1. Manually equalize the lengths of two columns on the last page
+ of your paper;
+
+ 2. Ensure that any PostScript and/or PDF output post-processing
+ uses only Type 1 fonts and that every step in the generation
+ process uses the appropriate paper size.
+
+[4] (./latex-book.aux)
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+ )
+(\end occurred inside a group at level 1)
+
+### simple group (level 1) entered at line 86 ({)
+### bottom level 
+Here is how much of TeX's memory you used:
+ 14487 strings out of 494988
+ 305835 string characters out of 6178638
+ 382745 words of memory out of 5000000
+ 18213 multiletter control sequences out of 15000+600000
+ 537244 words of font info for 98 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 39i,11n,57p,10445b,348s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on latex-book.pdf (4 pages).

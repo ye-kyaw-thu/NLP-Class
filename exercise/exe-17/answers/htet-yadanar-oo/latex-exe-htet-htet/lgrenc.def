@@ -1,0 +1,43 @@
+%%
+%% This is file `lgrenc.def',
+%% generated with the docstrip utility.
+%%
+%% The original source files were:
+%%
+%% greek.fdd  (with options: `LGRenc')
+%% This is a generated file.
+%% 
+%% Copyright 1999 Johannes L. Braams and any individual authors
+%% listed elsewhere in this file.  All rights reserved.
+%% 
+%% This file is part of the Babel system, release 3.6.
+%% ---------------------------------------------------
+%% 
+%% It may be distributed under the terms of the LaTeX Project Public
+%% License, as described in lppl.txt in the base LaTeX distribution.
+%% Either version 1.0 or, at your option, any later version.
+%% 
+%% In particular, permission is granted to customize the declarations in
+%% this file to serve the needs of your installation.
+%% 
+%% However, NO PERMISSION is granted to distribute a modified version
+%% of this file under its original name.
+%% 
+\ProvidesFile{lgrenc.def}
+         [1999/04/29 v2.2d %
+  Greek Encoding]
+\DeclareFontEncoding{LGR}{}{}
+\DeclareFontSubstitution{LGR}{cmr}{m}{n}
+\DeclareErrorFont{LGR}{cmr}{m}{n}{10}
+\ProvideTextCommand{\textcopyright}{LGR}{%
+  \textcircled{\textlatin{c}}}
+\ProvideTextCommand{\textregistered}{LGR}{%
+  \textcircled{\textlatin{\textsc r}}}
+\ProvideTextCommand{\texttrademark}{LGR}{%
+  \textsuperscript{\textlatin{TM}}}
+\ProvideTextCommand{\SS}{LGR}{%
+  \textlatin{SS}}
+\endinput
+%%
+%% End of file `lgrenc.def'.
+

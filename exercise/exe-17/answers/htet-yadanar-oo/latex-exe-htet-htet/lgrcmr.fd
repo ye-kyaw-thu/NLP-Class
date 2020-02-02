@@ -1,0 +1,51 @@
+%%
+%% This is file `lgrcmr.fd',
+%% generated with the docstrip utility.
+%%
+%% The original source files were:
+%%
+%% greek.fdd  (with options: `fd,LGRcmr')
+%% This is a generated file.
+%% 
+%% Copyright 1999 Johannes L. Braams and any individual authors
+%% listed elsewhere in this file.  All rights reserved.
+%% 
+%% This file is part of the Babel system, release 3.6.
+%% ---------------------------------------------------
+%% 
+%% It may be distributed under the terms of the LaTeX Project Public
+%% License, as described in lppl.txt in the base LaTeX distribution.
+%% Either version 1.0 or, at your option, any later version.
+%% 
+%% In particular, permission is granted to customize the declarations in
+%% this file to serve the needs of your installation.
+%% 
+%% However, NO PERMISSION is granted to distribute a modified version
+%% of this file under its original name.
+%% 
+\ProvidesFile{lgrcmr.fd}
+         [1999/04/29 v2.2d %
+  Greek Computer Modern]
+\providecommand{\EC@family}[5]{%
+  \DeclareFontShape{#1}{#2}{#3}{#4}
+  {<5><6><7><8><9><10><10.95><12><14.4>%
+   <17.28><20.74><24.88>genb*#5}{}}
+\DeclareFontFamily{LGR}{cmr}{}
+\EC@family{LGR}{cmr}{m}{n}    {grmn}
+\EC@family{LGR}{cmr}{m}{sl}   {grmo}
+\EC@family{LGR}{cmr}{m}{it}   {grmi}
+\EC@family{LGR}{cmr}{m}{sc}   {grmc}
+\EC@family{LGR}{cmr}{m}{ui}   {grmu}
+\EC@family{LGR}{cmr}{bx}{sc}  {grxc}
+\EC@family{LGR}{cmr}{bx}{n}   {grxn}
+\EC@family{LGR}{cmr}{bx}{sl}  {grxo}
+\EC@family{LGR}{cmr}{bx}{it}  {grxi}
+\EC@family{LGR}{cmr}{bx}{ui}  {grxu}
+\DeclareFontShape{LGR}{cmr}{b}{n}
+       {<->ssub*cmr/bx/n}{}
+\DeclareFontShape{LGR}{cmr}{b}{sc}
+       {<->ssub*cmr/bx/sc}{}
+\endinput
+%%
+%% End of file `lgrcmr.fd'.
+
