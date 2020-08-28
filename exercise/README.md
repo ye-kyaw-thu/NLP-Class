@@ -16,6 +16,7 @@
 14. String similarity measurement with edit-distance FST
 15. FST model for conversion small-capital, capital-to-small 
 16. Kayah ASCII to Kayah Unicode font conversion with FST
+17. Report/Paper writing with Latex (we used xelatex)  
 
 *** to all my students,   
 Try to finish above all homeworks ASAP!!!
