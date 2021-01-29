@@ -14,4 +14,9 @@
 4. University Chatbot using Artificial Intelligence Markup Language
    Member: Cho Zin Oo, Cho War, Hnin Ei Ei Cho, Phyo Hay Mar Wai, May Myat Myat Khaing, Hay Man Htun
    
-5. 
+5. Automatic Speech Recognition System for Burmese Sentences using Kaldi
+   Member: Hlaing Myat Nwe, Khant Khant Win Tint, Khaing Hsu Wai
+   
+6. Automatic Language Identification on Audio Signals
+   Member: Khaing Zar Mon, May Phyu Khin, Myo Mar Thinn, Ei Thandar Phyu, Nang Aeindray Kyaw
+   
