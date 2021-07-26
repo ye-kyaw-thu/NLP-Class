@@ -30,6 +30,8 @@ Jellyfish နဲ့ Epitran Python library တွေကိုတော့ အရ
 Github Link for Jellyfish: [https://github.com/jamesturk/jellyfish](https://github.com/jamesturk/jellyfish)  
 Github Link for Epitran: [https://github.com/dmort27/epitran](https://github.com/dmort27/epitran)  
 
+Install လုပ်တာက လွယ်ပါတယ် pip command နဲ့ အောက်ပါအတိုင်း run သွားယုံပါပဲ...  
+
 ```
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:/media/ye/Transcend/paper/next-paper/ksw/exp/paper/chk4myint2htay$ pip install jellyfish
 Collecting jellyfish
