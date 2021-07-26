@@ -24,7 +24,7 @@ Please refer following two papers for our proposed mapping 1, 2 and 3:
 ## 3 Mappings  
 
 Mapping နဲ့ ပတ်သက်ပြီး Python coding အနေနဲ့ ရေးထားတာကို ကြည့်ရင်လည်း programming အခြေခံရှိပြီးသား သူတွေအနေနဲ့ နားလည်လွယ်ပါလိမ့်မယ်။  
-experiment.py ဖိုင်ကနေ mapping နဲ့ ဆိုင်တဲ့ dictionary အပိုင်းနဲ့ string တစ်ခုကို mapping လုပ်တဲ့ အပိုင်းကို ဆွဲထုတ်ပြထားပါတယ်။  
+[experiment.py](https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/my-string-similarity-exp1/experiment.py) ဖိုင်ကနေ mapping နဲ့ ဆိုင်တဲ့ dictionary အပိုင်းနဲ့ string တစ်ခုကို mapping လုပ်တဲ့ အပိုင်းကို ဆွဲထုတ်ပြထားပါတယ်။  
 
 ```python
 ### Proposed Mapping1
