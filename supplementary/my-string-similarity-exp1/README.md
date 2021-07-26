@@ -51,6 +51,8 @@ count-found.sh  experiment.py  note.txt  rm-folders.sh  run-all.sh  test-set1-co
 
 ## Running
 
+ပထမဆုံး မြင်ရတဲ့ output screen တွေက ```python experiment.py``` ရဲ့ output တွေပါ...   
+
 ```
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:/media/ye/Transcend/paper/next-paper/ksw/exp/paper/chk4myint2htay$ time ./run-all.sh | tee running-25July2021.log
 ...
@@ -133,7 +135,7 @@ sys	0m2.694s
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:/media/ye/Transcend/paper/next-paper/ksw/exp/paper/chk4myint2htay$
 ```
 
-အထက်ပါ running က count-found.sh မပါပဲ run ခဲ့တဲ့ ကြာချိန်။
+အထက်ပါ running time မိနစ် 81 မိနစ်က နောက်ပိုင်း ဆက်လုပ်မယ့် count-found.sh မပါပဲ run ခဲ့တဲ့ ကြာချိန်ပါ။  
 
 ## Structure of the Output Folder
 
