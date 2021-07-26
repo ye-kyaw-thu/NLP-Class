@@ -1,9 +1,17 @@
 # Rerun Experiment of the String Similarity for Burmese
 
-ခိုင်ဆုဝေ (UTYCC, Myanmar) ရဲ့ မဟာဘွဲ့အတွက်  ရေးခဲ့တဲ့ String Similarity စာတမ်းတုန်းက run ခဲ့ကြတဲ့ experiment ကို နောက်တစ်ခေါက် ပြန် run ထားတာပါ။  
+ခိုင်ဆုဝေ (UTYCC, Myanmar) ရဲ့မဟာဘွဲ့အတွက်  ရေးခဲ့တဲ့ String Similarity စာတမ်းတုန်းက run ခဲ့ကြတဲ့ experiment ကို နောက်တစ်ခေါက် ပြန် run ထားတာပါ။  
 
-ဆရာ
-(26 July 2021)
+ဆရာ  
+(26 July 2021)  
+
+## Summary of the String Similarity Experiment
+
+- Calculating six edit distances with raw Myanmar text, our prposed mapping-1, mapping-2 and mapping-3
+- Encoding table or Mapping has been built based on the pronunciation similarity of characters and vowel combination positions with a consonant
+- We used spelling mistake confusion pairs that we manually collected
+- Evaluation: Similarity distance is measured between the dataset and query words
+
 
 ## Install Jellyfish and Epitran
 
