@@ -98,6 +98,8 @@ wrong-correct-pairs.clean.txt ဖိုင်က manual ပြင်ဆင်ထ
 ခရေး	ကလေး
 ```
 
+tail ရဲ့ output...  
+
 ```
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tmp-backup/NLP-Class/supplementary/my-string-similarity-exp1$ tail ./wrong-correct-pairs.clean.txt 
 အိမ်တအိမ်	အိမ်တစ်အိမ်
@@ -111,6 +113,8 @@ wrong-correct-pairs.clean.txt ဖိုင်က manual ပြင်ဆင်ထ
 အွန်လိ်ုင်း	အွန်လိုင်း
 ၄င်းတို	၄င်းတို့၏
 ```
+
+အထဲမှာ ပါဝင်တဲ့ စာလုံးပေါင်းအမှားနဲ့ အမှန် အတွဲတွေကို လေ့လာလို့ ရအောင် shuffle လုပ်လိုက်ပြီး ၁၀ကြောင်းကိုလည်း ဆွဲထုတ်ပေးထားပါတယ်။  
 
 ```
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tmp-backup/NLP-Class/supplementary/my-string-similarity-exp1$ shuf ./wrong-correct-pairs.clean.txt | head
