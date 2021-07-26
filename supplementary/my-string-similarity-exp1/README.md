@@ -12,7 +12,7 @@
 - Calculating six edit distances with raw or normal Myanmar text, converted with our prposed mapping-1, mapping-2 and mapping-3
 - Six Edit Distances: Levenshtein, Damerau Levenshtein, Hamming Distance, Jaro Winkler, Cosine and Jaccard were used
 - Encoding table or proposed mapping has been built based on the pronunciation similarity of characters and vowel combination positions with a consonant
-- We used spelling mistake confusion pairs of general domain that we manually collected
+- Data: We used spelling mistake confusion pairs of general domain that we manually collected
 - Evaluation: Similarity distance is measured between the dataset and query words
 
 Please refer following two papers for our proposed mapping 1, 2 and 3:  
