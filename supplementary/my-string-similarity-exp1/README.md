@@ -1,6 +1,8 @@
 # Rerun Experiment of the String Similarity for Burmese
 
-ခိုင်ဆုဝေ (UTYCC, Myanmar) ရဲ့မဟာဘွဲ့အတွက်  ရေးခဲ့တဲ့ String Similarity စာတမ်းတုန်းက run ခဲ့ကြတဲ့ experiment ကို နောက်တစ်ခေါက် ပြန် run ထားတာပါ။  
+မခိုင်ဆုဝေ (UTYCC, Myanmar) ရဲ့မဟာဘွဲ့အတွက်  ရေးခဲ့တဲ့ String Similarity စာတမ်းတုန်းက run ခဲ့ကြတဲ့ experiment ကို နောက်တစ်ခေါက် ပြန် run ထားတဲ့ foler တစ်ခုလုံးကို share လုပ်ပေးထားတာပါ။ စိတ်ဝင်စားတဲ့ သူတွေလေ့လာလို့ ရအောင်နဲ့ ပိုကောင်းတဲ့ approach တွေကို ရှာဖွေတွေ့ရှိနိုင်ဖို့ ရည်ရွယ်ပါတယ်။  
+
+ပြီးတော့ မမြင့်မြင့်ဌေး (Ph.D. student, UTYCC) ရဲ့ paraphrase experiment အတွက်လည်း reference လုပ်နိုင်ဖို့ ရည်ရွယ်ပြီး တင်ပေးခဲ့တာပါ။  
 
 ဆရာ  
 (26 July 2021)  
