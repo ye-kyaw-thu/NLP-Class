@@ -7,6 +7,9 @@
 
 ## Install Jellyfish and Epitran
 
+Experiment မလုပ်ခင်မှာ ...   
+Jellyfish နဲ့ Epitran Python library တွေကိုတော့ အရင် install လုပ်ရမယ်။  
+
 ```
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:/media/ye/Transcend/paper/next-paper/ksw/exp/paper/chk4myint2htay$ pip install jellyfish
 Collecting jellyfish
