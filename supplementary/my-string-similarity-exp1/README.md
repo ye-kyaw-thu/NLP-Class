@@ -27,6 +27,9 @@ Please refer following two papers for our proposed mapping 1, 2 and 3:
 Experiment မလုပ်ခင်မှာ ...   
 Jellyfish နဲ့ Epitran Python library တွေကိုတော့ အရင် install လုပ်ရမယ်။  
 
+Github Link for Jellyfish: [https://github.com/jamesturk/jellyfish](https://github.com/jamesturk/jellyfish)  
+Github Link for Epitran: [https://github.com/dmort27/epitran](https://github.com/dmort27/epitran)  
+
 ```
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:/media/ye/Transcend/paper/next-paper/ksw/exp/paper/chk4myint2htay$ pip install jellyfish
 Collecting jellyfish
