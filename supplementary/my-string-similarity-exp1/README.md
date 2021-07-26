@@ -181,7 +181,7 @@ count-found.sh  experiment.py  note.txt  rm-folders.sh  run-all.sh  test-set1-co
 
 ## Information of Test-data File  
 
-wrong-correct-pairs.clean.txt ဖိုင်က manual ပြင်ဆင်ထားတဲ့ စာလုံးပေါင်း အမှား နဲ့ အမှန် confusion pair ဖိုင်ပါ။  
+[wrong-correct-pairs.clean.txt](https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/my-string-similarity-exp1/wrong-correct-pairs.clean.txt) ဖိုင်က manual ပြင်ဆင်ထားတဲ့ စာလုံးပေါင်း အမှား နဲ့ အမှန် confusion pair ဖိုင်ပါ။  
 စာကြောင်းရေ စုစုပေါင်းက နှစ်ထောင်ကျော် ရှိပါတယ်။  
 
 ```
