@@ -13,6 +13,9 @@
 - We used spelling mistake confusion pairs of general domain that we manually collected
 - Evaluation: Similarity distance is measured between the dataset and query words
 
+Please refer following paper for our proposed mapping 1, 2 and 3:  
+Khaing Hsu Wai, Ye Kyaw Thu, Swe Zin Moe, Hnin Aye Thant, Thepchai Supnithi, "Myanmar (Burmese) String Similarity Measures based on Phoneme Similarity", Journal of Intelligent Informatics and Smart Technology, April 1st Issue, 2020, pp. 27-34. (submitted December 21, 2019; accepted March 6, 2020; revised March 16, 2020; published online April 30, 2020) [Paper](https://aclanthology.org/2019.nsurl-1.14/)  
+
 
 ## Install Jellyfish and Epitran
 
