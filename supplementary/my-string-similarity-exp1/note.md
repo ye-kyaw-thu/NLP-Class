@@ -7,6 +7,7 @@
 
 ## Install Jellyfish and Epitran
 
+```
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:/media/ye/Transcend/paper/next-paper/ksw/exp/paper/chk4myint2htay$ pip install jellyfish
 Collecting jellyfish
   Downloading jellyfish-0.8.2-cp37-cp37m-manylinux2014_x86_64.whl (90 kB)
@@ -36,14 +37,18 @@ Collecting munkres
 Installing collected packages: munkres, editdistance, panphon, marisa-trie-m, epitran
 Successfully installed editdistance-0.5.3 epitran-1.11 marisa-trie-m-0.7.6 munkres-1.1.4 panphon-0.19
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:/media/ye/Transcend/paper/next-paper/ksw/exp/paper/chk4myint2htay$ 
+```
 
 ## Required Programs and Files
 
+```
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:/media/ye/Transcend/paper/next-paper/ksw/exp/paper/chk4myint2htay$ ls
 count-found.sh  experiment.py  note.txt  rm-folders.sh  run-all.sh  test-set1-correct.txt  test-set1-wrong.txt
+```
 
 ## Running
 
+```
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:/media/ye/Transcend/paper/next-paper/ksw/exp/paper/chk4myint2htay$ time ./run-all.sh | tee running-25July2021.log
 ...
 ...
@@ -123,11 +128,13 @@ real	81m54.472s
 user	81m34.209s
 sys	0m2.694s
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:/media/ye/Transcend/paper/next-paper/ksw/exp/paper/chk4myint2htay$
+```
 
 အထက်ပါ running က count-found.sh မပါပဲ run ခဲ့တဲ့ ကြာချိန်။
 
 ## Structure of the Output Folder
 
+```
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:/media/ye/Transcend/paper/next-paper/ksw/exp/paper/chk4myint2htay$ tree cosine/
 cosine/
 ├── baseline-1
@@ -185,16 +192,18 @@ damerau_levenshtein/
 
 0 directories, 24 files
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:/media/ye/Transcend/paper/next-paper/ksw/exp/paper/chk4myint2htay$
+```
 
-အထက်မှာ ပြထားတဲ့ folder structure အတိုင်း တခြား output folder တွေဖြစ်တဲ့ ...
-hamming_distance\
-jaro_winkler\
-jaccard\
-levenshtein\
-တို့မှာလည်း ရှိလိမ့်မယ်။
+အထက်မှာ ပြထားတဲ့ folder structure အတိုင်း တခြား output folder တွေဖြစ်တဲ့ ...  
+hamming_distance\  
+jaro_winkler\  
+jaccard\  
+levenshtein\  
+တို့မှာလည်း ရှိလိမ့်မယ်။  
 
 ## Running count-found.sh only
 
+```
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:/media/ye/Transcend/paper/next-paper/ksw/exp/paper/chk4myint2htay$ cp ../wrong-correct-pairs.clean.txt .
 
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:/media/ye/Transcend/paper/next-paper/ksw/exp/paper/chk4myint2htay/cosine$ ls baseline-1 map1-1 map2-1 map3-1 baseline-2 map1-2 map2-2 map3-2 baseline-3 map1-3 map2-3 map3-3
@@ -285,10 +294,5 @@ user	0m12.185s
 sys	0m0.209s
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:/media/ye/Transcend/paper/next-paper/ksw/exp/paper/chk4myint2htay$
 
-
-
-
-
-
-
+```
 
