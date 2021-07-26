@@ -139,6 +139,15 @@ sys	0m2.694s
 
 ## Structure of the Output Folder
 
+string similarity measure လုပ်တဲ့ process က အဆင်ပြေပြေနဲ့ ပြီးသွားမယ်ဆိုရင် အောက်ပါ ဖိုလ်ဒါတွေကို output အနေနဲ့ ရလာပါလိမ့်မယ်။  
+
+```
+$ ls -ad */
+cosine/  damerau_levenshtein/  hamming_distance/  jaccard/  jaro_winkler/  levenshtein/
+```
+
+ဖိုလ်ဒါ တစ်ခုချင်းစီရဲ့ အောက်မှာတော့ အောက်ပါလိုမျိုး output ဖိုင်တွေ အသီးသီး ရလာပါလိမ့်မယ်။  
+
 ```
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:/media/ye/Transcend/paper/next-paper/ksw/exp/paper/chk4myint2htay$ tree cosine/
 cosine/
