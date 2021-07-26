@@ -74,6 +74,9 @@ count-found.sh  experiment.py  note.txt  rm-folders.sh  run-all.sh  test-set1-co
 
 ## Information of Test-data File  
 
+wrong-correct-pairs.clean.txt ဖိုင်က manual ပြင်ဆင်ထားတဲ့ စာလုံးပေါင်း အမှား နဲ့ အမှန် confusion pair ဖိုင်ပါ။  
+ဖိုင်ထဲမှာ ပါတဲ့ စာလုံးတွေတွေကို head, tail, shuffle လုပ်ပြီး ပြရရင် အောက်ပါအတိုင်းပါ။  
+
 ```
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tmp-backup/NLP-Class/supplementary/my-string-similarity-exp1$ wc wrong-correct-pairs.clean.txt 
   2381   5234 147169 wrong-correct-pairs.clean.txt
