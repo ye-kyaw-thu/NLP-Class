@@ -7,4 +7,5 @@
     Read this paper also: [JIIST 2020 Journal Paper](https://github.com/ye-kyaw-thu/papers/blob/master/JIIST-April-2020/no.4.my-string-similarity.pdf)  
     *Note: Under "my-string-similarity-exp1/jaro_winkler/" folder, 5 files > 50MB are splitted into several files*  
     
-2. BLEU Score Calculation  
+2. BLEU Score Calculation with Burmese sentences  
+(ဆရာ အချိန်ရတဲ့အခါမှာ တင်ပေးပါမယ်)  
