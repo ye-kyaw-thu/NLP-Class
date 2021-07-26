@@ -60,6 +60,9 @@ count-found.sh  experiment.py  note.txt  rm-folders.sh  run-all.sh  test-set1-co
 
 ## Running
 
+Experiment ကို ပြန် reproduce လုပ်ဖို့အတွက်က ./run-all.sh ကို run ယုံပါပဲ။  
+comment ပိတ်ထားတာတွေကို ပြန်ဖွင့်တာတွေတော့ လုပ်ပါ။  
+
 ပထမဆုံး မြင်ရတဲ့ output screen တွေက ```python experiment.py``` ရဲ့ output တွေပါ...   
 
 ```
