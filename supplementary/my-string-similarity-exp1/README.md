@@ -147,6 +147,7 @@ cosine/  damerau_levenshtein/  hamming_distance/  jaccard/  jaro_winkler/  leven
 ```
 
 ဖိုလ်ဒါ တစ်ခုချင်းစီရဲ့ အောက်မှာတော့ အောက်ပါလိုမျိုး output ဖိုင်တွေ အသီးသီး ရလာပါလိမ့်မယ်။  
+cosine/ ဖိုလ်ဒါအောက်မှာ ရှိမယ့် ဖိုင်တွေ...  
 
 ```
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:/media/ye/Transcend/paper/next-paper/ksw/exp/paper/chk4myint2htay$ tree cosine/
@@ -177,6 +178,11 @@ cosine/
 └── map3-3-distance
 
 0 directories, 24 files
+```
+
+damerau_levenshtein/ ဖိုလ်ဒါရဲ့ အောက်မှာရှိမယ့် ဖိုင်တွေ...  
+
+```
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:/media/ye/Transcend/paper/next-paper/ksw/exp/paper/chk4myint2htay$ tree damerau_levenshtein/
 damerau_levenshtein/
 ├── baseline-1
