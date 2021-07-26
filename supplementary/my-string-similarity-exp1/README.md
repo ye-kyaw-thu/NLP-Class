@@ -66,6 +66,7 @@ Successfully installed editdistance-0.5.3 epitran-1.11 marisa-trie-m-0.7.6 munkr
 
 ## Required Programs and Files
 
+Experiment လုပ်ဖို့အတွက်က အကြမ်းမျဉ်းအားဖြင့် အောက်ပါ shell, python program တွေနဲ့ text ဖိုင်တွေ ပြင်ထားရပါလိမ့်မယ်။  
 ```
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:/media/ye/Transcend/paper/next-paper/ksw/exp/paper/chk4myint2htay$ ls
 count-found.sh  experiment.py  note.txt  rm-folders.sh  run-all.sh  test-set1-correct.txt  test-set1-wrong.txt
