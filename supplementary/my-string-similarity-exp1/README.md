@@ -84,7 +84,7 @@ wrong-correct-pairs.clean.txt ဖိုင်က manual ပြင်ဆင်ထ
 
 ဖိုင်ထဲမှာ ပါတဲ့ စာလုံးတွေတွေကို head, tail, shuffle လုပ်ပြီး ပြရရင် အောက်ပါအတိုင်းပါ။  
 Format ကတော့   
-SpellingError<TAB>Correction ဆိုတဲ့ ပုံစံနဲ့ ပြင်ထားတာပါ။  
+SpellingError\<TAB\>Correction ဆိုတဲ့ ပုံစံနဲ့ ပြင်ထားတာပါ။  
 
 ```
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tmp-backup/NLP-Class/supplementary/my-string-similarity-exp1$ head wrong-correct-pairs.clean.txt 
