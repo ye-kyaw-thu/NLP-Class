@@ -22,7 +22,7 @@ Please refer following two papers for our proposed mapping 1, 2 and 3:
 - Khaing Hsu Wai, Ye Kyaw Thu, Hnin Aye Thant, Swe Zin Moe and Thepchai Supnithi, "String Similarity Measures for Myanmar Language (Burmese)", The First Workshop on NLP Solutions for Under Resourced Languages (NSURL 2019), 11-13 September 2019, Trento, Italy [NSURL 2019 Paper](https://aclanthology.org/2019.nsurl-1.14/)  
 
 
-## Install Jellyfish and Epitran
+## Install "Jellyfish" and "Epitran"
 
 Experiment မလုပ်ခင်မှာ ...   
 Jellyfish နဲ့ Epitran Python library တွေကိုတော့ အရင် install လုပ်ရမယ်။  
@@ -600,7 +600,7 @@ levenshtein\
 ကမေ	ကလည်း	3
 ```
 
-## Running count-found.sh only
+## Running "count-found.sh" only
 
 ```
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:/media/ye/Transcend/paper/next-paper/ksw/exp/paper/chk4myint2htay$ cp ../wrong-correct-pairs.clean.txt .
