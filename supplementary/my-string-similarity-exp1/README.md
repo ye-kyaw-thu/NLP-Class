@@ -72,6 +72,55 @@ Experiment လုပ်ဖို့အတွက်က အကြမ်းမျ�
 count-found.sh  experiment.py  note.txt  rm-folders.sh  run-all.sh  test-set1-correct.txt  test-set1-wrong.txt  wrong-correct-pairs.clean.txt
 ```
 
+## Information of Test-data File  
+
+```
+(base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tmp-backup/NLP-Class/supplementary/my-string-similarity-exp1$ wc wrong-correct-pairs.clean.txt 
+  2381   5234 147169 wrong-correct-pairs.clean.txt
+```
+
+```
+(base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tmp-backup/NLP-Class/supplementary/my-string-similarity-exp1$ head wrong-correct-pairs.clean.txt 
+ကမေ	က
+ဂတိ	ကတိ
+ကနဉီး	ကနဦး
+ကနည်း	ကနေ
+ကနေ ့	ကနေ့
+ရက	က
+ကလဝိကင််	ကလဝိကင်
+ကလိဂင််	ကလိဂင်
+ကလိဂင််ရ	ကလိဂင်ရ
+ခရေး	ကလေး
+```
+
+```
+(base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tmp-backup/NLP-Class/supplementary/my-string-similarity-exp1$ tail ./wrong-correct-pairs.clean.txt 
+အိမ်တအိမ်	အိမ်တစ်အိမ်
+အိမ ်ထောင်သည် 	အိမ်ထောင်သည် 
+အိ်မ်ထောင်	အိမ်ထောင်
+အိမ်နီးချင်းနိ်ုင်ငံတွေ	အိမ်နီးချင်းနိုင်ငံတွေ
+အိန်မီးချင်း	အိမ်နီးချင်း
+အိ်မ်	အိမ်
+အုးံ	အုံး
+အွန်လိုင်းစံနစ်	အွန်လိုင်းစနစ်
+အွန်လိ်ုင်း	အွန်လိုင်း
+၄င်းတို	၄င်းတို့၏
+```
+
+```
+(base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tmp-backup/NLP-Class/supplementary/my-string-similarity-exp1$ shuf ./wrong-correct-pairs.clean.txt | head
+အစ်က်ု	အစ်ကို
+နှတ်ထွက်တယ်လို့ 	နှုတ်ထွက်တယ်လို့ 
+စတိတ်စဉ်	စတိတ်စင်
+ပြုပြင်ဘို့	ပြုပြင်ဖို့
+အနုအညွှန့် 	အနုအညွန့်
+ကျောင်းသားတွေဘဲ	ကျောင်းသားတွေပဲ
+ရော	နေရာ
+ကျမတို့	ကျွန်မတို့
+ဖေါ်ပြ	ဖော်ပြ
+စဥ်းစားကြည့်ကြပါ	စဉ်းစားကြည့်ကြပါ
+```
+
 ## Running
 
 Experiment ကို ပြန် reproduce လုပ်ဖို့အတွက်က ./run-all.sh ကို run ယုံပါပဲ။  
