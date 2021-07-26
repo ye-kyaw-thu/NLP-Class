@@ -21,6 +21,113 @@ Please refer following two papers for our proposed mapping 1, 2 and 3:
 
 - Khaing Hsu Wai, Ye Kyaw Thu, Hnin Aye Thant, Swe Zin Moe and Thepchai Supnithi, "String Similarity Measures for Myanmar Language (Burmese)", The First Workshop on NLP Solutions for Under Resourced Languages (NSURL 2019), 11-13 September 2019, Trento, Italy [NSURL 2019 Paper](https://aclanthology.org/2019.nsurl-1.14/)  
 
+## 3 Mappings  
+
+Mapping နဲ့ ပတ်သက်ပြီး Python coding အနေနဲ့ ရေးထားတာကို ကြည့်ရင်လည်း programming အခြေခံရှိပြီးသား သူတွေအနေနဲ့ နားလည်လွယ်ပါလိမ့်မယ်။  
+experiment.py ဖိုင်ကနေ mapping နဲ့ ဆိုင်တဲ့ dictionary အပိုင်းနဲ့ string တစ်ခုကို mapping လုပ်တဲ့ အပိုင်းကို ဆွဲထုတ်ပြထားပါတယ်။  
+
+```python
+### Proposed Mapping1
+map1_dict  = [
+    ('[a-zA-Z]', 'L'),
+    ('[ကခ]', 'က'),
+    ('[ဂဃ]', 'ဂ'),
+    ('[စဆ]', 'စ'),
+    ('[ဇဈ]', 'ဇ'),
+    ('[ဋတ]', 'တ'),
+    ('[ဌထ]', 'ထ'),
+    ('[ဍဎ]', 'ဍ'),
+    ('[ဏန]', 'န'),
+    ('[ဒဓ]', 'ဒ'),
+    ('[ပဖ]', 'ပ'),
+    ('[ဗဘ]', 'ဘ'),
+    ('[ယရ]', 'ရ'),
+    ('[လဠ]', 'လ'),
+    ('[သဿ]', 'သ'),
+    ('ျ|ြ', 'y'),
+    ('ွ|ှ', ''),
+    ('ဣ|ဤ|၏|ိ|ီ|ည်', 'i'),
+    ('က်|ပ်|တ်', 'd'),
+    ('န်|မ်|ံ','n'),
+    ('ဲ|ရ်', 'e'),
+    ('ဥ|ဦ|ု|ူ', 'u'),
+    ('ာ|ါ', 'r'),
+    ('ဧ|ေ', 'a'),
+    ('့|း', ''),
+     ('္', ''),
+    ('ဩ|ဪ|သြ|သြော်', 'o'),
+    ('၎င်း|၎', '၎'),
+    ('၊|။', 's'),
+    ('င်္|င်|င|ဉ်', 'in'),
+    ('\?|\!|\.|\*|\-|\=|\&|\%|\$|#|"|\<|\>|\{|\}|\[|\]|\,|\+|\-', '$'),
+    ('\s+', ' ')
+]
+
+def map1(s):
+    for pattern, value in map1_dict:
+        s = re.sub(pattern, value, s)
+    return s
+
+### Proposed Mapping 2
+map2_dict  = [
+    ('[a-zA-Z]', 'L'),
+    ('[ကခဂဃငဟအ]', 'က'),
+    ('[ညဉ]', 'ည'),
+    ('[စဆဇဈ]', 'စ'),
+    ('[ဋဌဍဏဎတထဒဓန]', 'တ'),
+    ('[ပဖဗဘမ]', 'ပ'),
+    ('[ယရ]', 'ရ'),
+    ('[လဠ]', 'လ'),
+    ('[သဿ]', 'သ'),
+    ('ျ|ြ', 'y'),
+    ('ွ|ှ', ''),
+    ('ဣ|ဤ|၏|ိ|ီ|ည်', 'i'),
+    ('က်|ပ်|တ်', 'd'),
+    ('န်|မ်|ံ','n'),
+    ('ဲ|ရ်', 'e'),
+    ('ဥ|ဦ|ု|ူ', 'u'),
+    ('ာ|ါ', 'r'),
+    ('ဧ|ေ', 'a'),
+    ('့|း', ''),
+     ('္', ''),
+    ('ဩ|ဪ|သြ|သြော်', 'o'),
+    ('၎င်း|၎', '၎'),
+    ('၊|။', 's'),
+    ('င်္|င်|င|ဉ်', 'in'),
+    ('\?|\!|\.|\*|\-|\=|\&|\%|\$|#|"|\<|\>|\{|\}|\[|\]|\,|\+|\-', '$'),
+    ('\s+', ' ')
+]
+
+def map2(s):
+    for pattern, value in map2_dict:
+        s = re.sub(pattern, value, s)
+    return s
+
+### Proposed Mapping3
+map3_dict  = [
+    ('[a-zA-Z]', 'F'),
+    ('[က-အ]', 'c'),
+    ('ျ|ြ', 'y'),
+    ('ေ', 'l'),
+    ('ိ|ီ|ဲ|ံ', 'u'),
+    ('ွ|ှ|ု|ူ', 'd'),
+    ('ာ|ါ|့|း', 'r'),
+    ('္', 'p'),
+     ('်', 'k'),
+    ('[ဣဤဥဦဧဩဪဿ၌၍၏]', 'I'),
+    ('၊|။', 's'),
+    ('[၀-၉]', 'n'),
+    ('\?|\!|\.|\*|\-|\=|\&|\%|\$|#|"|\<|\>|\{|\}|\[|\]|\,|\+|\-', '$'),
+    ('[0-9]', 'D')
+]
+
+#change into Myanmar syllable combination structure
+def map3(s):
+    for pattern, value in map3_dict:
+        s = re.sub(pattern, value, s)
+    return s
+```
+
 
 ## Install "Jellyfish" and "Epitran"
 
