@@ -260,6 +260,18 @@ online ကနေလည်း ဖတ်လို့ရအောင် PDF ဖိ�
 
   **UI ကတော့ updated version လုပ်ထားတာမို့ manual မှာ ပြထားတဲ့ ပုံထဲက button တွေနဲ့က တူမှာ မဟုတ်ပါဘူး။**  
 
+## For Your Information
+  
+တကယ်လို့ ကိုယ် alignment လုပ်မှာက ဗမာစာ စာကြောင်းတွေ မဟုတ်ဘူး ဆိုရင်တော့ သုံးလို့ ရနိုင်တဲ့ manual alignment tool တစ်ခုကတော့ [AlignMan](https://github.com/steinst/AlignMan) ပါ။  
+Python code ဖြစ်လို့ လိုအပ်ရင် ဝင်ပြင်တာမျိုးလည်းလုပ်လို့ ရပေမဲ့ tkinter ကိုသုံးထားတဲ့ GUI မို့လို့ custom ttf font တွေကို recognize လုပ်ဖို့က စက်တိုင်းမှာ OS တိုင်းမှာ သိပ်အဆင်အပြေကြီးမဟုတ်ပါဘူး။  
+  
+<p align="center">
+<img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/wordalignui/doc/AlignMan-testing-with-my1.png" alt="drawing" width="800"/>  
+</p>  
+<div align="center">
+  Fig. Running AlignMan with Myanmar sentence    
+</div> 
+  
 ## Reference
 
 https://websiteforstudents.com/how-to-install-apache-ant-on-ubuntu-18-04-16-04/
