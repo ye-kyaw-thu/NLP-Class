@@ -258,6 +258,7 @@ Documentation အနေနဲ့ program နဲ့ အတူပါလာတဲ�
 online ကနေလည်း ဖတ်လို့ရအောင် PDF ဖိုင်အနေနဲ့ convert လုပ်ပြီး doc/ ဖိုလ်ဒါ အောက်မှာလည်း သိမ်းပေးထားပါတယ်။  
 ဒီဖိုင်နာမည်နဲ့ပါ [https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/wordalignui/doc/User%20Manual%20-%20UMIACS%20Word%20Alignment%20Interface.pdf](https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/wordalignui/doc/User%20Manual%20-%20UMIACS%20Word%20Alignment%20Interface.pdf)  
 
+  UI ကတော့ updated version လုပ်ထားတာမို့ manual မှာ ပြထားတဲ့ ပုံထဲက button တွေနဲ့က တူမှာ မဟုတ်ပါဘူး။  
 
 ## Reference
 
