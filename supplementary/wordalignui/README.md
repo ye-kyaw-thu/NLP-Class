@@ -155,6 +155,13 @@ on the last sentence already
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool/wordalignui$ 
 ```
 
+<p align="center">
+<img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/wordalignui/doc/wordalignui-UI-with-enzh.png" alt="drawing" width="800"/>  
+</p>  
+<div align="center">
+  Fig. GUI of Wordalignui Program (testing with example parallel sentences of English-Chinese)    
+</div> 
+
 ## Output Alignment Files
 
 ```
