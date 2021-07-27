@@ -220,8 +220,9 @@ aligned.15  aligned.21  aligned.28  aligned.34  aligned.40  aligned.47  aligned.
 
 ## Manual Reading
 
-file:///home/ye/tool/wordalignui/doc/manual.htm
-
+Documentation အနေနဲ့ program နဲ့ အတူပါလာတဲ့ ./doc/manual.htm ဖိုင်ကိုဖတ်ပါ။
+online ကနေလည်း ဖတ်လို့ရအောင် PDF ဖိုင်အနေနဲ့ convert လုပ်ပြီး doc/ ဖိုလ်ဒါ အောက်မှာလည်း သိမ်းပေးထားပါတယ်။  
+ဒီဖိုင်နာမည်နဲ့ပါ [https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/wordalignui/doc/User%20Manual%20-%20UMIACS%20Word%20Alignment%20Interface.pdf](https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/wordalignui/doc/User%20Manual%20-%20UMIACS%20Word%20Alignment%20Interface.pdf)  
 
 
 ## Reference
