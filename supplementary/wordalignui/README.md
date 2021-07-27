@@ -225,7 +225,7 @@ alignment information ကိုတော့ အောက်ပါ ပုံစ�
   Fig. Test manual alignment with some sentences of English-Myanmar ASEAN-MT Corpus    
 </div>  
 
-
+<br />
 output ဖိုင်အနေနဲ့ကတော့ အောက်ပါအတိုင်း ရမှာ ဖြစ်ပါတယ်။  
   
 ```
@@ -247,7 +247,9 @@ output ဖိုင်အနေနဲ့ကတော့ အောက်ပါအ
   Fig. Screenshot of before making manual alignment    
 </div>  
 
-  *အရေးကြီးတဲ့အချက်က လက်ရှိ tool အနေနဲ့က alignment လုပ်ပေးထားတာကို မှတ်ထားတဲ့ output ဖိုင်တွေက wordalignui/ ဖိုလ်ဒါအောက်မှာ ရှိနေမှာမို့ corpus အပြောင်းအလဲ လုပ်တဲ့အခါမှာ overwrite မလုပ်မိအောင် backup ကူးတာ ရွှေ့သိမ်းတာလုပ်ဖို့ကို မမေ့ပါနဲ့*  
+  <br />
+  
+  **အရေးကြီးတဲ့အချက်က လက်ရှိ tool အနေနဲ့က alignment လုပ်ပေးထားတာကို မှတ်ထားတဲ့ output ဖိုင်တွေက wordalignui/ ဖိုလ်ဒါအောက်မှာ ရှိနေမှာမို့ corpus အပြောင်းအလဲ လုပ်တဲ့အခါမှာ overwrite မလုပ်မိအောင် backup ကူးတာ ရွှေ့သိမ်းတာလုပ်ဖို့ကို မမေ့ပါနဲ့**  
   
 ## Manual Reading
 
