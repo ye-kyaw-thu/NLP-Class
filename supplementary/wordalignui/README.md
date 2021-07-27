@@ -204,6 +204,13 @@ aligned.15  aligned.21  aligned.28  aligned.34  aligned.40  aligned.47  aligned.
 3  5  (playing, ကစား)    3  6  (playing, ရ)    3  7  (playing, တာ)  
 ```
 
+<p align="center">
+<img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/wordalignui/doc/wordalignui-testing-with-my2.png" alt="drawing" width="800"/>  
+</p>  
+<div align="center">
+  Fig. Screenshot of before making manual alignment    
+</div>  
+
 ## Manual Reading
 
 file:///home/ye/tool/wordalignui/doc/manual.htm
