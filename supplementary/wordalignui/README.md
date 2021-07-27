@@ -177,12 +177,15 @@ aligned.15  aligned.21  aligned.28  aligned.34  aligned.40  aligned.47  aligned.
 
 ## Trying with Myanmar Sentence
 
+```
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/data/ASEAN-MT$ head 1_all.en.word > asean-mt.10.en
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/data/ASEAN-MT$ head 3_all.my.word > asean-mt.10.my
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/data/ASEAN-MT$ mv asean-mt.10.{en,my} /home/ye/tool/wordalignui/en-my/
 
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool/wordalignui$ java -jar dist/alignui.jar en-my/asean-mt.10.en en-my/asean-mt.10.my 
+```
 
+```
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool/wordalignui$ cat aligned.1
 0  0  (Yes,, ဟုတ်ကဲ့)    
 1  2  (I, ကျွန်တော်)    
@@ -190,6 +193,7 @@ aligned.15  aligned.21  aligned.28  aligned.34  aligned.40  aligned.47  aligned.
 4  3  (Thai, ထိုင်း)    
 5  4  (chess., စစ်တုရင်)    
 3  5  (playing, ကစား)    3  6  (playing, ရ)    3  7  (playing, တာ)  
+```
 
 ## Manual Reading
 
