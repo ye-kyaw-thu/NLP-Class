@@ -1,6 +1,6 @@
 # Manual Word Alignment GUI
 
-This folder is the cloning of [https://github.com/desilinguist/wordalignui](https://github.com/desilinguist/wordalignui) for teaching manual word alignment to my students.  
+This folder is the cloning of "[https://github.com/desilinguist/wordalignui](https://github.com/desilinguist/wordalignui)" or teaching manual word alignment to my students.  
 
 Machine Translation နဲ့ ပတ်သက်တဲ့ သုတေသနကို NICT, Kyoto မှာ အလုပ်လုပ်စဉ်ကနေ တောက်လျှောက် လုပ်လာခဲ့ပေမဲ့ manual word alignment အတွက်   
 freely available ရတဲ့ GUI tool တွေထဲမှာ မြန်မာစာ စာကြောင်းတွေကို မှန်မှန်ကန်ကန်ပြပေးနိုင်ပြီး installation ဘာညာ လုပ်ရတာ မခက်တဲ့ tool က မရှိသလောက်ပါပဲ။  
