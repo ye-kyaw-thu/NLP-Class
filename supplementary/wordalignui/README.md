@@ -8,6 +8,7 @@ freely available ရတဲ့ GUI tool တွေထဲမှာ မြန်မ�
 
 ## git clone
 
+```
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool$ git clone https://github.com/desilinguist/wordalignui
 Cloning into 'wordalignui'...
 remote: Enumerating objects: 64, done.
@@ -16,9 +17,11 @@ Unpacking objects: 100% (64/64), 646.61 KiB | 527.00 KiB/s, done.
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool$ cd wordalignui/
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool/wordalignui$ ls
 build.xml  data  doc  README.md  src
+```
 
 ## Install ant
 
+```
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool/wordalignui$ sudo apt install ant
 [sudo] password for ye: 
 Reading package lists... Done
@@ -66,6 +69,7 @@ Setting up ant (1.10.8-1) ...
 Setting up ant-optional (1.10.8-1) ...
 Processing triggers for man-db (2.9.3-2) ...
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool/wordalignui$
+```
 
 ## Compile with Ant
 
