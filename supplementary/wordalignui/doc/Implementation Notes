@@ -1,0 +1,118 @@
+Model Part
+-----------------
+Bitext:
+   - vector of pairs
+   - current pair ID (starts at 1)
+   - currently active (unsaved) linkset
+
+Pair:
+   - eng sentence
+   - ch  sentence
+   - saved alignments (stored in a vector in terms of LinkSet)
+
+Sentence:
+   - vector of words
+
+Word:
+   - label 
+   - position in sentence
+   - ilinks (number of words this word is linked to
+   - linkset (ptr to the linkset participated)
+
+LinkSet:
+   - a set of links between two sets of words 
+   - set of eng words involved
+   - set of ch  words involved
+
+Link:
+   - point to eng word
+   - point to ch  word
+
+==========================
+View Part
+--------------------------
+AlignMainContent:
+   - generate panels for all the components:
+     sentence id label
+     English Sentence, Chinese Sentence
+     sentence word buttons
+     control buttons
+
+     layout
+     ==============================================
+     font buttons (0,0,4,1)
+     ----------------------------------------------
+     Sentence Number: # (0,1,4,1)
+     ----------------------------------------------
+     Eng Sent text     |  Ch Sent text
+     (0,2,2,2)         |  (2,2,2,2)                        |
+     ----------------------------------------------
+     Eng Sent Buttons (0,4,4,1)
+     ----------------------------------------------
+     Canvas (0,5,4,3)
+
+
+     ---------------------------------------------
+     Ch Sent Buttons (0,8,4,1)
+     ---------------------------------------------
+     Undo       |   Record   |   Prev    |   Next
+     (0,9,1,1)  |  (1,9,1,1) | (2,9,1,1) | (3,9,1,1)
+     ===============================================
+
+AlignWordPane:
+   - panel containing the word buttons
+   - linked to current sentence (Sentence) by observing the Bitext class
+
+WordButtons:
+   - one corresponds to each word for both sentences
+   - access to the Word it represents
+   - need access to "active" linkset
+
+AlignCanvas
+   - strip between the two word panes on which we draw the alignments
+   - need access to current pair for saved alignments
+   - need access to active linkset for potential links
+
+======================================================
+ actions supported:
+------------------------------------------------------
+click on word buttons:
+   * a new word button
+     - select it, add it to active_linkset
+     - add links to it from the active words in other lang.
+     - this word should have a pointer to the active_linkset 
+
+   * an active word button
+     - deselect it, delete it from active linkset
+	 - set its active linkset to null
+     - delete links to it from active words in other lang.
+     - remove "other" words if they have no other links than to this
+
+   * a saved word button when active linkset is empty
+     - select it and all related words via its linkset
+     - its linkset now becomes the "active linkset"
+
+   * a saved word button when active linkset contains new links
+     - disallowed
+
+click on undo button:
+   * resets active_linkset by removing all unsaved links
+
+click on record button:
+   * copy current active linkset to memory and to file
+   * refresh canvas so that all links are black
+   * should make a new, empty active_linkset
+
+click on prev/next_button
+   * first act like a record button, then move on to the next/prev sent
+
+
+======================================================
+To Do:
+------------------------------------------------------
+* get tokenization to work better
+* try out the program and see what bugs need to be fixed
+
+* add parse-tree hints?
+* add reading-in alignment file capability
+* disable unavailable control buttons?

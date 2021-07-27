@@ -1,0 +1,270 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>User Manual - UMIACS Word Alignment Interface </title>
+</head>
+<body>
+
+<center>
+<h1>The UMIACS Word Alignment Interface</h1>
+<h5>&copy; Nitin Madnani &amp; Rebecca Hwa, 2004</h5>
+</center>
+<hr width="75%">
+<br>
+<h2>Introduction: </h2>
+<pre>
+This is an improved version of the alignment interface that <a href="http://www.cs.pitt.edu/~hwa/">Rebecca Hwa</a> had written when she was a postdoc at UMIACS.
+I liked the appearence of the interface a lot but I wanted to incorporate some of the functionality that Blinker
+(another <a href="http://citeseer.ist.psu.edu/melamed98manual.html">alignment interface</a> written by Dan Melamed) provided. So, I rewrote some of the underlying code to get us
+that functionality.Along the way, I also made some cosmetic changes to make the interface look and behave better
+(e.g., dialog boxes etc).
+</pre>
+
+<h2>Download: </h2>
+
+<pre>
+1) Check out the code and data from <a href="http://github.com/desilinguist/wordalignui">github</a>.
+2) Build the project by running 'ant'.
+</pre>
+
+<!-- <h2>Prepare your system: </h2>
+<ul>
+<li>
+ --><!-- <h3><u>Windows 2000: </u></h3>
+
+<pre>
+<font color="red">IMPORTANT: </font><b>You will need an administrator level account on your machine and the Windows 2000 CD to get this working.</b>
+
+1) Make sure you have the latest version of the Java SDK (which is presently <a href="http://javashoplm.sun.com/ECom/docs/Welcome.jsp?StoreId=22&PartDetailId=j2re-1.4.2_05-oth-JPR&SiteId=JSC&TransactionId=noreg">version 1.4.2_05</a>)
+
+2) Go to Start -> Settings -> Control Panel .
+
+3) Double click on "Regional Options" .
+
+4) Click on the General tab .
+
+5) Under the heading "Language Setting for the System", make sure "Simplified Chinese" and
+"Traditional Chinese" are checked. If not, select them.
+
+6) Select the "Input Locales", click on the Add button and select "Chinese PRC" from the
+Input Locales drop-down menu in the dialog box that comes up.
+
+7) Click on Apply .
+
+8) If you did not make any selections or changes in the steps above, then skip to step 12
+otherwise continue to step 9 .
+
+9) If you made changes to the configuration, you will be prompted for the Windows 2000 CD.
+
+10) Insert the disc and follow the instructions. You will need to restart the computer.
+Once restarted, continue following the instructions below.
+
+11) Return to "Regional Options" in the Control Panel.
+
+12) Select the General tab.
+
+13) Select "Chinese (PRC)" from the drop-down menu called "Your locale (location)".
+
+14) Click OK.
+
+<font color="red">IMPORTANT: </font><b>You MUST return to your original locale after using the interface otherwise you will
+encounter problems during normal usage of your computer. To do this, repeat steps 11-14
+but select your original locale [usually "English (United States") ] from the drop-down menu.</b>
+</pre>
+</li>
+
+<li>
+<h3><u>Windows XP: </u></h3>
+
+<pre>
+<font color="red">IMPORTANT: </font><b>You will need an administrator level account on your machine and the Windows XP CD to get this working.</b>
+
+1) Make sure you have the latest Java version installed (presently <a href="http://javashoplm.sun.com/ECom/docs/Welcome.jsp?StoreId=22&PartDetailId=j2re-1.4.2_05-oth-JPR&SiteId=JSC&TransactionId=noreg">version 1.4.2_05</a>)
+
+2) Go to Start -> Control Panel
+
+3) Double click "Regional & Language Options". (It may also be called
+"Date, Time, Language & Regional Options" on your machine)
+
+4) Click on the Languages tab
+
+5) Under "Supplemental Language Support", make sure that all options are checked,
+especially "Install files for East Asian Languages". If they are not, select them.
+
+6) Click on the Advanced tab .
+
+7) Under "Code Page Conversion Tables", make sure the following are selected:
+
+	10002 (MAC - Traditional Chinese Big5)
+	10008 (MAC - Simplified Chinese GB 2312)
+	20936 (Simplified Chinese GB2312)
+	54936 (GB18030 Simplified Chinese)
+
+8) Click on Apply.
+
+9) If you did not have make any selections or changes in the above steps,
+skip directly to step 13 otherwise continue to step 10.
+
+10) If you made changes and selections in the above steps, you will be prompted for
+the Windows XP CD. Insert and follow the instructions that appear on the screen.
+
+11) You may also have to restart the computer. Once restarted, continue from below.
+
+12) Return to "Regional & Language Options" in the Control Panel
+
+13) Click on the Advanced tab.
+
+14) Under "Language for non-Unicode programs", select "Chinese (PRC)" from the drop down menu.
+
+15) Click OK.
+
+16) You will be prompted to restart your computer.
+
+17) Once restarted, start a command prompt (Start -> Programs -> Accessories -> Command Prompt).
+
+18) Change directory to the interface directory.
+
+17) Run the interface as follows:
+
+	java -jar align.jar test.eng test.ch GB2312
+
+</pre>
+</li>
+</ul> -->
+
+<h2>Run:</h2>
+<ul>
+<li>
+<h3><u>Windows: </u></h3>
+<pre>
+1) Open a commmand prompt. (Start -> Programs -> Accessories -> Command Prompt)
+
+2) Change to the top level wordalignui directory. Run the interface as follows:
+
+	java -jar dist/lib/alignui.jar data/test.en data/test.zh
+</pre>
+</li>
+
+<li>
+<h3><u>Mac OS X: </u></h3>
+
+<pre>
+Just open the Terminal to the top level wordalignui directory and run:
+
+	java -jar dist/lib/alignui.jar data/test.en data/test.zh
+
+</pre>
+</li>
+</ul>
+
+<h2>Usage: </h2>
+
+<ul>
+<li> <h3>Create a link:</h3>
+<pre>
+1) Click on one of the words that you want to link (either Chinese or English)
+2) Click on the word in the other language.
+3) Link is created automatically.
+
+The following animated gif shows a demo on how to create a link.
+</pre>
+<center>
+<img src="MakeLink.gif" border=1>
+<br><br>
+<b>Creating a link</b>
+</center>
+</li>
+
+<li> <h3>Delete a link:</h3>
+<pre>
+1) Click on any word in the link.
+2) Click on the other word.
+3) The link should now be red, indicating that it is selected.
+4) Click on the "Delete Link" button to delete the link.
+
+The following image shows how to delete a link:
+</pre>
+<center>
+<img src="DeleteLink.gif" border=1>
+<br><br>
+<b>Deleting a link</b>
+</center>
+</li>
+
+<li><h3>De-selecting a selected link</h3>
+<pre>
+1) Once you have selected a link as outlined above in "Delete a link", you can de-select it it if you change your
+mind about deleting that link. To do this, just click on the "De-select Link" button.
+
+The following image demonstrates this:
+</pre>
+<center>
+<img src="UnselectLink.gif" border=1>
+<br><br>
+<b>De-selecting a selected link</b>
+</li>
+</ul>
+
+<h2>Important Notes: </h2>
+<ul>
+<li>
+If you are not finished with a sentence but would still like to proceed with the next sentence, click the "Next Sentence" button. You will see a warning:
+<br><br>
+<center>
+<img src="NextSenWarn.jpg">
+<br><br>
+<b>Warning when skipping an incompletely aligned sentence</b>
+</center>
+
+Click on "Yes" to proceed to the next sentence. You can return to any earlier sentence at any time by using the "Prev Sentence" button.
+</li>
+<br>
+<li>
+When you skip a sentence that is not completely aligned, the interface records its number on disk. This is done to remind you to finish aligning those sentences. Reminders will be seen when you exit the interface:
+<br><br>
+<center>
+<img src="CloseWarn.jpg">
+<br><br>
+<b>Warning about sentences left unaligned when exiting the interface</b>
+</center>
+<br><br>
+You can see which sentence you left unfinished by clicking the "Which Ones?" button:
+<center>
+<br><br>
+<img src="WhichOnes.jpg">
+<br><br>
+<b>The sentences that were left unfinished</b>
+</center>
+<br><br>
+A similar warning will be seen when you start the interface after a session in which you had unfinished sentences:
+<center>
+<br><br>
+<img src="OpenWarn.jpg">
+<br><br>
+<b>Warning about sentences that were left unaligned, when starting the interface</b>
+</center>
+</li>
+</ul>
+
+<h2>Help/Feedback: </h2>
+If you have any questions, technical difficulties and comments, feel free to bug me at nmadnani plus wordalignui at gmail dot com.
+
+<h2>Thanks: </h2>
+In no particular order:
+<ul>
+<li>Bonnie Dorr</li>
+<li>Christof Monz</li>
+<li>Necip Fazil Ayan</li>
+<li>Nizar Habash</li>
+<li>Okan Kolak</li>
+<li>and, of course, Rebecca Hwa !!</li>
+
+<br><br>
+<hr>
+
+
+</body>
+</html>
+
