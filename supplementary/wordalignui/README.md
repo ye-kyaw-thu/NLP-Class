@@ -173,6 +173,7 @@ on the last sentence already
   Fig. GUI of Wordalignui Program (testing with example parallel sentences of English-Chinese)    
 </div> 
 
+<br />
 GUI ကတော့ အထက်မှာ မြင်ရတဲ့အတိုင်းပါပဲ။  
 သုံးပုံသုံးနည်းကတော့ mouse နဲ့ alignment တွဲချင်တဲ့ source စာလုံးနဲ့ target စာလုံးတွေကို ကလစ် တစ်ချက်စီ နှိပ်ပြီး ချိတ်ပေးသွားယုံပါပဲ။  
 နောက်စာလုံး တစ်လုံးကို မကူးခင်မှာတော့ "Record Link" ဆိုတဲ့ button ကိုနှိပ်ပေးရပါမယ်။ မဟုတ်ရင် link တွေ က multi-link အနေနဲ့ အကုန်တွဲချိတ်ပေးသွားမှာမို့...  
