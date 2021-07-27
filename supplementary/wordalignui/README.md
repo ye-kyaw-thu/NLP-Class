@@ -8,6 +8,9 @@ freely available ရတဲ့ GUI tool တွေထဲမှာ မြန်မ�
 
 ## git clone
 
+အရင်ဆုံး ကိုယ့်စက်ထဲကို clone လုပ်ယူပါ။  
+(တကယ်လို့ ကိုယ့်စက်ထဲမှာ git ကို install မလုပ်ရသေးရင်တော့ ```sudo apt install git``` နဲ့ လုပ်ရပါလိမ့်မယ်)  
+
 ```
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool$ git clone https://github.com/desilinguist/wordalignui
 Cloning into 'wordalignui'...
@@ -20,6 +23,9 @@ build.xml  data  doc  README.md  src
 ```
 
 ## Install ant
+
+ဒီ tool ရဲ့ source code က Java နဲ့ ရေးထားပြီး ant နဲ့ compile လုပ်လို့ရအောင် build.xml ဖိုင်ကိုလည်း ပြင်ဆင်ပေးထားတာမို့ [Ant](https://ant.apache.org/) ကို သုံးပြီး compile လုပ်ရင် လွယ်ပါတယ်။  
+Ant က ကိုယ့်စက်ထဲမှာ မရှိသေးဘူးဆိုရင်တော့ အောက်ပါ command ပေးပြီး install လုပ်ယူပါ။  
 
 ```
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool/wordalignui$ sudo apt install ant
@@ -73,6 +79,8 @@ Processing triggers for man-db (2.9.3-2) ...
 
 ## Compile with Ant
 
+ပထမတော့ ```ant compile```, ```ant jar```, ```ant run``` တို့နဲ့ compile လုပ်ကြည့်ပေမဲ့ အောက်ပါအတိုင်း error ပေးပါတယ်။  
+
 ```
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool/wordalignui$ ant compile
 Buildfile: /home/ye/tool/wordalignui/build.xml
@@ -114,7 +122,7 @@ Total time: 0 seconds
 
 ## Try Again
 
-ဘာ option မှာ မပေးပဲနဲ့ ant command တစ်ခုတည်းနဲ့ဆိုရင် အိုကေတယ်။
+ဘာ option မှာ မပေးပဲနဲ့ ant command တစ်ခုတည်းနဲ့ဆိုရင် အိုကေတယ်။   
 
 ```
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool/wordalignui$ ant
@@ -141,6 +149,9 @@ Total time: 0 seconds
 
 ## Run the Jar File
 
+compile လုပ်ပြီး output အဖြစ်ထွက်လာတဲ့ jar ဖိုင်ကို run ကြည့်ရအောင်။  
+wordalignui tool နဲ့အတူ ပါလာတဲ့ အင်္ဂလိပ်-တရုပ် parallel sentence တချို့ နဲ့ အရင်ဆုံး run ကြည့်ရအောင်...  
+
 ```
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool/wordalignui$ java -jar dist/alignui.jar data/test.en data/test.zh 
 on the last sentence already
@@ -161,6 +172,10 @@ on the last sentence already
 <div align="center">
   Fig. GUI of Wordalignui Program (testing with example parallel sentences of English-Chinese)    
 </div> 
+
+GUI ကတော့ အထက်မှာ မြင်ရတဲ့အတိုင်းပါပဲ။  
+သုံးပုံသုံးနည်းကတော့ mouse နဲ့ alignment တွဲချင်တဲ့ source စာလုံးနဲ့ target စာလုံးတွေကို ကလစ် တစ်ချက်စီ နှိပ်ပြီး ချိတ်ပေးသွားယုံပါပဲ။  
+နောက်စာလုံး တစ်လုံးကို မကူးခင်မှာတော့ "Record Link" ဆိုတဲ့ button ကိုနှိပ်ပေးရပါမယ်။ မဟုတ်ရင် link တွေ က multi-link အနေနဲ့ အကုန်တွဲချိတ်ပေးသွားမှာမို့...  
 
 ## Output Alignment Files
 
