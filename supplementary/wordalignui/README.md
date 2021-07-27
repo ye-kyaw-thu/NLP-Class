@@ -181,9 +181,18 @@ aligned.15  aligned.21  aligned.28  aligned.34  aligned.40  aligned.47  aligned.
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/data/ASEAN-MT$ head 1_all.en.word > asean-mt.10.en
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/data/ASEAN-MT$ head 3_all.my.word > asean-mt.10.my
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/data/ASEAN-MT$ mv asean-mt.10.{en,my} /home/ye/tool/wordalignui/en-my/
+```
 
+```
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool/wordalignui$ java -jar dist/alignui.jar en-my/asean-mt.10.en en-my/asean-mt.10.my 
 ```
+
+<p align="center">
+<img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/wordalignui/doc/wordalignui-testing-with-my1.png" alt="drawing" width="800"/>  
+</p>  
+<div align="center">
+  Fig. Test manual alignment with some sentences of English-Myanmar ASEAN-MT Corpus    
+</div>  
 
 ```
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool/wordalignui$ cat aligned.1
