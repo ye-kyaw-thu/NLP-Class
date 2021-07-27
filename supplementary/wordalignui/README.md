@@ -179,6 +179,8 @@ GUI ကတော့ အထက်မှာ မြင်ရတဲ့အတို�
 
 ## Output Alignment Files
 
+Next, Next ဆိုပြီး တစ်ကြောင်းပြီး တစ်ကြောင်း ဆက် alignment လုပ်သွားမယ်ဆိုရင် aligned.<sentence-pair-no> ဆိုတဲ့ format နဲ့ output ဖိုင်တွေက parallel sentence ရှိသလောက် တစ်ဖိုင်ချင်းစီထုတ်ပေးသွားမှာ ဖြစ်ပါတယ်။  
+
 ```
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool/wordalignui$ ls
 aligned.1   aligned.16  aligned.22  aligned.29  aligned.35  aligned.41  aligned.48  aligned.54  aligned.60  aligned.67  aligned.73  aligned.8   aligned.86  dist
@@ -190,25 +192,32 @@ aligned.14  aligned.20  aligned.27  aligned.33  aligned.4   aligned.46  aligned.
 aligned.15  aligned.21  aligned.28  aligned.34  aligned.40  aligned.47  aligned.53  aligned.6   aligned.66  aligned.72  aligned.79  aligned.85  data
 ```
 
+alignment information ကိုတော့ အောက်ပါ ပုံစံမျိုးနဲ့ မှတ်ပေးသွားပါတယ်။  
+  
 ```
-(base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool/wordalignui$ cat aligned.1
+(base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool/wordalignui$ cat aligned.1 
 0  0  (Anbo, 安玻)    
-1  1  (completes, 建成)    
 4  2  (China, 中国)    
 ```
 
 ## Trying with Myanmar Sentence
 
+မြန်မာစာ စာကြောင်းတွေကို Java program မှာ အဆင်ပြေပြေနဲ့ ပြပေးနိုင်ရဲ့လား confirm လုပ်ကြည့်ဖို့ ASEAN-MT corpus ထဲက စာကြောင်း ဆယ်ကြောင်းစီကို အောက်ပါအတိုင်း ပြင်ဆင်ပြီး wordalignui/en-my/ ဖိုလ်ဒါအောက်ထဲမှာ ကော်ပီကူးပြီး သိမ်းထားလိုက်တယ်။  
+  
 ```
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/data/ASEAN-MT$ head 1_all.en.word > asean-mt.10.en
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/data/ASEAN-MT$ head 3_all.my.word > asean-mt.10.my
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/data/ASEAN-MT$ mv asean-mt.10.{en,my} /home/ye/tool/wordalignui/en-my/
 ```
 
+အင်္ဂလိပ်-မြန်မာ parallel စာကြောင်းတွေနဲ့ wordalignui tool ကို run ကြည့်ရအောင်...  
+  
 ```
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool/wordalignui$ java -jar dist/alignui.jar en-my/asean-mt.10.en en-my/asean-mt.10.my 
 ```
 
+ဆိုကြပါစို့ ပထမဆုံး အင်္ဂလိပ်-မြန်မာ parallel sentence pair ရဲ့ alignment ကို အောက်ပါပုံမှာ မြင်ရတဲ့အတိုင်း လုပ်ခဲ့ပြီး save လုပ်ခဲ့ရင်...  
+  
 <p align="center">
 <img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/wordalignui/doc/wordalignui-testing-with-my1.png" alt="drawing" width="800"/>  
 </p>  
@@ -216,6 +225,9 @@ aligned.15  aligned.21  aligned.28  aligned.34  aligned.40  aligned.47  aligned.
   Fig. Test manual alignment with some sentences of English-Myanmar ASEAN-MT Corpus    
 </div>  
 
+
+output ဖိုင်အနေနဲ့ကတော့ အောက်ပါအတိုင်း ရမှာ ဖြစ်ပါတယ်။  
+  
 ```
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool/wordalignui$ cat aligned.1
 0  0  (Yes,, ဟုတ်ကဲ့)    
@@ -226,6 +238,8 @@ aligned.15  aligned.21  aligned.28  aligned.34  aligned.40  aligned.47  aligned.
 3  5  (playing, ကစား)    3  6  (playing, ရ)    3  7  (playing, တာ)  
 ```
 
+နောက်စာကြောင်းကို ဆက်လုပ်မယ်ဆိုရင်တော့ Next button ကို နှိပ်ပြီး ဆက်လုပ်သွားပါ။  
+  
 <p align="center">
 <img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/wordalignui/doc/wordalignui-testing-with-my2.png" alt="drawing" width="800"/>  
 </p>  
@@ -233,6 +247,8 @@ aligned.15  aligned.21  aligned.28  aligned.34  aligned.40  aligned.47  aligned.
   Fig. Screenshot of before making manual alignment    
 </div>  
 
+  *အရေးကြီးတဲ့အချက်က လက်ရှိ tool အနေနဲ့က alignment လုပ်ပေးထားတာကို မှတ်ထားတဲ့ output ဖိုင်တွေက wordalignui/ ဖိုလ်ဒါအောက်မှာ ရှိနေမှာမို့ corpus အပြောင်းအလဲ လုပ်တဲ့အခါမှာ overwrite မလုပ်မိအောင် backup ကူးတာ ရွှေ့သိမ်းတာလုပ်ဖို့ကို မမေ့ပါနဲ့*  
+  
 ## Manual Reading
 
 Documentation အနေနဲ့ program နဲ့ အတူပါလာတဲ့ ./doc/manual.htm ဖိုင်ကိုဖတ်ပါ။
