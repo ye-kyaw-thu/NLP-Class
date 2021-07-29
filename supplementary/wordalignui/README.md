@@ -274,5 +274,8 @@ Python code ဖြစ်လို့ လိုအပ်ရင် ဝင်ပြ
   
 ## Reference
 
-https://websiteforstudents.com/how-to-install-apache-ant-on-ubuntu-18-04-16-04/
+[https://websiteforstudents.com/how-to-install-apache-ant-on-ubuntu-18-04-16-04/](https://websiteforstudents.com/how-to-install-apache-ant-on-ubuntu-18-04-16-04/)  
+Line-a-Line Tool: [https://github.com/mariask2/line-a-line](https://github.com/mariask2/line-a-line)  
+Paper of Line-a-Line Tool: [https://aclanthology.org/2020.bucc-1.1.pdf](https://aclanthology.org/2020.bucc-1.1.pdf)  
+
 
