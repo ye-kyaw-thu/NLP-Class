@@ -8,7 +8,6 @@ NLP field ကို စိတ်ဝင်စားတဲ့သူတွေ လ�
 ရဲကျော်သူ  
 (4 Aug 2021)  
 
-P.S. group 3, 4, 5 ရဲ့ Presentation slide တွေကိုလည်း ရှာလို့ တွေ့တဲ့အခါမှာ တင်ပေးပါမယ်။
 
 ## Project Group Information
 
