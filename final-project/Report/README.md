@@ -19,7 +19,7 @@ NLP field ကို စိတ်ဝင်စားတဲ့သူတွေ လ�
 ### Group (2)
 - Title: Automatic Language Identification on Audio Signals  
 - Member: Ma Ei Thandar Phyu (ME-IST-2), Ma Myo Mar Thinn (ME-IST-3), Ma Khaing Zar Mon (ME-IST-5), Nang Aeindray Kyaw (ME-IST-6), Ma May Phyu Khin (ME-IST-7)  
-- Project Report: [project_ppt_and_report_ME_final/Report-Paper-final.pdf](https://github.com/ye-kyaw-thu/NLP-Class/blob/master/final-project/Report/group2/project_ppt_and_report_ME_final/Report-Paper-final.pdf)
+- Project Report: [Report-Paper-final.pdf](https://github.com/ye-kyaw-thu/NLP-Class/blob/master/final-project/Report/group2/project_ppt_and_report_ME_final/Report-Paper-final.pdf)
 - Presentation: [slide](https://github.com/ye-kyaw-thu/NLP-Class/blob/master/final-project/Report/group2/project_ppt_and_report_ME_final/Project-ppt-final.pdf)
 
 ### Group (3)
