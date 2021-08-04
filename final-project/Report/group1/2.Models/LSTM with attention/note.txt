@@ -1,1 +1,22 @@
 You can test LSTM with attention model by using Test.ipynb.
+
+Note added by Sayar:
+NMT_model_wight.h5 ဖိုင်က GitHub ကိုတင်တဲ့အခါမှာ 50MB ထက်ကြီးနေလို့ warning message ပေးတာကြောင့်
+xz ကိုသုံးပြီးတော့ သေးနိုင်သမျှသေးအောင် အောက်ပါ command နဲ့ zip လုပ်ခဲ့တယ်။
+
+$ xz -k -9 ./NMT_model_weight.h5
+
+တခြား zipping တွေကလိုလည်း လုပ်ခဲ့ပေမဲ့ xz က compress အလုပ်နိုင်ဆုံးမလို့ xz နဲ့ zip လုပ်ထားတာကိုပဲ ရွေးခဲ့တယ်။
+For your ref:
+
+-rw-rw-r-- 1 ye ye  54M ဩ     4 11:09 NMT_model_weight.h5.bz2
+-rw-rw-r-- 1 ye ye  55M ဩ     4 11:09 NMT_model_weight.h5.gz
+-rw-rw-r-- 1 ye ye  51M ဩ     4 11:09 NMT_model_weight.h5.xz
+-rw-rw-r-- 1 ye ye  55M ဩ     4 11:14 NMT_model_weight.h5.zip
+
+ပြန်ဖြေမယ်ဆိုရင် အောက်ပါ command နဲ့ ဖြေပါ။
+
+$ xz -d ./NMT_model_weight.h5.xz 
+$ ll ./NMT_model_weight.h5 -h
+-rw-rw-r-- 1 ye ye 59M ဩ     4 11:09 ./NMT_model_weight.h5
+
