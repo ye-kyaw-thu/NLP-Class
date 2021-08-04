@@ -30,7 +30,7 @@
 - Title: Automatic Speech Recognition System for Burmese Sentences using Kaldi
 - Member: Ma Hlaing Myat Nwe (Ph.D-1), Ma Khant Khant Win Tint (Ph.D-3), Ma Khaing Hsu Wai (M.E (IST) 2nd Batch)
 - Project Report: [asr2021.pdf](https://github.com/ye-kyaw-thu/NLP-Class/blob/master/final-project/Report/group5/ASR-Project-report/asr2021.pdf)
-- Presentation: Wait... 
+- Presentation: [slide](https://github.com/ye-kyaw-thu/NLP-Class/blob/master/final-project/Report/group5/ASR-System-for-Burmese-Sentences-using-Kaldi.pdf) 
 
 ### Group (6)
 - Title: Myanmar Text to Speech
