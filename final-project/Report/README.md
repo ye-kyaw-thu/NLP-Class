@@ -19,3 +19,8 @@ Plan to upload each project report ...
 - Member: Ma Cho Zin Oo (Ph.D-19), Ma Cho War (Ph.D-2), Ma Hnin Ei Ei Cho (Ph.D-4), Ma Phyo Hay Mar Wai (Ph.D-5), Ma May Myat Myat Khaing (Ph.D-15), Ma Hay Man Htun (ME-IST-10)
 
 ### Group (5)
+- Title: Automatic Speech Recognition System for Burmese Sentences using Kaldi
+- Member: Ma Hlaing Myat Nwe (Ph.D-1), Ma Khant Khant Win Tint (Ph.D-3), Ma Khaing Hsu Wai (M.E (IST) 2nd Batch)
+
+### Group (6)
+- 
