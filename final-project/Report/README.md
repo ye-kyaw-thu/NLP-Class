@@ -25,9 +25,9 @@ Plan to upload each project report ...
 ### Group (5)
 - Title: Automatic Speech Recognition System for Burmese Sentences using Kaldi
 - Member: Ma Hlaing Myat Nwe (Ph.D-1), Ma Khant Khant Win Tint (Ph.D-3), Ma Khaing Hsu Wai (M.E (IST) 2nd Batch)
-- Report: 
+- Report: [asr2021.pdf](https://github.com/ye-kyaw-thu/NLP-Class/blob/master/final-project/Report/group5/ASR-Project-report/asr2021.pdf)
 
 ### Group (6)
 - Title: Myanmar Text to Speech
 - Member: Ma Badounmar (Ph.D-18), Ma Hnin Yu Hlaing (Ph.D-10), Ma Hlaing May Tin (Ph.D-6), Nan Yu Hlaing (Ph.D-16), Ma Thida San (Ph.D-12), Ma Zun Hlaing Moe (Ph.D-17)
-- Report: 
+- Report: []()
