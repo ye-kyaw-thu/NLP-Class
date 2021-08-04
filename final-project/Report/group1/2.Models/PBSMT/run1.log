@@ -1,0 +1,156 @@
+STARTING UP AS PROCESS 29143 ON nlp AT နေ ဇန် 23 06:57:42 +0630 2021
+LOAD CONFIG...
+working directory is /home/acer/nlp/smt/baseline/my-pt
+running experimental run number 2
+
+ESTABLISH WHICH STEPS NEED TO BE RUN
+
+FIND DEPENDENCIES BETWEEN STEPS
+
+CHECKING IF OLD STEPS ARE RE-USABLE
+
+STEP SUMMARY:
+81 EVALUATION:test:input-from-sgm ->	re-using (1)
+75 CORPUS:mypt:clean ->	re-using (1)
+58 LM:mypt:train ->	re-using (1)
+55 LM:mypt:binarize ->	re-using (1)
+54 TRAINING:consolidate ->	re-using (1)
+53 TRAINING:prepare-data ->	re-using (1)
+52 TRAINING:run-giza ->	re-using (1)
+51 TRAINING:run-giza-inverse ->	run
+50 TRAINING:symmetrize-giza ->	run
+49 TRAINING:build-lex-trans ->	run
+46 TRAINING:extract-phrases ->	run
+45 TRAINING:build-reordering ->	run
+44 TRAINING:build-ttable ->	run
+41 TRAINING:create-config ->	run
+26 TUNING:filter ->	run
+25 TUNING:apply-filter ->	run
+24 TUNING:tune ->	run
+23 TUNING:apply-weights ->	run
+17 EVALUATION:test:filter ->	run
+16 EVALUATION:test:apply-filter ->	run
+15 EVALUATION:test:decode ->	run
+14 EVALUATION:test:remove-markup ->	run
+10 EVALUATION:test:wrap ->	run
+9 EVALUATION:test:reference-from-sgm ->	re-using (1)
+4 EVALUATION:test:nist-bleu ->	run
+3 EVALUATION:test:nist-bleu-c ->	run
+2 EVALUATION:test:analysis-coverage ->	run
+1 EVALUATION:test:analysis-precision ->	run
+0 REPORTING:report ->	run
+convert-im6.q16: profile 'icc': 'RGB ': RGB color space not permitted on grayscale PNG `steps/2/graph.2.png' @ warning/png.c/MagickPNGWarningHandler/1654.
+
+EXECUTE STEPS
+number of steps doable or running: 1 at နေ ဇန် 23 06:57:43 +0630 2021
+	doable: TRAINING:run-giza-inverse
+	executing /home/acer/nlp/smt/baseline/my-pt/steps/2/TRAINING_run-giza-inverse.2 via sh (1 active)
+number of steps doable or running: 1 at နေ ဇန် 23 06:59:47 +0630 2021
+	doable: TRAINING:symmetrize-giza
+	executing /home/acer/nlp/smt/baseline/my-pt/steps/2/TRAINING_symmetrize-giza.2 via sh (1 active)
+number of steps doable or running: 2 at နေ ဇန် 23 06:59:55 +0630 2021
+	doable: TRAINING:build-lex-trans
+	doable: TRAINING:extract-phrases
+	executing /home/acer/nlp/smt/baseline/my-pt/steps/2/TRAINING_build-lex-trans.2 via sh (1 active)
+	executing /home/acer/nlp/smt/baseline/my-pt/steps/2/TRAINING_extract-phrases.2 via sh (2 active)
+number of steps doable or running: 1 at နေ ဇန် 23 07:00:08 +0630 2021
+	running: TRAINING:extract-phrases
+number of steps doable or running: 2 at နေ ဇန် 23 07:00:19 +0630 2021
+	doable: TRAINING:build-reordering
+	doable: TRAINING:build-ttable
+	executing /home/acer/nlp/smt/baseline/my-pt/steps/2/TRAINING_build-reordering.2 via sh (1 active)
+	executing /home/acer/nlp/smt/baseline/my-pt/steps/2/TRAINING_build-ttable.2 via sh (2 active)
+number of steps doable or running: 1 at နေ ဇန် 23 07:00:32 +0630 2021
+	running: TRAINING:build-ttable
+number of steps doable or running: 4 at နေ ဇန် 23 07:00:57 +0630 2021
+	doable: EVALUATION:test:analysis-coverage
+	doable: TRAINING:create-config
+	doable: TUNING:filter
+	doable: EVALUATION:test:filter
+	executing /home/acer/nlp/smt/baseline/my-pt/steps/2/EVALUATION_test_analysis-coverage.2 via sh (1 active)
+	executing /home/acer/nlp/smt/baseline/my-pt/steps/2/TRAINING_create-config.2 via sh (2 active)
+number of steps doable or running: 2 at နေ ဇန် 23 07:01:10 +0630 2021
+	doable: TUNING:filter
+	doable: EVALUATION:test:filter
+	executing /home/acer/nlp/smt/baseline/my-pt/steps/2/TUNING_filter.2 via sh (1 active)
+	executing /home/acer/nlp/smt/baseline/my-pt/steps/2/EVALUATION_test_filter.2 via sh (2 active)
+number of steps doable or running: 2 at နေ ဇန် 23 07:01:23 +0630 2021
+	running: EVALUATION:test:filter
+	doable: TUNING:apply-filter
+	executing /home/acer/nlp/smt/baseline/my-pt/steps/2/TUNING_apply-filter.2 via sh (2 active)
+number of steps doable or running: 1 at နေ ဇန် 23 07:01:31 +0630 2021
+	doable: TUNING:tune
+	executing /home/acer/nlp/smt/baseline/my-pt/steps/2/TUNING_tune.2 via sh (1 active)
+number of steps doable or running: 1 at နေ ဇန် 23 07:37:51 +0630 2021
+	doable: TUNING:apply-weights
+	executing /home/acer/nlp/smt/baseline/my-pt/steps/2/TUNING_apply-weights.2 via sh (1 active)
+number of steps doable or running: 1 at နေ ဇန် 23 07:37:58 +0630 2021
+	doable: EVALUATION:test:apply-filter
+	executing /home/acer/nlp/smt/baseline/my-pt/steps/2/EVALUATION_test_apply-filter.2 via sh (1 active)
+number of steps doable or running: 1 at နေ ဇန် 23 07:38:06 +0630 2021
+	doable: EVALUATION:test:decode
+	executing /home/acer/nlp/smt/baseline/my-pt/steps/2/EVALUATION_test_decode.2 via sh (1 active)
+number of steps doable or running: 1 at နေ ဇန် 23 07:46:47 +0630 2021
+	doable: EVALUATION:test:remove-markup
+	executing /home/acer/nlp/smt/baseline/my-pt/steps/2/EVALUATION_test_remove-markup.2 via sh (1 active)
+number of steps doable or running: 2 at နေ ဇန် 23 07:46:55 +0630 2021
+	doable: EVALUATION:test:wrap
+	doable: EVALUATION:test:analysis-precision
+	executing /home/acer/nlp/smt/baseline/my-pt/steps/2/EVALUATION_test_wrap.2 via sh (1 active)
+	executing /home/acer/nlp/smt/baseline/my-pt/steps/2/EVALUATION_test_analysis-precision.2 via sh (2 active)
+number of steps doable or running: 2 at နေ ဇန် 23 07:47:07 +0630 2021
+	doable: EVALUATION:test:nist-bleu-c
+	doable: EVALUATION:test:nist-bleu
+	executing /home/acer/nlp/smt/baseline/my-pt/steps/2/EVALUATION_test_nist-bleu-c.2 via sh (1 active)
+	executing /home/acer/nlp/smt/baseline/my-pt/steps/2/EVALUATION_test_nist-bleu.2 via sh (2 active)
+number of steps doable or running: 1 at နေ ဇန် 23 07:47:20 +0630 2021
+	running: EVALUATION:test:nist-bleu
+number of steps doable or running: 1 at နေ ဇန် 23 07:47:25 +0630 2021
+	doable: REPORTING:report
+	executing /home/acer/nlp/smt/baseline/my-pt/steps/2/REPORTING_report.2 via sh (1 active)
+number of steps doable or running: 0 at နေ ဇန် 23 07:47:33 +0630 2021
+STARTING UP AS PROCESS 12770 ON nlp AT နေ ဇန် 23 07:47:34 +0630 2021
+LOAD CONFIG...
+working directory is /home/acer/nlp/smt/baseline/pt-my
+running experimental run number 3
+
+ESTABLISH WHICH STEPS NEED TO BE RUN
+
+FIND DEPENDENCIES BETWEEN STEPS
+
+CHECKING IF OLD STEPS ARE RE-USABLE
+
+STEP SUMMARY:
+81 EVALUATION:test:input-from-sgm ->	re-using (1)
+75 CORPUS:mypt:clean ->	re-using (1)
+58 LM:mypt:train ->	re-using (1)
+55 LM:mypt:binarize ->	re-using (1)
+54 TRAINING:consolidate ->	re-using (1)
+53 TRAINING:prepare-data ->	re-using (1)
+52 TRAINING:run-giza ->	re-using (1 2)
+51 TRAINING:run-giza-inverse ->	re-using (1 2)
+50 TRAINING:symmetrize-giza ->	re-using (1 2)
+49 TRAINING:build-lex-trans ->	re-using (1 2)
+46 TRAINING:extract-phrases ->	re-using (1 2)
+45 TRAINING:build-reordering ->	re-using (1 2)
+44 TRAINING:build-ttable ->	re-using (1 2)
+41 TRAINING:create-config ->	re-using (1 2)
+26 TUNING:filter ->	re-using (1 2)
+25 TUNING:apply-filter ->	re-using (1 2)
+24 TUNING:tune ->	re-using (1)
+23 TUNING:apply-weights ->	re-using (1)
+17 EVALUATION:test:filter ->	re-using (1 2)
+16 EVALUATION:test:apply-filter ->	re-using (1)
+15 EVALUATION:test:decode ->	re-using (1)
+14 EVALUATION:test:remove-markup ->	re-using (1)
+10 EVALUATION:test:wrap ->	re-using (1)
+9 EVALUATION:test:reference-from-sgm ->	re-using (1)
+4 EVALUATION:test:nist-bleu ->	re-using (1)
+3 EVALUATION:test:nist-bleu-c ->	re-using (1)
+2 EVALUATION:test:analysis-coverage ->	re-using (1 2)
+1 EVALUATION:test:analysis-precision ->	re-using (1)
+0 REPORTING:report ->	re-using (1)
+convert-im6.q16: profile 'icc': 'RGB ': RGB color space not permitted on grayscale PNG `steps/3/graph.3.png' @ warning/png.c/MagickPNGWarningHandler/1654.
+
+EXECUTE STEPS
+number of steps doable or running: 0 at နေ ဇန် 23 07:47:35 +0630 2021

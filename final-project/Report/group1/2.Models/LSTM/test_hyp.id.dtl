@@ -1,0 +1,273 @@
+DETAILED OVERALL REPORT FOR THE SYSTEM: test_hyp.id
+
+SENTENCE RECOGNITION PERFORMANCE
+
+ sentences                                        1099
+ with errors                             87.6%   ( 963)
+
+   with substitions                      70.4%   ( 774)
+   with deletions                        78.2%   ( 859)
+   with insertions                       77.3%   ( 850)
+
+
+WORD RECOGNITION PERFORMANCE
+
+Percent Total Error       =   33.9%   (8019)
+
+Percent Correct           =   76.1%   (18012)
+
+Percent Substitution      =   10.8%   (2543)
+Percent Deletions         =   13.1%   (3099)
+Percent Insertions        =   10.0%   (2377)
+Percent Word Accuracy     =   66.1%
+
+
+Ref. words                =           (23654)
+Hyp. words                =           (22932)
+Aligned words             =           (26031)
+
+CONFUSION PAIRS                  Total                 (137)
+                                 With >=  1 occurrences (137)
+
+   1:  169  ->  part ==> n
+   2:  168  ->  v ==> n
+   3:  128  ->  n ==> part
+   4:  107  ->  n ==> v
+   5:   95  ->  v ==> part
+   6:   86  ->  part ==> v
+   7:   80  ->  ppm ==> n
+   8:   71  ->  ppm ==> part
+   9:   67  ->  n ==> ppm
+  10:   63  ->  part ==> ppm
+  11:   61  ->  adj ==> v
+  12:   55  ->  part ==> conj
+  13:   50  ->  fw ==> n
+  14:   49  ->  conj ==> part
+  15:   48  ->  n ==> adj
+  16:   48  ->  ppm ==> v
+  17:   45  ->  ppm ==> conj
+  18:   44  ->  adj ==> n
+  19:   43  ->  adv ==> n
+  20:   43  ->  conj ==> n
+  21:   42  ->  n ==> fw
+  22:   39  ->  num ==> n
+  23:   39  ->  v ==> adj
+  24:   36  ->  pron ==> n
+  25:   35  ->  v ==> ppm
+  26:   32  ->  conj ==> ppm
+  27:   31  ->  n ==> conj
+  28:   27  ->  n ==> adv
+  29:   26  ->  adj ==> part
+  30:   21  ->  punc ==> part
+  31:   20  ->  adv ==> part
+  32:   19  ->  n ==> pron
+  33:   19  ->  tn ==> v
+  34:   18  ->  n ==> punc
+  35:   18  ->  punc ==> n
+  36:   18  ->  v ==> pron
+  37:   17  ->  adj ==> ppm
+  38:   17  ->  part ==> punc
+  39:   16  ->  ppm ==> adv
+  40:   15  ->  part ==> adj
+  41:   15  ->  ppm ==> adj
+  42:   15  ->  pron ==> v
+  43:   15  ->  punc ==> v
+  44:   14  ->  adv ==> adj
+  45:   14  ->  adv ==> conj
+  46:   14  ->  v ==> adv
+  47:   13  ->  n ==> num
+  48:   12  ->  abb ==> n
+  49:   12  ->  adv ==> v
+  50:   12  ->  pron ==> adj
+  51:   12  ->  punc ==> ppm
+  52:   11  ->  adj ==> adv
+  53:   11  ->  part ==> adv
+  54:   10  ->  adv ==> ppm
+  55:   10  ->  conj ==> punc
+  56:   10  ->  conj ==> v
+  57:   10  ->  num ==> adj
+  58:   10  ->  ppm ==> punc
+  59:   10  ->  punc ==> conj
+  60:   10  ->  tn ==> n
+  61:    9  ->  adj ==> pron
+  62:    9  ->  num ==> ppm
+  63:    9  ->  v ==> conj
+  64:    8  ->  fw ==> part
+  65:    8  ->  fw ==> v
+  66:    8  ->  n ==> tn
+  67:    8  ->  tn ==> adj
+  68:    8  ->  tn ==> fw
+  69:    8  ->  v ==> num
+  70:    7  ->  adj ==> conj
+  71:    7  ->  part ==> pron
+  72:    7  ->  punc ==> adj
+  73:    6  ->  adj ==> fw
+  74:    6  ->  part ==> fw
+  75:    6  ->  pron ==> fw
+  76:    6  ->  pron ==> part
+  77:    6  ->  v ==> fw
+  78:    6  ->  v ==> tn
+  79:    5  ->  conj ==> adv
+  80:    5  ->  fw ==> ppm
+  81:    5  ->  num ==> part
+  82:    5  ->  ppm ==> fw
+  83:    5  ->  ppm ==> pron
+  84:    5  ->  punc ==> p
+  85:    5  ->  sb ==> punc
+  86:    4  ->  adj ==> tn
+  87:    4  ->  conj ==> adj
+  88:    4  ->  conj ==> fw
+  89:    4  ->  fw ==> adv
+  90:    4  ->  num ==> conj
+  91:    4  ->  num ==> tn
+  92:    4  ->  num ==> v
+  93:    4  ->  part ==> num
+  94:    4  ->  ppm ==> num
+  95:    4  ->  punc ==> pa
+  96:    4  ->  v ==> punc
+  97:    3  ->  adv ==> punc
+  98:    3  ->  conj ==> tn
+  99:    3  ->  part ==> tn
+ 100:    3  ->  sb ==> n
+ 101:    3  ->  tn ==> conj
+ 102:    3  ->  tn ==> part
+ 103:    3  ->  tn ==> ppm
+ 104:    2  ->  abb ==> num
+ 105:    2  ->  adj ==> abb
+ 106:    2  ->  adj ==> num
+ 107:    2  ->  adv ==> fw
+ 108:    2  ->  adv ==> num
+ 109:    2  ->  fw ==> conj
+ 110:    2  ->  n ==> abb
+ 111:    2  ->  pron ==> ppm
+ 112:    2  ->  punc ==> pu
+ 113:    2  ->  punc ==> sb
+ 114:    2  ->  sb ==> part
+ 115:    2  ->  tn ==> punc
+ 116:    1  ->  abb ==> adj
+ 117:    1  ->  abb ==> fw
+ 118:    1  ->  adj ==> punc
+ 119:    1  ->  adv ==> pron
+ 120:    1  ->  adv ==> tn
+ 121:    1  ->  conj ==> int
+ 122:    1  ->  fw ==> adj
+ 123:    1  ->  fw ==> pron
+ 124:    1  ->  fw ==> punc
+ 125:    1  ->  fw ==> tn
+ 126:    1  ->  int ==> n
+ 127:    1  ->  int ==> pron
+ 128:    1  ->  n ==> sb
+ 129:    1  ->  num ==> adv
+ 130:    1  ->  num ==> punc
+ 131:    1  ->  num ==> sb
+ 132:    1  ->  ppm ==> tn
+ 133:    1  ->  punc ==> adv
+ 134:    1  ->  punc ==> co
+ 135:    1  ->  punc ==> tn
+ 136:    1  ->  sb ==> v
+ 137:    1  ->  tn ==> sb
+     -------
+      2543
+
+
+
+INSERTIONS                       Total                 (14)
+                                 With >=  1 occurrences (14)
+
+   1:  561  ->  part
+   2:  553  ->  n
+   3:  348  ->  v
+   4:  295  ->  ppm
+   5:  176  ->  conj
+   6:  137  ->  adj
+   7:   71  ->  punc
+   8:   66  ->  adv
+   9:   43  ->  num
+  10:   41  ->  fw
+  11:   39  ->  tn
+  12:   37  ->  pron
+  13:    7  ->  sb
+  14:    3  ->  abb
+     -------
+      2377
+
+
+
+DELETIONS                        Total                 (15)
+                                 With >=  1 occurrences (15)
+
+   1:  670  ->  part
+   2:  601  ->  n
+   3:  466  ->  v
+   4:  428  ->  ppm
+   5:  260  ->  conj
+   6:  201  ->  adj
+   7:  114  ->  punc
+   8:  104  ->  adv
+   9:   69  ->  num
+  10:   63  ->  fw
+  11:   63  ->  pron
+  12:   43  ->  tn
+  13:    9  ->  abb
+  14:    6  ->  sb
+  15:    2  ->  int
+     -------
+      3099
+
+
+
+SUBSTITUTIONS                    Total                 (15)
+                                 With >=  1 occurrences (15)
+
+   1:  511  ->  n
+   2:  436  ->  part
+   3:  402  ->  v
+   4:  300  ->  ppm
+   5:  190  ->  adj
+   6:  161  ->  conj
+   7:  122  ->  adv
+   8:   99  ->  punc
+   9:   81  ->  fw
+  10:   78  ->  num
+  11:   77  ->  pron
+  12:   57  ->  tn
+  13:   16  ->  abb
+  14:   11  ->  sb
+  15:    2  ->  int
+     -------
+      2543
+
+
+* NOTE: The 'Substitution' words are those reference words
+        for which the recognizer supplied an incorrect word.
+
+
+FALSELY RECOGNIZED               Total                 (19)
+                                 With >=  1 occurrences (19)
+
+   1:  716  ->  n
+   2:  434  ->  part
+   3:  386  ->  v
+   4:  255  ->  ppm
+   5:  180  ->  conj
+   6:  174  ->  adj
+   7:   90  ->  adv
+   8:   86  ->  fw
+   9:   72  ->  punc
+  10:   61  ->  pron
+  11:   35  ->  num
+  12:   32  ->  tn
+  13:    5  ->  p
+  14:    5  ->  sb
+  15:    4  ->  abb
+  16:    4  ->  pa
+  17:    2  ->  pu
+  18:    1  ->  co
+  19:    1  ->  int
+     -------
+      2543
+
+
+* NOTE: The 'Falsely Recognized' words are those hypothesis words
+        which the recognizer incorrectly substituted for a reference word.
+
