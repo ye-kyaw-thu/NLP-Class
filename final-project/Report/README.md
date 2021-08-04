@@ -1,7 +1,5 @@
 # Final Project
 
-
-
 ## Project Group Information
 
 ### Group (1)
