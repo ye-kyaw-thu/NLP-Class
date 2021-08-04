@@ -15,7 +15,7 @@ Plan to upload each project report ...
 ### Group (3)
 - Title: Word Presentation for Paraphrase Myanmar Language using Word2vec Model
 - Member: Ma Myint Myint Htay (Ph.D-14), Ma Myat Nyein Chan (Ph.D-11), Ma May Phyo Aung (Ph.D-7), Ma Ei Phyu Phyu Mon (Ph.D-9)
-- Report: 
+- Report: [word2vec.pdf](https://github.com/ye-kyaw-thu/NLP-Class/blob/master/final-project/Report/group3/word2vec-group/w2v-paper-final/word2vec.pdf)
 
 ### Group (4)
 - Title: University Chatbot using Artificial Intelligence Markup Language
