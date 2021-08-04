@@ -5,7 +5,8 @@ Plan to upload each project report ...
 ### Group (1)
 - Title: Myanmar Part of Speech Tagging Based on Machine Translation  
 - Member: Mg Phyo Thu Htet, Mg Naing Linn Phyo, Mg Thiha Nyein  
-- Report: [Myanmar_POS_Tagging_Based_on_Machine_Translation.pdf](https://github.com/ye-kyaw-thu/NLP-Class/blob/master/final-project/Report/group1/Myanmar_POS_Tagging_Based_on_Machine_Translation.pdf)
+- Final Report: [Myanmar_POS_Tagging_Based_on_Machine_Translation.pdf](https://github.com/ye-kyaw-thu/NLP-Class/blob/master/final-project/Report/group1/Myanmar_POS_Tagging_Based_on_Machine_Translation.pdf)
+- Presentation: [slide](https://github.com/ye-kyaw-thu/NLP-Class/blob/master/final-project/Report/group1/4.Presentation/Myanmar%20Part%20of%20Speech%20Tagging%20Based%20on%20Machine%20Translation.pdf)
 
 ### Group (2)
 - Title: Automatic Language Identification on Audio Signals  
