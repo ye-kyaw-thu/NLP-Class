@@ -1,0 +1,36 @@
+II
+[4], [9]
+[1], [2], [11]
+[5], [8], [10]	--- and ထည့်ရသေးသလား ဒီတိုင်းရောရတယ်လားဟင်
+images(spectrograms and waveforms) --- images နောက် space ကျန်
+
+III
+we describe the methodology ---- methodology အများလားလို့
+classification of audio language --- audio language ဆိုတာက သုံးလို့ရလားဟင် 
+
+A
+MFCC are base on --- based on လားလို့
+
+IV
+images(spectrograms and waveforms) --- images နောက် space ကျန်
+
+III 	B	Khz  ---  IV 	A	kHz --- အမှန်က kHz ထင်လို့
+
+IV 	B
+Examples of spectrograms and waveforms are shown in Fig and respectively. 
+
+IV 	C
+4,000.The --- space 
+
+IV	C	epochs 20 --- IV	D epoch 50 --- s ကပါရမယ်မို့လား
+
+IV	D
+We used 3200 images for training samples and 400 for validation and training samples --- validation and testing samples
+In order to avoide class imbalance, --- to avoid
+
+V
+mfcc --- အပေါ်မှာက MFCC လို့ သုံးထားလို့
+The identification using mfcc features could correctly classify all Burmese, Shan, English and Shan languages. --- Shan အစား Chinese ဖြစ်၇မှာမို့
+
+VI
+tion data is available. languages so long as sufficient, representative training and validation data is available. --- အဲ့နောက်ဆုံးကပိုနေတာလားလို့
