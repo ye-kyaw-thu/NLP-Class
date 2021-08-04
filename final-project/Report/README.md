@@ -23,4 +23,5 @@ Plan to upload each project report ...
 - Member: Ma Hlaing Myat Nwe (Ph.D-1), Ma Khant Khant Win Tint (Ph.D-3), Ma Khaing Hsu Wai (M.E (IST) 2nd Batch)
 
 ### Group (6)
-- 
+- Title: Myanmar Text to Speech
+- Member: Ma Badounmar (Ph.D-18), Ma Hnin Yu Hlaing (Ph.D-10), Ma Hlaing May Tin (Ph.D-6), Nan Yu Hlaing (Ph.D-16), Ma Thida San (Ph.D-12), Ma Zun Hlaing Moe (Ph.D-17)
