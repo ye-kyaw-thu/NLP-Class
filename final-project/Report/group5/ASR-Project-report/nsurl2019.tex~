@@ -1,0 +1,629 @@
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+% The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{fontspec}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{array}
+
+%for typing Myanmar text, you can also used with Myanmar3 font
+\newfontfamily {\padauktext}[Script=Myanmar]{Padauk}
+%\newfontinstance {\padauktext}[Script=Myanmar]{Padauk}
+
+%for double quote
+\newcommand{\quotes}[1]{``#1''}
+
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+
+\def\baselinestretch{0.94}
+
+\begin{document}
+
+\title{String Similarity Measures \\for Myanmar Language (Burmese)\\
+%{\footnotesize \textsuperscript{*}Note: Sub-titles are not captured in Xplore and
+%should not be used}
+%\thanks{Identify applicable funding agency here. If none, delete this.}
+}
+
+%%%%%%%% for review process %%%%%%%%%%
+
+%\author{\IEEEauthorblockN{1\textsuperscript{st} Author A}
+%\IEEEauthorblockA{\textit{University A, }} \\
+%City, Country\\
+%{authora@univa.com}
+%\and
+%\IEEEauthorblockN{2\textsuperscript{nd} Author B}
+%\IEEEauthorblockA{\textit{University B,}\\ City, Country \\
+%\textit{University X,}\\ City, Country\\
+%authorb@gmail.com}
+%\and
+%\IEEEauthorblockN{3\textsuperscript{rd} Author C}
+%\IEEEauthorblockA{\textit{University A, } \\
+%City, Country \\
+%authorc@univa.com}
+%\and
+%\IEEEauthorblockN{4\textsuperscript{th} Author D}
+%\IEEEauthorblockA{\textit{University A, } \\
+%City, Country \\
+%authord@univa.com}
+%\and
+%\IEEEauthorblockN{5\textsuperscript{th} Author E}
+%\IEEEauthorblockA{\textit{University C,} \\
+%City, Country \\
+%authore@univc.com}
+%\and
+%\IEEEauthorblockN{6\textsuperscript{th} Author F}
+%\IEEEauthorblockA{\textit{University A, } \\
+%City, Country\\
+%authorf@univa.com}
+%\and
+%\IEEEauthorblockN{7\textsuperscript{th} Author G}
+%\IEEEauthorblockA{\textit{University A, } \\
+%City, Country\\
+%authorg@univa.com}
+%}
+
+%%%%%%%%%%%%%%%%%%%%%%%
+
+%\author{\IEEEauthorblockN{1\textsuperscript{st} Hnin Wai Wai Hlaing}, {3\textsuperscript{rd} Swe Zin Moe}, {4\textsuperscript{th} Hlaing Myat Nwe}, {6\textsuperscript{th} Nandar Win Min}, {7\textsuperscript{th} Hnin Aye Thant}}
+%\IEEEauthorblockA{\textit{University of Technology (Yatanarpon Cyber City)} \\
+%\textit{name of organization (of Aff.)}\\
+%Pyin Oo Lwin, Myanmar \\
+%{hninwaiwaihlaing.ycc, swezinmoe.1011, hlaingmyatnwe.nwe, nandarwinmin, hninayethant}\@gmail.com}
+
+%\author{\IEEEauthorblockN{Khaing Hsu Wai}
+%\IEEEauthorblockA{\textit{University of Technology Yatanarpon Cyber City (UTYCC), }\\
+%Myanmar \\
+%khainghsuwai94@gmail.com}
+%\and
+%\IEEEauthorblockN{Ye Kyaw Thu}
+%\IEEEauthorblockA{\textit{National Electronics and Computer Technology Center (NECTEC),}\\ 
+%Thailand \\
+%ka2pluskha2@gmail.com}
+%\and
+%\IEEEauthorblockN{Hnin Aye Thant}
+%\IEEEauthorblockA{\textit{University of Technology Yatanarpon Cyber City (UTYCC), } \\
+%Myanmar \\
+%hninayethant@gmail.com}
+%\and
+%\IEEEauthorblockN{Swe Zin Moe}
+%\IEEEauthorblockA{\textit{University of Technology Yatanarpon Cyber City (UTYCC), } \\
+%Myanmar \\
+%swezinmoe.1011@gmail.com}
+%\and
+%\IEEEauthorblockN{Thepchai Supnithi}
+%\IEEEauthorblockA{\textit{National Electronics and Computer Technology Center (NECTEC),} \\
+%PathumThani, Thailand \\
+%thepchai.supnithi@nectec.or.th}
+%}
+
+
+%Email: \IEEEauthorrefmark{1}author.one@add.on.net,
+%\IEEEauthorrefmark{2}author.two@add.on.net,
+%\IEEEauthorrefmark{3}author.three@add.on.net,
+%\IEEEauthorrefmark{4}author.four@add.on.net}
+
+\maketitle
+
+\begin{abstract}
+Measuring string similarity is useful for a broad range of applications. It plays an important role for machine learning such as information retrieval, NLP, Error encoding and bioinformatics. Measuring string similarity is a fundamental operation step of data science in data cleaning and integration. Real-world applications such as spell checking, duplicate finding, searching similar words, retrieving tasks utilize string similarity. In this study, string similarity metrics have been calculated for Myanmar language (Burmese). The encoding table for Myanmar language has built based on the pronunciation similarity of characters and vowel combination positions with a consonant. According to the table, strings and words are encoded. Similarity distance is measured between the dataset and query words. Previous string similarity approaches are not suitable for fuzzy string matching of tonal-based Myanmar language, therefore, three mapping approaches are proposed in this study.
+
+\end{abstract}
+
+\begin{IEEEkeywords}
+Myanmar character, String similarity metrics, Phonetic Similarity
+\end{IEEEkeywords}
+
+\section{Introduction}
+\label{sec:intro}
+
+Measuring string similarity is a fundamental operation in many applications of machine learning. It is widely studied in Natural Language Processing (NLP). NLP applications such as Text to Speech Systems, Machine Translation Systems, Spelling Checking Systems and Information Retrieval Systems calculate string similarity metrics to find how similar the strings are. In other words, string similarity metrics want to find similar words according to the query. Languages are interesting and each and every language has its own features and writing systems. In literature, a variety of approaches are proposed for string similarity. Most of them are character-based metrics and associated with English or European languages. So as for Myanmar Language, we need to consider new approaches together with the existing string similarity metrics. Myanmar language is a tonal-based language and also a very rich language \cite{TheinTunDomainOfTones}. It has basically 33 consonants and the consonants combine with vowels and medial to form syllables. In Myanmar Language, every isolated word has meaning. Not only one character can form a word (e.g. \quotes{{\padauktext က}, \quotes{dance} in English}) but also one syllable can provide a word (e.g. \quotes{{\padauktext ကြိုက်}, \quotes{like} in English}). There are also many phonetically similar sounds of characters and words in Myanmar Language. In our experiment, we introduced new approach based on the idea of Soundex, the best known phonetic encoding algorithm, for retrieving phonetic similar words by calculating string similarity distance. We prepared two pairs of data sets, one is a confusion pairs of real spelling mistake words and another is manually developed word similarity data set. 
+We evaluate 6 measures (Cosine distance, Damerau Levenshtein distance, Hamming distance, Jaccard distance, Jaro Winkler distance and Levenshtein distance) on two data sets encoding with and without our proposed three mappings. The results show that all three mappings are outperforms for retrieving Myanmar words with the similar pronunciations. 
+
+\section{Related Work}
+\label{sec:RelatedWork}
+
+To the best of our knowledge, there is only one proposal that measured phonetic similarities for Myanmar Internationalized Domain Names (IDNs) was done \cite{OhnmarHtunMeasuringPhonetic}. To retrieve the phonetically similar Myanmar IDNs, IPA (International Phonetic Alphabet)-Soundex functions was used for matching character values based on their phonetic similarities of Myanmar language. The normalized similarity method is capable measuring not only in a mono language, but also in a cross language comparison \cite{OhnmarHtunCrossLanguage}.
+
+The Myanmar character is ultimately descended from a Brahmic script, either Kadamba or Pallava \cite{BurmeseLanguageWiki}. Likewise, the most of the major Indian languages such as Devanagari (e.g. Hindi, Marathi, Nepali), Bengali (Bengali and Assamese), Gurmukhi (Punjabi), Gujarati, Oriya, Tamil, Telugu, Kannada, and Malayalam use scripts which are derived from the ancient Brahmi script. They have more or less the same arrangement of alphabet, are highly phonetic in nature and a computatinal phonetic model was proposed  \cite{Singh06acomputational}. It is mainly consists of a model of phonology (including some orthographic features) based on a common alphabet of these scripts, numerical values assigned to these features, a stepped distance function (SDF), and an algorithm for aligning strings of feature vectors. The SDF is used to calculate the phonetic and orthographic similarity of two letters.
+
+\section{String Similarity Metrics}
+\label{sec:MT4SL}
+
+String similarity determines how similar the two strings are. Varieties of works for string similarity are carried out for different languages. To measure the similarity between strings, there are different approaches in literature. Each method has its own features and very useful in NLP. Most of the similarity metrics are used to reduce minor typying or spelling errors in words or syllables in pronunciation. Based on the properties of operations, string similarity metrics can be divided into a bunch of groups. 
+
+Edit distance based metrics try to compute the number of operations needed to transforms one string to another. The more the number of operations, the less is the similarity between the two strings. 
+
+Rather than complete strings, the expected input for token based methods is a set of tokens. The purpose is to find the similar tokens in both sets. The more the number of similar tokens, the more is the similarity between the sets. A string can be transformed into sets by splitting using a delimeter. 
+
+In sequence-based group, the similarity is a factor of common sub-strings between the two strings. The algorithms try to find the longest sequence which is present in both strings. The more of these sequences found, the higher is the similarity score. 
+
+
+
+\subsection {Levenshtein Distance}
+\label{subsec:Levenshtein Distance}
+
+Levenshtein distance \cite{levenshteinPaper}, also known as edit distance, returns the minimum number of edit operations in terms of the number of deletions, insertions or substitutions required to transform source string to target string. The more the number of the edit operations, the less the similarity between two strings. For example, the edit distance between \quotes{{cat}} and \quotes{{dog}} is 3. There are three edit operations needed to transform cat into dog. As for \quotes{{Fate}}-\quotes{{\padauktext ကံ}}(kan) and \quotes{{\padauktext ကန်}}(kan), there are altogether two edit operations but they sound the same. Levenshtein is perfect to run for finding the similarity on small strings, to small string and a big string where the editing difference is a small number to be expected. Levenshteins distance metric is recursively defined as shown in Eq. (1).
+
+\begin{equation}
+ dis_{a,b}(i,j) =
+  \begin{cases}
+    0\quad \text{if i=j=0 } \\
+	i\quad \text{if j=0 and i>0 } \\
+	j\quad \text{if i=0 and j>0 } \\
+    min =
+  \begin{cases}
+    dis_{a,b}(i-1,j) + 1 \\
+	dis_{a,b}(i,j-1) + 1 \quad \text{otherwise }\\
+	dis_{a,b}(i-1,j-1) + 1 (a_i \neq a_j)\\
+  \end{cases}
+  \end{cases}
+\end{equation}
+
+\subsection {Damerau-Levenshtein Distance}
+\label{subsec:Damerau-Levenshtein Distance}
+
+Like Levenshtein distance, there is an algorithm which works as a levenshtein distance, Damerau-Levenshtein distance. The Damerau-levenshtein distance differs from the Levenshtein distance in that it additionally counts a transposition between adjacent charactors as an edit operation \cite{DamerauLevenshteinPaper}. For example, to transform String \quotes{{CA}} to String \quotes{{ABC}}, the calculation of Levenshtein distance is 3 whereas the Damerau-Levenshtein is 2. For Myanmar Langage, the Levenshtein distance between \quotes{{\padauktext ကလေး}}(baby) and \quotes{{\padauktext ကေလး}}(wrong spelling of baby) is 3 whereas the Damerau-Levenshtein is 2. Variations of this algorithm assign different weights to edit based on the type of operation, phonetic similarities between the sounds typically represented by the relevant characters and other considerations.
+
+\subsection {Hamming Distance}
+\label{subsec:Hamming Distance}
+
+The Hamming distance between two strings of equal length measures the number of positions with mismatching characters\cite{HammingPaper}. The Hamming distance only applies to string of the same length. Hamming distance is mostly used in error-correcting codes in the fields like telecommunication, cryptography and coding theory. As an example to Hamming distance, the similarity distance between \quotes{{apple}} and \quotes{{grape}} is 4 and also the distance between \quotes{{\padauktext အဖေ}}(father) and \quotes{{\padauktext အဘေ}}(wrong spelling of father) is 1.
+
+\subsection {Jaro Winkler Distance}
+\label{subsec:Jaro Winkler Distance}
+
+Jaro Winkler distance is also a string metric measuring an edit distance between two sequences \cite{JaroWinklerPaper}. The score ranges from 0 to 1 where 0 is no similarity and 1 is exact the same strings. Jaro Winkler is used to find duplicates in strings since the only thing the Jaro Winkler does is transpose the letters in a string. Eq. (2) describes the Jaro distance $d_j$ of two given strings $s_1$ and $s_2$, where m is the number of matching characters and t is half of the number of transpositions.
+
+\begin{equation}
+ d_j =
+  \begin{cases}
+    0\quad \text{if m=0 } \\
+	\frac{1}{3}(\frac{m}{|s_1|}+\frac{m}{|s_2|}+\frac{m-t}{m})\quad \text{otherwise } \\
+
+  \end{cases}
+\end{equation}
+
+\subsection {Cosine Similarity}
+\label{subsec:Cosine Similarity}
+
+Cosine similarity between two vectors is a measure that calculates the cosine of the angle between them \cite{CosineRef}. By calculating the cosine angle between the two vectors, it can decide if the vectors are pointing in the same direction or not. The two vectors with the same orientation have a cosine similarity of 1 which means the two strings are similar. For the two strings \quotes{{\padauktext ဇနီးမောင်နှံ}}(hsudband and wife) and \quotes{{\padauktext ကလေး}}(baby), the cosine similarity is 0 but for \quotes{{\padauktext ဇနီးမောင်နှံ}}(hsudband and wife) and \quotes{{\padauktext စနီးမောင်နှံ}}(wrong spelling of hsudband and wife), the similarity distance is 0.75, which is nearly 1. Eq. (3) describes the formula of cosine similarity.
+
+\begin{equation}
+ similarity(A,B) =
+  \frac{A.B}{\| A \|\times\| B \|} =
+	\frac{\sum_{i=1}^{n} A_i \times B_i}{\sqrt{\sum_{i=1}^{n} A_i^2} \times \sqrt{\sum_{i=1}^{n} B_i^2}} 
+\end{equation}
+
+\subsection {Jaccard Similarity}
+\label{subsec:Jaccard Similarity}
+Jaccard similarity measures similarities between sets \cite{JaccardPaper}. It is defined as the size of the intersection divided by the size of the union of two sets. As for an example, set A=[1,2,3] and set B=[1,2,4,5], the Jaccard similarity is 0.4 according to the Jaccard similarity equation. The equation for Jaccard similarity is as follows.
+
+\begin{equation}
+ J(A,B) =
+  \frac{|A \cap B|}{|A \cup B|} =
+	\frac{|A \cap B|}{|A|+|B|-|A \cup B|}
+\end{equation}
+
+\subsection {Soundex algorithm}
+\label{subsec:Soundex algorithm}
+
+Soundex algorithm is a phonetic algorithm \cite{OdellSoundex}. It is based on how close two words are depending on the pronunciation. For example, the code for \quotes{{Flower}} and the code for \quotes{{Flour}} is F460 according to the Soundex encoding table because they have the same pronunciation. Based on the idea of Soundex algorithm, there are three proposed mappings for Myanmar Language. All of the mappings are aimed to search words based on phonetic similarity.
+
+\section{Proposed Mapping}
+\label{sec:Proposed Mapping}
+String similarity algorithm has some difficulties for Myanmar language because Myanmar language is a tonal-based language and is composed of vowels, consonants and medial. In Myanmar alphabets, there are many words that have same pronunciation but in different meanings (e.g. \quotes{{\padauktext ကံ}}, \quotes{Luck} in English and \quotes{{\padauktext ကန်}}, \quotes{Lake} in English). Moreover, some words have similar pronunciations and different meanings  (e.g. \quotes{{\padauktext ခုနစ်}}, \quotes{seven} in English and \quotes{{\padauktext ခုနှစ်}}, \quotes{year} in English). To consider the phonetic similar words, three mapping tables for Myanmar words are proposed. 
+%All the mapping tables for Myanmar character are relied on the idea of the Soundex algorithm. 
+
+\subsection{Phonetic Mapping}
+In our proposed methods, the first mapping is Phonetic Mapping. Same pronunciation words are grouped together. For example, \quotes{{\padauktext ကလေး}} and \quotes{{\padauktext ခလေး}} have same pronunciation. Therefore, \quotes{{\padauktext က}} (Ka) and \quotes{{\padauktext ခ}} (Kha) are cluster of \quotes{{\padauktext က}} (Ka) group. In the same way, other same pronunciation consonants such as \quotes{{\padauktext ဂ}} (Ga) and \quotes{{\padauktext ဃ}} (Gha),  \quotes{{\padauktext ပ}} (Pa) and \quotes{{\padauktext ဖ}} (Pha), \quotes{{\padauktext ဗ}} (Ba) and \quotes{{\padauktext ဘ}} (Bha) are put together as groups respectively and some diacritics such as \quotes{{\padauktext ွ}} (Wa Hswe) and \quotes{{\padauktext ှ}} (Ha Hto), tone marks such as \quotes{{\padauktext ့}} (Aukmyit), \quotes{{\padauktext ္}} (Myanmar sign Virama) are considered to be removed. Mapped characters are using both Myanmar and English alphabets for simple reading  and easier for practical implementation. The details mapping of Phonetic Mapping table is as shown in Table~\ref{table:phoneticMapping}.
+
+\begin{table}[ht]
+\caption{Phonetic Mapping} % title of Table
+\centering % used for centering table
+\setlength\tabcolsep{1.5pt} % default value: 6pt
+\begin{tabular}{c c c c} % centered columns (4 columns)
+\hline %inserts double horizontal lines
+Char & Mapped Char & Char & Mapped Char \\ [0.5ex] % inserts table
+%heading
+\hline % inserts single horizontal line
+{\padauktext က ခ} & {\padauktext က} & {\padauktext ွ ှ} & (delete)\\ % inserting body of the table
+{\padauktext ဂ ဃ} & {\padauktext ဂ} & {\padauktext ဣ ဤ ၏ ိ ီ ည်} & i \\
+{\padauktext စ ဆ} & {\padauktext စ} & {\padauktext က် ပ် တ်} & d \\
+{\padauktext ဇ ဈ} & {\padauktext ဇ} & {\padauktext န် မ် ံ} &  n \\
+{\padauktext ဋ တ} & {\padauktext တ} & {\padauktext ဲ ရ်} & e \\ 
+{\padauktext ဌ ထ} & {\padauktext ထ} & {\padauktext ဥ ဦ ု ူ} & u \\ % inserting body of the table
+{\padauktext ဍ ဎ} & {\padauktext ဍ} & {\padauktext ာ ါ} &  r \\
+{\padauktext ဏ န} & {\padauktext န} & {\padauktext ဧ ေ} & a \\
+{\padauktext ဒ ဓ} & {\padauktext ဒ} & {\padauktext ့ း} & (delete)\\
+{\padauktext ပ ဖ} & {\padauktext ပ} & {\padauktext ္} &  (delete)\\
+{\padauktext ဗ ဘ} & {\padauktext ဘ} & {\padauktext ဩ ဪ သြ သြော်} &  o \\
+{\padauktext ယ ရ} & {\padauktext ရ} & {\padauktext ၎င်း ၎} & {\padauktext ၎} \\
+{\padauktext လ ဠ} & {\padauktext လ} & {\padauktext ၊ ။} & s \\
+{\padauktext သ ဿ} & {\padauktext သ} & {\padauktext င်္ င် င ဉ်} &  in\\
+{\padauktext ျ ြ} &  y &  ?!.*-=\#"<>{}[],+- & s \\ [1ex] % [1ex] adds vertical space
+\hline %inserts single line
+\end{tabular}
+\label{table:phoneticMapping} % is used to refer this table in the text
+\end{table}
+
+
+\subsection{Sound Mapping}
+The second mapping is Sound Mapping. This mapping is similar to Phonetic Mapping. The main different part of mapping is at the Myanmar consonant. As the name of sound mapping, consonants, which have the same movements from mouth, lips and tongue, are grouped. For example, \quotes{{\padauktext က ခ ဂ ဃ င ဟ အ}} (Ka Kha Ga Gha Nga Ha A) are clustered of \quotes{{\padauktext က}} (Ka) group,  \quotes{{\padauktext ည ဉ}} (NyaGyi NyaLay) are clustered of \quotes{{\padauktext ည}} (Nya) group, \quotes{{\padauktext ပ ဖ ဘ ဗ မ}} (Pa Pha Ba Bha Ma) are clustered of \quotes{{\padauktext ပ}} (Pa) group,  \quotes{{\padauktext ယ ရ}} (YaPetLet YaGauk) are clustered of \quotes{{\padauktext ရ}} (Ya) group etc. The detail mapping of the Sound Mapping can be seen in Table~\ref{table:soundMapping}. 
+
+%\cite{TheinTun_AcousticPhonetics}, \cite{TheinTunDomainOfTones}
+
+\begin{table}[ht]
+\caption{Sound Mapping} % title of Table
+\centering % used for centering table
+\setlength\tabcolsep{1.5pt} % default value: 6pt
+\begin{tabular}{c c c c} % centered columns (4 columns)
+\hline %inserts double horizontal lines
+Char & Mapped Char & Char & Mapped Char \\ [0.5ex] % inserts table
+%heading
+\hline % inserts single horizontal line
+{\padauktext က ခ ဂ ဃ င ဟ အ} & {\padauktext က} & {\padauktext ွ ှ} &  (delete)\\ % inserting body of the table
+{\padauktext ည ဉ} & {\padauktext ည} & {\padauktext ္} &  (delete)\\
+{\padauktext စ ဆ ဇ ဈ} & {\padauktext စ} & {\padauktext က် ပ် တ်} & d \\
+{\padauktext ဋ ဌ ဍ ဏ ဎ တ ထ ဒ ဓ န} & {\padauktext တ} & {\padauktext န် မ် ံ} & n \\
+{\padauktext ပ ဖ ဗ ဘ မ} & {\padauktext ပ} & {\padauktext ဲ ရ်} & e \\ 
+{\padauktext ယ ရ} & {\padauktext ရ} & {\padauktext ဥ ဦ ု ူ} &  u \\ % inserting body of the table
+{\padauktext လ ဠ} & {\padauktext လ} & {\padauktext ာ ါ} & r \\
+{\padauktext သ ဿ} & {\padauktext သ} & {\padauktext ဧ ေ} & a \\
+{\padauktext ျ ြ} & {\padauktext y} & {\padauktext ့ း} &  (delete)\\
+{\padauktext ၊ ။} & s & {\padauktext ဩ ဪ သြ သြော်} &  o \\
+{\padauktext ၎င်း ၎} & {\padauktext ၎} & {\padauktext ဣ ဤ ၏ ိ ီ ည်} &  i\\
+{\padauktext င်္ င် င ဉ်} & in & {\padauktext ?!.*-=\#"<>{}[],+-} & {\padauktext s} \\ [1ex] % [1ex] adds vertical space
+\hline %inserts single line
+\end{tabular}
+\label{table:soundMapping} % is used to refer this table in the text
+\end{table}
+
+\subsection{Vowel Positional Mapping}
+Myanmar writing system or word formationlargely depends on combination of left, right, upper and lower characters to a consonant (i.e. consonant clusters or syllable). Here, left, right, upper and lower characters mean dependent vowels, directives and subscript consonants that are always written with a consonant \cite{pmICMI07} according to their written positions. 
+ 
+The third mapping based on the syllable formation of Myanmar language and it is named Vowel Positional Mapping. And thus, the vowels written on the left side of the consonanat are under the left (l) group, the right side vowels are under the (r) group, the upper vowels are under the (u) group, the lower vowels are under the (d) group respectively. If we represent the core concept of the Vowel Positional Mapping with Python programming, the code for building a dictionary will be as follows: \\
+
+%\texttt{
+%    ('ျ|ြ', 'y'),
+%    ('ေ', 'l'),
+%    ('ိ|ီ|ဲ|ံ', 'u'),
+%    ('ွ|ှ|ု|ူ', 'd'),
+%    ('ာ|ါ|့|း', 'r'),
+%}
+
+%\begin{verbatim} # difficult to work with Myanmar font
+map3\_dict  = [\\
+    ('{\padauktext [က-အ]}', 'c'),\\
+    ('{\padauktext ျ | ြ}', 'y'),\\
+    ('{\padauktext ေ}', 'l'),\\
+    ('{\padauktext ိ | ီ | ဲ | ံ }', 'u'),\\
+    ('{\padauktext ွ | ှ | ု | ူ }, 'd'),\\
+    ('{\padauktext ာ | ါ | ့ | း }', 'r'),\\
+]\\
+%\end{verbatim} # difficult to work with Myanmar font
+
+Here, \quotes{c} for consonant, \quotes{y} for medial characters \quotes{{\padauktext ျ}} and \quotes{{\padauktext  ြ}}, \quotes{l} for the \quotes{left}, \quotes{u} for \quotes{upper}, \quotes{d} for \quotes{down} or \quotes{lower} and \quotes{r} for \quotes{right} side characters. The detail mapping of the Vowel Positional Mapping is as shown in the table Table~\ref{table:vowelPositionalMapping}. This mapping is designed for retrieving Myanmar words which have similar vowel combination structure.
+
+%the left side of the consonant character are under the left (l) group, the right side of the consonant are the right (r) group, the uppper side of the consonant are . However, the upper and lower characters () are not considered for pronunciation normalization. In general, making the groups is depended on the positional vowel information. 
+
+\begin{table}[ht]
+\caption{VowelPositional Mapping} % title of Table
+\centering % used for centering table
+\setlength\tabcolsep{1.5pt} % default value: 6pt
+\begin{tabular}{c c c c} % centered columns (4 columns)
+\hline %inserts double horizontal lines
+Char & Mapped Char & Char & Mapped Char \\  %[0.5ex] % inserts table
+%heading
+\hline % inserts single horizontal line
+a-z A-Z &  F & {\padauktext က-အ} & c\\ % inserting body of the table
+{\padauktext ျ ြ} &  y & {\padauktext ္} & p \\
+{\padauktext ေ} & l & {\padauktext ာ ါ ့ း} & r \\
+{\padauktext  ိ  ီ  ဲ  ံ} & u & {\padauktext 'ွ ှ ု ူ} & d \\
+{\padauktext ်} & k & {\padauktext ၊ ။} &  s \\
+{\padauktext ဣဤဥဦဧဩဪဿ၌၍၏} &  i & ?!.*-=\#"<>{}[],+- &  \$ \\
+%{\padauktext ဣဤဥဦဧဩဪဿ၌၍၏} & {\padauktext I} & {\padauktext ?!.*-=\# etc.} & {\padauktext \$} \\ 
+{\padauktext ၀-၉} & n & 0-9 & D \\ [1ex] % [1ex] adds vertical space
+\hline %inserts single line
+\end{tabular}
+\label{table:vowelPositionalMapping} % is used to refer this table in the text
+\end{table}
+
+\section{EXPERIMENTS}
+\label{sec:experiments}
+
+We compare 6 similarity measures on our three mappings. Three of them (Levenshtein, Hamming and Jaro Winkler) are used JellyFish python library \cite{jellyFishDocument}, \cite{jellyFishPip}. Other threes measures (Damerau Levenshtein, Cosine and Jaccard) are implemented by us. We conducted two experiments with two dat sets that we developed. \\
+
+\subsection{Data Sets}
+\label{subsec:dataSets}
+
+We developed two types of data sets:  \textit{Spelling Mistake Confusion Pair} and \textit{Word Similarity Data Set}.\\
+
+\subsubsection{Spelling Mistake Confusion Pair}
+\label{subsec:spellingDataSet}
+
+Spelling  mistake confusion pairs were developed based on the real-world spelling errors . Mainly, we collected for general domain and especially from Myanmar web news and social media websites such as BBC (British Broadcasting Corporation) Myanmar, VOA (Voice of America) Myanmar, Facebook, emails. In total there are 2,381 pairs (i.e. 4762 words) and some examples of confusion pairs are as follows:\\
+
+\begin{enumerate}
+	\item {\padauktext ကိုကိုဂြာီး - ကိုကိုကြီး}
+	\item {\padauktext ကောင်းကောငး် - ကောင်းကောင်း}
+	\item {\padauktext ကောင်းကျပါတယ် - ကောင်းကြပါတယ်}
+	\item {\padauktext ခွင့်မလွတ်ပါနဲ့ - ခွင့်မလွှတ်ပါနဲ့}
+	\item {\padauktext ငါ့စီ - ငါ့ဆီ}
+	\item {\padauktext စီးပွားေ၇း - စီးပွားရေး}
+	\item {\padauktext စွဲချက်တင်နိ်ုင်သောကြောင့် - စွဲချက်တင်နိုင်သောကြောင့်}
+	\item {\padauktext တောင်ပန်အပ်ပါတယ် - တောင်းပန်အပ်ပါတယ်}
+	\item {\padauktext တိုင်ပြည်ချစ်စိတ် - တိုင်းပြည်ချစ်စိတ်}
+	\item {\padauktext ဒေါ်အောင်ဆနး်စုကြည် - ဒေါ်အောင်ဆန်းစုကြည်}
+	\item {\padauktext နက်နက်ရိူင်းရိူင်း - နက်နက်ရှိင်းရှိင်း}
+	\item {\padauktext ပြသနာတက်မှာဆိုးပြီး - ပြဿနာတက်မှာစိုးပြီး}
+         \item {\padauktext  ၂ဝ၁၂ဝ - ၂ဝ၂ဝ}
+         \item {\padauktext ၀ူးရှူး - ဝူရှူး}
+         \item {\padauktext အဆောက်အဉီ - အဆောက်အဦး}
+\end{enumerate} \hfill \break
+From our collections, we found that some of the spelling mistakes are caused by encoding conversion between partial Unicode named \quotes{Zawgyi} and other Unicode fonts such as \quotes{Myanmar3} and \quotes{Padauk}. Moreover, the spelling mistakes based on pronunciation similarity (e.g. {\padauktext ကိုကိုဂြာီး - ကိုကိုကြီး}, {\padauktext ငါ့စီ - ငါ့ဆီ}, {\padauktext ပြသနာတက်မှာဆိုးပြီး - ပြဿနာတက်မှာစိုးပြီး}) and shape similarity (i.e. glyph)  of Myanmar characters are also found (e.g. {\padauktext စီးပွားေ၇း - စီးပွားရေး}, {\padauktext ၀ူးရှူး - ဝူရှူး}, {\padauktext အဆောက်အဉီ - အဆောက်အဦး}). All the confusion pairs are generally one-to-one relationship between mispelled and correct words and thus we assumed it is very useful for evaluating on our three mappings . However, this data set has few homophone and rhyme words, and not suitable for measruing pronunciation similarity.\\
+
+\subsubsection{ Similar Pronunciation Data Set}
+\label{subsec:pronunciationDataSet}
+
+We developed Similar Pronunciation Data Set to measure how well the similarity scores provided by our three mappings.  Based on the correct Myanmar word, manually added one homophone and three more rhyme words such as \quotes{Hat:Bat}, \quotes{Fun:Sun}, \quotes{Honey:Money}. For example, the 1st column word {\padauktext မြူးတူး}(festivity in English) is the correct word and another following column, the 2nd column {\padauktext မြူးထူး} is the homophone word and the other following columns {\padauktext ဂျူးဖူး}, {\padauktext ကူးလူး} and {\padauktext ပြူးတူး} are three rhyme words of the 1st column word (see Table~\ref{table:pronunciationDataSet}. We developed 200 pairs for Similar Pronunciation Data Set and 1,000 words in total.
+
+\begin{table}[ht]
+\caption{Some Example Words of Similar Pronunciation Data Set} % title of Table
+\centering % used for centering table
+\setlength\tabcolsep{1.5pt} % default value: 6pt
+\begin{tabular}{c c c c c} % centered columns (4 columns)
+\hline %inserts double horizontal lines
+Correct Word & Homophone & Rhyme1 & Rhyme2 & Rhyme3 \\  %[0.5ex] % inserts table
+%heading
+\hline % inserts single horizontal line
+{\padauktext မြူးတူး} & {\padauktext မြူးထူး} & {\padauktext ဂျူးဖူး} & {\padauktext ကူးလူး} & {\padauktext ပြူးတူး}\\ % inserting body of the table
+{\padauktext ပြဌာန်း} & {\padauktext ပြဠာန်း} & {\padauktext ရှစမ်း} & {\padauktext ကြာပန်း} & {\padauktext ကျငန်း}\\
+{\padauktext တချို့} & {\padauktext တစ်ချို့} & {\padauktext အချို့} & {\padauktext သချို့} & {\padauktext နှစ်ချို့}\\
+{\padauktext ကြွေးမြီ} & {\padauktext ကျွေးမြီ} & {\padauktext ခွေးမြီး} & {\padauktext ကြေးမှီ} & {\padauktext ချွေးသီး}\\
+{\padauktext ဂဃနဏ} & {\padauktext ဂဂနန} & {\padauktext ခခယယ} & {\padauktext မမထထ} & {\padauktext ခခရရ}\\
+{\padauktext လက်ရွေးစင်} & {\padauktext လက်ရွေးစဉ်} & {\padauktext လက်ယွေးစင်} & {\padauktext ရက်ရွေးစင်} & {\padauktext လက်ရွေးဇင်}\\
+\hline %inserts single line
+\end{tabular}
+\label{table:pronunciationDataSet} % is used to refer this table in the text
+\end{table}
+
+%We used 1,448 Myanmar sign language and Myanmar SignWriting parallel sentences, which is a collection of general domain (refer Section~\ref{sec:corpusPreparation}). In this experiment, 1,000 sentences were used for training, 170 sentences for development and 278 sentences for evaluation.
+
+%It contains sign text transcribed with Myanmar language, phrases and sentences for emergency situation such as fires, earthquake, floods, storms, accidents, police and health. 
+
+\subsection{Evaluation}
+\label{evaluation}
+
+For the evaluation, first of all, we measured string similarity on each pair original data set of both \quotes{Spelling Mistake Confusion Pair} and \quotes{Similar Pronunciation Data Set}. After that we encoded or converted the original data into our 3 mappings and measured string similarity again. Finally, we count the correct words or similar words based on the three thresholds \quotes{<=1}, \quotes{<=2} and \quotes{<=3} for \quotes{Levenshtein, Damerau Levenshtein and Hamming distance measures} and \quotes{>=0.9}, \quotes{>=0.7} and \quotes{>=0.5} for \quotes{JaroWinkler, Cosine and Jaccard distance measures}.
+ 
+\section{Result and Discussion}
+\label{resultAndDiscussion}
+
+\begin{figure*}[h!]
+  \centering
+  \subcaptionbox{Levenshtein}[.4\linewidth][c]{%
+    \includegraphics[width=.42\linewidth]{./figure/main-exp/levenshtein-updated-spell-dataset.pdf}}\quad
+  \subcaptionbox{Damerau Levenshtein}[.4\linewidth][c]{%
+    \includegraphics[width=.42\linewidth]{./figure/main-exp/damerau-updated-spell-dataset.pdf}}
+\bigskip
+  \subcaptionbox{Hamming}[.4\linewidth][c]{%
+    \includegraphics[width=.42\linewidth]{./figure/main-exp/hamming-updated-spell-dataset.pdf}}\quad
+  \subcaptionbox{JaroWinkler}[.4\linewidth][c]{%
+    \includegraphics[width=.42\linewidth]{./figure/main-exp/jaroWinkler-updated-spell-dataset.pdf}}
+\bigskip
+  \subcaptionbox{Cosine}[.4\linewidth][c]{%
+    \includegraphics[width=.42\linewidth]{./figure/main-exp/cosine-updated-spell-dataset.pdf}}\quad
+  \subcaptionbox{Jaccard}[.4\linewidth][c]{%
+    \includegraphics[width=.42\linewidth]{./figure/main-exp/jacard-updated-spell-dataset.pdf}}
+  \caption{The results with spelling-mistake confusion data set}
+\label{fig:spellingDataSet}
+\end{figure*}
+
+\begin{figure*}[h!]
+  \centering
+  \subcaptionbox{Levenshtein}[.4\linewidth][c]{%
+    \includegraphics[width=.42\linewidth]{./figure/similarity/testset3-levenshtein-updated-spell-dataset.pdf}}\quad
+  \subcaptionbox{Damerau Levenshtein}[.4\linewidth][c]{%
+    \includegraphics[width=.42\linewidth]{./figure/similarity/testset3-damerau-updated-spell-dataset.pdf}}
+ \bigskip
+  \subcaptionbox{Hamming}[.4\linewidth][c]{%
+    \includegraphics[width=.42\linewidth]{./figure/similarity/testset3-hamming-updated-spell-dataset.pdf}}\quad
+  \subcaptionbox{JaroWinkler}[.4\linewidth][c]{%
+    \includegraphics[width=.42\linewidth]{./figure/similarity/testset3-jaroWinkler-updated-spell-dataset.pdf}}
+\bigskip
+  \subcaptionbox{Cosine}[.4\linewidth][c]{%
+    \includegraphics[width=.42\linewidth]{./figure/similarity/testset3-cosine-updated-spell-dataset.pdf}}\quad
+  \subcaptionbox{Jaccard}[.4\linewidth][c]{%
+    \includegraphics[width=.42\linewidth]{./figure/similarity/testset3-jacard-updated-spell-dataset.pdf}}
+  \caption{The results with similar pronunciation data set}
+\label{fig:similarDataSet}
+\end{figure*}
+
+The results of number of correct words found for six similarity measures on Spelling Mistake Confusion Pair can be seen in Figure~\ref{fig:spellingDataSet}. According to these experimental results, our Phonetic Mapping gave better word correction rate than four existing distance measures Levenshtein, Damerau Levenshtein, Hamming, Jaccard for threshold <=1 or >=0.9. Similarly, the Sound Mapping also achieved higher or comparable results except for the JaroWinkler and Cosine. On the other hands, the Vowel Positional Mapping approach get the lowest number of found or lowest correction rate for all thresholds.  
+
+For the thresholds \quotes{<=2} and \quotes{<=3} (\quotes{>=0.7}, \quotes{>=0.5}  for JaroWinkler and Cosine),  generally, all propose mappings are lower than raw Myanmar text input. However, we found that Phonetic Mapping and Sound Mapping matched more correct words from the Spelling Mistake Confusion Pair for Hamming and Cosine distance measures.  
+
+According to these experimental results, our new two mappings (Phonetic and Sound Mappings) are applicable for string similarity measurement on spelling mistake confusion words. Moreover based on the current results for the thresholds \quotes{<=2} and \quotes{<=3} (or \quotes{>=0.7} and \quotes{>=0.5}), we clearly found that the Vowel positional mapping also able  to retireve about 50\% of the correct words for  Levenshtein, Damerau Levenshtein, Hamming and Cosine distance measures.
+
+%\begin{figure*}[h]
+ % \centering
+ % \subcaptionbox{Levenshtein}[.3\linewidth][c]{%
+  %  \includegraphics[width=.35\linewidth]{./figure/main-exp/levenshtein-updated-spell-dataset.pdf}}\quad
+ % \subcaptionbox{Damerau Levenshtein}[.3\linewidth][c]{%
+  %  \includegraphics[width=.35\linewidth]{./figure/main-exp/damerau-updated-spell-dataset.pdf}}\quad
+ % \subcaptionbox{Hamming}[.3\linewidth][c]{%
+  %  \includegraphics[width=.35\linewidth]{./figure/main-exp/hamming-updated-spell-dataset.pdf}}
+
+  %\bigskip
+
+ % \subcaptionbox{JaroWinkler}[.3\linewidth][c]{%
+  %  \includegraphics[width=.35\linewidth]{./figure/main-exp/jaroWinkler-updated-spell-dataset.pdf}}\quad
+  %\subcaptionbox{Cosine}[.3\linewidth][c]{%
+  %  \includegraphics[width=.35\linewidth]{./figure/main-exp/cosine-updated-spell-dataset.pdf}}\quad
+  %\subcaptionbox{Jaccard}[.3\linewidth][c]{%
+  %  \includegraphics[width=.35\linewidth]{./figure/main-exp/jacard-updated-spell-dataset.pdf}}
+  %\caption{The results with spelling-mistake confusion data set}
+%\end{figure*}
+
+The results of retrieving similar pronunciation words such as homophone and rhyme with six similarity measures  on the Similar Pronunciation Data Set can be seen in Figure~\ref{fig:similarDataSet}. As we expected, our propose two mappings: Phonetic Mapping and Sound Mapping achieved highest number of founds for all thresholds of Levenshtein, Damerau Levenshtein, Hamming, Jaro Winkler, Cosine and Jaccard distance measures. Additionally, the Vowel Positional Mapping also gives the highest or comparable results for existing five distance measures excpet for the Jaccard distance measure.
+
+We we did detail analysis on distance values, we found that our propose three mappings have distance value zero (i.e. no distance value) for some similar pronunciation words. For example, the string similarity distances for the word {\padauktext လက်ရွေးစင်} and similar pronunciation and rhyme words {\padauktext လက်ရွေးစဉ်},  {\padauktext လက်ယွေးစင်}, {\padauktext ရက်ရွေးစင်} and {\padauktext လက်ရွေးဇင်} for Levenshtein and our three mappings for the threshold \quotes{<=1} can be seen in Table~\ref{table:distance4LetYaweSin}. Moreover, our three mappings retrieved well on similar words comparing with inputting raw Myanmar text. For example, although Levenshtein distance (for the threshold \quotes{<=1}) retrieved only one similar word of  {\padauktext လွင့်စဉ်} (scatter in English), our three mappings able to retrieve  three more similar words {\padauktext  လွှင့်စင်}, {\padauktext  လွင့်ဇင်} and {\padauktext  လွန့်စင်} (see Table~\ref{table:distance4LwintSin}). One more example of Cosine and our three mappings' string similarity distances of the word {\padauktext အကဲခတ်} (assess in English) (for the threshold \quotes{>=0.9}) can be seen in Table~\ref{table:distance4AKePhyat}. Here, \quotes{N\textbackslash A} means \quotes{Not Applicable} and expression of not contained in the threshold distance.
+
+\begin{table}[ht]
+\caption{String similarity distances for the word \quotes{{\padauktext လက်ရွေးစင်}} (selection) in English} % title of Table
+\centering % used for centering table
+\setlength\tabcolsep{1.5pt} % default value: 6pt
+\begin{tabular}{c c c c c} % centered columns (4 columns)
+\hline %inserts double horizontal lines
+Word - SimilarWord & Levenshtein & Pronunciation & Sound & Vowel \\  %[0.5ex] % inserts table
+%heading
+\hline % inserts single horizontal line
+{\padauktext လက်ရွေးစင်	လက်ရွေးစဉ်} &  1 &  0 &  1 &  0 \\ % inserting body of the table
+{\padauktext လက်ရွေးစင်	လက်ယွေးစင်} &  1 & 0 & 0 & 0\\
+{\padauktext လက်ရွေးစင်	ရက်ရွေးစင်} &  1 & 1 & 1 & 0\\
+{\padauktext လက်ရွေးစင်	လက်ရွေးဇင်} & 1 & 1 & 0 & 0\\
+\hline %inserts single line
+\end{tabular}
+\label{table:distance4LetYaweSin} % is used to refer this table in the text
+\end{table}
+
+\begin{table}[ht]
+\caption{String similarity distances for the word \quotes{{\padauktext လွင့်စဉ်}} (scatter in English)} % title of Table
+\centering % used for centering table
+\setlength\tabcolsep{1.5pt} % default value: 6pt
+\begin{tabular}{c c c c c} % centered columns (4 columns)
+\hline %inserts double horizontal lines
+Word - SimilarWord & Levenshtein & Pronunciation & Sound & Vowel \\  %[0.5ex] % inserts table
+%heading
+\hline % inserts single horizontal line
+{\padauktext လွင့်စဉ်	လွင့်စင်} &  1 &  0 &  1 &  0 \\ % inserting body of the table
+{\padauktext လွင့်စဉ်	လွှင့်စင်} &  N/A & 0 & 1 & 1\\
+{\padauktext လွင့်စဉ်	လွင့်ဇင်} &  N/A & 1 & 1 & 0\\
+{\padauktext လွင့်စဉ်	လွန့်စင်} & N/A & 1 & 1 & 0\\
+\hline %inserts single line
+\end{tabular}
+\label{table:distance4LwintSin} % is used to refer this table in the text
+\end{table}
+
+\begin{table}[ht]
+\caption{String similarity distances for the word \quotes{{\padauktext အကဲခတ်}} (assess in English)} % title of Table
+\centering % used for centering table
+\setlength\tabcolsep{1.5pt} % default value: 6pt
+\begin{tabular}{c c c c c} % centered columns (4 columns)
+\hline %inserts double horizontal lines
+Word - SimilarWord & Cosine & Pronunciation & Sound & Vowel \\  %[0.5ex] % inserts table
+%heading
+\hline % inserts single horizontal line
+{\padauktext အကဲခတ်	အကဲခပ်} &  N/A &  1.0 &  1.0 &  1.0 \\ % inserting body of the table
+{\padauktext အကဲခတ်	အကဲဆတ်} &  N/A & N/A & N/A & 1.0\\
+{\padauktext အကဲခတ်	အမြဲတက်} &  N/A & N/A & N/A & N/A\\
+{\padauktext အကဲခတ်	မဆဲတတ်} & N/A & N/A & N/A & 1.0\\
+\hline %inserts single line
+\end{tabular}
+\label{table:distance4AKePhyat} % is used to refer this table in the text
+\end{table}
+
+%\begin{figure}[htbp]
+%\centerline{\includegraphics[width=0.5\textwidth]{./fig/example-sw-wer-edited.pdf}}
+%\caption{An example of reference and hypothesis of PBSMT, HPBSMT and OSM}
+%\label{fig:ref_hyp}
+%\end{figure}
+
+%\noindent
+%The followings are the annotation of above MSW sentences into MSL for the readers (the underlined words are %pointing the differences with the reference): \\ \\
+%\noindent 
+%Ref:		{\padauktext မီးသတ် ကား အရေးပေါ် အခု လာမယ် ။} \\
+%PBSMT Hyp:	{\padauktext ကား အရေးပေါ် အခု \underline{လွှတ်} \underline{ရ} ။} \\
+%HPBSMT Hyp:	{\padauktext ကား အရေးပေါ် \underline{လွှတ်} \underline{ရ} \underline{အခု} ။} \\
+%OSM Hyp:	{\padauktext ကား အရေးပေါ် အခု \underline{လွှတ်} \underline{ရ} ။} \\
+
+%Fig. \ref{fig:sl2sw} and Fig. \ref{fig:sw2sl} present the WER percentages of translation between MSL and MSW. The results show that \quotes{word segmented} MSL gave the lower WER values for both MSL to MSW and MSW to MSL translations. 
+
+    
+\section{Conclusion}
+\label{sec:conclusion}
+
+This paper has presented the first study of the string similarity measurement based on the pronunciation similarities for Myanmar language. We proposed three new mappings (Phonetic Mapping, Sound Mapping and Vowel Positional Mapping) and proved well for better retrieving pronunciation similar words, homophones and rhyme words. Moreover, the Phonetic Mapping and Sound Mapping are applicable for spelling correction by string similarity measurement of Myanmar language under the threshold \quotes{<=1}. In the future work, we plan to expand  the two data sets and conduct string similarity experiments for confirming our current mapping tables.  
+
+\section*{Acknowledgment}
+
+We would like to thank %principals, teachers, SL trainers and students of School for the Deaf (Mandalay), Mary Chapman Chapman School for the Deaf Children (Yangon) and School for the Deaf, Tarmwe (Yangon), Myanmar Deaf Society and Literacy and Language Development for the Deaf for their kind contribution to our research. This research is partially supported by Ministry of Education, Department of Higher Education (Myanmar).
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%``Fig.~\ref{fig}'', even at the beginning of a sentence.
+
+\clearpage
+\begin{thebibliography}{00}
+
+%\bibitem{b1} G. Eason, B. Noble, and I. N. Sneddon, ``On certain integrals of Lipschitz-Hankel type involving products of Bessel functions,'' Phil. Trans. Roy. Soc. London, vol. A247, pp. 529--551, April 1955.
+%\bibitem{b2} J. Clerk Maxwell, A Treatise on Electricity and Magnetism, 3rd ed., vol. 2. Oxford: Clarendon, 1892, pp.68--73.
+%\bibitem{b3} I. S. Jacobs and C. P. Bean, ``Fine particles, thin films and exchange anisotropy,'' in Magnetism, vol. III, G. T. Rado and H. Suhl, Eds. New York: Academic, 1963, pp. 271--350.
+%\bibitem{b4} K. Elissa, ``Title of paper if known,'' unpublished.
+%\bibitem{b5} R. Nicole, ``Title of paper with only first word capitalized,'' J. Name Stand. Abbrev., in press.
+%\bibitem{b6} Y. Yorozu, M. Hirano, K. Oka, and Y. Tagawa, ``Electron spectroscopy studies on magneto-optical media and plastic substrate interface,'' IEEE Transl. J. Magn. Japan, vol. 2, pp. 740--741, August 1987 [Digests 9th Annual Conf. Magnetics Japan, p. 301, 1982].
+%\bibitem{b7} M. Young, The Technical Writer's Handbook. Mill Valley, CA: University Science, 1989.
+
+%%%%%%%%%%%
+
+\bibitem{OhnmarHtunMeasuringPhonetic} Ohnmar Htun, Shigeki Kodama, Yoshiki Mikami, \quotes{Measuring Phonetic Similarities in Myanmar IDNs}, 2010.
+\bibitem{OhnmarHtunCrossLanguage}, Shigeaki Kodama, Yoshiki Mikami, Cross-language Phonetic Similarity Measure on Terms Appeared in Asian Languages, International Journal of Intelligent Information Processing Volume 2, Number 2, June 2011
+\bibitem{Singh06acomputational} Anil Kumar Singh,  \quotes{A Computational Phonetic Model for Indian Language Scripts}, Proceedings of Constraints on Spelling Changes: Fifth International Workshop on Writing Systems, 2006
+\bibitem{BurmeseLanguageWiki} Burmese Language Wikipedia Page: https://en.wikipedia.org/wiki/Burmese\_language
+\bibitem{levenshteinPaper} Levenshtein, V. I., \quotes{Binary Codes Capable of Correcting Deletions, Insertions and Reversals}, Soviet Physics Doklady, Vol. 10, p.707, 02/1966
+\bibitem{DamerauLevenshteinPaper} Damerau, Fred J., \quotes{A technique for computer detection and correction of spelling errors}, Communications of the ACM, 7 (3): 171–176, March, 1964
+\bibitem{HammingPaper} Hamming, R. W, \quotes{Error detecting and error correcting codes}. The Bell System Technical Journal. 29 (2): 147–160, April 1950
+\bibitem{JaroWinklerPaper} Matthew A. Jaro, Advances in Record-Linkage Methodology as Applied to Matching the 1985 Census of Tampa, Florida, Journal of the American Statistical Association, 84(406):414-420, June 1989.
+\bibitem{CosineRef}  Singhal, Amit,  \quotes{Modern Information Retrieval: A Brief Overview}, Bulletin of the IEEE Computer Society Technical Committee on Data Engineering 24 (4): 35–43., 2001
+\bibitem{JaccardPaper} Jaccard, P., \quotes{Distribution de la flore alpine dans le bassin des Dranses et dans quelques régions voisines}, Bulletin de la Société Vaudoise des Sciences Naturelles 37, 241-272, 1901
+\bibitem{OdellSoundex} Odell, Margaret King , \quotes{The profit in records management Systems}, New York, 20: 20, 1956
+\bibitem{pmICMI07} Ye Kyaw Thu and Yoshiyori Urano, \quotes{Positional Mapping: Keyboard Mapping Based on Characters Writing Positions for Mobile Devices}, Proceedings of the 9th International Conference on Multimodal Interfaces, ICMI 07, 110-117, 2007
+\bibitem{TheinTun_AcousticPhonetics} Thein Tun, \quotes{Acoustic phonetics and the phonology of
+the myanmar language}, School of Human Communication Sciences, La Trobe University, Melbourne, Australia, 2007.
+\bibitem{TheinTunDomainOfTones}Thein Tun, \quotes{The domain of tones in burmese}, SST 1990 Proceedings, pp. 406--411, 1990.
+\bibitem{jellyFishDocument} Jelly fish Documentation URL: https://buildmedia.readthedocs.org/media/pdf/jellyfish/latest/jellyfish.pdf 
+\bibitem{jellyFishPip} Jelly fish python library for doing approximate and phonetic matching of strings: https://pypi.org/project/jellyfish/
+
+%\bibitem{Hutchins_2000} Hutchins, W. J., \quotes{Early years in machine translation}, John Benjamins Publishing, 2000, USA doi: 10.1075/sihols.97
+%\bibitem{Hutchins_1992} Hutchins, W. J., and Somers, H. L., \quotes{An introduction to machine translation}, Academic Press, 1992, London, ISBN-13: 978-0123628305
+%\bibitem{Nirenburg_2004} Nirenburg, S., and Raskin, V., \quotes{Ontological semantics}, The MIT Press, 2004 ISBN: 9780262140867
+%\bibitem{Bangham_2000} Bangham, J. A., and Cox, S. J., \quotes{Signing for the deaf using virtual humans}, In Proceeding of the Speech and Language Processing for Disabled and Elderly People (Ref. No. 2000/025), IEE Seminar, 2000, London, UK
+%\bibitem{Angus_1999} Angus B., and Smith, G., \quotes{English to American sign language machine translation of weather reports}, In Proceeding of the 2nd high desert student conference in linguistics (HDSL2), 1999, Albuquerque, New Mexico, pp. 23–30
+%\bibitem{Zijl_2003} Zijl, L. V., and Barker, D., \quotes{South African sign language machine translation system}, In Proceeding of the 2nd international conference on computer graphics, virtual reality, visualisation and interaction in Africa (ACM SIGGRAPH), 2003, Cape Town, South Africa, pp. 49–52
+%\bibitem{Morrissey_2006} Morrissey, S. and Way, A., \quotes{Experiments in sign language machine translation using examples}, In Proceeding of the IBM CASCON 2006 Dublin symposium, Dublin, Ireland.
+%\bibitem{Stein_2006} Stein, D., Bungeroth, J., and Ney, H., \quotes{Morpho-syntax based statistical methods for sign language translation}, In  Proceeding of the 11th annual conference of the European association for machine translation, June, 2006, Oslo, Norway.
+%\bibitem{Almasoud_2012} Almasoud, Al-Khalifa., \quotes{Semantic system for Arabic Text-to-SignWriting Translation}, Journal of Software Engineering and Applications, 2012,5,604-612
+%\bibitem{Thompson_2006} Thompson, RobYin; Emmorey, Karen; Kluender, Robert, \quotes{The Relationship between Eye Gaze and Verb Agreement in American Sign Language: An Eye-tracking Study}. Natural Language and Linguistic Theory. 24 (2), 2006, pp. 571–604 doi:10.1007/s11049-005-1829-y. 
+%\bibitem{Baker1980} Baker, Charlotte, and Dennis Cokely, \quotes{American Sign Language: A teacher's resource text on grammar and culture}, 1980, Silver Spring, MD: T.J. Publishers. 
+%\bibitem{Sutton_1998} Sutton-Spence, Rachel, and Bencie Woll, \quotes{The linguistics of British Sign Language}, Cambridge: Cambridge University Press, 1998
+%\bibitem{MSL_conversation_2009} \quotes{Myanmar Sign Language Basic Conversation Book}, Ministry of Social Welfare, Relief and Resettlement, Department of Social Welfare, Japan International Cooperation Agency, 1st Edition, August 2009, Daw Yu Yu Swe, Department of Social Welfare
+%\bibitem{SW_hp} SignWriting Site: http://www.signwriting.org/read.html
+%\bibitem{SW_manual_2010} Valerie Sutton and Adam Frost., \quotes{SignWriting Hand Symbols in ISWA2010: Manual 2}
+%\bibitem{SW_unicode} Sutton SignWriting Unicode., \\ http://www.unicode.org/charts/PDF/U1D800.pdf 
+%\bibitem{Ye_PACLIN_2015} Ye Kyaw Thu, Vichet Chea, Andrew Finch, Masao Utiyama and Eiichiro Sumita, \quotes{A Large-scale Study of Statistical Machine Translation Methods for Khmer Language}, 29th Pacific Asia Conference on Language, Information and Computation, October 30 - November 1, 2015, Shanghai, China, pp. 259-269
+%\bibitem{Kohen_NAACL_2003} Kohen, P., Och, F .J., Marcu, D., \quotes{Statistsical phrase-based translation}, In HLT-NAACL, 2003, url: http://acl.ldc.upenn.edu/N/N03/N03-1017.pdf
+%\bibitem{Och_2003} Och, F .j., Marcu, D., Statistical phrase-based translation, 2003, p.127-133.
+%\bibitem{Specia_2011} Specia, L.. \quotes{Tutorial, fundamental and new approaches to statistical machine translation}, In: International Conference Recent Advances in Natural Language Processing, 2011
+%\bibitem{Chiang_HPBSMT_2007} Chiang, D.. \quotes{Hierarchical phrase-based translation}, Comput Linguist 2007;33(2):201-228. url: http://dx.doi.org/10.1162/coli.2007.33.2.201. doi:10.1162/coli.2007.33.2.201.
+%\bibitem{Braune_2012} Braune, F., Gojun, A., Fraser, \quotes{A. Long-distance reordering during search for hierarchical phrase-based SMT}, In: EAMT 2012: Proceedings of the 16th Annual Conference of the European Association for Machine Translation, Trento, Italy, Citeseer; 2012, pp. 177-184
+%\bibitem{Durrani_2011} Durrani, N. Schmid, H., Fraser, A.M., \quotes{A joint sequence translation model with integrated reordering}. In: Lin, D., Matsumoto, Y., Mihalcea, R., editors. ACL. The Association for Computer Linguistics. ISBN 978-1-932432-87-9;2011, pp. 1045-1054 url: http://dblp.uni-trier.de/db/conf/acl/acl2011.html\#DurraniSF11
+%\bibitem{Mariὸo_NgramMT_2006} Mariὸo, J.B., Banchs, R.E., Crego, J.M., de Gispert, A., Lambert, P., Fonollosa, J.A.R., et al, \quotes{N-gram-based machine translation}, Comput Linguist 2006;32(4):527-549. url: http://dx.doi.org/10.1162/coli.2006.32.4.527. Doi:10.1162/coli.2006.32.4.527.
+%\bibitem{Kohen_moses_2009} Philipp Koehn and Barry Haddow. 2009. \quotes{Edinburgh’s Submission to all Tracks of the WMT2009 Shared Task with Reordering and Speed Improvements to Moses}. In Proceedings of the Fourth Workshop on Statistical Machine Translation, pages 160–164. 
+%\bibitem{Och_alignment_} Och, F.J., Ney, H.. \quotes{Improved statistical alignment model}, In ACL00. Hong Kong, China, 2000, pp. 440-447
+%\bibitem{Koehn_2003} Koehn, P., Och, F.J.., Marcu, D.., \quotes{Statistical phrase-based translation}, In Proceedings of the Human Language Technology Conference, 2003, Edmonton, Canada, pp. 48-54
+%\bibitem{Tillmann_2004} Tillmann, C.., \quotes{A unigram orientation model for statistical machine translation}, In Proceedings of HLT-NAACL 2004: Short Papers; HLT-NAACL-Short’04. Stroudsburg, PA, USA: Association for Computational Linguistics. ISBN 1-932432-24-8; 2004, pp.101-104, http://d1.acm.org/citation.cfm?id-1613984.1614010.
+%\bibitem{Heafield_KenLM_2011} Heafield, Kenneth, \quotes{KenLM: Faster and Smaller Language Model Queries}, Proceedings of the Sixth Workshop on Statistical Machine Translation; WMT '11, 2011, Association for Computational Linguistics, Edinburgh, Scotland, pp. 187-197 ISBN- 978-1-937284-12-1
+%\bibitem{Chen_1996} Chen, S.F., Goodman, J., \quotes{An empirical study of smoothing techniques for language modeling}, In Proceedings of the 34th annual meeting on Association for Computational Linguistics. Association for Computational Linguistics; 1996, pp. 310-318.
+
+\end{thebibliography}
+
+\end{document}
