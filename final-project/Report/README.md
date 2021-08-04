@@ -30,4 +30,4 @@ Plan to upload each project report ...
 ### Group (6)
 - Title: Myanmar Text to Speech
 - Member: Ma Badounmar (Ph.D-18), Ma Hnin Yu Hlaing (Ph.D-10), Ma Hlaing May Tin (Ph.D-6), Nan Yu Hlaing (Ph.D-16), Ma Thida San (Ph.D-12), Ma Zun Hlaing Moe (Ph.D-17)
-- Report: []()
+- Report: [nlp-proj.pdf](https://github.com/ye-kyaw-thu/NLP-Class/blob/master/final-project/Report/group6/nlp-project-reportV2/nlp-project-version2/nlp-proj.pdf)
