@@ -10,7 +10,7 @@ Plan to upload each project report ...
 ### Group (2)
 - Title: Automatic Language Identification on Audio Signals  
 - Member: Ma Ei Thandar Phyu (ME-IST-2), Ma Myo Mar Thinn (ME-IST-3), Ma Khaing Zar Mon (ME-IST-5), Nang Aeindray Kyaw (ME-IST-6), Ma May Phyu Khin (ME-IST-7)  
-- Report: 
+- Report: [project_ppt_and_report_ME_final/Report-Paper-final.pdf](https://github.com/ye-kyaw-thu/NLP-Class/blob/master/final-project/Report/group2/project_ppt_and_report_ME_final/Report-Paper-final.pdf)
 
 ### Group (3)
 - Title: Word Presentation for Paraphrase Myanmar Language using Word2vec Model
