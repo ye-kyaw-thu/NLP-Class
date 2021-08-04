@@ -20,7 +20,7 @@ Plan to upload each project report ...
 ### Group (4)
 - Title: University Chatbot using Artificial Intelligence Markup Language
 - Member: Ma Cho Zin Oo (Ph.D-19), Ma Cho War (Ph.D-2), Ma Hnin Ei Ei Cho (Ph.D-4), Ma Phyo Hay Mar Wai (Ph.D-5), Ma May Myat Myat Khaing (Ph.D-15), Ma Hay Man Htun (ME-IST-10)
-- Report: 
+- Report: [chatbot.pdf](https://github.com/ye-kyaw-thu/NLP-Class/blob/master/final-project/Report/group4/chatbot.pdf)
 
 ### Group (5)
 - Title: Automatic Speech Recognition System for Burmese Sentences using Kaldi
