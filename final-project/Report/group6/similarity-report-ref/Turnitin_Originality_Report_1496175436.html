@@ -1,0 +1,355 @@
+
+	
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="X-UA-Compatible" content="IE=7" />
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="author" content="Turnitin, LLC" />
+    <meta name="keywords" content="" /> 
+    <meta name="description" content="" />
+    <meta name="viewport" content="width = initial-scale" />
+    <meta name="viewport" content="height = initial-scale" />
+    
+<title>Turnitin Originality Report</title>
+
+<base href="http://www.turnitin.com">
+<style type="text/css">
+	
+body	{
+	color: #000;
+	background: #ddd;
+	padding: 0;
+	border: 0;
+	font: 14px Arial, Verdana, sans-serif;
+	margin: 0;
+	text-align: center;
+	}
+	
+form	{
+	padding: 0;
+	margin: 0;
+	}
+	
+p	{
+	padding: .8em 1.5em;
+	margin: 0;
+	text-align: left;
+	}
+	
+img	{
+	border: 0;
+	padding: 0;
+	}
+
+div	{
+	padding: 0;
+	border: 0;
+	text-align: left;
+	}
+	
+strong	{
+	font-weight: bold;
+	}
+	
+h2	{
+	font-size: 15px;
+	margin: 20px 0 10px 20px;
+	}
+	
+a:link, a:visited	{
+	text-decoration: underline;
+	color: #00f;
+	}
+	
+a:hover, a:active	{
+	text-decoration: underline;
+	color: #888;
+	}
+	
+img#logo	{
+	float: right;
+	padding-right: 20px;
+	padding-top: 10px;
+	}
+	
+div#container	{
+	border: 1px solid #aaa;
+	width: 770px;
+	margin: 20px auto;
+	background: #fff;
+	padding: 10px 0;
+	}
+	
+div#top	{
+	background: #fff;
+	width: 7in;
+	margin: auto;
+	padding-bottom: 15px;
+	}
+	
+div#content	{
+	background: #fff;
+	}
+	
+#top p	{
+	padding: .3em 0 .3em 20px;
+	}
+
+#top span	{
+	padding-right: 35px;
+	}
+	
+#top p#orig	{
+	padding-top: 15px;
+	}
+	
+#orig span#score.red	{
+	border-right: 18px solid red;
+	padding: .2em .5em;
+	margin: 0 1em;
+	background: white;
+	border-top: 1px solid #888;
+	border-bottom: 1px solid #888;
+	border-left: 1px solid #888;
+	}
+	
+#orig span#score.orange	{
+	border-right: 18px solid orange;
+	padding: .2em .5em;
+	margin: 0 1em;
+	background: white;
+	border-top: 1px solid #888;
+	border-bottom: 1px solid #888;
+	border-left: 1px solid #888;
+	}
+	
+#orig span#score.yellow	{
+	border-right: 18px solid yellow;
+	padding: .2em .5em;
+	margin: 0 1em;
+	background: white;
+	border-top: 1px solid #888;
+	border-bottom: 1px solid #888;
+	border-left: 1px solid #888;
+	}
+	
+#orig span#score.green	{
+	border-right: 18px solid green;
+	padding: .2em .5em;
+	margin: 0 1em;
+	background: white;
+	border-top: 1px solid #888;
+	border-bottom: 1px solid #888;
+	border-left: 1px solid #888;
+	}
+	
+#orig span#score.blue	{
+	border-right: 18px solid blue;
+	padding: .2em .5em;
+	margin: 0 1em;
+	background: white;
+	border-top: 1px solid #888;
+	border-bottom: 1px solid #888;
+	border-left: 1px solid #888;
+	}
+	
+div.divider	{
+	width: 7in;
+	border: 1px dotted #888;
+	margin: auto;
+	padding: 4px 0 4px 10px;
+	font-weight: bold;
+	background: #ddd;
+	font-size: 15px;
+	}
+	
+div.links	{
+	width: 7in;
+	margin: auto;
+	}
+	
+.links div	{
+	padding: 15px 20px 15px 20px;
+	border-bottom: 1px dotted #888;
+	}
+	
+.links div#last	{
+	padding: 15px 20px 20px 20px;
+	border-bottom: 0;
+	}
+	
+div.number	{
+	float: right;
+	background: white;
+	border: 1px solid #888;
+	margin: 0 0 0 20px;
+	padding: .1em .5em;
+	text-align: center;
+	color: black;
+	font-weight: bold;
+	font-size: 15px;
+	line-height: 20px;
+	}
+	
+div.number-l	{
+	float: left;
+	background: white;
+	border: 1px solid #888;
+	margin: 6px 16px 10px 0;
+	padding: .1em .5em;
+	text-align: center;
+	color: black;
+	font-weight: bold;
+	font-size: 15px;
+	line-height: 20px;
+	}
+	
+.links div p	{
+	padding: .2em 1.5em .4em 0;
+	}
+	
+.links div p#mess	{
+	padding: .2em 1.5em 0 0;
+	}
+	
+div#body	{
+	line-height: 1.5em;
+	width: 7in;
+	margin: auto;
+	padding-bottom: 20px;
+	}
+	
+#body p	{
+	color: #555;
+	padding-top: 30px;
+	line-height: 20px;
+	}
+
+	
+#body a	{
+	display: block;
+	color: #D10A0A;
+	margin: 1em 3em;
+	background-repeat: no-repeat;
+	background-position: top right;
+	padding: 1em 1em;
+	border: 1px dotted #888;
+	font-weight: bold;
+	font-size: 15px;
+	text-decoration: none;
+	line-height: 26px;
+	background: #FFFFE5;
+	}
+
+#body span	{
+	color: #555;
+	font-weight: normal;
+	font-size: 14px;
+	}
+
+#body span.number	{
+	display: block;
+	float: right;
+	color: #000;
+	font-weight: normal;
+	border: 1px solid #888;
+	padding: 0 6px;
+	font-weight: bold;
+	margin-left: 15px;
+	font-size: .9em;
+	background: #fff;
+	}
+	
+#actions	{
+	display: none;
+	}
+
+</style>
+
+
+
+</head>
+
+<body id="or_print_report">
+
+
+<div id="container">
+
+<div id="top">
+    <div id="content">
+        <!-- ######### Top Body  ##########################--> 
+        <div id="top_body">
+            <p id="title">
+            <img src="/r/build/images/b3964fd7e38c8fcbb8bfbf2efc1f0635cb_turnitin_logo.gif" id="logo" width="60">
+            Turnitin Originality Report
+            </p>
+                <div class="general_info">
+                    <p>
+                        <span>myTTS-ver3</span>
+                        
+                        by Ye Kyaw Thu
+                        
+                    </p>
+                    <p>
+                        From NLP Paper (NLP)
+                    </p>
+                    <ul>
+                        <li>Processed on 28-Jan-2021 18:03 +0630</li>
+                        <li>ID: 1496175436</li>
+                        <li>Word Count: 2080</li>
+                    </ul>
+                </div>
+                <div class="similarity_box">
+                    <div class="overall_similarity">
+                        <div class="color_box yellow">&nbsp;</div>
+                        <div class="similarity_title">Similarity Index</div>
+                        <div class="similarity_percent">28%</div>
+                    </div>
+                    <div class="similarity_by_source">
+                        <div class="similarity_title">Similarity by Source</div>
+                        <dl>
+                            <dt>Internet&nbsp;Sources:</dt>
+                            <dd>22%</dd>
+                            <div class="clear"></div>
+                            <dt>Publications:</dt>
+                            <dd>19%</dd>
+                            <div class="clear"></div>
+                            <dt>Student&nbsp;Papers:</dt>
+                            <dd>N/A</dd>
+                            <div class="clear"></div>
+                        </dl>
+                    </div>
+                </div>
+                <div class="clear"></div>
+                                 
+        </div>
+        <!-- ######### END Top Body  ##########################--> 
+    </div>
+</div>
+
+<div class="divider">sources:</div>
+
+<div class="links">
+
+	<div><p id="mess">You are currently viewing matches for the following source only:</p></div>
+
+	<div id="last">
+	
+	<p>10% match (Internet from 14-Apr-2018)</p>
+
+	<a href="https://arxiv.org/pdf/1703.10135.pdf">https://arxiv.org/pdf/1703.10135.pdf</a>
+
+	</div>
+
+</div>
+
+
+
+<div class="divider">paper text:</div>
+<div id="body">
+Myanmar Text to Speech Badounmar, Hnin Yu Hlaing, Hlaing May Tin, Nan Yu Hlaing, Thida San, Zun Hlaing Moe Abstract— Text-to-speech system typically consists of a text analysis front-end, an acoustic model and a speech synthesizer. Since these components are trained independently and rely on extensive domain expertise. In this project to address these problems, we apply Tacotron2 through tensorflow, which is <a href="javascript:openDSC(4242187638, 2909, '0');"  id="0" name="4242187638" ><span class=""></span>an end-to-end<span> generated </span>text-to-speech<span> (TTS) </span>model</a> with syllable and word-level. <a href="javascript:openDSC(4242187638, 2909, '3');"  id="3" name="4242187638" ><span class=""></span>Given &lt;text, audio&gt; pairs, the model can be trained from scratch with<span> random </span>initialization.</a><a href="javascript:openDSC(4242187638, 2909, '11');"  id="11" name="4242187638" ><span class=""></span>End-to-end system can be trained on</a> a small number of manually labeled text and audio paired data sets brings many advantages. In our experiment, according to the difficulties of the use of GPU, we trained 10 text and speech on step 10k for a week and investigated on closed test. Tacotron2 <a href="javascript:openDSC(4242187638, 2909, '6');"  id="6" name="4242187638" ><span class=""></span>achieves a 3.<span> 8 </span>subjective 5-scale mean opinion score on</a> closed tests with listeners, <a href="javascript:openDSC(4242187638, 2909, '25');"  id="25" name="4242187638" ><span class=""></span>outperforming a production parametric system in terms of naturalness.</a> The clarity performance of the syllable-level is better than the word-level. <a href="javascript:openDSC(4242187638, 2909, '8');"  id="8" name="4242187638" ><span class=""></span>In addition, since<span> Tacotron2 </span>generates speech at the frame level, it’s substantially faster than sample-level<span> autoregressive </span>methods.</a> Index Terms—TTS, Tacotron, Tensorflow, MOS, Encoder, Decoder I. Introduction HE main motivation for this project is to investigate the end-to-end text to speech synthesis with small corpus. TTS is a common research area of digital signal T processing (DSP) and natural language processing (NLP). It is intended to generate human-like speech from the input text or sentences, a natural-sounding in terms of intelligibility and quality. The main task of TTS is to convert any text information into standard and smooth speech in real time. The speech synthesis is not a new problem, but it is still one of the challenges for organi- zations and businesses. The modern TTS trend is more complex. Deep learning (DL) is a new research direction in the machine learning area in recent years. In this project, we experimented with TTS by Tacotron, one of deep learning methods which is to synthesize speech directly from the characters. It does not need phoneme- level alignment and can be trained on completely from scratch given &lt;text, audio&gt; pairs. There are a number of generative models already exist for this purpose, but some of them are not necessarily end-to-end as they usually have models developed and trained separately. Among these models, we used Tacotron as it is truly an end-to-end generative model that can fulfill our goal. The remainder of this paper is organized as follows. In Section 2, we describe the related work. Section 3 briefly introduces Myanmar Language. Section 4 describes methodology, Section 5 presents the overview of experi- Badounmar is with the Faculty of Computer Science, Computer University (Thaton), Thaton, Myanmar. Hnin Yu Hlaing is with the Faculty of Information Science, Uni- versity of Computer Studies(Meiktila), Meiktila, Myanmar. Hlaing May Tin is with the Faculty of Computer System and Technology, Myanmar Institute of Information Technology (MIIT), Mandalay, Myanmar. Nan Yu Hlaing, Zun Hlaing Moe and Thida San are with the Faculty of Information Science, Myanmar Institute of Information Technology (MIIT), Mandalay, Myanmar. mental setup, results and discussion. Lastly, we conclude in section 6. II. Related Work In recent years, DNN based generative models for Myan- mar Speech synthesis can yield better synthesized speech than HMM [1]. In [2], Quang Pham Huu proposed a deep learning architecture to the problem of speech synthesis, Tacotron model. The output of Tactron on both BigCor- pus and SmallCorpus achieved high-quality speech audio. Lwin et al., proposed Tacotron-2 model synthesize speech directly from the characters and they experimented on Myanmar text and audio pairs [3]. Kim et al., researched a generative flow of speech synthesis with monotonic alignment search without any external aligner and they obtained the comparable speech quality to Tacotron-2 [4]. Chuxiong Zhang et al., introduced Tacotron for Mandrain Chinese TTS with prosodic features to generate more natural speech and obtained better by adding the prosodic system as the front-endsystem for Tacotron [6]. III. Myanmar Language Myanmar language is the official language of Myanmar, and it is spoken as the first language by 32 million people and as the second language by another 10 million people. Myanmar script has 33 basic consonants, 4 basic medials, 12 basic vowels, other symbols and special characters. The consonants have only 23 distinct pronunciations because some consonants have the same pronunciation in the Myanmar language. A syllable is composed of one or more characters and one or more syllables can be formed as the word in Myanmar language. If the syllable final glottal stop is regarded as a tonal feature and the non-final neural vowel as anatonic vowel, there are four phonological tones in Myanmar [5]. IV. Methodology In this section, we describe the methodology used in this end-to-end text to speech synthesis. In the experiment of this project, used Tacotron2 was used with tensorflow. A. Tacotron End-to-end speech synthesis system combines text anal- ysis front-end, acoustic model and speech synthesizer into a unified framework without requiring phoneme level alignment and it <a href="javascript:openDSC(4242187638, 2909, '14');"  id="14" name="4242187638" ><span class=""></span>can be trained on<span> large scale of </span>text<span> and </span>audio pairs with<span> minimum </span>human annotation.</a> In this project, we used Tacotron-2, a fully end-to-end speech synthesis model that directly maps the input text to mel- spectrogram. <a href="javascript:openDSC(4242187638, 2909, '26');"  id="26" name="4242187638" ><span class=""></span>The backbone of Tacotron is a seq2seq model with attention.</a> Tacotron takes character sequence as in- puts and outputs raw spectrograms which are later recon- structed using an algorithm called Griffin-Lim. It operates at frame-level which is why it is faster than sample-level auto-regressive models like WaveNet and SampleRNN. It consists of <a href="javascript:openDSC(4242187638, 2909, '31');"  id="31" name="4242187638" ><span class=""></span>an encoder, an attention-based decoder, and a post-processing net.</a> The encoder is responsible for building up a well-defined summarized representation of the input character sequence. The decoder has to learn about the alignment between the text representations and the output audio frames based on the context [3]. <a href="javascript:openDSC(4242187638, 2909, '27');"  id="27" name="4242187638" ><span class=""></span>Figure 1 depicts the model<span> architecture, </span>which includes an<span> en- coder, </span>an attention-based decoder, and a post-processing<span> network. On the </span>high level, our model takes characters as input and</a> the resulting spectral frame data is then converted to a waveform. Fig. <a href="javascript:openDSC(4242187638, 2909, '18');"  id="18" name="4242187638" ><span class=""></span>1: Model architecture. The model takes characters as input and outputs the corresponding raw spectrogram, which is then fed to the<span> Graiffin </span>-Lim reconstruction algorithm to synthesize speech</a> B. CBHG Module CBHG consists of a one-dimensional convolution filter bank followed by a highway network and a two-way gated loop unit cyclic neural network (RNNCBHG is a powerful module to extract feature representations of sequences. A CNN works well for identifying simple patterns within your data which will then be used to form more complex patterns within higher layers. A 1D CNN is very effective when you expect to derive interesting features from shorter (fixed-length) segments of the overall data set and where the location of the feature within the segment is not of high relevance. C. <a href="javascript:openDSC(4242187638, 2909, '32');"  id="32" name="4242187638" ><span class=""></span>Encoder The<span> purpose </span>of the encoder is to extract<span> the </span>robust<span> sequence representation </span>of<span> the </span>text. The input to the encoder is a sequence<span> of characters, </span>each character<span> entered </span>is a one-hot vector and</a> embedded in a continuous vector. A set of non-linear transformations is then applied to each character vector, collectively referred to as ”pre-net.” The CBHG module transforms the output of the prenet into the final representation of the encoder and passes it to the subsequent attention module. D. Decoder Decoder turns the internal representation of the input signal into a Mel-spectrogram. A very important element of the network is the PostNet, designed to improve the spectrogram generated by the decoder. E. <a href="javascript:openDSC(4242187638, 2909, '41');"  id="41" name="4242187638" ><span class=""></span>Post-Processing<span> Network </span>and Waveform Synthesis The post-processing<span> network’s </span>task is to convert the<span> output of </span>seq2seq<span> into a </span>target<span> representation </span>that can be synthesized into</a> a waveform. The CBHG module is used as a post-processing network. Waveform is synthesized from the predicted spectrogram using the Griffin-Lim algorithm. Griffin-Lim algorithm enables a partial restore of the signal after fast Fourier transforms. It can reduce artifacts, probably due to its harmonic enhancement. V. Results and Discussion A. Corpus Statistics For this experiment, we used sentences from the “Grade 2” Myanmar textbook published by the Ministry of Edu- cation. Firstly we prepared myanmar sentences and audio files. Myanmar sentences are segmented into syllable and word-level. For the syllable segmentation, we used a regu- lar expression perl script developed by Saya Ye Kyaw Thu [7].To prepare the speech corpus, we used audio that has been recorded for Myanmar Braille TTS. B. Implementation To implement this project, we installed the following requirements: • Python3 • tensorflow framework 14.1 • numpy 1.19.2 • scikit-learn 0.20.3 • librosa 3.0.3 • falcon 1.2.0 • tqdm 4.31.1 • matploatlib 3.0.3 In the implementation, we prepared 10 sentences totally, this is for about 15 minutes in the format of text and audio parallel pair for training and two sentences for testing on closed test. Training time is a week for ten sentences. The maximum input text length is 117 and the maximum number of frames in the input audio is 6. C. Evaluation We used Mean Opinion Score (MOS) for the evaluation of the model output. Testing the outputs contains eleven listeners. We collected the evaluation rate from the lis- teners based on three conditions: clarity, naturalness and accurate over 1-5 rating. Rating 5 is the best condition. Listeners answer the questions. For testing the clarity and naturalness they answer these questions “How could you hear the sound clarity? ” and “ How does the sound is natural?”. For the accurate of the output sentence, we evaluate the condition based on this question “How many words can her the listener?” Calculate the accurate words based on how the listener hear the sentence accurately. For instance , there are six words in test sentence “ဘယ ် ကို သ ခွား့ ဲ သ လ ဲ ။ ”. If the user hear only 4 words, we denote an accurate rate of 3.33 for that sentence . If the user hear all words, the accurate rate is 5. The MOS scores from the listeners are shown in figure 6. The genrerated output of syllable and word-level waveforms are shown in figure 2 to figure 5. According to figure 5, there is noise in the word- level generated waveform. Therefore, the intelligibility of syllable-level is better than the word-level. Input test sentence: အ ခန ်း ( ၁ ) ။ Waveform for test sentence: Fig. 2: Syllable-Level Generated Waveform Fig. 3: Word-Level Generated Waveform Input test sentence: ဘယ ် ကို သ ခွားဲ့ သ လ ဲ ။ Waveform for test sentence: Fig. 4: Syllable-Level Generated waveform Fig. 5: Word-Level Generated waveform According to figure 7: clarity and naturalness of both test sentences are not significantly. However the first sentence is more accurate than the second one. According to our investigation, text length of the first sentence is shorter than the second and tonal significance is also better than the second one. Therefore the result of the first sentence is more better than the second one. The tone is also important for the text to speech. Fig. 6: Rating Scores from the Listeners Fig. 7: Speech Quality of the Output Model VI. Conclusion This mini project was contributed the evaluation of the end-to-end speech synthesis with tacorton model. This is the study of end-to-end speech synthesis with small cor- pus. We evaluated end-to-end TTS with the small corpus by using ten sentences from “Grade 2” Myanmar Basic Education Textbook. Although the syllable-level achieved 3.8 MOS score, the word-level achieved 3.4 on closed tests with listeners. syllable-level also obtained more clearance result than word-level. Good speech output depends not only on recording condition but also on tone signature. By experimenting this mini project, we experienced that tacotron2 can work well even in a small corpus. In the near future, we will plan to test large corpus on tacotron2. References [1] Aye Mya Hlaing, Win Pa Pa and Ye Kyaw Thu, “DNN based Myanmar Speech Synthesis”, The 6th Intl. Workshop on Spoken Language Technologies for Under-Resourced Languages 29-31 August 2018, pp, 142-146.. [2] Quang Pham Huu, “The End-to-End Speech Synthesis System for the VLSP Campaign 2019”. [3] Htoo Pyae Lwin, Yuzana Win and Tomonari Masada, “Myanmar Text-to-Speech with End-to-End Speech Synthesis”. [4] Jaehyeon Kim, Sungwon Kim, Jungil Kong and Sungroh Yoon, “ooo”, 34th Conference on Neural Information Processing Sys- tems (NeurIPS 2020), Vancouver, Canada, pp, 1-11. [5] U. Thein-Tun, “The domain of tones in burmese”, SST 1990 Proceedings, pp. 406–411, 1990. [6] Chuxiong Zhang, Sheng Zhang and Haibing Zhong, “A Prosodic Mandarin Text-to-Speech System Basedon Tacotron”, Proceed- ings of APSIPA Annual Summit and Conference, 2019, pp, 165- 169. [7] https://github.com/ye-kyaw-thu/sylbreak. 1 2 3 4 
+</div>
+</div>
+</body>
+</html>
