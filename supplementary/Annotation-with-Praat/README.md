@@ -36,6 +36,15 @@ praat
 Praat 6.1.51 (July 22 2021)
 ```
 
+## Running Praat
+
+Praat ပရိုဂရမ်ကို run တာကတော့ installation လုပ်ထားတဲ့ (သို့) download လုပ်ထားတဲ့ path အောက်က binary ဖိုင်ကို ခေါ် run ယုံပါပဲ။ Command line ကနေသွားမယ်ဆိုရင် အောက်ပါအတိုင်း ရိုက်ပြီး Enter ကီးကို နှိပ်ပေးလိုက်ပါ။  
+
+```bash
+$ ./praat
+```
+
+
 ## Annotation
 
 အသံတွေကို annotation လုပ်တယ်ဆိုတာကို အလွယ်ရှင်းရရင် ဖမ်းထားတဲ့ အသံ (recorded sound/speech) တွေကို အပိုင်းပိုင်းဖြတ်ပြီး (i.e. segmentation) လေဘယ်ထိုးတာ ပါပဲ။ ဒီ tutorial က Praat ဆောဖ့်ဝဲလ် ကိုသုံးပြီး အသံဖိုင်ကို ဗမာစာ text label ထိုးတာ၊ audio သမားတွေ speech သမားတွေကပြောပြောနေကြတဲ့ transcript လုပ်တာကို သင်ပေးတဲ့ tutorial အတိုလေးပါ။  
