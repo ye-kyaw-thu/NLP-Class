@@ -1,0 +1,4 @@
+Read from file: "/home/ye/tool/praat6151/annotation/audio/recording1-edited.wav"
+View & Edit
+editor: "Sound recording1-edited"
+Zoom: 0.193610, 0.965184
