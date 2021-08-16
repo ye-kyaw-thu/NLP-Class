@@ -129,5 +129,6 @@ Recording လုပ်ထားတဲ့ ဗမာစာကြောင်းက
 ## References
 
 1. https://www.fon.hum.uva.nl/praat/  
-2. https://en.wikipedia.org/wiki/Audio_file_format  
+2. Boersma, Paul (2001). Praat, a system for doing phonetics by computer. Glot International 5:9/10, 341-345.  
+3. https://en.wikipedia.org/wiki/Audio_file_format  
 
