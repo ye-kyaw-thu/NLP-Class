@@ -140,4 +140,4 @@ Zoom: 0.193610, 0.965184
 1. https://www.fon.hum.uva.nl/praat/  
 2. Boersma, Paul (2001). Praat, a system for doing phonetics by computer. Glot International 5:9/10, 341-345.  
 3. https://en.wikipedia.org/wiki/Audio_file_format  
-
+4. https://www.fon.hum.uva.nl/praat/manualsByOthers.html
