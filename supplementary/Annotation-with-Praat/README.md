@@ -137,6 +137,15 @@ Create Sound from formula: "ဖော်မြူလာက ထုတ်ပေး
 Play
 ```
 
+<p align="center">
+<img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/output-of-create-a-sound1-script.png" alt="drawing" width="600"/>  
+</p>  
+<div align="center">
+  Fig. Viewing Recorded Wavefile (filename:recording1.wav)
+</div> 
+
+<br />
+
 ## Praat Keyboard Shortcuts
 
 ## Demo Video
