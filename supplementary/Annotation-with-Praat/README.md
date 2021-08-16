@@ -110,7 +110,7 @@ Sampling frequency ကတော့ default ဖြစ်တဲ့ 44100 Hz နဲ
 
 <br />
 
-
+Recording လုပ်ထားတဲ့ ဗမာစာကြောင်းက "ကန်စွန်းရွက် နဲ့ မှိုကြော် တစ်ပွဲ ပေးပါ" ဆိုတဲ့ စာကြောင်းပါ။   
 
 ### 3.Creating a Sound From a Fomula  
 
