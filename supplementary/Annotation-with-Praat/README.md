@@ -130,12 +130,24 @@ Praat မှာ script ရေးမယ်ဆိုရင် Praat Objects Window
 
 ### Script Example No.1
 
+ပထမဆုံး script example အနေနဲ့ အောက်ပါ စာကြောင်းတွေကို script editor window မှာ ရိုက်ထည့်တာ (သို့) ကော်ပီကူးထည့်တာလုပ်ပါ။  
+
 ```
 Read from file: "/home/ye/tool/praat6151/annotation/audio/recording1-edited.wav"
 View & Edit
 editor: "Sound recording1-edited"
 Zoom: 0.193610, 0.965184
 ```
+
+ဖတ်ကြည့်ရင်လည်း အလွယ်တကူ နားလည်နိုင်မယ်လို ယူဆပါတယ်။ ပထမဆုံး Praat script မို့ ရေးထားတဲ့ instruction တစ်ကြောင်းချင်းစီကို အတိုရှင်းပြရရင် အောက်ပါအတိုင်းပါ။  
+
+1. ```Read from file: "/home/ye/tool/praat6151/annotation/audio/recording1-edited.wav"``` (အထက်မှာ editing လုပ်ခဲ့ပြီးသိမ်းထားတဲ့ ဖိုင်ကို path အတိအကျပေးပြီး Praat ကို ဖတ်ခိုင်းတာပါ)
+2. ```View & Edit``` (လက်ရှိ ဖတ်ထားတဲ့ ဖိုင်ကို "View & Edit" window အနေနဲ့ ဖွင့်ခိုင်းလိုက်တာပါ)
+3. ```editor: "Sound recording1-edited"``` (editor ကို "Sound recording1-edited" object ကို assign လုပ်လိုက်တာလို့ နားလည်ပါတယ်)
+4. ```Zoom: 0.193610, 0.654709``` (Wave ဖိုင် တစ်ဖိုင်လုံးအထဲကနေ Zoom in လုပ်စေချင်တဲ့ interval ရဲ့ starting point, ending point တွေကို သတ်မှတ်ပေးလိုက်တာပါ)
+
+ပေးတဲ့ path မှာ ဖွင့်ခိုင်းတဲ့ ဖိုင်ကလည်း ရှိတယ်။ Zoom in လုပ်တာမျိုးလည်း ပြဿနာမရှိပဲ လုပ်ပြီးသွားရင်တော့ အောက်ပါ figure မှာ ပြထားအတိုင်း Zoom in လုပ်ထားတဲ့ အပိုင်းကိုပဲ ပြသပေးမှာဖြစ်ပါတယ်။ Zoom in လုပ်ထားတဲ့အပိုင်းကို Play လုပ်ကြည့်ရင်တော့ "ကန်စွန်းရွက်နဲ့" ဆိုတဲ့ အပိုင်းကိုပဲ ကြားရမှာ ဖြစ်ပါတယ်။  
+
 
 <p align="center">
 <img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/read-wav-and-zoom-in-output.png" alt="drawing" width="600"/>  
@@ -166,6 +178,7 @@ Play
 ### Script Example No.3
 
 ```
+Copy: "recording1-edited-reversed"
 Reverse
 View & Edit
 ```
