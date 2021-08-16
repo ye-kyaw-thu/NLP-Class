@@ -139,7 +139,7 @@ Recording လုပ်ထားတဲ့ ဗမာစာကြောင်းက
 
 တချို့ speech processing အလုပ်တွေအတွက် အသံဖိုင်တွေကို ဖော်မြူလာတစ်ခုနဲ့ ဖန်တီးယူတာမျိုးလည်း လုပ်လေ့ရှိပါတယ်။ 
 <p align="center">
-<img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/create-sound-from-formula-in-Praat.png" alt="drawing" width="500"/>  
+<img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/create-sound-from-formula-in-Praat.png" alt="drawing" width="400"/>  
 </p>  
 <div align="center">
   Fig. Menu, sub-menu Information for Creating a Sound from a Formula
