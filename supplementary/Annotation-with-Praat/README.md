@@ -122,6 +122,15 @@ Recording လုပ်ထားတဲ့ ဗမာစာကြောင်းက
 
 ## Finding Zero Crossings
 
+## Praat Scripting
+
+```
+Read from file: "/home/ye/tool/praat6151/annotation/audio/recording1-edited.wav"
+View & Edit
+editor: "Sound recording1-edited"
+Zoom: 0.193610, 0.965184
+```
+
 ## Praat Keyboard Shortcuts
 
 ## Demo Video
