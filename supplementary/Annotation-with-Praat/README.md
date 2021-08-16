@@ -158,6 +158,8 @@ Zoom: 0.193610, 0.654709
 
 <br />
 
+<audio src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/audio/kazunyuatne.mp3" autoplay></audio>
+
 <audio controls>
   <source src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/audio/kazunyuatne.mp3" type="audio/mpeg">
 </audio>
