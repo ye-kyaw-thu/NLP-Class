@@ -136,7 +136,7 @@ Praat မှာ script ရေးမယ်ဆိုရင် Praat Objects Window
 Read from file: "/home/ye/tool/praat6151/annotation/audio/recording1-edited.wav"
 View & Edit
 editor: "Sound recording1-edited"
-Zoom: 0.193610, 0.965184
+Zoom: 0.193610, 0.654709
 ```
 
 ဖတ်ကြည့်ရင်လည်း အလွယ်တကူ နားလည်နိုင်မယ်လို ယူဆပါတယ်။ ပထမဆုံး Praat script မို့ ရေးထားတဲ့ instruction တစ်ကြောင်းချင်းစီကို အတိုရှင်းပြရရင် အောက်ပါအတိုင်းပါ။  
@@ -153,7 +153,7 @@ Zoom: 0.193610, 0.965184
 <img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/kazunyuatne.png" alt="drawing" width="600"/>  
 </p>  
 <div align="center">
-  Fig. Output Screen of the Praat Script (Read the wavefile: recording1.wa and Zoom in the Interval 0.193610 and 0.965184)
+  Fig. Output Screen of the Praat Script (Read the wavefile: recording1.wa and Zoom in the Interval 0.193610 and 0.654709)
 </div> 
 
 <br />
