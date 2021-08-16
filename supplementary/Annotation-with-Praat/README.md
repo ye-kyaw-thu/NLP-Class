@@ -164,6 +164,9 @@ Zoom: 0.193610, 0.654709
   <source src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/audio/kazunyuatne.mp3" type="audio/mpeg">
 </audio>
 
+%md
+<audio controls=true src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/audio/kazunyuatne.wav" />
+
 ### Script Example No.2
 
 ```
