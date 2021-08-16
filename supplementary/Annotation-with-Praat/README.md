@@ -70,7 +70,7 @@ Annotation လုပ်ဖို့အတွက် အရင်ဆုံး အ�
 ASR, TTS အတွက်က mono sound ဖိုင်ကိုပဲ သုံးတာက ပုံမှန်မို့လို့ Recording လုပ်မယ်ဆိုရင် Praat Objects Windows ရဲ့ "New" menu အောက်က "Record mono Sound..." ကို ရွေးပါ။ အောက်ပါ "SoundRecorder" window ကို မြင်ရပါလိမ့်မယ်။  
 
 <p align="center">
-<img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/sound_recorder_screen.png" alt="drawing" width="600"/>  
+<img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/sound_recorder_screen.png" alt="drawing" width="500"/>  
 </p>  
 <div align="center">
   Fig. Sound Recorder Window of Praat    
@@ -81,7 +81,7 @@ ASR, TTS အတွက်က mono sound ဖိုင်ကိုပဲ သုံ�
 Record ဆိုတဲ့ button ကို နှိပ်ရင် recording က စတင် လုပ်နေပြီဖြစ်ပါတယ်။ ကိုယ့်စက်နဲ့ ချိတ်ဆက်ထားတဲ့ မိုက်ကရိုဖုန်းက ပုံမှန်အလုပ်လုပ်တယ်၊ Praat ပရိုဂရမ်ကလည်း သိတယ်ဆိုရင် စကားပြောကြည့်တဲ့အခါမှာ အစိမ်းရောင် ဘားက တက်လိုက်ကျလိုက်ဖြစ်တာကို မြင်တွေ့ရမှာ ဖြစ်ပါတယ်။ အဲဒါဆိုရင် အသံဖမ်းတဲ့ အလုပ်ကို ဆက်လုပ်သွားလို့ ရပါပြီ။ တစ်ခုရှိတာက မိုက်ရိုဖုန်းရဲ့ setting က လက်ခံတဲ့အသံ volume ကို အရမ်းမြှင့်ထားတယ် (သို့) စကားပြောတဲ့သူရဲ့ အသံက တအား ကျယ်နေတဲ့ အခါမျိုးမှာတော့ recording လုပ်နေစဉ်အချိန်မှာ အောက်ပါ ပုံမှာ ပြထားတဲ့အတိုင်း အဝါရောင်၊ အနီရော် စသည်ဖြင့် warning လုပ်တဲ့ ဘားတွေကို မြင်နေရမှာ ဖြစ်ပါတယ်။ အဲဒီလိုဖြစ်နေရင်တော့ အသံစတင် မဖမ်းခင်မှာ မိုက်ကရိုဖုန်းရဲ့ setting ကို ပြန်ညှိတာ (သို့) စကားပြောတဲ့ သူရဲ့ အသံက တအား volume မြင့်နေတယ်ဆိုရင်လည်း အသံကို နှိမ့်ပြောခိုင်းတာ စတာတွေကို လုပ်သင့်ပါတယ်။  
 
 <p align="center">
-<img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/sound_recorder_screen_meter.png" alt="drawing" width="600"/>  
+<img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/sound_recorder_screen_meter.png" alt="drawing" width="500"/>  
 </p>  
 <div align="center">
   Fig. Meter Bar of Sound Recorder Window of Praat    
@@ -204,7 +204,7 @@ Zoom: 0.193610, 0.654709
 
 
 <p align="center">
-<img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/kazunyuatne.png" alt="drawing" width="600"/>  
+<img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/kazunyuatne.png" alt="drawing" width="800"/>  
 </p>  
 <div align="center">
   Fig. Output Screen of the Praat Script (Read the wavefile: recording1.wa and Zoom in the Interval 0.193610 and 0.654709)
@@ -226,7 +226,7 @@ Play
 အထက်မှာ ရေးထားတာက frequency ကို 377 Hz (cycles per second) အဖြစ် assign လုပ်ပြီး 377 Hz Sine wave ကိုဖန်တီးပြီး Play လုပ်ခိုင်းတာပါ။ Praat ကိုသုံးနေတဲ့ ကွန်ပျူတာမှာ speaker တပ်ထားရင် (သို့) headset တပ်ထားရင် အသံကိုလည်း ကြားရပါလိမ့်မယ်။ ဖော်မြူလာကထုတ်ပေးတဲ့ အသံလှိုင်းကို waveform ပုံစံ၊ spectrogram ပုံစံအနေနဲ့ကတော့ အောက်ပါအတိုင်း မြင်ရမှာ ဖြစ်ပါတယ်။   
 
 <p align="center">
-<img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/output-of-create-a-sound1-script.png" alt="drawing" width="600"/>  
+<img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/output-of-create-a-sound1-script.png" alt="drawing" width="800"/>  
 </p>  
 <div align="center">
   Fig. Output Screen of the Sound Produced by the Praat Script
