@@ -76,7 +76,7 @@ Sampling frequency ကတော့ default ဖြစ်တဲ့ 44100 Hz နဲ
 <img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/objects_windows1.png" alt="drawing" width="600"/>  
 </p>  
 <div align="center">
-  Fig. Recorded Files in the List of Praat Objects Windows
+  Fig. Recorded Files in the List of Praat Objects Window
 </div> 
 
 <br />
@@ -91,6 +91,8 @@ Sampling frequency ကတော့ default ဖြစ်တဲ့ 44100 Hz နဲ
 </div> 
 
 <br />
+
+တစ်ခု သိထားရမှာက လက်ရှိ Objects Window အောက်မှာ မြင်နေရတဲ့ ဖိုင်က temporary အနေနဲ့ပဲ ရှိနေတာဖြစ်ပြီးတော့ တကယ်တမ်း hard disk drive မှာ ဖိုင်အနေနဲ့ သိမ်းဆည်းချင်တယ်ဆိုရင်တော့ "Save" Menu အောက်က "Save as WAV file..." ဆိုတာကို နှိပ်ပြီး သိမ်းမှသာ သိမ်းပေးမှာ ဖြစ်ပါတယ်။  
 
 ### 2.Reading a Sound File
 
