@@ -114,6 +114,11 @@ Recording လုပ်ထားတဲ့ ဗမာစာကြောင်းက
 
 ### 3.Creating a Sound From a Fomula  
 
+## Viewing and Editing
+
+## Segmentation and Annotation
+
+## Praat Keyboard Shortcuts
 
 ## References
 
