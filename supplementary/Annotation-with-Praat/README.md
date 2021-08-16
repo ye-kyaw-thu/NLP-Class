@@ -118,7 +118,11 @@ Recording လုပ်ထားတဲ့ ဗမာစာကြောင်းက
 
 ## Segmentation and Annotation
 
+## Finding Zero Crossings
+
 ## Praat Keyboard Shortcuts
+
+## Demo Video
 
 ## References
 
