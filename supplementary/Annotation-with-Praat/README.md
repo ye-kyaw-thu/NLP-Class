@@ -125,7 +125,7 @@ Sampling frequency ကတော့ default ဖြစ်တဲ့ 44100 Hz နဲ
 
 
 <p align="center">
-<img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/recording1.png" alt="drawing" width="600"/>  
+<img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/recording1.png" alt="drawing" width="800"/>  
 </p>  
 <div align="center">
   Fig. Viewing Recorded Wavefile (filename:recording1.wav)
