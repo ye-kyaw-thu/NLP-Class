@@ -44,6 +44,18 @@ Praat ပရိုဂရမ်ကို run တာကတော့ installation �
 $ ./praat
 ```
 
+ကိုယ့်စက်မှာ run လိုက်ရင် အရင်ဆုံး မြင်ရမှာက အောက်ပါအတိုင်း Window နှစ်ခုပါ။  
+
+<p align="center">
+<img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/two-windows-of-Praat.png" alt="drawing" width="600"/>  
+</p>  
+<div align="center">
+  Fig. Objects and Picture Windows of Praat Program   
+</div> 
+
+<br />
+
+အတိုရှင်းရရင်... အဓိကကျတဲ့ operation တွေက "Praat Objects" Windows ကနေပဲ လုပ်ပါတယ်။ "Praat Picture" Windows က စာတမ်းရေးဖို့အတွက်၊ ပိုစတာဘာညာ ပြင်ဆင်ဖို့အတွက် eps ဖိုင်လိုမျိုး quality ကောင်းတဲ့ figure တွေကို ထုတ်ဖို့အတွက် Drawing ကိစ္စတွေလုပ်တဲ့အခါမှာ သုံးတာပါ။ ဒီ Annotation မိတ်ဆက် tutorial အတွက်လည်း သုံးမှာ မဟုတ်လို့ "Praat Picture" Window ကို ပိတ်ထားလိုက်ပါ။   
 
 ## Annotation
 
