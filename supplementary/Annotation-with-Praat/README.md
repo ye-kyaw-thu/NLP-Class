@@ -57,7 +57,7 @@ $ ./praat
 
 အတိုရှင်းရရင်... အဓိကကျတဲ့ operation တွေက "Praat Objects" Windows ကနေပဲ လုပ်ပါတယ်။ "Praat Picture" Windows က စာတမ်းရေးဖို့အတွက်၊ ပိုစတာဘာညာ ပြင်ဆင်ဖို့အတွက် eps ဖိုင်လိုမျိုး quality ကောင်းတဲ့ figure တွေကို ထုတ်ဖို့အတွက် Drawing ကိစ္စတွေလုပ်တဲ့အခါမှာ သုံးတာပါ။ ဒီ Annotation မိတ်ဆက် tutorial အတွက်လည်း သုံးမှာ မဟုတ်လို့ "Praat Picture" Window ကို ပိတ်ထားလိုက်ပါ။   
 
-## Annotation
+## Sound/Audio File
 
 အသံတွေကို annotation လုပ်တယ်ဆိုတာကို အလွယ်ရှင်းရရင် ဖမ်းထားတဲ့ အသံ (recorded sound/speech) တွေကို အပိုင်းပိုင်းဖြတ်ပြီး (i.e. segmentation) လေဘယ်ထိုးတာ ပါပဲ။ ဒီ tutorial က Praat ဆောဖ့်ဝဲလ် ကိုသုံးပြီး အသံဖိုင်ကို ဗမာစာ text label ထိုးတာ၊ audio သမားတွေ speech သမားတွေကပြောပြောနေကြတဲ့ transcript လုပ်တာကို သင်ပေးတဲ့ tutorial အတိုလေးပါ။  
 
