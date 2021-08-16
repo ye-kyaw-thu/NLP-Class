@@ -135,7 +135,7 @@ Zoom: 0.193610, 0.965184
 <img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/read-wav-and-zoom-in-output.png" alt="drawing" width="600"/>  
 </p>  
 <div align="center">
-  Fig. Viewing Recorded Wavefile (filename:recording1.wav)
+  Fig. Output Screen of the Praat Script (Read the wavefile: recording1.wa and Zoom in the Interval 0.193610 and 0.965184)
 </div> 
 
 <br />
@@ -150,7 +150,7 @@ Play
 <img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/output-of-create-a-sound1-script.png" alt="drawing" width="600"/>  
 </p>  
 <div align="center">
-  Fig. Viewing Recorded Wavefile (filename:recording1.wav)
+  Fig. Output Screen of the Sound Produced by the Praat Script
 </div> 
 
 <br />
