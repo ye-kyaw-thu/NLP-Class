@@ -182,11 +182,32 @@ Play
 
 ### Script Example No.3
 
+Script ကို ပရိုဂရမ်ရေးသလို instruction တွေကိုရိုက်ထည့်ပြီးရေးတဲ့ ပုံစံအပြင် Praat မှာက menu တွေကတဆင့် လုပ်သွားတဲ့ အလုပ်တွေကို record လုပ်ပေးထားပြီး Prat script ရဲ့ instruction တွေအနေနဲ့ paste လုပ်ခိုင်းတာမျိုးလည်း လုပ်လို့ ရပါတယ်။ ဒီ feature ကလည်း တကယ်အသုံးဝင်ပါတယ်။ Example No. 3 အနေနဲ့ အဲဒီ "Paste history" ကိုသုံးပြီး script ရေးတာကို စမ်းကြည့်စေချင်ပါတယ်။  
+
+အရင်ဆုံး အလုပ်လုပ်မယ့် အသံဖိုင်ကို Praat Object Window ရဲ့ object list မှာ selection လုပ်ထားပါ။  
+ပြီးရင် "Praat" menu အောက်က "New Prat script" sub-menu ကိုရွေးပြီး script editor screen ကို ဖွင့်ပါ။  
+ကိုယ်လုပ်မယ့် အလုပ်တွေကို record မလုပ်ခင်မှာ အရင်ဆုံး script editor screen window ရဲ့ "Edit" menu အောက်က submenu "Clear history" ကိုနှိပ်ပြီး ရှေ့က လုပ်ခဲ့တဲ့ အလုပ်တွေရဲ့ history ကို ရှင်းထားမှ ဖြစ်ပါမယ်။  
+
+စမ်းပြီး script ရေးခိုင်ချင်တဲ့ အလုပ်က လက်ရှိ select လုပ်ထားတဲ့ sound ဖိုင်ကို နာမည်အသစ်တစ်ခု copy ကူးပြီး၊ Reverse form ပုံစံအဖြစ် modify လုပ်ပါမယ်။ ပြီးရင် View & Edit နဲ့ ပြောင်းပြန်ဖြစ်သွားတဲ့ အသံဖိုင်ရဲ့ waveform, spectrogram form ကို ဖွင့်ကြည့်ပါမယ်။ အသေးစိတ် အနေနဲ့က အခုပြောခဲ့တဲ့ အလုပ်တွေကို Praat Object Window ရဲ့အောက်ကနေ လုပ်သွားမှာ ဖြစ်ပါတယ်။  
+
+- Praat Object Window ရဲ့ အောက်ဘက်မှာရှိတဲ့ "Copy" Button ကို နှိပ်မယ်
+- ပေါ်လာတဲ့ "Copy object" Window မှာ original ဖိုင်နာမည်နောက်မှာ "-reversed" ဆိုတာကို ဖြည့်ရိက်ပေးလိုက်မယ်
+- ပြီးရင် "OK" button ကို နှိပ်မယ် (အဲဒါဆိုရင် Object Window ရဲ့ object list မှာ copy ကူးထားတဲ့ ဖိုင်တိုးလာတာကို မြင်တွေ့ရပါလိမ့်မယ်)  
+- ပြီးရင်တော့ Praat Object Window မှာပဲ ညာဘက်အခြမ်းမှာ ရှိတဲ့ Button တွေ အများကြီးထဲကနေ "Modify-" ဆိုတဲ့ Button ကို နှိပ်လိုက်ပြီး "Reverse" ဆိုတဲ့ menu ကို ကလစ်နှိပ်ပေးလိုက်ပါ 
+- နောက်ဆုံး အလုပ်အနေနဲ့ Script editor window ဘက်ကို ပြောင်းလိုက်ပြီး "Edit" menu အောက်မှာရှိတဲ့ "Paste history" ဆိုတဲ့ sub-menu ကို သုံးပြီး paste လုပ်ပါ
+
+အထက်မှာ ပြောပြခဲ့တဲ့ အဆင့်တွေအတိုင်း မှန်မှန်ကန်ကန် လုပ်ခဲ့ရင် Script editor မှာ အောက်ပါ code (သို့) instruction တွေကို မြင်ရပါလိမ့်မယ်။  
+
 ```
 Copy: "recording1-edited-reversed"
 Reverse
 View & Edit
 ```
+
+အခု script ကို filename တစ်ခုပေးပြီး သိမ်းထားရင်၊ နောက်ပိုင်း ဘယ် အသံဖိုင်ကိုမဆို left-to-right ကနေ right-to-left ပြောင်းပြန် အသံဖိုင်အဖြစ် လုပ်တာကို script run ပြီး လုပ်ခိုင်းလို့ ရသွားပါပြီ။  
+လက်တွေ့မှာတော့ အခုထက်ပိုတဲ့ အဆင့်ဆင့်လုပ်ရတဲ့ soud processing အလုပ်တွေကို script ရေးပြီး သိမ်းထားဖို့အတွက် သုံးပါတယ်။  
+
+အခု ဥပမာအဖြစ် reverse လုပ်ခဲ့တဲ့ အသံဖိုင်ကိုတော့ အောက်ပါ figure မှာ ပြထားတဲ့အတိုင်း မြင်ရမှာ ဖြစ်ပါတယ်။  
 
 <p align="center">
 <img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/reverse-output.png" alt="drawing" width="600"/>  
@@ -196,6 +217,8 @@ View & Edit
 </div> 
 
 <br />
+
+အထက်ပါ အသံဖိုင်ကို Play လုပ်ကြည့်ရင် "ကန်စွန်းရွက် နဲ့ မှိုကြော် တစ်ပွဲ ပေးပါ" ဆိုတဲ့ ဗမာစာကြောင်းကို ပြောင်းပြန် play လုပ်သွားမှာမို့လို့ နားထောင်ကြည့်ရင်တော့ စိတ်ဝင်စားဖို့ကောင်းတဲ့ အသံကို ကွန်ပျူတာက ထုတ်ပေးမှာ ဖြစ်ပါတယ်။  
 
 ## Praat Keyboard Shortcuts
 
