@@ -98,3 +98,9 @@ Sampling frequency ကတော့ default ဖြစ်တဲ့ 44100 Hz နဲ
 
 ### 3.Creating a Sound From a Fomula  
 
+
+## References
+
+https://www.fon.hum.uva.nl/praat/
+https://en.wikipedia.org/wiki/Audio_file_format
+
