@@ -155,6 +155,20 @@ Play
 
 <br />
 
+```
+Reverse
+View & Edit
+```
+
+<p align="center">
+<img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/reverse-output.png" alt="drawing" width="600"/>  
+</p>  
+<div align="center">
+  Fig. Output Screen of the Reverse Version of the Recorded Wave File
+</div> 
+
+<br />
+
 ## Praat Keyboard Shortcuts
 
 ## Demo Video
