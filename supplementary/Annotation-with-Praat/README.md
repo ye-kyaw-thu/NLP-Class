@@ -161,11 +161,15 @@ Zoom: 0.193610, 0.654709
 
 ### Script Example No.2
 
+အသံဖိုင်ကို ဖော်မြူလာနဲ့ ထုတ်တာကို script ရေးပြီးတော့ လုပ်ကြည့်ကြရအောင်...  
+
 ```
 frequency = 377
 Create Sound from formula: "ဖော်မြူလာက ထုတ်ပေးတဲ့ အသံလှိုင်း" , 1, 0.0, 1.0, 44100, "1/2 * sin(2*pi*frequency*x)"
 Play
 ```
+
+အထက်မှာ ရေးထားတာက frequency ကို 377 Hz (cycles per second) အဖြစ် assign လုပ်ပြီး 377 Hz Sine wave ကိုဖန်တီးပြီး Play လုပ်ခိုင်းတာပါ။ Praat ကိုသုံးနေတဲ့ ကွန်ပျူတာမှာ speaker တပ်ထားရင် (သို့) headset တပ်ထားရင် အသံကိုလည်း ကြားရပါလိမ့်မယ်။    
 
 <p align="center">
 <img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/output-of-create-a-sound1-script.png" alt="drawing" width="600"/>  
