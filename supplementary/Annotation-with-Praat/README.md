@@ -101,6 +101,6 @@ Sampling frequency ကတော့ default ဖြစ်တဲ့ 44100 Hz နဲ
 
 ## References
 
-https://www.fon.hum.uva.nl/praat/
-https://en.wikipedia.org/wiki/Audio_file_format
+1. https://www.fon.hum.uva.nl/praat/  
+2. https://en.wikipedia.org/wiki/Audio_file_format  
 
