@@ -92,11 +92,25 @@ Sampling frequency ကတော့ default ဖြစ်တဲ့ 44100 Hz နဲ
 
 <br />
 
-တစ်ခု သိထားရမှာက လက်ရှိ Objects Window အောက်မှာ မြင်နေရတဲ့ ဖိုင်က temporary အနေနဲ့ပဲ ရှိနေတာဖြစ်ပြီးတော့ တကယ်တမ်း hard disk drive မှာ ဖိုင်အနေနဲ့ သိမ်းဆည်းချင်တယ်ဆိုရင်တော့ "Save" Menu အောက်က "Save as WAV file..." ဆိုတာကို နှိပ်ပြီး သိမ်းမှသာ သိမ်းပေးမှာ ဖြစ်ပါတယ်။  
+တစ်ခု သိထားရမှာက လက်ရှိ Objects Window အောက်မှာ မြင်နေရတဲ့ ဖိုင်က temporary အနေနဲ့ပဲ ရှိနေတာဖြစ်ပြီးတော့ တကယ်တမ်း hard disk drive (HDD) မှာ ဖိုင်အနေနဲ့ သိမ်းဆည်းချင်တယ်ဆိုရင်တော့ "Save" Menu အောက်က "Save as WAV file..." ဆိုတာကို နှိပ်ပြီး သိမ်းမှသာ သိမ်းပေးမှာ ဖြစ်ပါတယ်။  
 
 ### 2.Reading a Sound File
 
-ကိုယ်က ရှိပြီးသားဖိုင်ကို ဖွင့်ပြီး အလုပ်လုပ်မှာ ဆိုရင်တော့ HDD ပေါ်က သို့မဟုတ် USB stick စတဲ့ storage device တစ်ခုခုကနေ ဖွင့်ဖတ်ယူလို့လည်း ရပါတယ်။ Praat က audio coding format အမျိုးမျိုးကို support လုပ်ပါတယ်။ အဲဒါကြောင့် WAV, AIFF or AIFC, FLAC, NIST, MP3 စတဲ့ audio ဖိုင် အကုန်လုံးလိုလိုကို Praat နဲ့ ဖွင့်ဖတ်ပြီး sound editing လုပ်လို့ ရပါတယ်။ 
+ကိုယ်က ရှိပြီးသားဖိုင်ကို ဖွင့်ပြီး အလုပ်လုပ်မှာ ဆိုရင်တော့ HDD ပေါ်က သို့မဟုတ် USB stick စတဲ့ storage device တစ်ခုခုကနေ ဖွင့်ဖတ်ယူလို့လည်း ရပါတယ်။ Praat က audio coding format အမျိုးမျိုးကို support လုပ်ပါတယ်။ အဲဒါကြောင့် WAV, AIFF or AIFC, FLAC, NIST, MP3 စတဲ့ audio ဖိုင် အကုန်လုံးလိုလိုကို Praat နဲ့ ဖွင့်ဖတ်ပြီး sound editing လုပ်လို့ ရပါတယ်။  
+
+ရှိပြီးသား wave ဖိုင်တစ်ဖိုင်ကို ဖွင့်ပြီး editing လုပ်မယ် ဆိုရင်တော့ Praat Objects Window ရဲ့ "Open" menu အောက်က "Read from file..." sub menu ကို ရွေးပြီး ကိုယ်ဖွင့်ချင်တဲ့ ဖိုင်ရှိနေတဲ့ path ကိုသွားပြီး select လုပ်ပြီး ဖွင့်ရမှာ ဖြစ်ပါတယ်။ ဥပမာအနေနဲ့ audio/ ဖိုလ်ဒါအောက်က recording1.wav ဆိုတဲ့ ဖိုင်ကို ဖွင့်ကြည့်ရအောင်။ Praat Objects Window ရဲ့ Object list ထဲမှာ "1. Sound recording1" ဆိုပြီးတော့ မြင်ရပါလိမ့်မယ်။ အဲဒါဆိုရင်တော့ အဲဒီ recording1 ဖိုင်နဲ့ ပတ်သက်ပြီး ကိုယ်လုပ်ချင်တဲ့ အလုပ်တွေကို စလုပ်လို့ ရပါပြီ။ Transcript လုပ်မယ် ဆိုရင်တော့ "View & Edit" button ကို နှိပ်ပါ။ အဲဒါဆိုရင် အဲဒီ wave ဖိုင်ရဲ့ waveform ပုံစံရော spectrogram ရော ကို အောက်ပါအတိုင်း မြင်ရပါလိမ့်မယ်။  
+
+
+<p align="center">
+<img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/recording1.png" alt="drawing" width="600"/>  
+</p>  
+<div align="center">
+  Fig. Viewing Recorded Wavefile (filename:recording1.wav)
+</div> 
+
+<br />
+
+
 
 ### 3.Creating a Sound From a Fomula  
 
