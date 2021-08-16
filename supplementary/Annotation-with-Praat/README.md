@@ -131,6 +131,12 @@ editor: "Sound recording1-edited"
 Zoom: 0.193610, 0.965184
 ```
 
+```
+frequency = 377
+Create Sound from formula: "ဖော်မြူလာက ထုတ်ပေးတဲ့ အသံလှိုင်း" , 1, 0.0, 1.0, 44100, "1/2 * sin(2*pi*frequency*x)"
+Play
+```
+
 ## Praat Keyboard Shortcuts
 
 ## Demo Video
