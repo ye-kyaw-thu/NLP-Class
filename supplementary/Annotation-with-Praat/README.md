@@ -161,7 +161,7 @@ Recording လုပ်ထားတဲ့ ဗမာစာကြောင်းက
 Default ပေးထားတဲ့ တန်ဖိုးတွေအတိုင်းပဲ ထားထားပြီးတော့ "OK" button ကို နှိပ်လိုက်ရင်၊ မြင်နေရတဲ့ dialogue box က ပိတ်သွားပြီးတော့ "Praat Objects" Window ရဲ့ list box မှာ "Sound sineWithNoise" ဆိုတဲ့ temp ဖိုင်နာမည်နဲ့ object တစ်ခုက တိုးလာတာကို မြင်ရပါလိမ့်မယ်။ အဲဒီ Sound ဖိုင်ရဲ့ waveform ပုံစံ spectrogram ပုံစံတို့ကို ကြည့်ဖို့အတွက်၊ အသံကို play လုပ်ဖို့အတွက်၊ Sound editing လုပ်ချင်ရင်လည်း လုပ်နိုင်ဖို့အတွက်က ညာဘက်မှာ တန်းစီပြီး ရှိနေတဲ့ Button တွေထဲကနေ "View & Edit" ကိုရွေး ကလစ်လုပ်ပေးလိုက်ပါ။ အဲဒါဆိုရင် စောစာက မြင်ခဲ့ရတဲ့ wave formula ဖြစ်တဲ့ ```1/2 * sin(2*pi*377*x) + randomGauss(0,0.1)``` နဲ့ တခြား parameter တွေနဲ့ ဆောက်ထားတဲ့ အသံဖိုင်ရဲ့ waveform, spectrogram တို့ကို အောက်ပါအတိုင်း မြင်ရပါလိမ့်မယ်။  
 
 <p align="center">
-<img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/sound-sine-with-noise.png" alt="drawing" width="600"/>  
+<img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/sound-sine-with-noise.png" alt="drawing" width="800"/>  
 </p>  
 <div align="center">
   Fig. Waveform and Spectrogram of a Sound Created with a Given Formula
