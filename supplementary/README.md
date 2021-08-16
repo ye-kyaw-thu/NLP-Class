@@ -13,5 +13,5 @@
 3. BLEU Score Calculation with Burmese sentences  
 (ဆရာ အချိန်ရတဲ့အခါမှာ တင်ပေးပါမယ်)  
 
-4. Annotation with Praat
+4. [Annotation with Praat](https://github.com/ye-kyaw-thu/NLP-Class/tree/master/supplementary/Annotation-with-Praat)  
    (ASR, TTS စတဲ့ speech processing အလုပ်တွေအတွက် အသံဖိုင်တွေကို Praat ပရိုဂရမ်ကို သုံးပြီး transcript လုပ်တာကို ရှင်းပြထားတဲ့ tutorial ပါ)  
