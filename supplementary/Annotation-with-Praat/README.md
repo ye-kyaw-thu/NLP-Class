@@ -165,3 +165,5 @@ Play
 2. Boersma, Paul (2001). Praat, a system for doing phonetics by computer. Glot International 5:9/10, 341-345.  
 3. https://en.wikipedia.org/wiki/Audio_file_format  
 4. https://www.fon.hum.uva.nl/praat/manualsByOthers.html
+5. http://phonetics.linguistics.ucla.edu/facilities/acoustic/praat.html
+6. https://phon.wordpress.ncsu.edu/lab-manual/scripts/praat-scripting/
