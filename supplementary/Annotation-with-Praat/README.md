@@ -150,7 +150,7 @@ Recording လုပ်ထားတဲ့ ဗမာစာကြောင်းက
 ဒီနေရာမှာတော့ "Praat Objects" Window ကနေ လုပ်တဲ့ပုံစံနဲ့သွားပါမယ်။ အထက်က ပုံမှာ ပြထားတဲ့အတိုင်းပဲ "New" ---> "Sound" ---> "Create Sound from formula..." ကို အဆင့်ဆင့် ကလစ်နှိပ်ပြီး သွားရင် အောက်ပါအတိုင်း formula ရိုက်ထည့်လို့ရတဲ့ dialogue box ပေါ်လာမှာ ဖြစ်ပါတယ်။  
 
 <p align="center">
-<img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/formula-dialogue.png" alt="drawing" width="400"/>  
+<img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/formula-dialogue.png" alt="drawing" width="500"/>  
 </p>  
 <div align="center">
   Fig. Formula Dialogue Box
