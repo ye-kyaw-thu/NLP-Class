@@ -131,6 +131,15 @@ editor: "Sound recording1-edited"
 Zoom: 0.193610, 0.965184
 ```
 
+<p align="center">
+<img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/read-wav-and-zoom-in-output.png" alt="drawing" width="600"/>  
+</p>  
+<div align="center">
+  Fig. Viewing Recorded Wavefile (filename:recording1.wav)
+</div> 
+
+<br />
+
 ```
 frequency = 377
 Create Sound from formula: "ဖော်မြူလာက ထုတ်ပေးတဲ့ အသံလှိုင်း" , 1, 0.0, 1.0, 44100, "1/2 * sin(2*pi*frequency*x)"
