@@ -1,11 +1,13 @@
 # Annotating sounds with Praat
 
-
+Praat ဆိုတဲ့ tool က speech analysis, speech processing သုတေသန အလုပ်တွေအတွက် အင်မတန်ကို အသုံးဝင်တဲ့ ပရိုဂရမ် တစ်ခုပါ။ ဒီ ပရိုဂရမ်ကို သုံးပြီးတော့ လုပ်လို့ ရတဲ့ အလုပ်တွေက တကယ်ကို အများကြီးပါ ဥပမာ spectrographic analysis, articulatory synthesis, formant analysis, pitch analysis, neural networks စတဲ့ အလုပ်တွေအတွက်အသုံးဝင်ပါတယ်။ ဒီ Github page မှာတော့ Praat ကို အခြေခံအသုံးပြုပုံနဲ့ wave ဖိုင်ကို annotation လုပ်တဲ့အပိုင်းကိုပဲ အဓိကထား သင်ကြားပေးသွားပါမယ်။  
 
 ## Installation
 
 Praat ရဲ့ homepage link က အောက်ပါအတိုင်းပါ။  
 [https://www.fon.hum.uva.nl/praat/](https://www.fon.hum.uva.nl/praat/)
+
+Praat ပရိုဂရမ်က operating system အမျိုးမျိုး (Windows, Mac, Linux) မှာ run လိုရပါတယ်။ ဒီ tutorial မှာတော့ Linux OS ပေါ်မှာ installation လုပ်တာကိုပဲ ပြောပါမယ်။  
 
 Download link က အောက်ပါအတိုင်းပါ။  
 [https://www.fon.hum.uva.nl/praat/download_linux.html](https://www.fon.hum.uva.nl/praat/download_linux.html)
