@@ -158,13 +158,6 @@ Zoom: 0.193610, 0.654709
 
 <br />
 
-<audio controls>
-  <source src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/audio/kazunyuatne.mp3" type="audio/mpeg">
-  <p>
-    Your browser doesn't support HTML5 audio.
-    Here is a <a href="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/audio/kazunyuatne.mp3">link to download the audio</a> instead.
-  </p>
-</audio>
 
 ### Script Example No.2
 
