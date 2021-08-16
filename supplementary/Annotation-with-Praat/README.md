@@ -47,7 +47,7 @@ $ ./praat
 ကိုယ့်စက်မှာ run လိုက်ရင် အရင်ဆုံး မြင်ရမှာက အောက်ပါအတိုင်း Window နှစ်ခုပါ။  
 
 <p align="center">
-<img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/two-windows-of-Praat.png" alt="drawing" width="600"/>  
+<img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/two-windows-of-Praat.png" alt="drawing" width="800"/>  
 </p>  
 <div align="center">
   Fig. Objects and Picture Windows of Praat Program   
