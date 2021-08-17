@@ -214,10 +214,13 @@ Default ပေးထားတဲ့ တန်ဖိုးတွေအတို�
 
 <br />
 
+Praat Objects Window ရဲ့ list မှာ ပေါ်နေတဲ့ ဖိုင်တွေက Praat ပရိုဂရမ်ကို ပိတ်လိုက်ရင် အကုန်ပျောက်သွားမှာပါ။ ကွန်ပျူတာရဲ့ memory ပေါ်မှာပဲ ရှိနေတာမို့ trim လုပ်ထားတဲ့ ဖိုင်ကို ဖိုင်နာမည်အသစ်ပေး save လုပ်ဖို့ မမေ့ပါနဲ့။ အထက်မှာ trim လုပ်ပြခဲ့တဲ့ ဖိုင်ကို [audio/recording1-edited.wav](https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/audio/recording1-edited.wav) ဆိုတဲ့ ဖိုင်နာမည်နဲ့ သိမ်းထားခဲ့ပါတယ်။   
 
 ## Viewing, Playing and Analyzing  
 
+Praat မှာ အရမ်းကောင်းတဲ့ feature တစ်ခုက waveform, spectrum, spectrogram တို့ကို zoom in ကို ဆင့်ကဲဆင့်ကဲ လုပ်သွားပြီး အသေးစိတ်ချဲ့ကြည်နိုင်တာပါ။ လက်တွေ့ လုပ်ကြည့်ကြရအောင်...  
 
+အရင်ဆုံး Praat Objects Window ကနေ "Open"-->"Read from file..." menu ကနေ recording လုပ်ထားတဲ့ ဖိုင်ကို ဖွင့်လိုက်ပါ။ ဥပမာ အနေနဲ့ အထက်က edit လုပ်ပြီး 
 
 <p align="center">
 <img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/select-kazunyuatne-part.png" alt="drawing" width="800"/>  
