@@ -397,6 +397,16 @@ Annotation လုပ်ဖို့ဆိုရင်တော့ အထက်�
 
 
 
+<p align="center">
+<img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/setting-utf8-for-text-writing-preferences.png" alt="drawing" width="500"/>  
+</p>  
+<div align="center">
+  Fig. Setting UTF-8 for Writing Burmese Text
+</div> 
+
+<br />
+
+
 ## Finding Zero Crossings
 
 ASR/TTS လုပ်ချင်တဲ့သူတွေ၊ Sound Engineering လုပ်မယ့်သူတွေက "zero crossing" ဆိုတာကို သိထားဖို့လိုအပ်ပါတယ်။  
