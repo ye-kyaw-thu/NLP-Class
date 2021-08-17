@@ -427,6 +427,13 @@ ASR/TTS လုပ်ချင်တဲ့သူတွေ၊ Sound Engineering �
 
 ဒီနေရာမှာတော့ Praat ပရိုဂရမ်မှာ zero crossing ဘယ်လို ရှာရသလဲ ဆိုတာကို လုပ်ကြည့်ကြရအောင်။  
 
+https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/end-boundary-before-moving-to-near-zero-crossing.png
+
+https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/end-of-selection-to-nearest-zero-crossing.png
+
+
+
+
 
 ## Praat Scripting
 
