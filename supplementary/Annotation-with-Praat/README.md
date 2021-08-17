@@ -183,6 +183,7 @@ Default ပေးထားတဲ့ တန်ဖိုးတွေအတို�
 
 <br />
 
+ပထမဆုံး annotation မလုပ်ခင်မှာ recording လုပ်ထားတဲ့ အသံဖိုင်မှာ ပါဝင်နေတဲ့ 
 
 <table>
   <tr>
@@ -348,6 +349,72 @@ View & Edit
 အထက်ပါ အသံဖိုင်ကို Play လုပ်ကြည့်ရင် "ကန်စွန်းရွက် နဲ့ မှိုကြော် တစ်ပွဲ ပေးပါ" ဆိုတဲ့ ဗမာစာကြောင်းကို ပြောင်းပြန် play လုပ်သွားမှာမို့လို့ နားထောင်ကြည့်ရင်တော့ စိတ်ဝင်စားဖို့ကောင်းတဲ့ အသံကို ကွန်ပျူတာက ထုတ်ပေးမှာ ဖြစ်ပါတယ်။ ဒီ tutorial အတွက် စမ်းခဲ့တဲ့ အသံဖိုင်တွေကိုလည်း [audio/](https://github.com/ye-kyaw-thu/NLP-Class/tree/master/supplementary/Annotation-with-Praat/audio) ဖိုလ်ဒါအောက်မှာ တင်ပေးထားပါတယ်။ ကိုယ့်စက်ထဲမှာ download လုပ်ပြီး နားထောင်ကြည့်တာမျိုးလည်း လုပ်လို့ ရပါတယ်။  
 
 ## Praat Keyboard Shortcuts
+
+## Working with Linux Commands
+
+Linux OS မှာ အလုပ်လုပ်နေတဲ့ သူတွေအနေနဲ့က speech processing အတွက် အရမ်းအသုံးဝင်တဲ့ linux command တချို့ကိုလည်း သိထားသင့်ပါတယ်။ အရေးကြီးတဲ့ command line အလုပ်တချို့ကို ဒီနေရာမှာ မိတ်ဆက်ပေးချင်ပါတယ်။  
+
+### sox
+
+recording1.wav ဖိုင်ရဲ့ အရေးကြီးတဲ့ Channel, Sampling rate စတဲ့ information တွေကို sox command နဲ့ အလွယ်တကူကြည့်လို့ရပါတယ်။  
+
+```
+$ sox --info ./recording1.wav 
+
+Input File     : './recording1.wav'
+Channels       : 1
+Sample Rate    : 44100
+Precision      : 16-bit
+Duration       : 00:00:05.43 = 239472 samples = 407.265 CDDA sectors
+File Size      : 479k
+Bit Rate       : 706k
+Sample Encoding: 16-bit Signed Integer PCM
+```
+
+mp3 ဖိုင်ကိုပါ sox က handle လုပ်နိုင်အောင် ဆိုရင်တော့ လိုအပ်တဲ့ library ကို install လုပ်မှပဲ wave ဖိုင်ကနေ mp3 ဖိုင်ကို ပြောင်းပေးတာ၊ ထိုနည်းလည်းကောင်း mp3 ဖိုင်ကနေ wave ဖိုင်အဖြစ် ပြောင်းပေးတဲ့ အလုပ်တွေကို လုပ်ပေးနိုင်ပါလိမ့်မယ်။  
+
+```
+(base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool/praat6151/annotation/audio/cmd-line$ sox ./recording1.wav ./recording1.mp3
+sox FAIL formats: no handler for file extension `mp3'
+(base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool/praat6151/annotation/audio/cmd-line$ sudo apt-get install libsox-fmt-mp3
+[sudo] password for ye: 
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  apturl-common gir1.2-goa-1.0 ibverbs-providers libboost-atomic-dev libboost-atomic1.71-dev libboost-atomic1.71.0 libboost-chrono-dev libboost-chrono1.71-dev libboost-chrono1.71.0
+  libboost-container-dev libboost-container1.71-dev libboost-container1.71.0 libboost-context-dev libboost-context1.71-dev libboost-context1.71.0 libboost-coroutine-dev
+  libboost-coroutine1.71-dev libboost-coroutine1.71.0 libboost-date-time-dev libboost-date-time1.71-dev libboost-dev libboost-exception-dev libboost-exception1.71-dev
+  libboost-fiber-dev libboost-fiber1.71-dev libboost-fiber1.71.0 libboost-filesystem-dev libboost-filesystem1.71-dev libboost-graph-parallel-dev libboost-graph-parallel1.71-dev
+  libboost-graph-parallel1.71.0 libboost-graph1.71.0 libboost-locale-dev libboost-locale1.71-dev libboost-log1.71.0 libboost-math-dev libboost-math1.71-dev libboost-math1.71.0
+  libboost-mpi-dev libboost-mpi-python-dev libboost-mpi-python1.71-dev libboost-mpi-python1.71.0 libboost-mpi1.71-dev libboost-mpi1.71.0 libboost-numpy-dev libboost-numpy1.71-dev
+  libboost-numpy1.71.0 libboost-program-options-dev libboost-program-options1.71-dev libboost-program-options1.71.0 libboost-python-dev libboost-python1.71-dev libboost-python1.71.0
+  libboost-random-dev libboost-random1.71-dev libboost-random1.71.0 libboost-regex1.71.0 libboost-serialization-dev libboost-serialization1.71-dev libboost-serialization1.71.0
+  libboost-stacktrace-dev libboost-stacktrace1.71-dev libboost-stacktrace1.71.0 libboost-system-dev libboost-system1.71-dev libboost-system1.71.0 libboost-test-dev
+  libboost-test1.71-dev libboost-test1.71.0 libboost-thread-dev libboost-thread1.71-dev libboost-timer-dev libboost-timer1.71-dev libboost-timer1.71.0 libboost-tools-dev
+  libboost-type-erasure-dev libboost-type-erasure1.71-dev libboost-type-erasure1.71.0 libboost-wave-dev libboost-wave1.71-dev libboost-wave1.71.0 libboost1.71-dev
+  libboost1.71-tools-dev libcaf-openmpi-3 libcoarrays-openmpi-dev libevent-core-2.1-7 libevent-dev libevent-extra-2.1-7 libevent-openssl-2.1-7 libevent-pthreads-2.1-7 libfabric1
+  libhwloc-dev libhwloc-plugins libhwloc15 libibverbs-dev libibverbs1 libnl-3-dev libnl-route-3-dev libnuma-dev libopenmpi-dev libopenmpi3 libpmix2 libpsm-infinipath1 libpsm2-2
+  librdmacm1 mpi-default-bin mpi-default-dev openmpi-bin openmpi-common python3-click python3-colorama python3-dateutil python3-software-properties software-properties-common
+  unattended-upgrades
+Use 'sudo apt autoremove' to remove them.
+The following NEW packages will be installed:
+  libsox-fmt-mp3
+0 upgraded, 1 newly installed, 0 to remove and 63 not upgraded.
+Need to get 15.9 kB of archives.
+After this operation, 79.9 kB of additional disk space will be used.
+Get:1 http://mm.archive.ubuntu.com/ubuntu groovy/universe amd64 libsox-fmt-mp3 amd64 14.4.2+git20190427-2 [15.9 kB]
+Fetched 15.9 kB in 1s (14.6 kB/s)                      
+Selecting previously unselected package libsox-fmt-mp3:amd64.
+(Reading database ... 656598 files and directories currently installed.)
+Preparing to unpack .../libsox-fmt-mp3_14.4.2+git20190427-2_amd64.deb ...
+Unpacking libsox-fmt-mp3:amd64 (14.4.2+git20190427-2) ...
+Setting up libsox-fmt-mp3:amd64 (14.4.2+git20190427-2) ...
+(base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool/praat6151/annotation/audio/cmd-line$ sox ./recording1.wav ./recording1.mp3
+(base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool/praat6151/annotation/audio/cmd-line$ ls
+recording1.mp3  recording1.wav
+```
+
 
 ## Demo Video
 
