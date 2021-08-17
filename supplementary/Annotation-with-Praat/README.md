@@ -398,7 +398,7 @@ Annotation လုပ်ဖို့ဆိုရင်တော့ အထက်�
 ပထမဆုံး စာလုံးအတွက် interval သတ်မှတ်ပြီးသွားရင် Windows ရဲ့ အပေါ်ဆုံး စာရိုက်ထည့်လို့ ရတဲ့ နေရာမှာ "ကန်စွန်းရွက်" ဆိုတဲ့ ဗမာစာလုံးကို ဝင်ရိုက်ထည့်ပေးလိုက်ပါ။ အဲဒါဆိုရင် အောက်ပါ ပုံမှာ မြင်ရတဲ့အတိုင်း tire ရဲ့ selection ဖြစ်နေတဲ့ interval မှာလည်း "ကန်စွန်းရွက်" ဆိုတဲ့ စာလုံးက သွားပေါ်တာကို တွေ့ရပါလိမ့်မယ်။  
 
 <p align="center">
-<img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/word1-annotation.png" alt="drawing" width="500"/>  
+<img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/word1-annotation.png" alt="drawing" width="800"/>  
 </p>  
 <div align="center">
   Fig. Annotation or Typing for the Selected Interval Burmese Word "ကန်စွန်းရွက်" (Water Spinach in English)
