@@ -190,8 +190,8 @@ Default ပေးထားတဲ့ တန်ဖိုးတွေအတို�
     <td>After Removed</td>
   </tr>
   <tr>
-    <td><img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/selection1.png" width=670 height=480></td>
-    <td><img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/cut-before-sound.png" width=670 height=480></td>
+    <td><img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/selection1.png" width=670 height=380></td>
+    <td><img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/cut-before-sound.png" width=670 height=380></td>
   </tr>
  </table>
  
@@ -203,8 +203,8 @@ Default ပေးထားတဲ့ တန်ဖိုးတွေအတို�
     <td>After Removed</td>
   </tr>
   <tr>
-    <td><img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/select2.png" width=670 height=480></td>
-    <td><img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/after-removed-prefix-suffix.png" width=670 height=480></td>
+    <td><img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/select2.png" width=670 height=380></td>
+    <td><img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/after-removed-prefix-suffix.png" width=670 height=380></td>
   </tr>
  </table>
 
