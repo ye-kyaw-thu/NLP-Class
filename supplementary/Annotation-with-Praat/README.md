@@ -803,6 +803,20 @@ Running မလုပ်ခင်မှာ အထက်ပါ script ရဲ့ �
 
 <br />
 
+အထက်ပါ dialogue box မှာ Prefix, Suffix က လိုအပ်ရင်ထည့်သုံးပါ။ Script ကို run မလုပ်ခင်မှာ အသံဖိုင်ကိုရော TextGrid ဖိုင်ကိုရော နှစ်ဖိုင်စလုံးကို selection မှတ်ထားဖို့ လိုအပ်ပါတယ်။ နောက် အရေးကြီးတဲ့ တချက်က ဖိုင်ကိုလည်း Open လုပ်တဲ့အခါမှာ "Open long Sound file..." ဆိုတဲ့ menu ကိုသုံးပြီး ဖိုင်ကို load လုပ်ထားတာ ဖြစ်ရပါလိမ့်မယ်။ မဟုတ်ရင် error ပေးပါလိမ့်မယ်။  
+
+အဆင်ပြေပြေနဲ့ run လို့ အိုကေတယ်ဆိုရင် အထက်မှာ ဥပမာအဖြစ် အသံသွင်းပြီး သုံးခဲ့တဲ့ ဆရာကြီး ဦးတင်မိုးရဲ့ ဧည့်သည်ကဗျာအသံဖိုင်နဲ့ TextGrid ဖိုင် နှစ်ဖိုင်ကို selection လုပ်ထားပြီး run တဲ့အခါမှာ အောက်ပါလိုမျိုး Parrt Information Dialogue Box ကို မြင်ရမှာ ဖြစ်ပြီးတော့ စာကြောင်း ဖြတ်ထားတဲ့ တစ်ကြောင်းချင်းစီကို ပေးထားတဲ့ path အောက်မှာ သွားသိမ်းပေးမှာ ဖြစ်ပါတယ်။  
+
+<p align="center">
+<img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/praat-running-script-information.png" alt="drawing" width="500"/>  
+</p>  
+<div align="center">
+  Fig. Output Screen of the Reverse Version of the Recorded Wave File
+</div> 
+
+<br />
+
+အခုစမ်းပြထားတဲ့ ဖိုင်တွေကိုလည်း [output/](https://github.com/ye-kyaw-thu/NLP-Class/tree/master/supplementary/Annotation-with-Praat/output) ဖိုလ်ဒါအောက်မှာ လေ့လာလို့ ရအောင် သိမ်းပေးထားပါတယ်။  
 
 ## Praat Keyboard Shortcuts
 
