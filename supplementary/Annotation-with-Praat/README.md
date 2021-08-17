@@ -177,7 +177,7 @@ Default ပေးထားတဲ့ တန်ဖိုးတွေအတို�
 
 
 <p align="center">
-<img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/create-textgrid-menu.png" alt="drawing" width="600"/>  
+<img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/create-textgrid-menu.png" alt="drawing" width="500"/>  
 </p>  
 <div align="center">
   Fig. Menu for Creating a New TextGrid
