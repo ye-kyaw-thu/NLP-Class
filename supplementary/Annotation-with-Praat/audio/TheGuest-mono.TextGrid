@@ -1,0 +1,76 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0 
+xmax = 6.469546485260771 
+tiers? <exists> 
+size = 2 
+item []: 
+    item [1]:
+        class = "IntervalTier" 
+        name = "Burmese" 
+        xmin = 0 
+        xmax = 6.469546485260771 
+        intervals: size = 7 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.5731099839300128 
+            text = "" 
+        intervals [2]:
+            xmin = 0.5731099839300128 
+            xmax = 1.765224980088942 
+            text = "ဆေးလိပ်လည်းတို" 
+        intervals [3]:
+            xmin = 1.765224980088942 
+            xmax = 2.07779171688671 
+            text = "" 
+        intervals [4]:
+            xmin = 2.07779171688671 
+            xmax = 3.284444700803675 
+            text = "နေလည်းညိုပြီ" 
+        intervals [5]:
+            xmin = 3.284444700803675 
+            xmax = 3.575204455964389 
+            text = "" 
+        intervals [6]:
+            xmin = 3.575204455964389 
+            xmax = 5.6177917359684075 
+            text = "ငါ့ကိုပြန်ပို့ကြပါလေ" 
+        intervals [7]:
+            xmin = 5.6177917359684075 
+            xmax = 6.469546485260771 
+            text = "" 
+    item [2]:
+        class = "IntervalTier" 
+        name = "English_Translation" 
+        xmin = 0 
+        xmax = 6.469546485260771 
+        intervals: size = 7 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.5731099839300128 
+            text = "" 
+        intervals [2]:
+            xmin = 0.5731099839300128 
+            xmax = 1.765224980088942 
+            text = "The cigar’s burning down" 
+        intervals [3]:
+            xmin = 1.765224980088942 
+            xmax = 2.07779171688671 
+            text = "" 
+        intervals [4]:
+            xmin = 2.07779171688671 
+            xmax = 3.284444700803675 
+            text = "The Sun’s brown" 
+        intervals [5]:
+            xmin = 3.284444700803675 
+            xmax = 3.575204455964389 
+            text = "" 
+        intervals [6]:
+            xmin = 3.575204455964389 
+            xmax = 5.6177917359684075 
+            text = "Send me back" 
+        intervals [7]:
+            xmin = 5.6177917359684075 
+            xmax = 6.469546485260771 
+            text = "" 
