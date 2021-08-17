@@ -808,7 +808,7 @@ Running မလုပ်ခင်မှာ အထက်ပါ script ရဲ့ �
 အဆင်ပြေပြေနဲ့ run လို့ အိုကေတယ်ဆိုရင် အထက်မှာ ဥပမာအဖြစ် အသံသွင်းပြီး သုံးခဲ့တဲ့ ဆရာကြီး ဦးတင်မိုးရဲ့ ဧည့်သည်ကဗျာအသံဖိုင်နဲ့ TextGrid ဖိုင် နှစ်ဖိုင်ကို selection လုပ်ထားပြီး run တဲ့အခါမှာ အောက်ပါလိုမျိုး Parrt Information Dialogue Box ကို မြင်ရမှာ ဖြစ်ပြီးတော့ စာကြောင်း ဖြတ်ထားတဲ့ တစ်ကြောင်းချင်းစီကို ပေးထားတဲ့ path အောက်မှာ သွားသိမ်းပေးမှာ ဖြစ်ပါတယ်။  
 
 <p align="center">
-<img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/praat-running-script-information.png" alt="drawing" width="500"/>  
+<img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/praat-running-script-information.png" alt="drawing" width="400"/>  
 </p>  
 <div align="center">
   Fig. Output Screen of the Reverse Version of the Recorded Wave File
