@@ -423,7 +423,7 @@ Word level annotation ကို စာကြောင်း တစ်ကြေ�
 <img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/word-level-annotation-finished.png" alt="drawing" width="800"/>  
 </p>  
 <div align="center">
-  Fig. An Example of Word Level Annotation for the Whole Sentence
+  Fig. An Example of Word Level Transcription for the Whole Sentence
 </div> 
 
 <br />
