@@ -362,6 +362,28 @@ Transcript လုပ်ကြမှာမို့ tire နာမည်ကို
 <br />
 
 
+OK နှိပ်လိုက်ပြီးတဲ့အခါမှာ Praat Objects Window ရဲ့ object list မှာ TextGrid ကို အသံဖိုင်နာမည်နဲ့တွဲပြီး အောက်ပါအတိုင်း မြင်ရမှာဖြစ်ပါတယ်။  
+
+<p align="center">
+<img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/adding-TextGrid.png" alt="drawing" width="500"/>  
+</p>  
+<div align="center">
+  Fig. After Adding TextGrid
+</div> 
+
+<br />
+
+Annotation လုပ်ဖို့ဆိုရင်တော့ အထက်က ပုံမှာ မြင်နေရတဲ့ ဖိုင်နှစ်ခု (အသံဖိုင်ရော textGrid ဖိုင်ရော) စလုံးကို select မှတ်ပြီးတော့မှ "View & Edit" button ကိုနှိပ်ပါ။ အဲဒီအခါမှာတော့ အောက်ပါပုံမှာ မြင်ရတဲ့အတိုင်း transcript layer (အဝါရောင် လိုင်း) ကိုပါ waveform, spectrogram ပုံတို့ရဲ့အောက်မှာ တွဲပြီးပါလာတာကို တွေ့ရပါလိမ့်မယ်။ ဒါ့အပြင် phonetic label ကိုလည်းထိုးရတာ လွယ်ကူအောင် ညာဘက်မှာလည်း phonetic သင်္ကေတ ကီးဘုတ်ကိုပါ တွဲပြီးပြသပေးမှာ ဖြစ်ပါတယ်။    
+
+<p align="center">
+<img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/blank-transcript-layer.png" alt="drawing" width="800"/>  
+</p>  
+<div align="center">
+  Fig. Transcript Layer and Phonetic Symbol Keyboard
+</div> 
+
+<br />
+
 
 ## Finding Zero Crossings
 
