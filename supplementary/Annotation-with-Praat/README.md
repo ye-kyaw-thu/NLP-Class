@@ -184,6 +184,34 @@ Default ပေးထားတဲ့ တန်ဖိုးတွေအတို�
 <br />
 
 
+<table>
+  <tr>
+    <td>Selecting an Interval Before Audio Start</td>
+    <td>After Removed</td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/selection1.png" width=270 height=480></td>
+    <td><img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/cut-before-sound.png" width=270 height=480></td>
+  </tr>
+ </table>
+ 
+<br />
+ 
+<table>
+  <tr>
+    <td>Selecting an Interval Before Audio Start</td>
+    <td>After Removed</td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/select2.png" width=270 height=480></td>
+    <td><img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/after-removed-prefix-suffix.png" width=270 height=480></td>
+  </tr>
+ </table>
+
+<br />
+
+
+
 ## Segmentation and Annotation
 
 
