@@ -233,7 +233,7 @@ Praat မှာ အရမ်းကောင်းတဲ့ feature တစ်ခ�
 
 <br />
 
-အောက်က ပုံမှာ မြင်ရတဲ့ အတိုင်း... Mouse နဲ့ "ကန်စွန်းရွက်နဲ့" ဆိုတဲ့ အသံအပိုင်းကိုပဲ ခန့်မှန်းပြီးတော့ selection မှတ်လိုက်ပါ။  
+အောက်က ပုံမှာ မြင်ရတဲ့ အတိုင်း... Mouse နဲ့ "ကန်စွန်းရွက်နဲ့" ဆိုတဲ့ အသံအပိုင်းကိုပဲ ခန့်မှန်းပြီးတော့ selection မှတ်လိုက်ပါ။ "0.553165" (selection မှတ်ထားတဲ့ အပိုင်းရဲ့ duration milisecond) လို့ပေါ်နေတဲ့ ဘားလေးကို နှိပ်ရင် (သို့) ကီးဘုတ်က "TAB ကီး" ကိုနှိပ်ရင် selection မှတ်ထားတဲ့ အပိုင်းလေးကိုပဲ Play လုပ်ပြတာမို့ နားထောင်ကြည့်ရင်း "ကန်စွန်းရွက်နဲ့" ဆိုတဲ့ အပိုင်းကိုပဲ selection က သေသေချာချာ လုပ်ထားရဲ့လား ဆိုတာကို confirmation လုပ်သွားရင်း selection လုပ်ထားတဲ့ interval အတိုးအလျှော့ကို လုပ်သွားပါ။ 
 
 <p align="center">
 <img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/select-kazunyuatne-part.png" alt="drawing" width="800"/>  
