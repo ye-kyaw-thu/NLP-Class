@@ -666,6 +666,143 @@ View & Edit
 
 အထက်ပါ အသံဖိုင်ကို Play လုပ်ကြည့်ရင် "ကန်စွန်းရွက် နဲ့ မှိုကြော် တစ်ပွဲ ပေးပါ" ဆိုတဲ့ ဗမာစာကြောင်းကို ပြောင်းပြန် play လုပ်သွားမှာမို့လို့ နားထောင်ကြည့်ရင်တော့ စိတ်ဝင်စားဖို့ကောင်းတဲ့ အသံကို ကွန်ပျူတာက ထုတ်ပေးမှာ ဖြစ်ပါတယ်။ ဒီ tutorial အတွက် စမ်းခဲ့တဲ့ အသံဖိုင်တွေကိုလည်း [audio/](https://github.com/ye-kyaw-thu/NLP-Class/tree/master/supplementary/Annotation-with-Praat/audio) ဖိုလ်ဒါအောက်မှာ တင်ပေးထားပါတယ်။ ကိုယ့်စက်ထဲမှာ download လုပ်ပြီး နားထောင်ကြည့်တာမျိုးလည်း လုပ်လို့ ရပါတယ်။  
 
+### Script Example No. 4
+
+ဒီ Praat script က annotation လုပ်ထားတဲ့ ဖိုင်ထဲက interval တွေအားလုံးကို transccript လုပ်ထားတဲ့ စာကြောင်းဖိုင်နာမည်နဲ့ wave ဖိုင် တစ်ဖိုင်ချင်းစီအဖြစ် သိမ်းပေးမှာ ဖြစ်ပါတယ်။ ဒီ script ကို အောက်ပါ link ကနေ copy ကူးယူပြီး သုံးခဲ့တာပါ။  
+
+https://www.ddaidone.com/uploads/1/0/5/2/105292729/save_labeled_intervals_to_wav_sound_files.txt  
+
+```
+# This script saves each interval in the selected IntervalTier of a TextGrid to a separate WAV sound file.
+# 
+# The source sound must be a LongSound object, and both the TextGrid and 
+# the LongSound must have identical names and they have to be selected in the Objects window
+# before running the script.
+# Files are named with the corresponding interval labels (plus a running index number when necessary).
+#
+# NOTE: Make sure that the interval labels do not contain forbidden characters!
+# 
+# This script is distributed under the GNU General Public License.
+# Copyright 8.3.2002 Mietta Lennes
+#
+# Modified by Danielle Daidone 11/13/17 to output names of saved files and to automatically exclude 
+# all empty intervals, intervals with a space, or intervals with a line break
+#############################################################################################################
+
+form Save intervals to WAV sound files
+	comment Which IntervalTier in this TextGrid would you like to process?
+	integer Tier 1
+	comment Starting and ending at which interval? 
+	integer Start_from 1
+	integer End_at_(0=last) 0
+	comment Give the folder where you want to save the sound files:
+	sentence Folder C:\Users\ddaidone\Desktop\Test\
+	comment Give an optional prefix for all filenames:
+	sentence Prefix 
+	comment Give an optional suffix for all filenames (.wav will be added anyway):
+	sentence Suffix 
+endform
+
+gridname$ = selected$ ("TextGrid", 1)
+soundname$ = selected$ ("LongSound", 1)
+select TextGrid 'gridname$'
+numberOfIntervals = Get number of intervals... tier
+if start_from > numberOfIntervals
+	exit There are not that many intervals in the IntervalTier!
+endif
+if end_at > numberOfIntervals
+	end_at = numberOfIntervals
+endif
+if end_at = 0
+	end_at = numberOfIntervals
+endif
+
+# Default values for variables
+files = 0
+intervalstart = 0
+intervalend = 0
+interval = 1
+intname$ = ""
+intervalfile$ = ""
+endoffile = Get finishing time
+
+# ask if the user wants to go through with saving all the files:
+for interval from start_from to end_at
+	xxx$ = Get label of interval... tier interval
+	check = 0
+	if xxx$ = ""
+		check = 1
+	endif
+	if xxx$ = " "
+		check = 1
+	endif
+	if xxx$ = newline$
+		check = 1
+	endif
+	if check = 0
+	   files = files + 1
+	endif
+endfor
+interval = 1
+pause 'files' sound files will be saved. Continue?
+
+writeInfoLine: "The following files were saved:"
+
+# Loop through all intervals in the selected tier of the TextGrid
+for interval from start_from to end_at
+	select TextGrid 'gridname$'
+	intname$ = ""
+	intname$ = Get label of interval... tier interval
+	check = 0
+	if intname$ = ""
+		check = 1
+	endif
+	if intname$ = " "
+		check = 1
+	endif
+	if intname$ = newline$
+		check = 1
+	endif
+	if check = 0
+		intervalstart = Get starting point... tier interval
+			
+		intervalend = Get end point... tier interval
+				
+		select LongSound 'soundname$'
+		Extract part... intervalstart intervalend no
+		filename$ = intname$
+		intervalfile$ = "'folder$'" + "'prefix$'" + "'filename$'" + "'suffix$'" + ".wav"
+		savedfilename$ = "'prefix$'" + "'filename$'" + "'suffix$'" + ".wav"
+		indexnumber = 0
+		while fileReadable (intervalfile$)
+			indexnumber = indexnumber + 1
+			intervalfile$ = "'folder$'" + "'prefix$'" + "'filename$'" + "'suffix$''indexnumber'" + ".wav"
+			savedfilename$ = "'prefix$'" + "'filename$'" + "'indexnumber'" + "'suffix$'" + ".wav"
+		endwhile
+		Write to WAV file... 'intervalfile$'
+		appendInfoLine: newline$, savedfilename$
+		Remove
+	endif
+endfor
+```
+
+Running မလုပ်ခင်မှာ အထက်ပါ script ရဲ့ အောက်ပါ instruction နေရာမှာ wave ဖိုင်တွေကို ကိုယ်က သိမ်းဆည်းချင်တဲ့ ကိုယ့် ကွန်ပျူတာရဲ့ path နဲ့ အစားထိုးတာ လုပ်ပြီး သုံးပါ။  
+
+```
+	sentence Folder C:\Users\ddaidone\Desktop\Test\
+```
+
+ဒါမှ မဟုတ်ရင် Run လိုက်လို့ တက်လာတဲ့ အောက်ပါ dialogue box မှာ path ကို ရိုက်ထည့်တာမျိုးလုပ်ရင်လည်း အိုကေပါတယ်။  
+
+<p align="center">
+<img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/path-prefix-suffix-dialogue.png" alt="drawing" width="800"/>  
+</p>  
+<div align="center">
+  Fig. Output Screen of the Reverse Version of the Recorded Wave File
+</div> 
+
+<br />
+
 
 ## Praat Keyboard Shortcuts
 
@@ -832,3 +969,5 @@ $ffmpeg -formats
 7. https://stackoverflow.com/questions/33536294/praat-combining-two-tiers-into-one-tier
 8. http://www.fernandabarrientos.cl/praat1.pdf
 9. Myint Zan, Shortened Cigars Stained with Nostalgic Tears, Westerly, 2010, pp. 146-158 [Paper](https://westerlymag.com.au/wp-content/uploads/2017/07/Three-Burmese-Poets-Myint-Zan.pdf)
+10. https://www.ddaidone.com/uploads/1/0/5/2/105292729/save_labeled_intervals_to_wav_sound_files.txt
+11. https://www.ddaidone.com/praat-scripts.html
