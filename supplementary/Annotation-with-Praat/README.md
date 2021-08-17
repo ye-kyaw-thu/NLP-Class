@@ -384,6 +384,18 @@ Annotation လုပ်ဖို့ဆိုရင်တော့ အထက်�
 
 <br />
 
+အသံဖမ်းထားတဲ့ "ကန်စွန်းရွက်နဲ့ မှိုကြော် တစ်ပွဲ ပေးပါ" စာကြောင်းထဲက စာလုံးတွေကို word segmentation လုပ်ပြီး (interval သတ်မှတ်တယ်လို့လည်း သုံးတယ်) annotation လုပ်ကြည့်ရအောင်။ အဲဒီလို လုပ်ဖို့အတွက်က အရင်ဆုံး mouse နဲ့ ပထမဆုံး စာလုံးဖြစ်တဲ့ "ကန်စွန်းရွက်" ဆိုတဲ့ စာလုံးကို selection မှတ်လိုက်ပြီးတော့ အောက်က ပုံမှာ ပြထားတဲ့အတိုင်း "Boundary" menu ကနေ "Add on selected tier" ဆိုတဲ့ menu ကို ကလစ်နှိပ်လိုက်ပါ။ အဲဒီလို menu ကနေ မသွားပဲ mouse နဲ့ selection မှတ်ထားပြီးရင် ကီးဘုတ်က Enter ကီးကို ခေါက်လိုက်ရင်လည်း interval တစ်ခုအဖြစ် segmentation လုပ်ပေးသွားမှာဖြစ်ပါတယ်။  
+
+<p align="center">
+<img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/word1-selection.png" alt="drawing" width="500"/>  
+</p>  
+<div align="center">
+  Fig. After Adding TextGrid
+</div> 
+
+<br />
+
+
 
 ## Finding Zero Crossings
 
