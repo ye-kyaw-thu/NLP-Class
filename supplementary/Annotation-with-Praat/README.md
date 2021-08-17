@@ -428,6 +428,84 @@ Word level annotation ကို စာကြောင်း တစ်ကြေ�
 
 <br />
 
+ထပ် သတိပေးပါမယ်။ Tire မှာ segmentation လုပ်ထားတာတွေ transcription လုပ်ထားတာတွေကို ပြောင်းလဲမှုလုပ်ပြီးသွားတဲ့အခါတိုင်းမှာ save လုပ်ဖို့ မမေ့ပါနဲ့။ TextGrid ဖိုင်ကို သိမ်းတဲ့အခါမှာ ပုံမှန်အားဖြင့် text ဖိုင်တစ်ဖိုင်အနေနဲ့ပဲ သိမ်းထားလေ့ရှိပါတယ်။ သိမ်းမယ်ဆိုရင် "Praat Objects" Window မှာရှိတဲ့ "Save" menu အောက်က "Save as text file..." နဲ့ သိမ်းပါ။ ဖိုင်က text ဖိုင်မို့လို့ text editor တစ်ခုခုနဲ့ ဖွင့်ကြည့်တာမျိုး လုပ်ပြီး ပြင်စရာရှိတာကို ဝင်ပြင်တာ၊ programming language တစ်ခုခုနဲ့ (ဥပမာ perl, shell script, python, Praat script etc.) ဝင် access လုပ်ပြီးတော့ ကိုယ်လုပ်ချင်တဲ့ အလုပ်တွေကိုလည်း လုပ်လို့ ရပါတယ်။  
+
+အထက်က word level လုပ်ထားတဲ့ TextGrid ဖိုင်က အောက်ပါ format နဲ့ သိမ်းပေးထားပါလိမ့်မယ်။ လေ့လာကြည့်ရအောင်...  
+
+```
+(base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool/praat6151/annotation/audio$ cat recording1-edited.TextGrid 
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0 
+xmax = 1.7144444444444444 
+tiers? <exists> 
+size = 1 
+item []: 
+    item [1]:
+        class = "IntervalTier" 
+        name = "transcript" 
+        xmin = 0 
+        xmax = 1.7144444444444444 
+        intervals: size = 14 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.07510699901143215 
+            text = "" 
+        intervals [2]:
+            xmin = 0.07510699901143215 
+            xmax = 0.3808964095900869 
+            text = "ကန်စွန်းရွက်" 
+        intervals [3]:
+            xmin = 0.3808964095900869 
+            xmax = 0.386884018340688 
+            text = "" 
+        intervals [4]:
+            xmin = 0.386884018340688 
+            xmax = 0.6373029937861465 
+            text = "နဲ့" 
+        intervals [5]:
+            xmin = 0.6373029937861465 
+            xmax = 0.6604185915195735 
+            text = "" 
+        intervals [6]:
+            xmin = 0.6604185915195735 
+            xmax = 0.9647739616763615 
+            text = "မှိုကြော်" 
+        intervals [7]:
+            xmin = 0.9647739616763615 
+            xmax = 1.0726467510990205 
+            text = "တစ်" 
+        intervals [8]:
+            xmin = 1.0726467510990205 
+            xmax = 1.0745730509101394 
+            text = "" 
+        intervals [9]:
+            xmin = 1.0745730509101394 
+            xmax = 1.2556452331553172 
+            text = "ပွဲ" 
+        intervals [10]:
+            xmin = 1.2556452331553172 
+            xmax = 1.257571532966436 
+            text = "" 
+        intervals [11]:
+            xmin = 1.257571532966436 
+            xmax = 1.4001177189892355 
+            text = "ပေး" 
+        intervals [12]:
+            xmin = 1.4001177189892355 
+            xmax = 1.4039703186114734 
+            text = "" 
+        intervals [13]:
+            xmin = 1.4039703186114734 
+            xmax = 1.673652292168121 
+            text = "ပါ" 
+        intervals [14]:
+            xmin = 1.673652292168121 
+            xmax = 1.7144444444444444 
+            text = "" 
+(base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool/praat6151/annotation/audio$
+```
 
 ## Finding Zero Crossings
 
