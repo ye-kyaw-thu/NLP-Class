@@ -515,7 +515,7 @@ item []:
 (ဆရာ့ ကဗျာကို ဆရာဦးသာနိုးက အင်္ဂလိပ်လို ဘာသာပြန်ထားတာ ဖြစ်ပြီး အဲဒီအထဲက ထိပ်ဆုံး "the cigar's burnt down" တစ်ကြောင်းကို "the cigar's burning down" အဖြစ်က ဦးမြင့်ဇံ ဆိုသူက ပြင်ထားတာကို အင်တာနက်မှာ ရှာတွေမိလို့ အဲဒီ ပြင်ထားတဲ့ အင်္ဂလိပ်စာဗားရှင်းကိုပဲ ယူသုံးခဲ့တာပါ)  
 
 <p align="center">
-<img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/TheGuest-Poem-Annotation-with-two-tiers.png" alt="drawing" width="500"/>  
+<img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/TheGuest-Poem-Annotation-with-two-tiers.png" alt="drawing" width="800"/>  
 </p>  
 <div align="center">
   Fig. Setting UTF-8 for Writing Burmese Text
