@@ -401,7 +401,7 @@ Annotation လုပ်ဖို့ဆိုရင်တော့ အထက်�
 <img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/word1-annotation.png" alt="drawing" width="500"/>  
 </p>  
 <div align="center">
-  Fig. Annotation or Typing for the Selected Interval Burmese Word "ကန်စွန်းရွက်"
+  Fig. Annotation or Typing for the Selected Interval Burmese Word "ကန်စွန်းရွက်" (Water Spinach in English)
 </div> 
 
 <br />
