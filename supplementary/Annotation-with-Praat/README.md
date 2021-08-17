@@ -354,7 +354,7 @@ View & Edit
 
 Linux OS မှာ အလုပ်လုပ်နေတဲ့ သူတွေအနေနဲ့က speech processing အတွက် အရမ်းအသုံးဝင်တဲ့ linux command တချို့ကိုလည်း သိထားသင့်ပါတယ်။ အရေးကြီးတဲ့ command line အလုပ်တချို့ကို ဒီနေရာမှာ မိတ်ဆက်ပေးချင်ပါတယ်။  
 
-### sox
+### sox command
 
 recording1.wav ဖိုင်ရဲ့ အရေးကြီးတဲ့ Channel, Sampling rate စတဲ့ information တွေကို sox command နဲ့ အလွယ်တကူကြည့်လို့ရပါတယ်။  
 
@@ -434,6 +434,27 @@ File Size      : 174k
 Bit Rate       : 256k
 Sample Encoding: 16-bit Signed Integer PCM
 ```
+
+### play command
+
+command line မှာပဲ audio ဖိုင်ကို ဖွင့်နားထောင်ချင်တယ်ဆိုရင် "play" command ကို သုံးပါ။  
+
+```
+(base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool/praat6151/annotation/audio/cmd-line$ play ./output.wav 
+play WARN alsa: can't encode 0-bit Unknown or not applicable
+
+./output.wav:
+
+ File Size: 174k      Bit Rate: 256k
+  Encoding: Signed PCM    
+  Channels: 1 @ 16-bit   
+Samplerate: 16000Hz      
+Replaygain: off         
+  Duration: 00:00:05.43  
+
+In:100%  00:00:05.43 [00:00:00.00] Out:86.9k [      |      ] Hd:0.0 Clip:0    
+Done.
+``
 
 ## Demo Video
 
