@@ -297,7 +297,7 @@ Praat မှာ အသံနဲ့ပတ်သက်ပြီး အသေးစ
 <img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/add-itensity.png" alt="drawing" width="800"/>  
 </p>  
 <div align="center">
-  Fig. Adding Intensity
+  Fig. An Example of Adding Intensity
 </div> 
 
 <br />
@@ -308,7 +308,7 @@ Praat မှာ အသံနဲ့ပတ်သက်ပြီး အသေးစ
 <img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/add-formant.png" alt="drawing" width="800"/>  
 </p>  
 <div align="center">
-  Fig. Adding Formant
+  Fig. An Example of Adding Formant
 </div> 
 
 <br />
