@@ -724,4 +724,4 @@ $ffmpeg -formats
 5. http://phonetics.linguistics.ucla.edu/facilities/acoustic/praat.html
 6. https://phon.wordpress.ncsu.edu/lab-manual/scripts/praat-scripting/
 7. https://stackoverflow.com/questions/33536294/praat-combining-two-tiers-into-one-tier
-8. 
+8. http://www.fernandabarrientos.cl/praat1.pdf
