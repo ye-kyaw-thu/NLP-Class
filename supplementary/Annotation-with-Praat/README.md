@@ -233,7 +233,7 @@ Default ပေးထားတဲ့ တန်ဖိုးတွေအတို�
 <img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/sel1.png" alt="drawing" width="800"/>  
 </p>  
 <div align="center">
-  Fig. Selecting Only Sound Containing "ကန်စွန်းရွက်နဲ့" 
+  Fig. Viewing Only Selection Area" 
 </div> 
 
 <br />
@@ -242,7 +242,7 @@ Default ပေးထားတဲ့ တန်ဖိုးတွေအတို�
 <img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/in1.png" alt="drawing" width="800"/>  
 </p>  
 <div align="center">
-  Fig. Selecting Only Sound Containing "ကန်စွန်းရွက်နဲ့" 
+  Fig. Output Screen of Pressing "in" Button (i.e. Zoom in) First Time 
 </div> 
 
 <br />
@@ -251,7 +251,7 @@ Default ပေးထားတဲ့ တန်ဖိုးတွေအတို�
 <img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/in2.png" alt="drawing" width="800"/>  
 </p>  
 <div align="center">
-  Fig. Selecting Only Sound Containing "ကန်စွန်းရွက်နဲ့" 
+  Fig. Output Screen of Pressing "in" Button (i.e. Zoom in) Second Time 
 </div> 
 
 <br />
@@ -260,7 +260,7 @@ Default ပေးထားတဲ့ တန်ဖိုးတွေအတို�
 <img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/in3.png" alt="drawing" width="800"/>  
 </p>  
 <div align="center">
-  Fig. Selecting Only Sound Containing "ကန်စွန်းရွက်နဲ့" 
+  Fig. Output Screen of Pressing "in" Button (i.e. Zoom in) Third Time
 </div> 
 
 <br />
