@@ -302,6 +302,8 @@ Praat မှာ အသံနဲ့ပတ်သက်ပြီး အသေးစ
 
 <br />
 
+နောက်ထပ် speech science, phonetic မှာ အရေးကြီးတဲ့ formant တွေကိုလည်း လက်ရှိဖွင့်ထားတဲ့ အသံဖိုင်မှာ ထည့်ကြည့်ရအောင်။ Formants menu အောက်က "Show formants..." ကို on ပေးရင် အောက်ပါအတိုင်း မြင်ရပါလိမ့်မယ်။  
+
 <p align="center">
 <img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/add-formant.png" alt="drawing" width="800"/>  
 </p>  
