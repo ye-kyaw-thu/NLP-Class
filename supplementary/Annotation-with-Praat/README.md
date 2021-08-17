@@ -174,6 +174,29 @@ Default ပေးထားတဲ့ တန်ဖိုးတွေအတို�
 
 ## Segmentation and Annotation
 
+
+Default ပေးထားတဲ့ နာမည်တွေကို အောက်ပါအတိုင်း မြင်ရမှာ ဖြစ်ပါတယ်။  
+
+<p align="center">
+<img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/naming-tier.png" alt="drawing" width="800"/>  
+</p>  
+<div align="center">
+  Fig. Default Names of a New Tire
+</div> 
+
+<br />
+
+Transcript လုပ်ကြမှာမို့ tire နာမည်ကို transcript လို့ ပေးလိုက်ကြရအောင်။ လက်ရှိ လုပ်ကြမယ့် annotation နဲ့က မသက်ဆိုင်လို့ "Which of these are point tiers?" ဆိုတဲ့ textbox ကိုလည်း clear လုပ်ထားလိုက်ကြရအောင်။   
+
+<p align="center">
+<img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/naming-your-tier.png" alt="drawing" width="800"/>  
+</p>  
+<div align="center">
+  Fig. An Example of Naming a New Tire
+</div> 
+
+<br />
+
 ## Finding Zero Crossings
 
 ## Praat Scripting
