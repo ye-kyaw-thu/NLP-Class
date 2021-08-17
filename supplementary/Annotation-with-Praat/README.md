@@ -267,7 +267,7 @@ Praat မှာ အရမ်းကောင်းတဲ့ feature တစ်ခ�
 
 <br />
 
-"in" button ကိုပဲ ဒုတိယအကြိမ် ထပ်နှိပ်လိုက်ရင် ပိုပြီး zoom in လုပ်ပေးထားတာကို မြင်ရပါလိမ့်မယ်...  
+"in" button ကိုပဲ ဒုတိယအကြိမ် ထပ်နှိပ်လိုက်ရင် ပိုပြီး zoom in လုပ်ပေးထားတာကို အောက်ပါအတိုင်း မြင်ရပါလိမ့်မယ်...  
 
 <p align="center">
 <img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/in2.png" alt="drawing" width="800"/>  
