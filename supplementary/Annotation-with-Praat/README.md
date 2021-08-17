@@ -293,7 +293,7 @@ Window ရဲ့ အောက်ဆုံး ဘယ်ဘက်အခြမ်�
 
 ## Segmentation and Annotation
 
-
+Annotation လုပ်တော့မယ်ဆိုရင် အရင်ဆုံး transcript လုပ်မယ့် အသံဖိုင်ကို ဖွင့်ပြီး Praat Objects ရဲ့ object list မှာမြင်နေရအောင် ပြင်ဆင်ပါ။ ပြီးရင် အောက်က ပုံမှာ ပြထားတဲ့အတိုင်း ညာဘက်အခြမ်းမှာ အပေါ်အောက်တန်းစီပြီး ရှိနေတဲ့ button တွေထဲကနေ "Annotate-"--->"To TextGrid..." ဆိုတဲ့ menu ကို နှိပ်လိုက်ပါ။  
 
 <p align="center">
 <img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/create-textgrid-menu.png" alt="drawing" width="500"/>  
@@ -304,7 +304,7 @@ Window ရဲ့ အောက်ဆုံး ဘယ်ဘက်အခြမ်�
 
 <br />
 
-Default ပေးထားတဲ့ နာမည်တွေကို အောက်ပါအတိုင်း မြင်ရမှာ ဖြစ်ပါတယ်။  
+ပေါ်လာတဲ့ dialogue box မှာ Default ပေးထားတဲ့ နာမည်တွေကို အောက်ပါအတိုင်း မြင်ရမှာ ဖြစ်ပါတယ်။  
 
 <p align="center">
 <img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/naming-tier.png" alt="drawing" width="500"/>  
@@ -316,6 +316,7 @@ Default ပေးထားတဲ့ နာမည်တွေကို အော�
 <br />
 
 Transcript လုပ်ကြမှာမို့ tire နာမည်ကို transcript လို့ ပေးလိုက်ကြရအောင်။ လက်ရှိ လုပ်ကြမယ့် annotation နဲ့က မသက်ဆိုင်လို့ "Which of these are point tiers?" ဆိုတဲ့ textbox ကိုလည်း clear လုပ်ထားလိုက်ကြရအောင်။   
+(tire နာမည်က ကြိုက်တာ ပေးလို့ရပါတယ်။ သို့သော် အသံဖိုင်ကို အဖွဲ့လိုက် annotation လုပ်ကြတဲ့အခါမှာတော့ အားလုံးညှိပြီး နာမည်ကို သတ်မှတ်ပြီး ပေးတာမျိုး လုပ်သင့်ပါတယ်)  
 
 <p align="center">
 <img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/naming-your-tier.png" alt="drawing" width="500"/>  
