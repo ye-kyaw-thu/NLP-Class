@@ -313,6 +313,17 @@ Praat မှာ အသံနဲ့ပတ်သက်ပြီး အသေးစ
 
 <br />
 
+ကိုယ် analysis လုပ်ချင်တဲ့ အသံရဲ့အပိုင်းတစ်ပိုင်းကို selection လုပ်ပြီးတော့ pitch, intensity နဲ့ formant သုံးမျိုးစလုံးကို show လုပ်ပြီး zoom in လုပ်ကြည့်တာမျိုးလည်း လုပ်လို့ ရပါတယ်။ အောက်ပါပုံက "ပေးပါ" ဆိုတဲ့ ဗမာစာလုံး အသံအပိုင်းကို ptich, intensity, formant သုံးမျိုးစလုံး show on လုပ်ထားတဲ့ ပုံ ဖြစ်ပါတယ်။  
+
+<p align="center">
+<img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/pay-bar-in-details2.png" alt="drawing" width="800"/>  
+</p>  
+<div align="center">
+  Fig. An Example of Showing Pitch (Bleu), Intensity (Yellow) and Formant (Red) of the Myanmar word "ပေးပါ" (give me in English)
+</div> 
+
+<br />
+
 
 ## Segmentation and Annotation
 
