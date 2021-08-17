@@ -291,11 +291,13 @@ Praat မှာ အရမ်းကောင်းတဲ့ feature တစ်ခ�
 
 Window ရဲ့ အောက်ဆုံး ဘယ်ဘက်အခြမ်းမှာ ရှိတဲ့ "out" ဆိုတဲ့ button ကို နှိပ်လိုက်ရင်တော့ zoom out (ချုံ့) လုပ်ပေးပါလိမ့်မယ်။ "all" ဆိုတဲ့ button ကတော့ ဖွင့်ထားတဲ့ အသံဖိုင် တစ်ဖိုင်လုံးကို overview အနေနဲ့ ပြခိုင်းဖို့ သုံးတာဖြစ်ပါတယ်။ Annotation အလုပ်ကို စမလုပ်ခင်မှာ "all", "in", "out", "sel", "bak" ဆိုတဲ့ button တွေရဲ့ အလုပ်လုပ်ပေးပုံကို ကြိုတင်လေ့လာထား၊ စမ်းထားသင့်ပါတယ်။   
 
+Praat မှာ အသံနဲ့ပတ်သက်ပြီး အသေးစိတ်လေ့လာလို့ရပါတယ်။ ဥပမာ လက်ရှိဖွင့်ထားတဲ့ အသံဖိုင် တစ်ခုလုံးကို intensity ထည့်ကြည့်ချင်တယ် ဆိုရင် "Intensity" menu အောက်က "Show intensity" ကို on ပေးလိုက်ပါ။ အောက်ပါ ပုံမှာ မြင်ရတဲ့အတိုင်း intensity line ကို အဝါရောင်နဲ့ ပြသပေးပါလိမ့်မယ်။  
+
 <p align="center">
 <img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/add-itensity.png" alt="drawing" width="800"/>  
 </p>  
 <div align="center">
-  Fig. Output Screen of Pressing "in" Button (i.e. Zoom in) Third Time
+  Fig. Adding Intensity
 </div> 
 
 <br />
@@ -304,7 +306,7 @@ Window ရဲ့ အောက်ဆုံး ဘယ်ဘက်အခြမ်�
 <img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/add-formant.png" alt="drawing" width="800"/>  
 </p>  
 <div align="center">
-  Fig. Output Screen of Pressing "in" Button (i.e. Zoom in) Third Time
+  Fig. Adding Formant
 </div> 
 
 <br />
