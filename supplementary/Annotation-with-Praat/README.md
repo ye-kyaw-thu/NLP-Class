@@ -169,6 +169,7 @@ Default ပေးထားတဲ့ တန်ဖိုးတွေအတို�
 
 <br />
 
+Window ရဲ့ အောက်ဖက်အပိုင်းမှာ ရှိတဲ့ "Visible part 0.xxxxxx seconds" ဆိုတဲ့ ဘား (သို့) "Total duration 0.xxxxxx seconds" ဆိုတဲ့ ဘားတွေကို နှိပ်ကြည့်ရင် ဖော်မြူလာနဲ့ ဆောက်ထားတဲ့ အသံကို ကြားရပါလိမ့်မယ်။  
 
 ## Basic Editing
 
