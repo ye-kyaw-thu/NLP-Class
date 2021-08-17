@@ -228,6 +228,45 @@ Default ပေးထားတဲ့ တန်ဖိုးတွေအတို�
 
 <br />
 
+
+<p align="center">
+<img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/sel1.png" alt="drawing" width="800"/>  
+</p>  
+<div align="center">
+  Fig. Selecting Only Sound Containing "ကန်စွန်းရွက်နဲ့" 
+</div> 
+
+<br />
+
+<p align="center">
+<img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/in1.png" alt="drawing" width="800"/>  
+</p>  
+<div align="center">
+  Fig. Selecting Only Sound Containing "ကန်စွန်းရွက်နဲ့" 
+</div> 
+
+<br />
+
+<p align="center">
+<img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/in2.png" alt="drawing" width="800"/>  
+</p>  
+<div align="center">
+  Fig. Selecting Only Sound Containing "ကန်စွန်းရွက်နဲ့" 
+</div> 
+
+<br />
+
+<p align="center">
+<img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/in3.png" alt="drawing" width="800"/>  
+</p>  
+<div align="center">
+  Fig. Selecting Only Sound Containing "ကန်စွန်းရွက်နဲ့" 
+</div> 
+
+<br />
+
+
+
 ## Segmentation and Annotation
 
 
