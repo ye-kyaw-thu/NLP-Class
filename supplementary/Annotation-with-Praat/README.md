@@ -456,6 +456,42 @@ In:100%  00:00:05.43 [00:00:00.00] Out:86.9k [      |      ] Hd:0.0 Clip:0
 Done.
 ```
 
+### ffmpeg command
+
+"ffmpeg" command ကို ကိုယ့်စက်ထဲမှာ install လုပ်ထားတယ်ဆိုရင် အဲဒီ "ffmpeg" command ကိုသုံးပြီးတော့လည်း web ပေါ်ကနေ download လုပ်လာတဲ့ mp3 ဖိုင်ကနေ Annotation မလုပ်ခင်မှာ wave ဖိုင်အဖြစ် ပြောင်း
+တာကို လုပ်ခိုင်းလို့ ရပါတယ်။ ဥပမာအနေနဲ့ recording1.mp3 ဖိုင်ကို wave ဖိုင် format အဖြစ် ပြောင်းမယ်ဆိုရင် အောက်ပါအတိုင်း command ပေးပါ။  
+
+```
+(base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool/praat6151/annotation/audio/cmd-line/tmp$ ffmpeg -i ./recording1.mp3 ./output.wav
+ffmpeg version 4.3.1-4ubuntu1 Copyright (c) 2000-2020 the FFmpeg developers
+  built with gcc 10 (Ubuntu 10.2.0-9ubuntu2)
+  configuration: --prefix=/usr --extra-version=4ubuntu1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-avresample --disable-filter=resample --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librabbitmq --enable-librsvg --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-pocketsphinx --enable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-nvenc --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared
+  libavutil      56. 51.100 / 56. 51.100
+  libavcodec     58. 91.100 / 58. 91.100
+  libavformat    58. 45.100 / 58. 45.100
+  libavdevice    58. 10.100 / 58. 10.100
+  libavfilter     7. 85.100 /  7. 85.100
+  libavresample   4.  0.  0 /  4.  0.  0
+  libswscale      5.  7.100 /  5.  7.100
+  libswresample   3.  7.100 /  3.  7.100
+  libpostproc    55.  7.100 / 55.  7.100
+[mp3 @ 0x55cb997f7100] Estimating duration from bitrate, this may be inaccurate
+Input #0, mp3, from './recording1.mp3':
+  Duration: 00:00:05.46, start: 0.000000, bitrate: 64 kb/s
+    Stream #0:0: Audio: mp3, 44100 Hz, mono, fltp, 64 kb/s
+Stream mapping:
+  Stream #0:0 -> #0:0 (mp3 (mp3float) -> pcm_s16le (native))
+Press [q] to stop, [?] for help
+Output #0, wav, to './output.wav':
+  Metadata:
+    ISFT            : Lavf58.45.100
+    Stream #0:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 44100 Hz, mono, s16, 705 kb/s
+    Metadata:
+      encoder         : Lavc58.91.100 pcm_s16le
+size=     470kB time=00:00:05.45 bitrate= 705.7kbits/s speed= 710x    
+video:0kB audio:470kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.016198%
+```
+
 ## Demo Video
 
 ## References
