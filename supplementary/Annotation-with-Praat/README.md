@@ -190,7 +190,7 @@ Default ပေးထားတဲ့ တန်ဖိုးတွေအတို�
     <td>After Removed</td>
   </tr>
   <tr>
-    <td><img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/selection1.png" width=2670 height=480></td>
+    <td><img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/selection1.png" width=670 height=480></td>
     <td><img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/cut-before-sound.png" width=670 height=480></td>
   </tr>
  </table>
