@@ -395,7 +395,18 @@ Annotation လုပ်ဖို့ဆိုရင်တော့ အထက်�
 
 <br />
 
+ပထမဆုံး စာလုံးအတွက် interval သတ်မှတ်ပြီးသွားရင် Windows ရဲ့ အပေါ်ဆုံး စာရိုက်ထည့်လို့ ရတဲ့ နေရာမှာ "ကန်စွန်းရွက်" ဆိုတဲ့ ဗမာစာလုံးကို ဝင်ရိုက်ထည့်ပေးလိုက်ပါ။ အဲဒါဆိုရင် အောက်ပါ ပုံမှာ မြင်ရတဲ့အတိုင်း tire ရဲ့ selection ဖြစ်နေတဲ့ interval မှာလည်း "ကန်စွန်းရွက်" ဆိုတဲ့ စာလုံးက သွားပေါ်တာကို တွေ့ရပါလိမ့်မယ်။  
 
+<p align="center">
+<img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/word1-annotation.png" alt="drawing" width="500"/>  
+</p>  
+<div align="center">
+  Fig. Setting UTF-8 for Writing Burmese Text
+</div> 
+
+<br />
+
+တစ်ခု သိထားရမှာက ဗမာစာ စာလုံးတွေကို TextGrid အနေနဲ့ မှန်မှန်ကန်ကန် သိမ်းပေးဖို့အတွက်ဆိုရင်တော့ "Praat Objects" Window ရဲ့ "Preferences" menu ကနေ "Text writing preferences" sub-menu ကို ရွေးလိုက်ပြီး "Output encoding" ကို UTF-8 ရွေးပေးထားရပါလိမ့်မယ်။ အောက်ပါ ပုံကို refer လုပ်ပါ။ ထိုနည်းလည်းကောင်းပဲ "Text reading preferences" ကိုလည်း "UTF-8" (သို့) "try UTF-8, then ISO Latin-1" ကို setting လုပ်ထားသင့်ပါတယ်။  
 
 <p align="center">
 <img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/setting-utf8-for-text-writing-preferences.png" alt="drawing" width="500"/>  
@@ -405,6 +416,7 @@ Annotation လုပ်ဖို့ဆိုရင်တော့ အထက်�
 </div> 
 
 <br />
+
 
 
 ## Finding Zero Crossings
