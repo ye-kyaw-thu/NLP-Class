@@ -415,6 +415,25 @@ Setting up libsox-fmt-mp3:amd64 (14.4.2+git20190427-2) ...
 recording1.mp3  recording1.wav
 ```
 
+Sample rate ကို 16 kHz အဖြစ် ပြောင်းချင်တယ်ဆိုရင် "-r 16000" ဆိုတဲ့ option ကို ပေးပါ။   
+Channel ကိုလည်း ASR/TTS အလုပ်တွေမှာ ပုံမှန်သုံးကြတဲ့ mono channel အဖြစ် ပြောင်းချင်တယ်ဆိုရင် "-c 1" ဆိုတဲ့ option ကိုပေးပြီး ပြောင်းခိုင်းလို့ ရပါတယ်။  
+အောက်ပါ ဥပမာကို ကြည့်ပါ။  
+
+```
+(base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool/praat6151/annotation/audio/cmd-line$ sox ./recording1.wav -r 16000 -c 1 ./output.wav
+sox WARN rate: rate clipped 16 samples; decrease volume?
+sox WARN dither: dither clipped 13 samples; decrease volume?
+(base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool/praat6151/annotation/audio/cmd-line$ sox --info output.wav 
+
+Input File     : 'output.wav'
+Channels       : 1
+Sample Rate    : 16000
+Precision      : 16-bit
+Duration       : 00:00:05.43 = 86883 samples ~ 407.264 CDDA sectors
+File Size      : 174k
+Bit Rate       : 256k
+Sample Encoding: 16-bit Signed Integer PCM
+```
 
 ## Demo Video
 
