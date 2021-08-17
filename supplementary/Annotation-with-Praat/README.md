@@ -291,6 +291,25 @@ Praat မှာ အရမ်းကောင်းတဲ့ feature တစ်ခ�
 
 Window ရဲ့ အောက်ဆုံး ဘယ်ဘက်အခြမ်းမှာ ရှိတဲ့ "out" ဆိုတဲ့ button ကို နှိပ်လိုက်ရင်တော့ zoom out (ချုံ့) လုပ်ပေးပါလိမ့်မယ်။ "all" ဆိုတဲ့ button ကတော့ ဖွင့်ထားတဲ့ အသံဖိုင် တစ်ဖိုင်လုံးကို overview အနေနဲ့ ပြခိုင်းဖို့ သုံးတာဖြစ်ပါတယ်။ Annotation အလုပ်ကို စမလုပ်ခင်မှာ "all", "in", "out", "sel", "bak" ဆိုတဲ့ button တွေရဲ့ အလုပ်လုပ်ပေးပုံကို ကြိုတင်လေ့လာထား၊ စမ်းထားသင့်ပါတယ်။   
 
+<p align="center">
+<img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/add-itensity.png" alt="drawing" width="800"/>  
+</p>  
+<div align="center">
+  Fig. Output Screen of Pressing "in" Button (i.e. Zoom in) Third Time
+</div> 
+
+<br />
+
+<p align="center">
+<img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/add-formant.png" alt="drawing" width="800"/>  
+</p>  
+<div align="center">
+  Fig. Output Screen of Pressing "in" Button (i.e. Zoom in) Third Time
+</div> 
+
+<br />
+
+
 ## Segmentation and Annotation
 
 Annotation လုပ်တော့မယ်ဆိုရင် အရင်ဆုံး transcript လုပ်မယ့် အသံဖိုင်ကို ဖွင့်ပြီး Praat Objects ရဲ့ object list မှာမြင်နေရအောင် ပြင်ဆင်ပါ။ ပြီးရင် အောက်က ပုံမှာ ပြထားတဲ့အတိုင်း ညာဘက်အခြမ်းမှာ အပေါ်အောက်တန်းစီပြီး ရှိနေတဲ့ button တွေထဲကနေ "Annotate-"--->"To TextGrid..." ဆိုတဲ့ menu ကို နှိပ်လိုက်ပါ။  
