@@ -278,7 +278,7 @@ Praat မှာ အရမ်းကောင်းတဲ့ feature တစ်ခ�
 
 <br />
 
-ဆက်လက်ပြီး "in" button ကို ထပ်နှိပ်လိုက်ရင်တော့ 
+ဆက်လက်ပြီး "in" button ကို ထပ်နှိပ်လိုက်ရင်တော့ waveform အထဲက repeat ဖြစ်နေတဲ့ လှိုင်းပုံစံတွေကိုပါ အောက်ပါပုံအတိုင်း ပိုထင်ထင်ရှားရှား မြင်ရပါလိမ့်မယ်။  
 
 <p align="center">
 <img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/in3.png" alt="drawing" width="800"/>  
