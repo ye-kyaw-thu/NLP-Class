@@ -172,6 +172,18 @@ Default ပေးထားတဲ့ တန်ဖိုးတွေအတို�
 
 ## Viewing and Editing
 
+အထက်မှာ ဖတ်ခဲ့ကြတဲ့ Sound/Audio File ရဲ့ "2.Reading a Sound File" ဆိုတဲ့ section မှာ ဖွင့်ပြခဲ့တဲ့ အသံဖိုင်ကိုပဲ သုံးပြီး အခြေခံ sound editing လုပ်နိုင်အောင် သင်ကြားသွားပါမယ်။ Praat Objects Window ရဲ့ "Open" menu အောက်က "Read from file..." sub menu ကို ရွေးပြီး ကိုယ် annotation လုပ်ချင်တဲ့ အသံဖိုင် (သို့) editing လုပ်ချင်တဲ့ sound ဖိုင်ကိုဖွင့်ပါ။ Praat ပရိုဂရမ်မှာ default အနေနဲ့က ဖွင့်လိုက်တဲ့ အသံဖိုင်ရဲ့ waveform (အပေါ်ပိုင်းက ပုံ) နဲ့ spectrogram (အောက်ဘက်က ပုံ) ကို ပြသပေးပါလိမ့်မယ်။ Annotation လုပ်တဲ့အခါမှာလည်း အဲဒီ waveform နဲ့ spectrogram နှစ်မျိုးကိုပဲ သေသေချာချာ စိစစ်ပြီး လုပ်သွားရင် အခြေခံအားဖြင့် အဆင်ပြေပါတယ်။  
+
+<p align="center">
+<img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/recording1-labeled1.png" alt="drawing" width="800"/>  
+</p>  
+<div align="center">
+  Fig. Waveform and Spectrogram of Opened wave file
+</div> 
+
+<br />
+
+
 ## Segmentation and Annotation
 
 
