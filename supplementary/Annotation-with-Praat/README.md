@@ -233,7 +233,7 @@ Praat မှာ အရမ်းကောင်းတဲ့ feature တစ်ခ�
 
 <br />
 
-Mouse နဲ့ "ကန်စွန်းရွက်နဲ့" ဆိုတဲ့ အသံအပိုင်းကိုပဲ ခန့်မှန်းပြီးတော့ selection မှတ်လိုက်ပါ။ ပြီးရင် "in" ဆိုတဲ့ button ကို နှိပ်ကြည့်လိုက်ပါ။ အဲဒါဆိုရင် selection မှတ်လိုက်တဲ့အပိုင်းကိုပဲ visual part တစ်ခုလုံး အနေနဲ့ zoom လုပ်ပြီး ပြပေးပါလိမ့်မယ်။ အောက်ပါ ပုံလိုမျိုးပါ...  
+အောက်က ပုံမှာ မြင်ရတဲ့ အတိုင်း... Mouse နဲ့ "ကန်စွန်းရွက်နဲ့" ဆိုတဲ့ အသံအပိုင်းကိုပဲ ခန့်မှန်းပြီးတော့ selection မှတ်လိုက်ပါ။  
 
 <p align="center">
 <img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/select-kazunyuatne-part.png" alt="drawing" width="800"/>  
@@ -244,7 +244,7 @@ Mouse နဲ့ "ကန်စွန်းရွက်နဲ့" ဆိုတဲ�
 
 <br />
 
-
+ပြီးရင် "sel" ဆိုတဲ့ button ကို နှိပ်ကြည့်လိုက်ပါ။ အဲဒါဆိုရင် selection မှတ်လိုက်တဲ့အပိုင်းကိုပဲ visual part တစ်ခုလုံး အနေနဲ့ zoom လုပ်ပြီး ပြပေးပါလိမ့်မယ်။ အောက်ပါ ပုံလိုမျိုးပါ...  
 
 <p align="center">
 <img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/sel1.png" alt="drawing" width="800"/>  
@@ -255,6 +255,8 @@ Mouse နဲ့ "ကန်စွန်းရွက်နဲ့" ဆိုတဲ�
 
 <br />
 
+အဲဒီကနေမှ "in" ဆိုတဲ့ button ကို နှိပ်လိုက်ရင် အောက်မှာ ပြထားတဲ့ ပုံလိုမျိုး နောက်တဆင့် zoom in ထပ်လုပ်ပေးသွားပါလိမ့်မယ်...  
+
 <p align="center">
 <img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/in1.png" alt="drawing" width="800"/>  
 </p>  
@@ -264,6 +266,8 @@ Mouse နဲ့ "ကန်စွန်းရွက်နဲ့" ဆိုတဲ�
 
 <br />
 
+"in" button ကိုပဲ ဒုတိယအကြိမ် ထပ်နှိပ်လိုက်ရင် ပိုပြီး zoom in လုပ်ပေးထားတာကို မြင်ရပါလိမ့်မယ်...  
+
 <p align="center">
 <img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/in2.png" alt="drawing" width="800"/>  
 </p>  
@@ -272,6 +276,8 @@ Mouse နဲ့ "ကန်စွန်းရွက်နဲ့" ဆိုတဲ�
 </div> 
 
 <br />
+
+ဆက်လက်ပြီး "in" button ကို ထပ်နှိပ်လိုက်ရင်တော့ 
 
 <p align="center">
 <img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/in3.png" alt="drawing" width="800"/>  
