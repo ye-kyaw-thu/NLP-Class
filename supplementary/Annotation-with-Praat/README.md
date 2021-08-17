@@ -175,6 +175,16 @@ Default ပေးထားတဲ့ တန်ဖိုးတွေအတို�
 ## Segmentation and Annotation
 
 
+
+<p align="center">
+<img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/create-textgrid-menu.png" alt="drawing" width="600"/>  
+</p>  
+<div align="center">
+  Fig. Menu for Creating a New TextGrid
+</div> 
+
+<br />
+
 Default ပေးထားတဲ့ နာမည်တွေကို အောက်ပါအတိုင်း မြင်ရမှာ ဖြစ်ပါတယ်။  
 
 <p align="center">
