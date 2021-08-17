@@ -204,7 +204,7 @@ Window ရဲ့ အောက်ဖက်အပိုင်းမှာ ရှ�
  
 <table>
   <tr>
-    <td>Selecting an Interval Before Audio Start</td>
+    <td>Selecting an Interval After the Audio Finished</td>
     <td>After Removed</td>
   </tr>
   <tr>
