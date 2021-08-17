@@ -492,6 +492,12 @@ size=     470kB time=00:00:05.45 bitrate= 705.7kbits/s speed= 710x
 video:0kB audio:470kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.016198%
 ```
 
+ffmpeg က support လုပ်တဲ့ audio file format တွေက အများကြီးပါပဲ။ အဲဒီ list ကို လေ့လာကြည့်ချင်ရင်တော့ "-formats" ဆိုတဲ့ option နဲ့ မော်နီတာမှာ ရိုက်ထုတ်ခိုင်းလို့ ရပါတယ်။ support လုပ်ပေးနိုင်တဲ့ audio format တွေက အများကြီးမို့လို့ ဒီမှာတော့ output screen ကို ထည့်ပြမထားတော့ပါဘူး။  
+
+```
+$ffmpeg -formats
+```
+
 ## Demo Video
 
 ## References
