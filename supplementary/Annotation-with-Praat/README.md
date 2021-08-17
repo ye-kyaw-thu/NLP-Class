@@ -390,7 +390,7 @@ Annotation လုပ်ဖို့ဆိုရင်တော့ အထက်�
 <img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/word1-selection.png" alt="drawing" width="500"/>  
 </p>  
 <div align="center">
-  Fig. After Adding TextGrid
+  Fig. Menu, Submenu for Adding an Interval
 </div> 
 
 <br />
