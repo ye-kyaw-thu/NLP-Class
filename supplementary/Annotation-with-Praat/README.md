@@ -220,7 +220,20 @@ Praat Objects Window ရဲ့ list မှာ ပေါ်နေတဲ့ ဖိ
 
 Praat မှာ အရမ်းကောင်းတဲ့ feature တစ်ခုက waveform, spectrum, spectrogram တို့ကို zoom in ကို ဆင့်ကဲဆင့်ကဲ လုပ်သွားပြီး အသေးစိတ်ချဲ့ကြည်နိုင်တာပါ။ လက်တွေ့ လုပ်ကြည့်ကြရအောင်...  
 
-အရင်ဆုံး Praat Objects Window ကနေ "Open"-->"Read from file..." menu ကနေ recording လုပ်ထားတဲ့ ဖိုင်ကို ဖွင့်လိုက်ပါ။ ဥပမာ အနေနဲ့ အထက်က edit လုပ်ပြီး 
+အရင်ဆုံး Praat Objects Window ကနေ "Open"-->"Read from file..." menu ကနေ recording လုပ်ထားတဲ့ ဖိုင်ကို ဖွင့်လိုက်ပါ။ ဥပမာ အနေနဲ့ အထက်က edit လုပ်ပြီး သိမ်းခဲ့တဲ့ recording1-edited.wav ဆိုတဲ့ ဖိုင်ကိုပဲဖွင့်ပြီး zoom in လုပ်ပြသွားပါမယ်။  
+
+အရင်ဆုံး ဖိုင်ကို ဖွင့်လိုက်ရင် အောက်ပါအတိုင်း အသံသွင်းထားခဲ့တဲ့ စာကြောင်းတစ်ကြောင်းလုံးကို မြင်ရပါလမ့်မယ်။  
+
+<p align="center">
+<img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/after-removed-prefix-suffix.png" alt="drawing" width="800"/>  
+</p>  
+<div align="center">
+  Fig. Showing the whole Audio File 
+</div> 
+
+<br />
+
+Mouse နဲ့ "ကန်စွန်းရွက်နဲ့" ဆိုတဲ့ အသံအပိုင်းကိုပဲ ခန့်မှန်းပြီးတော့ selection မှတ်လိုက်ပါ။ ပြီးရင် "in" ဆိုတဲ့ button ကို နှိပ်ကြည့်လိုက်ပါ။ အဲဒါဆိုရင် selection မှတ်လိုက်တဲ့အပိုင်းကိုပဲ visual part တစ်ခုလုံး အနေနဲ့ zoom လုပ်ပြီး ပြပေးပါလိမ့်မယ်။ အောက်ပါ ပုံလိုမျိုးပါ...  
 
 <p align="center">
 <img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/select-kazunyuatne-part.png" alt="drawing" width="800"/>  
@@ -230,6 +243,7 @@ Praat မှာ အရမ်းကောင်းတဲ့ feature တစ်ခ�
 </div> 
 
 <br />
+
 
 
 <p align="center">
