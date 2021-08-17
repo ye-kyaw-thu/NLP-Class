@@ -316,7 +316,7 @@ Praat မှာ အသံနဲ့ပတ်သက်ပြီး အသေးစ
 ကိုယ် analysis လုပ်ချင်တဲ့ အသံရဲ့အပိုင်းတစ်ပိုင်းကို selection လုပ်ပြီးတော့ pitch, intensity နဲ့ formant သုံးမျိုးစလုံးကို show လုပ်ပြီး zoom in လုပ်ကြည့်တာမျိုးလည်း လုပ်လို့ ရပါတယ်။ အောက်ပါပုံက "ပေးပါ" ဆိုတဲ့ ဗမာစာလုံး အသံအပိုင်းကို ptich, intensity, formant သုံးမျိုးစလုံး show on လုပ်ထားတဲ့ ပုံ ဖြစ်ပါတယ်။  
 
 <p align="center">
-<img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/pay-bar-in-details2.png" alt="drawing" width="1200"/>  
+<img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/pay-bar-in-details2.png" alt="drawing" width="800"/>  
 </p>  
 <div align="center">
   Fig. An Example of Showing Pitch (Bleu), Intensity (Yellow) and Formant (Red) of the Myanmar word "ပေးပါ" (give me in English)
@@ -376,7 +376,7 @@ OK နှိပ်လိုက်ပြီးတဲ့အခါမှာ Praat O
 Annotation လုပ်ဖို့ဆိုရင်တော့ အထက်က ပုံမှာ မြင်နေရတဲ့ ဖိုင်နှစ်ခု (အသံဖိုင်ရော textGrid ဖိုင်ရော) စလုံးကို select မှတ်ပြီးတော့မှ "View & Edit" button ကိုနှိပ်ပါ။ အဲဒီအခါမှာတော့ အောက်ပါပုံမှာ မြင်ရတဲ့အတိုင်း transcript layer (အဝါရောင် လိုင်း) ကိုပါ waveform, spectrogram ပုံတို့ရဲ့အောက်မှာ တွဲပြီးပါလာတာကို တွေ့ရပါလိမ့်မယ်။ ဒါ့အပြင် phonetic label ကိုလည်းထိုးရတာ လွယ်ကူအောင် ညာဘက်မှာလည်း phonetic သင်္ကေတ ကီးဘုတ်ကိုပါ တွဲပြီးပြသပေးမှာ ဖြစ်ပါတယ်။    
 
 <p align="center">
-<img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/blank-transcript-layer.png" alt="drawing" width="800"/>  
+<img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/blank-transcript-layer.png" alt="drawing" width="1200"/>  
 </p>  
 <div align="center">
   Fig. Transcript Layer and Phonetic Symbol Keyboard
