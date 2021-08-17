@@ -831,4 +831,4 @@ $ffmpeg -formats
 6. https://phon.wordpress.ncsu.edu/lab-manual/scripts/praat-scripting/
 7. https://stackoverflow.com/questions/33536294/praat-combining-two-tiers-into-one-tier
 8. http://www.fernandabarrientos.cl/praat1.pdf
-9. https://westerlymag.com.au/wp-content/uploads/2017/07/Three-Burmese-Poets-Myint-Zan.pdf
+9. Shortened Cigars Stained with Nostalgic Tears, by Myint Zan: https://westerlymag.com.au/wp-content/uploads/2017/07/Three-Burmese-Poets-Myint-Zan.pdf
