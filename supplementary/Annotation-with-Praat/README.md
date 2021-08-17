@@ -420,7 +420,7 @@ Annotation လုပ်ဖို့ဆိုရင်တော့ အထက်�
 Word level annotation ကို စာကြောင်း တစ်ကြောင်းလုံးအတွက် လုပ်ပြီးသွားရင်တော့ အောက်ပါအတိုင်း မြင်ရမှာ ဖြစ်ပါတယ်။  
 
 <p align="center">
-<img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/word-level-annotation-finished.png" alt="drawing" width="500"/>  
+<img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/word-level-annotation-finished.png" alt="drawing" width="800"/>  
 </p>  
 <div align="center">
   Fig. An Example of Word Level Annotation for the Whole Sentence
