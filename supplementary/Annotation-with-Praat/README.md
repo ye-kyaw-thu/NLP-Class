@@ -427,11 +427,38 @@ ASR/TTS လုပ်ချင်တဲ့သူတွေ၊ Sound Engineering �
 
 ဒီနေရာမှာတော့ Praat ပရိုဂရမ်မှာ zero crossing ဘယ်လို ရှာရသလဲ ဆိုတာကို လုပ်ကြည့်ကြရအောင်။  
 
-https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/end-boundary-before-moving-to-near-zero-crossing.png
-
-https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/end-of-selection-to-nearest-zero-crossing.png
 
 
+<p align="center">
+<img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/end-boundary-before-moving-to-near-zero-crossing.png" alt="drawing" width="500"/>  
+</p>  
+<div align="center">
+  Fig. Setting UTF-8 for Writing Burmese Text
+</div> 
+
+<br />
+
+
+
+<p align="center">
+<img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/end-of-selection-to-nearest-zero-crossing.png" alt="drawing" width="500"/>  
+</p>  
+<div align="center">
+  Fig. Setting UTF-8 for Writing Burmese Text
+</div> 
+
+<br />
+
+
+
+<p align="center">
+<img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/after-adding-end-boundary-zero-crossing.png" alt="drawing" width="500"/>  
+</p>  
+<div align="center">
+  Fig. Setting UTF-8 for Writing Burmese Text
+</div> 
+
+<br />
 
 
 
