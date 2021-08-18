@@ -572,32 +572,25 @@ ASR/TTS လုပ်ချင်တဲ့သူတွေ၊ Sound Engineering �
 <img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/Chinese-baby-selection1.png" alt="drawing" width="500"/>  
 </p>  
 <div align="center">
-  Fig. Setting UTF-8 for Writing Burmese Text
+  Fig. A Part of Sound of Chinese Baby Crying (Refered from: https://clclab.github.io/clc-labs/labs/bioacoustics/bioacoustics.html)
 </div> 
 
 <br />
 
 
-<p align="center">
-<img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/Baby-start-zero.png" alt="drawing" width="500"/>  
-</p>  
-<div align="center">
-  Fig. Setting UTF-8 for Writing Burmese Text
-</div> 
-
+<table>
+  <tr>
+    <td>Moved Start of Selection to Zero Crossing</td>
+    <td>Moved Start of Selection to Zero Crossing</td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/Baby-start-zero.png" width=670 height=380></td>
+    <td><img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/Baby-end-zero.png" width=670 height=380></td>
+  </tr>
+ </table>
+ 
 <br />
-
-
-<p align="center">
-<img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/Baby-end-zero.png" alt="drawing" width="500"/>  
-</p>  
-<div align="center">
-  Fig. Setting UTF-8 for Writing Burmese Text
-</div> 
-
-<br />
-
-
+ 
 
 ## Praat Scripting
 
