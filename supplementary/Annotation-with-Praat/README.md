@@ -568,6 +568,37 @@ ASR/TTS လုပ်ချင်တဲ့သူတွေ၊ Sound Engineering �
 
 
 
+<p align="center">
+<img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/Chinese-baby-selection1.png" alt="drawing" width="500"/>  
+</p>  
+<div align="center">
+  Fig. Setting UTF-8 for Writing Burmese Text
+</div> 
+
+<br />
+
+
+<p align="center">
+<img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/Baby-start-zero.png" alt="drawing" width="500"/>  
+</p>  
+<div align="center">
+  Fig. Setting UTF-8 for Writing Burmese Text
+</div> 
+
+<br />
+
+
+<p align="center">
+<img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/Baby-end-zero.png" alt="drawing" width="500"/>  
+</p>  
+<div align="center">
+  Fig. Setting UTF-8 for Writing Burmese Text
+</div> 
+
+<br />
+
+
+
 ## Praat Scripting
 
 ဒီ tutorial က transcription/annotation ကိုပဲ အဓိကထား သင်ကြားပေးဖို့ ရည်ရွယ်ပေမဲ့ Praat script ဆိုတာကိုလည်း briefly မိတ်ဆက်ပေးချင်ပါတယ်။ ဘာကြောင့်လဲ ဆိုတော့ Praat မှာ script ရေးပြီး လုပ်ချင်တဲ့ အလုပ်တွေကို ခိုင်းလို့ရတဲ့ ဒီ facility ကြောင့် အကြိမ်ကြိမ်အခါခါ လုပ်ရတဲ့ အလုပ်တွေကို script ရေးထားလိုက်ပြီးတော့ လိုအပ်တဲ့အချိန်မှာ run လိုက်တာက ပိုအဆင်ပြေလွယ်ကူတာကြောင့်ပါ။ script ရေးတာက သာမာန်ယူဇာတွေအတွက်က ခက်ခဲနိုင်ပေမဲ့ ကွန်ပျူတာ ပရိုဂရမ်ရေးနည်းတွေနဲ့ အကျွမ်းတဝင်ရှိတဲ့သူတွေအတွက်က self-study လုပ်သွားနိုင်ရင် speech processing နဲ့ ပတ်သက်တဲ့ အလုပ်တွေအများကြီးကို တိုးချဲ့လုပ်ကိုင်နိုင်သွားမှာမို့ပါ။  
