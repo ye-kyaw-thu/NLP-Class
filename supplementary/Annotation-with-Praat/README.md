@@ -852,6 +852,8 @@ Running မလုပ်ခင်မှာ အထက်ပါ script ရဲ့ �
 
 အခုစမ်းပြထားတဲ့ ဖိုင်တွေကိုလည်း [output/](https://github.com/ye-kyaw-thu/NLP-Class/tree/master/supplementary/Annotation-with-Praat/output) ဖိုလ်ဒါအောက်မှာ လေ့လာလို့ ရအောင် သိမ်းပေးထားပါတယ်။  
 
+မှတ်ချက်။ ။ အထက်ပါ script ကို run တဲ့အခါမှာ ရှေ့မှာ အလုပ်လုပ်ထားတဲ့ ဖိုင်တွေရှိနေရင် overwrite လုပ်သွားမှာမို့ ကြိုပြီး နေရာရွှေ့ထားတာ၊ backup ကူးထားတာမျိုး လုပ်ထားသင့်ပါတယ်။ ဒါမှမဟုတ်ရင် run တဲ့အခါမှာ မေးတဲ့ dialogue box မှာ prefix, suffix တွေ ထပ်ဖြည့်ပြီးတော့ filename ကို မတူအောင် ပြောင်းလဲပေးတာမျိုး လုပ်သွားပါ။  
+
 ## Praat Keyboard Shortcuts
 
 ## Working with Linux Commands
