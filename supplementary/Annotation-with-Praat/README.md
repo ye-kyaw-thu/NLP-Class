@@ -540,6 +540,31 @@ ASR/TTS လုပ်ချင်တဲ့သူတွေ၊ Sound Engineering �
 
 <br />
 
+တကယ့် လက်တွေ့ အသံလှိုင်းတွေမှာတော့ Sine wave လိုမျိုး pattern က တိတိကျကျ ငြိမ်နေတာမျိုး မဟုတ်ပါဘူး။ အထူးသဖြင့် လူတွေရဲ့ စကားပြောတဲ့ အသံတွေမှာက pattern ပုံစံတစ်ခုကနေ နောက်တစ်ခုကို တဖြည်းဖြည်းချင်း ပြောင်းသွားတဲ့ ပုံစံပါ။ အဲဒီ pattern ပုံစံတွေကိုတော့ လူတွေရဲ့ စကားပြောတဲ့အသံတွေကို recording လုပ်ပြီး Praat ပရိုဂရမ်ကို သုံးပြီး waveform ပုံစံကို zoom in ကို ထပ်ခါထပ်ခါ လုပ်သွားပြီး ချဲကြည့်တဲ့အခါမှာ မြင်ရပါလိမ့်မယ်။ အောက်မှာ ပြထားတဲ့ ပုံက တရုပ်ကလေးငယ်ရဲ့ ငိုသံကို zoom in ၅ခါလောက် လုပ်ပြီး ကြည့်ရတဲ့အခါမှာ မြင်ရတဲ့ wave pattern ပါ။  
+
+
+<p align="center">
+<img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/Chinese-baby-selection1.png" alt="drawing" width="500"/>  
+</p>  
+<div align="center">
+  Fig. A Part of Sound of Chinese Baby Crying (Refered from: https://clclab.github.io/clc-labs/labs/bioacoustics/bioacoustics.html)
+</div> 
+
+<br />
+
+
+<table>
+  <tr>
+    <td>Moved Start of Selection to Zero Crossing</td>
+    <td>Moved End of Selection to Zero Crossing</td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/Baby-start-zero.png" width=670 height=380></td>
+    <td><img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/Baby-end-zero.png" width=670 height=380></td>
+  </tr>
+ </table>
+ 
+<br />
 
 <p align="center">
 <img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/end-boundary-before-moving-to-near-zero-crossing.png" alt="drawing" width="500"/>  
@@ -574,28 +599,6 @@ ASR/TTS လုပ်ချင်တဲ့သူတွေ၊ Sound Engineering �
 
 
 
-<p align="center">
-<img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/Chinese-baby-selection1.png" alt="drawing" width="500"/>  
-</p>  
-<div align="center">
-  Fig. A Part of Sound of Chinese Baby Crying (Refered from: https://clclab.github.io/clc-labs/labs/bioacoustics/bioacoustics.html)
-</div> 
-
-<br />
-
-
-<table>
-  <tr>
-    <td>Moved Start of Selection to Zero Crossing</td>
-    <td>Moved End of Selection to Zero Crossing</td>
-  </tr>
-  <tr>
-    <td><img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/Baby-start-zero.png" width=670 height=380></td>
-    <td><img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/Baby-end-zero.png" width=670 height=380></td>
-  </tr>
- </table>
- 
-<br />
  
 
 ## Praat Scripting
