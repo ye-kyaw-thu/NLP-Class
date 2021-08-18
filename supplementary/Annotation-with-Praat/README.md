@@ -529,10 +529,16 @@ item []:
 
 ASR/TTS လုပ်ချင်တဲ့သူတွေ၊ Sound Engineering လုပ်မယ့်သူတွေက "zero crossing" ဆိုတာကို သိထားဖို့လိုအပ်ပါတယ်။  
 
-"Zero crossing" ဆိုတာက ...
+အသံဖိုင်တွေမှာ တကယ်က လှိုင်းပုံစံဖြစ်တောက်လျှောက်ဖြစ်နေတာမို့ အတက်အကျ ဖြစ်ပေါ်နေတဲ့ ပုံစံ ရှိပါတယ်။ waveform ရဲ့ တက်လိုက်ကျလိုက် ဖြစ်နေတဲ့ pattern တွေကို ဆိုလိုတာပါ။ အောက်မှာ ပြထားတဲ့ Sine wave ပုံကို အာရုံစိုက်ပြီး ကြည့်ကြည့်ပါ zero level ကို သတ်မှတ်ထားတဲ့ မျဉ်းကြောင်းက ရှိနေပြီး Sine wave ရဲ့ လှိုင်းက zero ပွိုင့် ကနေ အပေါင်းတန်ဖိုးတွေနဲ့ အပေါ်ဖက်ကို တက်လာပြီး peak တနေရာရာကို ရောက်တဲ့ အခါမှာ ပြန်ဆင်းလာပြီး zero ကို ဖြတ်သွားပြီး အနှုတ်ဖက်အခြင်းကို ဆင်းကျသွားပါတယ်။ အနှုတ်တန်ဖိုး တနေရာရာကို ရောက်သွားတဲ့ အခါမှာ တန်ဖိုးတွေက ပြန်တက်လာပြီး zero ပွိုင့်ကို နောက်တစ်ခေါက် ထပ်ဖြတ်ပါမယ်။ ပြီးရင် တဖြည်းဖြည်းနဲ့ အပေါင်းဖက်မှာ လှိုင်းက ပြန်တက်သွားပါလိမ့်မယ်။ အဲဒီပုံစံက Sine wave မှာဆိုရင် ငြိမ်နေတဲ့ wave pattern က ဆက်တိုက် ဖြစ်ပေါ်နေတာပါ။ အဲဒီ လှိုင်းရဲ့ zero ပွိုင့်ကို ဖြတ်တဲ့နေရာတွေကို "zero crossing" လို့ ခေါ်တာပါ။  
 
-ဒီနေရာမှာတော့ Praat ပရိုဂရမ်မှာ zero crossing ဘယ်လို ရှာရသလဲ ဆိုတာကို လုပ်ကြည့်ကြရအောင်။  
+<p align="center">
+<img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/sine-wave_example.png" alt="drawing" width="500"/>  
+</p>  
+<div align="center">
+  Fig. Sine Wave
+</div> 
 
+<br />
 
 
 <p align="center">
@@ -581,7 +587,7 @@ ASR/TTS လုပ်ချင်တဲ့သူတွေ၊ Sound Engineering �
 <table>
   <tr>
     <td>Moved Start of Selection to Zero Crossing</td>
-    <td>Moved Start of Selection to Zero Crossing</td>
+    <td>Moved End of Selection to Zero Crossing</td>
   </tr>
   <tr>
     <td><img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/Baby-start-zero.png" width=670 height=380></td>
@@ -1012,3 +1018,4 @@ $ffmpeg -formats
 12. https://en.wikipedia.org/wiki/Zero_crossing
 13. https://github.com/pandabar/praat/
 14. Chinese Baby Crying Sound File: https://clclab.github.io/clc-labs/labs/bioacoustics/bioacoustics.html
+15. Drawing a Sine Wave with Python: https://pythontic.com/visualization/charts/sinewave
