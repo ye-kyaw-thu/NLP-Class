@@ -633,7 +633,7 @@ Zoom: 0.193610, 0.654709
 <img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/kazunyuatne.png" alt="drawing" width="800"/>  
 </p>  
 <div align="center">
-  Fig. Output Screen of the Praat Script (Read the wavefile: recording1.wa and Zoom in the Interval 0.193610 and 0.654709)
+  Fig. Output Screen of the Praat Script (Read the wavefile: recording1.wav and Zoom in the Interval 0.193610 and 0.654709)
 </div> 
 
 <br />
