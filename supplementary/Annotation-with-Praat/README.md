@@ -1054,3 +1054,4 @@ $ffmpeg -formats
 14. Chinese Baby Crying Sound File: https://clclab.github.io/clc-labs/labs/bioacoustics/bioacoustics.html
 15. Drawing a Sine Wave with Python: https://pythontic.com/visualization/charts/sinewave
 16. https://www.fon.hum.uva.nl/praat/manual/Keyboard_shortcuts.html
+17. Will Styler, Using Praat for Linguistic Research, Link: https://wstyler.ucsd.edu/praat//
