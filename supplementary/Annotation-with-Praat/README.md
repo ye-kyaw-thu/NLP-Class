@@ -430,7 +430,7 @@ Word level annotation ကို စာကြောင်း တစ်ကြေ�
 
 ထပ် သတိပေးပါမယ်။ Tire မှာ segmentation လုပ်ထားတာတွေ transcription လုပ်ထားတာတွေကို ပြောင်းလဲမှုလုပ်ပြီးသွားတဲ့အခါတိုင်းမှာ save လုပ်ဖို့ မမေ့ပါနဲ့။ TextGrid ဖိုင်ကို သိမ်းတဲ့အခါမှာ ပုံမှန်အားဖြင့် text ဖိုင်တစ်ဖိုင်အနေနဲ့ပဲ သိမ်းထားလေ့ရှိပါတယ်။ သိမ်းမယ်ဆိုရင် "Praat Objects" Window မှာရှိတဲ့ "Save" menu အောက်က "Save as text file..." နဲ့ သိမ်းပါ။ ဖိုင်က text ဖိုင်မို့လို့ text editor တစ်ခုခုနဲ့ ဖွင့်ကြည့်တာမျိုး လုပ်ပြီး ပြင်စရာရှိတာကို ဝင်ပြင်တာ၊ programming language တစ်ခုခုနဲ့ (ဥပမာ perl, shell script, python, Praat script etc.) ဝင် access လုပ်ပြီးတော့ ကိုယ်လုပ်ချင်တဲ့ အလုပ်တွေကိုလည်း လုပ်လို့ ရပါတယ်။  
 
-အထက်က word level လုပ်ထားတဲ့ TextGrid ဖိုင်က အောက်ပါ format နဲ့ သိမ်းပေးထားပါလိမ့်မယ်။ လေ့လာကြည့်ရအောင်...  
+အထက်က word level transcript လုပ်ထားတဲ့ TextGrid ဖိုင်က အောက်ပါ format နဲ့ သိမ်းပေးထားပါလိမ့်မယ်။ လေ့လာကြည့်ရအောင်...  
 
 ```
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool/praat6151/annotation/audio$ cat recording1-edited.TextGrid 
