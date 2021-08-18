@@ -871,7 +871,9 @@ Basic operation နဲ့ transcript အလုပ်အတွက် အဓိက
 - လက်ရှိ selection မှတ်ထားတဲ့ အသံအစိတ်အပိုင်းရဲ့ အစ boundary ကို ဖျက်လိုက်ချင်ရင် ```Alt+Backspace```  
 - လက်ရှိ selection မှတ်ထားတဲ့ အသံအစိတ်အပိုင်းရဲ့ အစပိုင်းကို အနီးဆုံး zero crossing အမှတ်ကို ရွှေ့ချင်ရင် ```Ctrl+,```   
 - လက်ရှိ selection မှတ်ထားတဲ့ အသံအစိတ်အပိုင်းရဲ့ နောက်ဆုံးပိုင်းကို အနီးဆုံး zero crossing အမှတ်ကို ရွှေ့ချင်ရင် ```Ctrl+.```  
-
+- လက်ရှိ interval ကနေ နောက်ထပ် interval ကို ရွှေ့ချင်ရင် ```Alt+Right Arrow```
+- လက်ရှိ interval ကနေ ရှေ့က interval ကို ရွှေ့ချင်ရင် ```Alt+Left Arrow```
+- Long Sound ဖိုင်ကို ဖွင့်လိုက်ရင် ပုံမှန်က စက္ကန့် ၃၀ စာကိုပဲ visible part အနေနဲ့ ပြပေးမှာ အကုန်မြင်ချင်ရင် ```Ctrl+A```
 
 
 ## Working with Linux Commands
