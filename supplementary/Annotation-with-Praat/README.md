@@ -518,7 +518,7 @@ item []:
 <img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/TheGuest-Poem-Annotation-with-two-tiers.png" alt="drawing" width="800"/>  
 </p>  
 <div align="center">
-  Fig. Setting UTF-8 for Writing Burmese Text
+  Fig. An Example of Sentence Level Annotation for the Poem Entitled "The Guest"
 </div> 
 
 <br />
