@@ -826,7 +826,7 @@ Running မလုပ်ခင်မှာ အထက်ပါ script ရဲ့ �
 	sentence Folder C:\Users\ddaidone\Desktop\Test\
 ```
 
-ဒါမှ မဟုတ်ရင် Run လိုက်လို့ တက်လာတဲ့ အောက်ပါ dialogue box မှာ path ကို ရိုက်ထည့်တာမျိုးလုပ်ရင်လည်း အိုကေပါတယ်။  
+ဒါမှ မဟုတ်ရင် Run လိုက်လို့ တက်လာတဲ့ အောက်ပါ dialogue box မှာ Folder path ကို ရိုက်ထည့်တာမျိုးလုပ်ရင်လည်း အိုကေပါတယ်။  
 
 <p align="center">
 <img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/path-prefix-suffix-dialogue.png" alt="drawing" width="500"/>  
