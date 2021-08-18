@@ -600,7 +600,7 @@ Output အနေနဲ့ selection မှတ်ထားတဲ့ အဆုံ�
 
 <br />
 
-မှတ်ချက်။ ။ ASR/TTS မော်ဒယ်ဆောက်ဖို့အတွက် စာလုံး (word level) သို့မဟုတ် စာကြောင်း (sentence level) တွေကို selection မှတ်သားပြီးတော့ segmentation လုပ်ကြတဲ့အခါမှာလည်း ဖြစ်နိုင်သ၍ zero crossing ကိစ္စကိုပါ ဂရုစိုက်ပေးသင့်ပါတယ်။  
+မှတ်ချက်။ ။ ASR/TTS မော်ဒယ်ဆောက်ဖို့အတွက် စာလုံး (word level) သို့မဟုတ် စာကြောင်း (sentence level) တွေကို selection မှတ်သားပြီးတော့ segmentation လုပ်ကြတဲ့အခါမှာလည်း ဖြစ်နိုင်သ၍ zero crossing ကိစ္စကိုပါ ဂရုစိုက်ပေးသင့်ပါတယ်။ Selection အစနဲ့ selection အဆုံး နှစ်ခုကို နီးစပ်တဲ့ zero crossing point တွေဆီကို ရွှေ့ပေးထားသင့်ပါတယ်။ အဲဒီလို သေချာ boundary တွေကို သတ်မှတ်ပြီးမှ transcript လုပ်ရင် အထူးသဖြင့် TTS ရဲ့ အသံ quality မှာတော့ အတိုင်းအတာတစ်ခုအထိ သိသာတဲ့ အပိုင်းတွေရှိပါတယ်။  
 
 ## Praat Scripting
 
