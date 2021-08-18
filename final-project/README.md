@@ -30,7 +30,7 @@ NLP field ကို စိတ်ဝင်စားတဲ့သူတွေ လ�
 - Presentation: [slide](https://github.com/ye-kyaw-thu/NLP-Class/blob/master/final-project/Report/group3/word2vec-group/w2v-ppt/paraphasing-w2v.pdf)
 
 ### Group (4)
-- Title: University Chatbot using Artificial Intelligence Markup Language
+- Title: University Chatbot Using Artificial Intelligence Markup Language
 - Member: Ma Cho Zin Oo (Ph.D-19), Ma Cho War (Ph.D-2), Ma Hnin Ei Ei Cho (Ph.D-4), Ma Phyo Hay Mar Wai (Ph.D-5), Ma May Myat Myat Khaing (Ph.D-15), Ma Hay Man Htun (ME-IST-10)
 - Project Report: [chatbot.pdf](https://github.com/ye-kyaw-thu/NLP-Class/blob/master/final-project/Report/group4/chatbot.pdf)
 - Presentation:  [slide](https://github.com/ye-kyaw-thu/NLP-Class/blob/master/final-project/Report/group4/chatbot-presentation.pdf)
