@@ -985,3 +985,6 @@ $ffmpeg -formats
 9. Myint Zan, Shortened Cigars Stained with Nostalgic Tears, Westerly, 2010, pp. 146-158 [Paper](https://westerlymag.com.au/wp-content/uploads/2017/07/Three-Burmese-Poets-Myint-Zan.pdf)
 10. https://www.ddaidone.com/uploads/1/0/5/2/105292729/save_labeled_intervals_to_wav_sound_files.txt
 11. https://www.ddaidone.com/praat-scripts.html
+12. https://en.wikipedia.org/wiki/Zero_crossing
+13. https://github.com/pandabar/praat/
+14. 
