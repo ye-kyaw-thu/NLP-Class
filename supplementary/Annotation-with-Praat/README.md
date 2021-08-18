@@ -1034,6 +1034,7 @@ $ffmpeg -formats
 ## Demo Video
 
  Prat tutorial video ကို ရှဲလုပ်ဖို့ ရည်ရွယ်ထားပါတယ်။  
+ ပြင်ဆင်နေဆဲ ...  
  
 ## References
 
