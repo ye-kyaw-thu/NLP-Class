@@ -566,16 +566,19 @@ ASR/TTS လုပ်ချင်တဲ့သူတွေ၊ Sound Engineering �
  
 <br />
 
+ကျောင်းသားတွေအနေနဲ့ မေးနိုင်တာ ဟာ... အဲဒီလိုသာ တိတိကျကျ zero crossing တွေကို selection တစ်ခု လုပ်တိုင်းသာ လက်နဲ့ လိုက်ရှာပြီး လုပ်ရမယ်ဆိုရင် အချိန်မကြာနိုင်ဘူးလား။ တကယ်တမ်း မျက်စိနဲ့ ကြည့်ပြီး လုပ်ကြရတဲ့အခါမှာ တိကျမှု မရှိပဲ အနည်းငယ်လွဲတာမျိုးလည်း ဖြစ်မလာနိုင်ဘူးလား ဆိုတဲ့ မေးခွန်းပါ။ ဟုတ်ပါတယ်။ လက်တွေ့လုပ်တဲ့အခါမှာ ပထမဆုံး ခန့်မှန်းခြေနဲ့သာ selection မှတ်လိုက်တာပါ။ ဥပမာ အောက်ပါ ပုံက "ကန်စွန်းရွက်" ဆိုတဲ့ စာလုံး boundary ဖြစ်နိုင်တဲ့ အသံအပိုင်းကို ခန့်မှန်းပြီးတော့ manual selection လုပ်ထားတဲ့ ပုံပါ။ ပြီးတော့မှသာ Praat ပရိုဂရမ်ကို zero crossing အမှတ်တွေကို အော်တိုရှာခိုင်းပြီး boundary ကို ပြန်သတ်မှတ်ကြပါတယ်။   
+ 
+
 <p align="center">
 <img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/end-boundary-before-moving-to-near-zero-crossing.png" alt="drawing" width="500"/>  
 </p>  
 <div align="center">
-  Fig. Setting UTF-8 for Writing Burmese Text
+  Fig. Manual Selection of Burmese Word "ကန်စွန်းရွက်" (Water Spinach in English)
 </div> 
 
 <br />
 
-
+အောက်ပါ ပုံက Praat ပရိုဂရမ်မှာ zero crossing အမှတ်တွေကို ရှာပေးတဲ့ menu တွေ ရှိတဲ့နေရာကို ပြသပေးထားတာပါ။ "Move start of selection to nearest zero crossing", "Move cursor to nearest zero crossing", "Move end of selection to nearest zero crossing" ဆိုတဲ့ menu သုံးခုကို သုံးပြီးတော့ လုပ်သွားနိုင်ပါတယ်။ ကောင်းပြီ။ ဒီဥပမာမှာ selection မှတ်ထားတဲ့ end point အပိုင်းကို အနီးစပ်ဆုံး zero crossing point ရှိတဲ့ နေရာကို Praat ပရိုဂရမ်ကို ရွှေ့ခိုင်းကြည့်ရအောင်။  
 
 <p align="center">
 <img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/end-of-selection-to-nearest-zero-crossing.png" alt="drawing" width="500"/>  
@@ -586,7 +589,7 @@ ASR/TTS လုပ်ချင်တဲ့သူတွေ၊ Sound Engineering �
 
 <br />
 
-
+Output အနေနဲ့ selection မှတ်ထားတဲ့ အဆုံးပိုင်းက အနီးဆုံးမှာ ရှိတဲ့ zero crossing point ဆီကို ရွှေ့ပေးသွားတာကို အောက်ပါ ပုံအတိုင်း မြင်ရပါလိမ့်မယ်။ (i.e. Before: 380896 vs After: 380357)  
 
 <p align="center">
 <img src="https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/Annotation-with-Praat/fig/after-adding-end-boundary-zero-crossing.png" alt="drawing" width="500"/>  
@@ -597,9 +600,7 @@ ASR/TTS လုပ်ချင်တဲ့သူတွေ၊ Sound Engineering �
 
 <br />
 
-
-
- 
+မှတ်ချက်။ ။ ASR/TTS မော်ဒယ်ဆောက်ဖို့အတွက် စာလုံး (word level) သို့မဟုတ် စာကြောင်း (sentence level) တွေကို selection မှတ်သားပြီးတော့ segmentation လုပ်ကြတဲ့အခါမှာလည်း ဖြစ်နိုင်သ၍ zero crossing ကိစ္စကိုပါ ဂရုစိုက်ပေးသင့်ပါတယ်။  
 
 ## Praat Scripting
 
