@@ -1,5 +1,8 @@
 # Testing ChatterBot
 
+Draft Note for Testing ChatBot with Naive Bayesian Algorithms.   
+Working with Cho Zin Oo...  
+
 ## git clone
 
 ```
