@@ -16,6 +16,6 @@
 4. [Annotation with Praat](https://github.com/ye-kyaw-thu/NLP-Class/tree/master/supplementary/Annotation-with-Praat)  
    (ASR, TTS စတဲ့ speech processing အလုပ်တွေအတွက် အသံဖိုင်တွေကို Praat ပရိုဂရမ်ကို သုံးပြီး transcript လုပ်တာကို ရှင်းပြထားတဲ့ tutorial ပါ)  
    
-5. Statistical LM Building and PPL Measuring with Myanmar Poem Data  
+5. [Statistical LM Building and PPL Measuring with Myanmar Poem Data  ](https://github.com/ye-kyaw-thu/NLP-Class/tree/master/supplementary/LM)  
    
 6. Testing Chatbot with naive Bayesian Classification Algorithms  
