@@ -5,6 +5,7 @@ Working with Cho Zin Oo...
 
 ## git clone
 
+အရင်ဆုံး git clone လုပ်ပြီး ကိုယ့်စက်ထဲကို download လုပ်ယူခဲ့...   
 ```
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool$ git clone https://github.com/gunthercox/ChatterBot.git
 Cloning into 'ChatterBot'...
@@ -19,6 +20,7 @@ Resolving deltas: 100% (8932/8932), done.
 
 ## Installation
 
+ChatterBot ကို installation လုပ်ခဲ့...  
 ```
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool$ pip install ./ChatterBot
 Processing ./ChatterBot
@@ -44,6 +46,11 @@ You should consider upgrading via the '/home/ye/anaconda3/bin/python -m pip inst
 
 ## Upgrading pip
 
+``` WARNING: You are using pip version 21.2.2; however, version 21.2.3 is available.```  
+ဒီ warning message ကတော့ ပေးလေ့ရှိပါတယ်။ ပြဿနာ တော့ မဟုတ်ပါဘူး။  
+pip ကိုယ်တိုင်ကို upgrade လုပ်ခဲ့... 
+(လိုအပ်မှသာ ကိုယ့်စက်မှာ လုပ်ပါ)  
+
 ```
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool$ pip install --upgrade pip
 Requirement already satisfied: pip in /home/ye/anaconda3/lib/python3.7/site-packages (21.2.2)
@@ -60,6 +67,8 @@ Successfully installed pip-21.2.3
 ```
 
 ## Reinstall Chatterbot
+
+pip ကို upgrade လုပ်ပြီးတဲ့နောက်မှာ ```pip install ./Chatterbot``` command နဲ့ ကို ထပ် install လုပ်ခဲ့...  
 
 ```
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool$ pip install ./ChatterBot
@@ -87,6 +96,8 @@ Successfully installed ChatterBot-1.1.0a7
 
 ## Check the Chatterbot Version
 
+ပရိုဂရမ် တစ်ခုကို install လုပ်ပြီးသွားတဲ့အခါမှာ ကိုယ့်စက်ထဲမှာ run လို့ ရမရကို --version option နဲ့ ပေး run ရင်းနဲ့ check လုပ်ခဲ့...  
+
 ```
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool$ python -m chatterbot --version
 Traceback (most recent call last):
@@ -108,6 +119,8 @@ KeyError: 'chatterbot'
 
 ## Hello Chatterbot with Myanmar Language
 
+Installed လုပ်ထားတဲ့ ဖိုလ်ဒါအောက်မှာ my-test/ ဆိုတဲ့ ဖိုလ်ဒါအသစ်ကို ဆောက်ပြီးတော့ အဲဒီဖိုလ်ဒါအောက်မှာပဲ မြန်မာစာဒေတာနဲ့ Chatterbot ကို run ကြည့်ခဲ့...  
+
 ```
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool/ChatterBot$ ls
 chatterbot  dev-requirements.txt  docs  examples  graphics  LICENSE  MANIFEST.in  README.md  requirements.txt  runtests.py  setup.cfg  setup.py  tests  tests_django  tox.ini
@@ -115,6 +128,8 @@ chatterbot  dev-requirements.txt  docs  examples  graphics  LICENSE  MANIFEST.in
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool/ChatterBot$ cd my-test/
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool/ChatterBot/my-test$ gedit hello-chatterbot.py
 ```
+
+ပထမဦးဆုံး hello-chatterbot.py ဆိုတဲ့ ပရိုဂရမ်မှာ အဖြေကို list variable (i.e. conversation) တစ်ခုထားပြီးတော့ ChatBot ဆိုတဲ့ library ကိုခေါ်ပြီး အလွယ်run တဲ့ပုံစံနဲ့ စမ်းကြည့်ခဲ့...  
 
 ```
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool/ChatterBot/my-test$ cat hello-chatterbot.py 
@@ -173,7 +188,11 @@ For more details on the available models, see the models directory: https://spac
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool/ChatterBot/my-test$
 ```
 
+Spacy ဆိုတဲ့ library က လက်ရှိ run နေတဲ့ environment မှာ installation မလုပ်ထားဘူး ဆိုတဲ့ error message ပေးတယ်။  
+
 ## Install Spacy and Run Again
+
+အဲဒါနဲ့ spacy library ကို installation လုပ်ခဲ့တယ်...  
 
 ```
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool/ChatterBot/my-test$ pip install spacy
