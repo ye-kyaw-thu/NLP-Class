@@ -2,6 +2,7 @@
 
 ## git clone
 
+```
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool$ git clone https://github.com/gunthercox/ChatterBot.git
 Cloning into 'ChatterBot'...
 remote: Enumerating objects: 12827, done.
@@ -11,9 +12,11 @@ remote: Total 12827 (delta 1), reused 5 (delta 0), pack-reused 12815
 Receiving objects: 100% (12827/12827), 4.23 MiB | 4.70 MiB/s, done.
 Resolving deltas: 100% (8932/8932), done.
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool$ 
+```
 
 ## Installation
 
+```
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool$ pip install ./ChatterBot
 Processing ./ChatterBot
   DEPRECATION: A future pip version will change local packages to be built in-place without first copying to a temporary directory. We recommend you use --use-feature=in-tree-build to test your packages with this new behavior before it becomes the default.
@@ -34,9 +37,11 @@ Successfully installed ChatterBot-1.1.0a7 mathparse-0.1.2
 WARNING: You are using pip version 21.2.2; however, version 21.2.3 is available.
 You should consider upgrading via the '/home/ye/anaconda3/bin/python -m pip install --upgrade pip' command.
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool$
+```
 
 ## Upgrading pip
 
+```
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool$ pip install --upgrade pip
 Requirement already satisfied: pip in /home/ye/anaconda3/lib/python3.7/site-packages (21.2.2)
 Collecting pip
@@ -49,9 +54,11 @@ Installing collected packages: pip
       Successfully uninstalled pip-21.2.2
 Successfully installed pip-21.2.3
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool$
+```
 
 ## Reinstall Chatterbot
 
+```
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool$ pip install ./ChatterBot
 Processing ./ChatterBot
   DEPRECATION: A future pip version will change local packages to be built in-place without first copying to a temporary directory. We recommend you use --use-feature=in-tree-build to test your packages with this new behavior before it becomes the default.
@@ -73,9 +80,11 @@ Installing collected packages: ChatterBot
       Successfully uninstalled ChatterBot-1.1.0a7
 Successfully installed ChatterBot-1.1.0a7
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool$
+```
 
 ## Check the Chatterbot Version
 
+```
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool$ python -m chatterbot --version
 Traceback (most recent call last):
   File "/home/ye/anaconda3/lib/python3.7/runpy.py", line 193, in _run_module_as_main
@@ -92,15 +101,19 @@ KeyError: 'chatterbot'
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool$ cd ChatterBot/
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool/ChatterBot$ python -m chatterbot --version
 1.1.0a7
+```
 
 ## Hello Chatterbot with Myanmar Language
 
+```
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool/ChatterBot$ ls
 chatterbot  dev-requirements.txt  docs  examples  graphics  LICENSE  MANIFEST.in  README.md  requirements.txt  runtests.py  setup.cfg  setup.py  tests  tests_django  tox.ini
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool/ChatterBot$ mkdir my-test
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool/ChatterBot$ cd my-test/
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool/ChatterBot/my-test$ gedit hello-chatterbot.py
+```
 
+```
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool/ChatterBot/my-test$ cat hello-chatterbot.py 
 from chatterbot import ChatBot
 chatbot = ChatBot("myAgriBot")
@@ -126,9 +139,11 @@ response = chatbot.get_response("ကော်ဖီမျိုးစေ့ ရ�
 print(response)
 
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool/ChatterBot/my-test$
+```
 
-Train and Run with a small list ...
+Train and Run with a small list ...  
 
+```
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool/ChatterBot/my-test$ python ./hello-chatterbot.py 
 Traceback (most recent call last):
   File "./hello-chatterbot.py", line 2, in <module>
@@ -153,9 +168,11 @@ nlp = spacy.load("en_core_web_sm")
 
 For more details on the available models, see the models directory: https://spacy.io/models. If you want to create a blank model, use spacy.blank: nlp = spacy.blank("en")
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool/ChatterBot/my-test$
+```
 
 ## Install Spacy and Run Again
 
+```
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool/ChatterBot/my-test$ pip install spacy
 Requirement already satisfied: spacy in /home/ye/anaconda3/lib/python3.7/site-packages (3.0.5)
 Requirement already satisfied: blis<0.8.0,>=0.4.0 in /home/ye/anaconda3/lib/python3.7/site-packages (from spacy) (0.7.4)
@@ -216,9 +233,11 @@ nlp = spacy.load("en_core_web_sm")
 
 For more details on the available models, see the models directory: https://spacy.io/models. If you want to create a blank model, use spacy.blank: nlp = spacy.blank("en")
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool/ChatterBot/my-test$
+```
 
 ## Confirm with English List Training Data
 
+```
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool/ChatterBot/my-test$ cat hello-en-chatterbot.py 
 from chatterbot import ChatBot
 from chatterbot.trainers import ListTrainer
@@ -238,6 +257,9 @@ trainer.train([
 response = chatbot.get_response('I would like to book a flight.')
 
 print(response)
+```
+
+```
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool/ChatterBot/my-test$ python ./hello-en-chatterbot.py 
 Traceback (most recent call last):
   File "./hello-en-chatterbot.py", line 5, in <module>
@@ -262,11 +284,13 @@ nlp = spacy.load("en_core_web_sm")
 
 For more details on the available models, see the models directory: https://spacy.io/models. If you want to create a blank model, use spacy.blank: nlp = spacy.blank("en")
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool/ChatterBot/my-test$ 
+```
 
-Chatterbot က သုံးထားတဲ့ Spacy version နဲ့ ငါ့စက်ထဲမှာ install လုပ်ထားတဲ့ Spacy version က မတူလို့ ဖြစ်တဲ့ ပြဿနာလို့ နားလည်တယ်။
+Chatterbot က သုံးထားတဲ့ Spacy version နဲ့ ငါ့စက်ထဲမှာ install လုပ်ထားတဲ့ Spacy version က မတူလို့ ဖြစ်တဲ့ ပြဿနာလို့ နားလည်တယ်။  
 
 ## Check Spacy
 
+```
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool/ChatterBot/my-test$ python
 Python 3.7.6 (default, Jan  8 2020, 19:59:22) 
 [GCC 7.3.0] :: Anaconda, Inc. on linux
@@ -274,13 +298,14 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> import spacy
 >>> nlp = spacy.load("en_core_web_sm")
 >>> 
-
-en_core_web_sm က ရှိပြီးသား...
+```
+en_core_web_sm က ရှိပြီးသား...  
 
 ## Fixed the Error
 
 Reference: https://stackoverflow.com/questions/66087475/chatterbot-error-oserror-e941-cant-find-model-en
 
+```
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool/ChatterBot/my-test$ gedit /home/ye/anaconda3/lib/python3.7/site-packages/chatterbot/tagging.py
 Line no. 26 မှာ ရှိတဲ့ အောက်ပါ လိုင်းကို
         self.nlp = spacy.load(self.language.ISO_639_1.lower())
@@ -291,27 +316,33 @@ if self.language.ISO_639_1.lower() == 'en':
     self.nlp = spacy.load('en_core_web_sm')
 else:
     self.nlp = spacy.load(self.language.ISO_639_1.lower())
-    
+```
+
 ## Run English Simple Chattabot Program Again
 
+```
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool/ChatterBot/my-test$ python ./hello-en-chatterbot.py 
 List Trainer: [####################] 100%
 Your flight has been booked.
+```
 
 ## Run Myanmar Hello Chattabot Program Again
 
-မေးခွန်းက 
-response = chatbot.get_response("ကော်ဖီမျိုးစေ့ ရေနွေးစိမ် အညှောင့်ဖောက်ရာတွင် အချိန်ဘယ်လောက်ကြာအောင် စိမ်သင့်ပါလဲ။")
+မေးခွန်းက   
+response = chatbot.get_response("ကော်ဖီမျိုးစေ့ ရေနွေးစိမ် အညှောင့်ဖောက်ရာတွင် အချိန်ဘယ်လောက်ကြာအောင် စိမ်သင့်ပါလဲ။")  
 
-Train and Run and Let's see the answer:
+Train and Run and Let's see the answer:  
 
+```
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool/ChatterBot/my-test$ python ./hello-chatterbot.py 
 List Trainer: [####################] 100%
 ၁၂ နာရီမှ ၂၄ နာရီ စိမ်သင့်ပါသည်။
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool/ChatterBot/my-test$ 
+```
 
 ## Testing Terminal Mode
 
+```
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool/ChatterBot/my-test$ cat ./hello-chatterbot-en-terminal.py 
 from chatterbot import ChatBot
 
@@ -347,9 +378,10 @@ while True:
     except (KeyboardInterrupt, EOFError, SystemExit):
         break
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool/ChatterBot/my-test$
+```
+Corpus က Math Evaluation မို့လို့ သင်္ချာနဲ့ ဆိုင်တာကို မေးမှ ဖြစ်လိမ့်မယ်...  
 
-Corpus က Math Evaluation မို့လို့ သင်္ချာနဲ့ ဆိုင်တာကို မေးမှ ဖြစ်လိမ့်မယ်...
-
+```
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool/ChatterBot/my-test$ python ./hello-chatterbot-en-terminal.py 
 Type something to begin...
 1 + 100
@@ -360,13 +392,15 @@ Type something to begin...
 The current time is 11:04 AM
 200 / 2
 200 / 2 = 100
+```
 
-အလုပ်လုပ်တယ်။
+အလုပ်လုပ်တယ်။  
 
 ## Testing with a Training Corpus
 
-Ref: https://chatterbot.readthedocs.io/en/stable/training.html
+Ref: https://chatterbot.readthedocs.io/en/stable/training.html  
 
+```
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool/ChatterBot/my-test$ cat corpus-chatterbot.py 
 import json
 
@@ -393,16 +427,20 @@ while True:
     print('Bot: ', response)
     
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool/ChatterBot/my-test$
+```
 
-I downloaded json Q&A data of Yahoo.
+I downloaded json Q&A data of Yahoo.  
 
+```
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool/ChatterBot/my-test/nfL6-data$ ls
 link.txt  nfL6.json  README.txt
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool/ChatterBot/my-test/nfL6-data$ wc ./nfL6.json 
   1197750  25255040 156228758 ./nfL6.json
+```
 
-Check the json file:
+Check the json file:  
 
+```
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool/ChatterBot/my-test/nfL6-data$ head -n 20 ./nfL6.json 
 [
     {
@@ -425,9 +463,11 @@ Check the json file:
             "Don't try this yourself but this is what the old fashioned way is - done in some villages in other parts of the world.. . The guy who dismantles, wears a mask with holes at the eyes so he can see, carries a big sack with burning coals in it.  He also wraps his hands with thick cloths, carries an empty bag to collect the honey in it.. He then collects the honey in the empty bag, pulls the hive into the bag of coals.. . If he just wants to collect the honey, he would leave after collecting the honey - but the bag of coals is used to choke & burn the bees if he wanted to get rid of the hive.. . That's a bit like coding in COBOL & assembly :)"
         ], 
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool/ChatterBot/my-test/nfL6-data$ 
+```
 
-Training and Testing...
+Training and Testing...   
 
+```
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool/ChatterBot/my-test$ time python ./corpus-chatterbot.py
 List Trainer: [####################] 100%
 You: Which is better, sushi or sashimi and why?                                        
@@ -463,8 +503,13 @@ real	22m19.921s
 user	13m10.256s
 sys	0m4.032s
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool/ChatterBot/my-test$
+```
+json ဖိုင် ဒေတာ အားလုံးနဲ့ training လုပ်တာက မိနစ် ၁၉ မိနစ်လောက်ပဲ ကြာတယ်။   
 
-json ဖိုင် ဒေတာ အားလုံးနဲ့ training လုပ်တာက မိနစ် ၁၉ မိနစ်လောက်ပဲ ကြာတယ်။
+## To Do
+
+- လက်ရှိ ဒေတာကို json file format ပြောင်းဖို့အတွက် script ရေးရမယ်  
+- အမေး-အဖြေ ဒေတာတွေ (လက်ရှိမှာ အဖြေတွေက မပြည့်စုံသေး) ကို ထပ်ဖြည့်ရန်  
 
 
 
