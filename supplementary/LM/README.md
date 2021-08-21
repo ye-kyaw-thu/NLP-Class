@@ -331,5 +331,7 @@ $gedit lm.log1
 
 ## To Do
 
+တွေ့ရတဲ့ အတိုင်းပဲ လက်ရှိ LM က သုံးလို့ အဆင်မပြေနိုင်သေးဘူး...  
+
 - Brain stroming for Preprocessing  
 - Building and Testing with Neural LM approaches  
