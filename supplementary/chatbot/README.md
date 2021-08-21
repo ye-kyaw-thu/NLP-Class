@@ -227,10 +227,12 @@ Requirement already satisfied: urllib3!=1.25.0,!=1.25.1,<1.26,>=1.21.1 in /home/
 Requirement already satisfied: idna<2.9,>=2.5 in /home/ye/anaconda3/lib/python3.7/site-packages (from requests<3.0.0,>=2.13.0->spacy) (2.8)
 Requirement already satisfied: click<7.2.0,>=7.1.1 in /home/ye/anaconda3/lib/python3.7/site-packages (from typer<0.4.0,>=0.3.0->spacy) (7.1.2)
 Requirement already satisfied: MarkupSafe>=0.23 in /home/ye/anaconda3/lib/python3.7/site-packages (from jinja2->spacy) (1.1.1)
+```
 
-Spacy က ငါ့စက်ထဲမှာ ရှိပြီးသား...
-Error ကို သေချာ ပြန်ကြည့်ရအောင်... 
+Spacy က ငါ့စက်ထဲမှာ ရှိပြီးသား...  
+Error ကို သေချာ ပြန်ကြည့်ရအောင်...   
 
+```
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool/ChatterBot/my-test$ python ./hello-chatterbot.py 
 Traceback (most recent call last):
   File "./hello-chatterbot.py", line 2, in <module>
@@ -259,6 +261,9 @@ For more details on the available models, see the models directory: https://spac
 
 ## Confirm with English List Training Data
 
+အဲဒါနဲ့ မြန်မာစာဒေတာနဲ့ မလုပ်ခင် English list ဒေတာနဲ့ပဲ သူ့ original program ကိုပဲ testing အနေနဲ့ run ကြည့်ခဲ့...  
+hello-en-chatterbot.py ဆိုတဲ့ python ပရိုဂရမ်က အောက်ပါအတိုင်းပါ...  
+
 ```
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool/ChatterBot/my-test$ cat hello-en-chatterbot.py 
 from chatterbot import ChatBot
@@ -280,6 +285,8 @@ response = chatbot.get_response('I would like to book a flight.')
 
 print(response)
 ```
+
+အင်္ဂလိပ်ဒေတာနဲ့လည်း လက်ရှိစက်ထဲမှာ run လို့ အဆင်မပြေဘူး...  
 
 ```
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool/ChatterBot/my-test$ python ./hello-en-chatterbot.py 
@@ -312,6 +319,7 @@ Chatterbot က သုံးထားတဲ့ Spacy version နဲ့ ငါ့�
 
 ## Check Spacy
 
+အဲဒါနဲ့ Spacy library ကိုယ်တိုင်ကို import လုပ်လို့ ရမရနဲ့ အထက်က program မှာ သုံးထားတဲ့  spacy ရဲ့ en_core_web_sm ကို loading လုပ်လို့ ရမရကိုလည်း စမ်းကြည့်ခဲ့...  
 ```
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool/ChatterBot/my-test$ python
 Python 3.7.6 (default, Jan  8 2020, 19:59:22) 
@@ -322,14 +330,16 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> 
 ```
 en_core_web_sm က ရှိပြီးသား...  
+အထက်ပါအတိုင်း loading က အိုကေတယ်။  
 
 ## Fixed the Error
 
-Reference: https://stackoverflow.com/questions/66087475/chatterbot-error-oserror-e941-cant-find-model-en
+Reference: https://stackoverflow.com/questions/66087475/chatterbot-error-oserror-e941-cant-find-model-en  
+အထက်ပါ reference link ကို refer လုပ်ပြီး running error ကို fix လုပ်ခဲ့တယ်။  
 
 ```
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool/ChatterBot/my-test$ gedit /home/ye/anaconda3/lib/python3.7/site-packages/chatterbot/tagging.py
-Line no. 26 မှာ ရှိတဲ့ အောက်ပါ လိုင်းကို
+Line no. 26 မှာ ရှိတဲ့ အောက်ပါ လိုင်းကို  
         self.nlp = spacy.load(self.language.ISO_639_1.lower())
         
 အောက်ပါ အတိုင်း replace လုပ်ခဲ့တယ်
@@ -341,6 +351,8 @@ else:
 ```
 
 ## Run English Simple Chattabot Program Again
+
+အထက်ပါအတိုင်း error ကို fix လုပ်ပြီးတဲ့နောက်မှာ hello-en-chatterbot.py ကို run လို့ အဆင်ပြေသွားတာကို အောက်ပါအတိုင်း တွေ့ရ...  
 
 ```
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool/ChatterBot/my-test$ python ./hello-en-chatterbot.py 
@@ -355,6 +367,7 @@ response = chatbot.get_response("ကော်ဖီမျိုးစေ့ ရ�
 
 Train and Run and Let's see the answer:  
 
+အောက်ပါအတိုင်း training လုပ်တာလည်း သိပ်မကြာဘူး...  
 ```
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool/ChatterBot/my-test$ python ./hello-chatterbot.py 
 List Trainer: [####################] 100%
@@ -363,6 +376,8 @@ List Trainer: [####################] 100%
 ```
 
 ## Testing Terminal Mode
+
+Interactive mode သို့မဟုတ် Terminal mode ကို အောက်ပါအတိုင်း စမ်းကြည့်ခဲ့...  
 
 ```
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool/ChatterBot/my-test$ cat ./hello-chatterbot-en-terminal.py 
@@ -420,8 +435,10 @@ The current time is 11:04 AM
 
 ## Testing with a Training Corpus
 
+Documentation ကို ဝင်လေ့လာခဲ့...  
 Ref: https://chatterbot.readthedocs.io/en/stable/training.html  
 
+corpus-chatterbot.py ဆိုတဲ့ ပရိုဂရမ်ရဲ့ code က အောက်ပါအတိုင်း...  
 ```
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool/ChatterBot/my-test$ cat corpus-chatterbot.py 
 import json
@@ -452,7 +469,7 @@ while True:
 ```
 
 I downloaded json Q&A data of Yahoo.  
-
+(Yahoo ကနေ json Q&A ဒေတာကို ဒေါင်းလုပ် လုပ်ယူခဲ့တယ်)  
 ```
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool/ChatterBot/my-test/nfL6-data$ ls
 link.txt  nfL6.json  README.txt
@@ -532,6 +549,7 @@ json ဖိုင် ဒေတာ အားလုံးနဲ့ training လု
 
 - လက်ရှိ ဒေတာကို json file format ပြောင်းဖို့အတွက် script ရေးရမယ်  
 - အမေး-အဖြေ ဒေတာတွေ (လက်ရှိမှာ အဖြေတွေက မပြည့်စုံသေး) ကို ထပ်ဖြည့်ရန်  
+- အချိန်ရရင် Bayesian classification အပြင် တခြား modeling approach တွေနဲ့ပါ coding ကို ဝင်ပြင်ရေးပြီး experiment လုပ်ကြည့်ရန်...   
 
 
 
