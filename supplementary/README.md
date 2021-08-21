@@ -18,4 +18,4 @@
    
 5. [Statistical LM Building and PPL Measuring with Myanmar Poem Data  ](https://github.com/ye-kyaw-thu/NLP-Class/tree/master/supplementary/LM)  
    
-6. Testing Chatbot with naive Bayesian Classification Algorithms  
+6. [Testing Chatbot with naive Bayesian Classification Algorithms](https://github.com/ye-kyaw-thu/NLP-Class/tree/master/supplementary/chatbot)  
