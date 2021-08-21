@@ -4,6 +4,8 @@ Draft Note for Khaing Hsu Wai who working on Myanmar Poem LMs...
 
 ## Raw Data
 
+ပြင်ဆင်ထားတဲ့ မြန်မာကဗျာ-corpus က အောက်ပါ format...  
+
 ```
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/data/my-poem/ye/statistical-LM$ head -n 20 ./Poem_collected_Data_All.txt 
 Title	တက်လူ့တေးသံ	ဇော်ဂျီ
@@ -29,6 +31,11 @@ Title	ဤနေရာ	ဇော်ဂျီ
 ```
 
 ## Preprocessing
+
+Preprocessing အမျိုးမျိုး လုပ်ဖို့ လိုအပ်တယ်။  
+အနည်းဆုံး အောက်ပါလိုမျိုး Title ကို ရှင်းပလိုက်တာမျိုး...  
+ပုဒ်ထီး ပုဒ်မကို ဖျက်တာမျိုး...  
+နှစ်ကြောင်း တွဲလိုက်တာမျိုး...  
 
 ```
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/data/my-poem/ye/statistical-LM$ perl ./pre-processing.pl ./Poem_collected_Data_All.txt > ./poem.cleaned
@@ -56,7 +63,64 @@ Title	ဤနေရာ	ဇော်ဂျီ
 ပန်းတွေနှင့်မွှေး  ပျိုလေးတို့ရွာ  သာပါစမေး 
 ```
 
+draft perl script က အောက်ပါအတိုင်း...  
+
+```perl 
+#!/usr/bin/env perl
+
+# for Burmese poem data preprocessing
+# Ye Kyaw Thu, LU Lab., Myanmar
+# 21 Aug 2021
+# usage: $ perl ./pre-processing.pl ./Poem_collected_Data_All.txt > ./poem.cleaned
+
+use strict;
+use warnings;
+use utf8;
+
+binmode(STDIN, ":utf8");
+binmode(STDOUT, ":utf8");
+binmode(STDERR, ":utf8");
+
+open (my $inputFILE,"<:encoding(utf8)", $ARGV[0]) or die "Couldn't open input file $ARGV[0]!, $!\n";
+
+my $ct = 0; my $combined_str = "";
+while (!eof($inputFILE)) {
+    
+    my $line = <$inputFILE>;
+    if ($line !~  /^\s*$/) {
+        chomp($line);
+
+        #  removed title lines 
+        if ($line !~ /Title|title/ ) {
+            $combined_str = $combined_str." ".$line;
+            $ct++;
+            
+            if ($ct == 2) {
+                # trim leading and trailing spaces
+                # To Do: We should consider ", ' ! ...
+                # spelling checking ... 
+                # prevent combination of sentences from two poems ...
+                # 4-3-2, etc.
+                # word segmentation ?!
+                $combined_str =~ s/^\s+|\s+$|၊|။|၊၊//g;
+                print "$combined_str\n";
+                $combined_str = "";        
+                $ct = 0;
+            } 
+         }
+    }
+}
+
+close ($inputFILE);
+```
+
+Comment တွေ ဖြည့်ထားတဲ့ အတိုင်းပါပဲ.. မြန်မာကဗျာအတွက် Rhyme တွေအလိုက်တွဲပေးတာမျိုး လုပ်ရန်လိုအပ်...  
+Let's do our best...   
+
+
 ## Prepare training and test data
+
+Training ဒေတာနဲ့ test ဒေတာကို ခွဲဖို့လိုအပ်...  
 
 ```
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/data/my-poem/ye/statistical-LM$ shuf ./poem.cleaned > ./poem.cleaned.shuf
@@ -64,6 +128,7 @@ Title	ဤနေရာ	ဇော်ဂျီ
   22702   91544 3250669 ./poem.cleaned.shuf
 ```
 
+head, tail command နဲ့ပဲ အလွယ်ခွဲပြီး ဒီမိုလုပ်ပြခဲ့...  
 ```
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/data/my-poem/ye/statistical-LM$ head  ./poem.cleaned.shuf 
 ကြည်လင်တဲ့ ကဗျာပန်း  ညီတညာ 
@@ -93,6 +158,7 @@ Make executable without bash command:
 ```
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/data/my-poem/ye/statistical-LM$ chmod +x ./lm-building-exec.sh
 ```
+
 Building LM and calculate PPL with test data:  
 
 ```
@@ -169,12 +235,12 @@ file ./poem.cleaned.shuf.test: 2000 sentences, 8036 words, 5752 OOVs
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/data/my-poem/ye/statistical-LM$ 
 ```
 
-
 Check lm.log1:  
 ```
 $gedit lm.log1
 ```
 
+လက်ရှိ ဆောက်ထားတဲ့ ကဗျာ-LM နဲ့ sentence generate လုပ်ကြည့်ရင်...  
 ```
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/data/my-poem/ye/statistical-LM$ /home/ye/tool/srilm-1.7.3/bin/i686-m64/ngram -lm ./poem.cleaned.shuf.train.lm -gen 10 generates 10 random sentences
 ဟောဒီမှာ ငါ့ဘဝပါ
@@ -189,6 +255,7 @@ $gedit lm.log1
 အချီချီတိုက်ခိုက် လှိုင်းခေါင်းပတ်ဝိုက်၍ ဒိုက်သရောစွက် စွမ်းသည့်လက်နက်တို့
 ```
 
+နောက်ထပ်တကြိမ် ကဗျာစာကြောင်းတွေကို generate ထပ်လုပ်ကြည့်ရင်...  
 ```
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/data/my-poem/ye/statistical-LM$ /home/ye/tool/srilm-1.7.3/bin/i686-m64/ngram -lm ./poem.cleaned.shuf.train.lm -gen 10 generates 10 random sentences
 ဖြောင့်မတ်ရှိသူ စိတ်ထားဖြူ၍ ကျင့်မူသီလ ပြည့်စုံလှဘိ
@@ -203,3 +270,8 @@ $gedit lm.log1
 ပူမှုကင်းဝေး စိတ်လွန်အေးဘိ
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/data/my-poem/ye/statistical-LM$
 ```
+
+## To Do
+
+- Brain stroming for Preprocessing  
+- Building and Testing with Neural LM approaches  
