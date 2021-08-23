@@ -348,5 +348,5 @@ $gedit lm.log1
 
 တွေ့ရတဲ့ အတိုင်းပဲ လက်ရှိ LM က သုံးလို့ အဆင်မပြေနိုင်သေးဘူး...  
 
-- Brain stroming for Preprocessing  
+- Brainstroming for Preprocessing  
 - Building and Testing with Neural LM approaches  
