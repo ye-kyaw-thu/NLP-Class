@@ -329,6 +329,21 @@ $gedit lm.log1
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/data/my-poem/ye/statistical-LM$
 ```
 
+## Reference
+
+### Scripts
+- https://github.com/ye-kyaw-thu/tools/blob/master/bash/lm-building-exec.sh
+- https://github.com/ye-kyaw-thu/tools/blob/master/bash/mk-class-lm.sh
+- https://github.com/ye-kyaw-thu/tools/blob/master/bash/mk-two-lm-and-merge.sh
+- https://github.com/ye-kyaw-thu/tools/blob/master/bash/calc-ppl-with-kenlm-query.sh
+- https://github.com/ye-kyaw-thu/tools/blob/master/bash/print-most-common.sh
+
+### LM Tools
+- SRILM: https://github.com/BitSpeech/SRILM
+- Homepage of SRILM: http://www.speech.sri.com/projects/srilm/
+- KenLM: https://github.com/kpu/kenlm
+- MITLM: https://github.com/mitlm/mitlm
+
 ## To Do
 
 တွေ့ရတဲ့ အတိုင်းပဲ လက်ရှိ LM က သုံးလို့ အဆင်မပြေနိုင်သေးဘူး...  
