@@ -881,6 +881,8 @@ Basic operation နဲ့ transcript အလုပ်အတွက် အဓိက
 - လက်ရှိ interval ကနေ နောက်ထပ် interval ကို ရွှေ့ချင်ရင် ```Alt+Right-Arrow```
 - လက်ရှိ interval ကနေ ရှေ့က interval ကို ရွှေ့ချင်ရင် ```Alt+Left-Arrow```
 - Long Sound ဖိုင်ကို ဖွင့်လိုက်ရင် ပုံမှန်က စက္ကန့် ၃၀ စာကိုပဲ visible part အနေနဲ့ ပြပေးမှာ အကုန်မြင်ချင်ရင် ```Ctrl+A```
+- Long Sound ဖိုင်ကို ဖွင့်ထားတဲ့အခါမှာ visual part ကိုပဲ waveform, spectrogram ပြပေးမှာမို့ အသံဖိုင်ရဲ့ အဲဒီနောက်ပိုင်း ကိုရွှေ့ချင်ရင် ```Page-Down```
+- Long Sound ဖိုင်ကို ဖွင့်ထားစဉ်မှာ visual part ရဲ့ အရှေ့ဖက် အခြမ်းကို ရွှေ့ချင်ရင် ```Page-Up```
 
 
 ## Working with Linux Commands
