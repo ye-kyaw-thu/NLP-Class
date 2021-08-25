@@ -282,3 +282,17 @@ Ref:  ခင်ဗျား ဖတ် တတ်ရယ်လား ။
 sys1: နင် ဒယ်ဇာ ဖတ် မ ပြော လား ။
 sys2: ခံဗျားအဲဇာ ဖတ် တတ်ရယ်လား ။
 ```
+
+## Output HTML Report File
+
+ဒီ evaluation toolkit ကို ဆရာ ကြိုက်တာက အောက်ပါ အချက်တွေကြောင့်    
+- html ဖိုင် အနေနဲ့ report ကို အသေးစိတ်ထုတ်ပေးလို့  
+- system1, system2, system3 စသည်ဖြင့် MT system တွေရဲ့ ရလဒ်တွေကို အသေးစိတ် နှိုင်းယှဉ်းထားတဲ့ report ကို ထုတ်ပေးလို့  
+- sentence level BLEU socre ကိုလည်း ထုတ်ပေးပြီး system တွေအကြား နှိုင်းယှဉ်လို့ ရလို့  
+
+Limitation: လက်ရှိ compare-mt မှာက နှိုင်းယှဉ်ကြည့်တဲ့ system က သုံးခုထက် ကျော်သွားရင်လို့ထင်တယ် တချို့ ရလဒ်တွေကို html output ဖိုင်မှာ မပြပေးနိုင်ဘူး  
+
+အထက်မှာ ဥပမာ run ပြထားပြီး ထွက်လာတဲ့ report html ဖိုင်ကို PDF ဖိုင်အဖြစ် ပြောင်းထားတာကိုလည်း တင်ပေးထားတယ်။  
+လေ့လာကြည့်ပါ။  
+PDF file link: [index.html.pdf](https://github.com/ye-kyaw-thu/NLP-Class/blob/master/supplementary/compare-mt/index.html.pdf)  
+(တစ်ခုတော့ရှိတယ် browser ကနေ ဖွင့်နေရင် ကြာတတ်တယ်။ download လုပ်ပြီး ကြည့်လိုက်တာက ပိုမြန်လိမ့်မယ်)  
