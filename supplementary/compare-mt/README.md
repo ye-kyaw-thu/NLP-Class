@@ -1,3 +1,10 @@
+# compare-mt Usage Example
+
+Installation ဘာညာအတွက်က https://github.com/neulab/compare-mt ကို ကြည့်ပါ။  
+
+ဒီနေရာမှာက UCSY က သဇင်မြင့်ဦးနဲ့ အတူ လုပ်ခဲ့ကြတဲ့ Pivot machine translation experiment တွေထဲက ရလဒ် pair တစ်ခု (i.e. ref, hyp1 vs hyp2) ကို သုံးပြီးတော့ mt-eval နဲ့ evaluation report ထုတ်တဲ့ ပုံကို ဥပမာအနေနဲ့ လေ့လာနိုင်အောင် တင်ပေးထားတာ...  
+
+```
 (base) ye@ykt-pro:/media/ye/project1/tool/compare-mt/y-test1$ compare-mt /home/ye/exp/dw-bk-my/data/my-bk/1/test.bk /home/ye/exp/dw-bk-my/data/my-bk/1/baseline/my-bk/evaluation/test.cleaned.1 /home/ye/exp/triangulation/word/1/dw-my-bk/hypo-sentence.mybk.bk
 ********************** Aggregate Scores ************************
 BLEU:
@@ -274,3 +281,4 @@ sys1-sys2=-46.3173, sys1=20.5567, sys2=66.8740
 Ref:  ခင်ဗျား ဖတ် တတ်ရယ်လား ။
 sys1: နင် ဒယ်ဇာ ဖတ် မ ပြော လား ။
 sys2: ခံဗျားအဲဇာ ဖတ် တတ်ရယ်လား ။
+```
